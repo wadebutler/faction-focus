@@ -1,0 +1,767 @@
+{
+    "Broodlord": {
+        "Broodlord": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "-",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Hive Tyrant": {
+        "Hive Tyrant": {
+            "model_count": "1",
+            "points_value": "155",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Neurothrope": {
+        "Neurothrope": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "1",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Old One Eye": {
+        "Old One Eye": {
+            "model_count": "1",
+            "points_value": "220\u2022",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "9",
+            "attacks": "5",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Tervigon": {
+        "Tervigon": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "The Swarmlord": {
+        "The Swarmlord": {
+            "model_count": "1",
+            "points_value": "270\u2022",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Tyranid Prime": {
+        "Tyranid Prime": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Malanthrope": {
+        "Malanthrope": {
+            "model_count": "1-3",
+            "points_value": "135",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Genestealers": {
+        "Genestealer": {
+            "model_count": "5-20",
+            "points_value": "15",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Hormagaunts": {
+        "Hormagaunt": {
+            "model_count": "10-30",
+            "points_value": "6",
+            "movement": "8\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "5",
+            "save": "6+"
+        }
+    },
+    "Ripper Swarm": {
+        "Ripper Swarm": {
+            "model_count": "3-9",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Termagants": {
+        "Termagant": {
+            "model_count": "10-30",
+            "points_value": "5",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "5",
+            "save": "6+"
+        }
+    },
+    "Tyranid Warriors": {
+        "Tyranid Warrior": {
+            "model_count": "3-9",
+            "points_value": "21",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Termagants (Legendary)": {
+        "Termagant": {
+            "model_count": "10-30",
+            "points_value": "4",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "5",
+            "save": "6+"
+        }
+    },
+    "Tyrannocyte": {
+        "Tyrannocyte": {
+            "model_count": "1",
+            "points_value": "65",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Deathleaper": {
+        "Deathleaper": {
+            "model_count": "1",
+            "points_value": "65\u2022",
+            "movement": "9\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "5+"
+        }
+    },
+    "Haruspex": {
+        "Haruspex": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "7\"",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "13",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Hive Guard": {
+        "Hive Guard": {
+            "model_count": "3-6",
+            "points_value": "40",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Lictor": {
+        "Lictor": {
+            "model_count": "1",
+            "points_value": "32",
+            "movement": "9\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Maleceptor": {
+        "Maleceptor": {
+            "model_count": "1",
+            "points_value": "160",
+            "movement": "7\"",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Pyrovores": {
+        "Pyrovore": {
+            "model_count": "1-3",
+            "points_value": "28",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "5",
+            "save": "4+"
+        }
+    },
+    "The Red Terror": {
+        "The Red Terror": {
+            "model_count": "1",
+            "points_value": "55\u2022",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Tyrant Guard": {
+        "Tyrant Guard": {
+            "model_count": "3-6",
+            "points_value": "38",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Venomthropes": {
+        "Venomthrope": {
+            "model_count": "3-6",
+            "points_value": "33",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "5",
+            "save": "5+"
+        }
+    },
+    "Zoanthropes": {
+        "Zoanthrope": {
+            "model_count": "3-6",
+            "points_value": "45",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Sky-Slasher Swarm": {
+        "Sky-Slasher Swarm": {
+            "model_count": "3-9",
+            "points_value": "15",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Tyranid Shrikes": {
+        "Tyranid Shrike": {
+            "model_count": "3-9",
+            "points_value": "24",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Gargoyles": {
+        "Gargoyle": {
+            "model_count": "10-30",
+            "points_value": "7",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "5",
+            "save": "6+"
+        }
+    },
+    "Mucolid Spores": {
+        "Mucolid Spore": {
+            "model_count": "1-3",
+            "points_value": "22",
+            "movement": "3\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "1",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Raveners": {
+        "Ravener": {
+            "model_count": "3-9",
+            "points_value": "22",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "5",
+            "save": "5+"
+        }
+    },
+    "Spore Mines": {
+        "Spore Mine": {
+            "model_count": "3-9",
+            "points_value": "10",
+            "movement": "3\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "1",
+            "toughness": "1",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "7+"
+        }
+    },
+    "Dimachaeron": {
+        "Dimachaeron": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Meiotic Spores": {
+        "Meiotic Spore": {
+            "model_count": "3-9",
+            "points_value": "20",
+            "movement": "3\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "1",
+            "toughness": "2",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "7+"
+        }
+    },
+    "Harpy": {
+        "Harpy": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Hive Crone": {
+        "Hive Crone": {
+            "model_count": "1",
+            "points_value": "155",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Biovores": {
+        "Biovore": {
+            "model_count": "1-3",
+            "points_value": "50",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "5",
+            "save": "4+"
+        }
+    },
+    "Carnifexes": {
+        "Carnifex": {
+            "model_count": "1-3",
+            "points_value": "80",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Exocrine": {
+        "Exocrine": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "6\"",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Mawloc": {
+        "Mawloc": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "-",
+            "strength": "*",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "7",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Screamer-Killers": {
+        "Screamer-Killer": {
+            "model_count": "1-3",
+            "points_value": "105",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Thornbacks": {
+        "Thornback": {
+            "model_count": "1-3",
+            "points_value": "80",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Toxicrene": {
+        "Toxicrene": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "8\"",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Trygon": {
+        "Trygon": {
+            "model_count": "1",
+            "points_value": "120",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "6",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Trygon Prime": {
+        "Trygon Prime": {
+            "model_count": "1",
+            "points_value": "160",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Tyrannofex": {
+        "Tyrannofex": {
+            "model_count": "1",
+            "points_value": "190",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Stone Crusher Carnifex Brood": {
+        "Stone Crusher Carnifex Brood": {
+            "model_count": "1-3",
+            "points_value": "90",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Barbed Hierodule": {
+        "Barbed Hierodule": {
+            "model_count": "1",
+            "points_value": "460",
+            "movement": "*",
+            "weapon_skill": "3+",
+            "ballistic_skill": "*",
+            "strength": "10",
+            "toughness": "8",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Harridan": {
+        "Harridan": {
+            "model_count": "1",
+            "points_value": "760",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "30",
+            "attacks": "5",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Hierophant Bio-titan": {
+        "Hierophant Bio-titan": {
+            "model_count": "1",
+            "points_value": "2000",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "3+",
+            "strength": "10",
+            "toughness": "8",
+            "wounds": "50",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Scythed Hierodule": {
+        "Scythed Hierodule": {
+            "model_count": "1",
+            "points_value": "410",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "10",
+            "toughness": "8",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Sporocyst": {
+        "Sporocyst": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "-",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    }
+}

@@ -1,0 +1,3636 @@
+{
+    "Captain": {
+        "Captain": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Captain in Cataphractii Armour": {
+        "Captain in Cataphractii Armour": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "4\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain in Gravis Armour": {
+        "Captain in Gravis Armour": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Captain in Phobos Armour": {
+        "Captain in Phobos Armour": {
+            "model_count": "1",
+            "points_value": "93",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Captain in Terminator Armour": {
+        "Captain in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain on Bike": {
+        "Captain on Bike": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaplain": {
+        "Chaplain": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaplain in Terminator Armour": {
+        "Chaplain in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Librarian": {
+        "Librarian": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Librarian in Phobos Armour": {
+        "Librarian in Phobos Armour": {
+            "model_count": "1",
+            "points_value": "98",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Librarian in Terminator Armour": {
+        "Librarian in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Lieutenants": {
+        "Lieutenant": {
+            "model_count": "1-2",
+            "points_value": "65",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Lieutenants in Phobos Armour": {
+        "Lieutenant in Phobos Armour": {
+            "model_count": "1-2",
+            "points_value": "78",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Primaris Captain": {
+        "Primaris Captain": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Primaris Chaplain": {
+        "Primaris Chaplain": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Primaris Librarian": {
+        "Primaris Librarian": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Primaris Lieutenants": {
+        "Primaris Lieutenant": {
+            "model_count": "1-2",
+            "points_value": "70",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Techmarine": {
+        "Techmarine": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Adrax Agatone": {
+        "Adrax Agatone": {
+            "model_count": "1",
+            "points_value": "145\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain Lysander": {
+        "Captain Lysander": {
+            "model_count": "1",
+            "points_value": "140\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain Sicarius": {
+        "Captain Sicarius": {
+            "model_count": "1",
+            "points_value": "115\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Chaplain Cassius": {
+        "Chaplain Cassius": {
+            "model_count": "1",
+            "points_value": "95\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chief Librarian Tigurius": {
+        "Chief Librarian Tigurius": {
+            "model_count": "1",
+            "points_value": "135\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Iron Father Feirros": {
+        "Iron Father Feirros": {
+            "model_count": "1",
+            "points_value": "140\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Kayvaan Shrike": {
+        "Kayvaan Shrike": {
+            "model_count": "1",
+            "points_value": "135\u2022",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Khan on Bike": {
+        "Kor\u2019sarro Khan": {
+            "model_count": "1",
+            "points_value": "110\u2022",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Kor\u2019sarro Khan": {
+        "Kor\u2019sarro Khan": {
+            "model_count": "1",
+            "points_value": "110\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Marneus Calgar": {
+        "Marneus Calgar": {
+            "model_count": "1",
+            "points_value": "210\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Pedro Kantor": {
+        "Pedro Kantor": {
+            "model_count": "1",
+            "points_value": "155\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Sergeant Chronus": {
+        "Sergeant Chronus": {
+            "model_count": "1",
+            "points_value": "35\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Sergeant Telion": {
+        "Sergeant Telion": {
+            "model_count": "1",
+            "points_value": "20\u2022",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Tor Garadon": {
+        "Tor Garadon": {
+            "model_count": "1",
+            "points_value": "145\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Vulkan He\u2019stan": {
+        "Vulkan He\u2019stan": {
+            "model_count": "1",
+            "points_value": "135\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Chaplain Grimaldus": {
+        "Chaplain Grimaldus": {
+            "model_count": "1",
+            "points_value": "95\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "High Marshal Helbrecht": {
+        "High Marshal Helbrecht": {
+            "model_count": "1",
+            "points_value": "155\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Marneus Calgar in Armour of Heraclus": {
+        "Marneus Calgar in Armour of Heraclus": {
+            "model_count": "1",
+            "points_value": "200\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "The Emperor\u2019s Champion": {
+        "The Emperor\u2019s Champion": {
+            "model_count": "1",
+            "points_value": "80\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Primaris Captain (Indomitus)": {
+        "Primaris Captain": {
+            "model_count": "1",
+            "points_value": "105\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Primaris Chaplain (Indomitus)": {
+        "Primaris Chaplain": {
+            "model_count": "1",
+            "points_value": "85\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Primaris Lieutenant (Indomitus)": {
+        "Primaris Lieutenant": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Gabriel Angelos": {
+        "Gabriel Angelos": {
+            "model_count": "1",
+            "points_value": "195\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Ahazra Redth": {
+        "Ahazra Redth": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Arch-Centurion Carnac Commodus": {
+        "Arch-Centurion Carnac Commodus": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Armenneus Valthex": {
+        "Armenneus Valthex": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Bray\u2019arth Ashmantle": {
+        "Bray\u2019arth Ashmantle": {
+            "model_count": "1",
+            "points_value": "330",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "8",
+            "toughness": "9",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain Corien Sumatris": {
+        "Captain Corien Sumatris": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Captain Mordaci Blaylock": {
+        "Captain Mordaci Blaylock": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain Pellas Mir\u2019san": {
+        "Captain Pellas Mir\u2019san": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Captain Silas Alberec": {
+        "Captain Silas Alberec": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Captain Tarnus Vale": {
+        "Captain Tarnus Vale": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Captain Zhrukhal Androcles": {
+        "Captain Zhrukhal Androcles": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Carab Culln the Risen": {
+        "Carab Culln the Risen": {
+            "model_count": "1",
+            "points_value": "400\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "15",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Casan Sabius": {
+        "Casan Sabius": {
+            "model_count": "1",
+            "points_value": "185\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Chaplain Dreadnought Titus": {
+        "Chaplain Dreadnought Titus": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Chaplain Ivanus Enkomi": {
+        "Chaplain Ivanus Enkomi": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaplain Venerable Dreadnought": {
+        "Chaplain Venerable Dreadnought": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Damocles Command Rhino": {
+        "Damocles Command Rhino": {
+            "model_count": "1",
+            "points_value": "120",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Harath Shen": {
+        "Harath Shen": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Hecaton Aiakos": {
+        "Hecaton Aiakos": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "9\"",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "High Chaplain Thulsa Kane": {
+        "High Chaplain Thulsa Kane": {
+            "model_count": "1",
+            "points_value": "155",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Knight-Captain Elam Courbray": {
+        "Knight-Captain Elam Courbray": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Lias Issodon": {
+        "Lias Issodon": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Lieutenant Commander Anton Narvaez": {
+        "Lieutenant Commander Anton Narvaez": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Lord Asterion Moloc": {
+        "Lord Asterion Moloc": {
+            "model_count": "1",
+            "points_value": "165",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Lord High Commander Carab Culln": {
+        "Lord High Commander Carab Culln": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Lugft Huron": {
+        "Lugft Huron": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Magister Sevrin Loth": {
+        "Magister Sevrin Loth": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Malakim Phoros": {
+        "Malakim Phoros": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Tyberos the Red Wake": {
+        "Tyberos the Red Wake": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Vaylund Cal": {
+        "Vaylund Cal": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Chaplain on Bike": {
+        "Chaplain on Bike": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chief Librarian Tigurius (Legendary)": {
+        "Chief Librarian Tigurius": {
+            "model_count": "1",
+            "points_value": "115\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Kayvaan Shrike (Legendary)": {
+        "Kayvaan Shrike": {
+            "model_count": "1",
+            "points_value": "150\u2022",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Kor\u2019sarro Khan (Legendary)": {
+        "Kor\u2019sarro Khan": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Kor\u2019sarro Khan on Moondrakkan": {
+        "Kor\u2019sarro Khan on Moondrakkan": {
+            "model_count": "1",
+            "points_value": "132\u2022",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Land Raider Excelsior": {
+        "Land Raider Excelsior": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Librarian in Terminator Armour (Legendary)": {
+        "Librarian in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Librarian on Bike": {
+        "Librarian on Bike": {
+            "model_count": "1",
+            "points_value": "119",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Marneus Calgar (Legendary)": {
+        "Marneus Calgar": {
+            "model_count": "1",
+            "points_value": "250\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Marneus Calgar in Artificer Armour": {
+        "Marneus Calgar in Artificer Armour": {
+            "model_count": "1",
+            "points_value": "235\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Rhino Primaris": {
+        "Rhino Primaris": {
+            "model_count": "1",
+            "points_value": "52",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Techmarine (Legendary)": {
+        "Techmarine": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Techmarine on Bike": {
+        "Techmarine on Bike": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Incursor Squad": {
+        "Incursor": {
+            "model_count": "4-9",
+            "points_value": "21",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Incursor Sergeant": {
+            "model_count": "1",
+            "points_value": "21",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Infiltrator Squad": {
+        "Infiltrator": {
+            "model_count": "4-8",
+            "points_value": "24",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Infiltrator Helix Adept": {
+            "model_count": "0-1",
+            "points_value": "34",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Infiltrator Sergeant": {
+            "model_count": "1",
+            "points_value": "24",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Intercessor Squad": {
+        "Intercessor": {
+            "model_count": "4-9",
+            "points_value": "20",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Intercessor Sergeant": {
+            "model_count": "1",
+            "points_value": "20",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Scout Squad": {
+        "Scout": {
+            "model_count": "4-9",
+            "points_value": "14",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Scout Sergeant": {
+            "model_count": "1",
+            "points_value": "14",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Tactical Squad": {
+        "Space Marine": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Space Marine Sergeant": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Crusader Squad": {
+        "Initiate": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Neophyte": {
+            "model_count": "0-10",
+            "points_value": "14",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Sword Brother": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Assault Intercessor Squad": {
+        "Assault Intercessor": {
+            "model_count": "4-9",
+            "points_value": "19",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Assault Intercessor Sergeant": {
+            "model_count": "1",
+            "points_value": "19",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Drop Pod": {
+        "Drop Pod": {
+            "model_count": "1",
+            "points_value": "65",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "0",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Impulsor": {
+        "Impulsor": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Land Speeder Storm": {
+        "Land Speeder Storm": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "18\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Razorback": {
+        "Razorback": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Repulsor": {
+        "Repulsor": {
+            "model_count": "1",
+            "points_value": "230",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Rhino": {
+        "Rhino": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Infernum Pattern Razorback": {
+        "Infernum Pattern Razorback": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Lucius Pattern Dreadnought Drop Pod": {
+        "Lucius Pattern Dreadnought Drop Pod": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "0",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Terrax-pattern Termite Assault Drill": {
+        "Terrax-pattern Termite Assault Drill": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Aggressor Squad": {
+        "Aggressor": {
+            "model_count": "2-5",
+            "points_value": "40",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Aggressor Sergeant": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Ancient in Terminator Armour": {
+        "Ancient in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Apothecary": {
+        "Apothecary": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Cataphractii Terminator Squad": {
+        "Cataphractii Terminator": {
+            "model_count": "4-9",
+            "points_value": "26",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Cataphractii Sergeant": {
+            "model_count": "1",
+            "points_value": "26",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Centurion Assault Squad": {
+        "Centurion": {
+            "model_count": "2-5",
+            "points_value": "45",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "2+"
+        },
+        "Centurion Sergeant": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Company Ancient": {
+        "Company Ancient": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Company Champion": {
+        "Company Champion": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Company Veterans": {
+        "Space Marine Veteran": {
+            "model_count": "1-4",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Veteran Sergeant": {
+            "model_count": "1",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Contemptor Dreadnought": {
+        "Contemptor Dreadnought": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Dreadnought": {
+        "Dreadnought": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Invictor Tactical Warsuit": {
+        "Invictor Tactical Warsuit": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "13",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Ironclad Dreadnought": {
+        "Ironclad Dreadnought": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Primaris Ancient": {
+        "Primaris Ancient": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Primaris Apothecary": {
+        "Primaris Apothecary": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Redemptor Dreadnought": {
+        "Redemptor Dreadnought": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Reiver Squad": {
+        "Reiver": {
+            "model_count": "4-9",
+            "points_value": "18",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Reiver Sergeant": {
+            "model_count": "1",
+            "points_value": "18",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Servitors": {
+        "Servitor": {
+            "model_count": "4",
+            "points_value": "7",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Sternguard Veteran Squad": {
+        "Space Marine Veteran": {
+            "model_count": "4-9",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Veteran Sergeant": {
+            "model_count": "1",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Tartaros Terminator Squad": {
+        "Tartaros Terminator": {
+            "model_count": "4-9",
+            "points_value": "23",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Tartaros Sergeant": {
+            "model_count": "1",
+            "points_value": "23",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Terminator Assault Squad": {
+        "Terminator": {
+            "model_count": "4-9",
+            "points_value": "23",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Terminator Sergeant": {
+            "model_count": "1",
+            "points_value": "23",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Terminator Squad": {
+        "Terminator": {
+            "model_count": "4-9",
+            "points_value": "23",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Terminator Sergeant": {
+            "model_count": "1",
+            "points_value": "23",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Vanguard Veteran Squad": {
+        "Space Marine Veteran": {
+            "model_count": "4-9",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Veteran Sergeant": {
+            "model_count": "1",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Venerable Dreadnought": {
+        "Venerable Dreadnought": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chapter Ancient": {
+        "Chapter Ancient": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Chapter Champion": {
+        "Chapter Champion": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Honour Guard": {
+        "Honour Guard": {
+            "model_count": "2",
+            "points_value": "25\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Tyrannic War Veterans": {
+        "Tyrannic War Veteran": {
+            "model_count": "3-9",
+            "points_value": "17\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Veteran Sergeant": {
+            "model_count": "1",
+            "points_value": "17\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Victrix Honour Guard": {
+        "Victrix Honour Guard": {
+            "model_count": "2",
+            "points_value": "35\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Cenobyte Servitors": {
+        "Cenobyte Servitor": {
+            "model_count": "3",
+            "points_value": "6\u2022",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Bladeguard Ancient": {
+        "Bladeguard Ancient": {
+            "model_count": "1",
+            "points_value": "85\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Bladeguard Veteran Squad": {
+        "Bladeguard Veteran": {
+            "model_count": "2",
+            "points_value": "35\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Bladeguard Veteran Sergeant": {
+            "model_count": "1",
+            "points_value": "35\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Judiciar": {
+        "Judiciar": {
+            "model_count": "1",
+            "points_value": "85\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Deimos Pattern Relic Predator": {
+        "Deimos Pattern Relic Predator": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Contemptor Dreadnought": {
+        "Relic Contemptor Dreadnought": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "9\"",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Relic Deredeo Dreadnought": {
+        "Relic Deredeo Dreadnought": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Javelin Attack Speeder": {
+        "Relic Javelin Attack Speeder": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "15\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "6",
+            "wounds": "9",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Sicaran Arcus Strike Tank": {
+        "Relic Sicaran Arcus Strike Tank": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Sicaran Battle Tank": {
+        "Relic Sicaran Battle Tank": {
+            "model_count": "1",
+            "points_value": "180",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Sicaran Omega Tank Destroyer": {
+        "Relic Sicaran Omega Tank Destroyer": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Sicaran Punisher Assault Tank": {
+        "Relic Sicaran Punisher Assault Tank": {
+            "model_count": "1",
+            "points_value": "180",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Sicaran Venator Tank Destroyer": {
+        "Relic Sicaran Venator Tank Destroyer": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Relic Whirlwind Scorpius": {
+        "Relic Whirlwind Scorpius": {
+            "model_count": "1",
+            "points_value": "195",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Apothecary on Bike": {
+        "Apothecary on Bike": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Company Ancient on Bike": {
+        "Company Ancient on Bike": {
+            "model_count": "1",
+            "points_value": "88",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Company Champion on Bike": {
+        "Company Champion on Bike": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Company Veterans on Bikes": {
+        "Space Marine Veteran Biker": {
+            "model_count": "1-4",
+            "points_value": "34",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Veteran Biker Sergeant": {
+            "model_count": "1",
+            "points_value": "34",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Damned Legionnaires": {
+        "Legionnaire": {
+            "model_count": "4-9",
+            "points_value": "25",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        },
+        "Legionnaire Sergeant": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Dreadnought (Legendary)": {
+        "Dreadnought": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Honour Guard (Legendary)": {
+        "Honour Guard": {
+            "model_count": "2",
+            "points_value": "21\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Imperial Space Marine": {
+        "Imperial Space Marine": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Venerable Dreadnought (Legendary)": {
+        "Venerable Dreadnought": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Assault Squad": {
+        "Space Marine": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Space Marine Sergeant": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Attack Bike Squad": {
+        "Attack Bike": {
+            "model_count": "1-3",
+            "points_value": "30",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Bike Squad": {
+        "Space Marine Biker": {
+            "model_count": "2-7",
+            "points_value": "25",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Biker Sergeant": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Attack Bike": {
+            "model_count": "0-1",
+            "points_value": "30",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Inceptor Squad": {
+        "Inceptor": {
+            "model_count": "2-5",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Inceptor Sergeant": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Land Speeders": {
+        "Land Speeder": {
+            "model_count": "1-3",
+            "points_value": "45",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Scout Bike Squad": {
+        "Scout Biker": {
+            "model_count": "2-8",
+            "points_value": "25",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Scout Biker Sergeant": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Suppressor Squad": {
+        "Suppressor": {
+            "model_count": "2",
+            "points_value": "33",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Suppressor Sergeant": {
+            "model_count": "1",
+            "points_value": "33",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Invader ATV Squad": {
+        "Invader ATV": {
+            "model_count": "1-3",
+            "points_value": "60",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Outrider Squad": {
+        "Outrider": {
+            "model_count": "2",
+            "points_value": "45\u2022",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Outrider Sergeant": {
+            "model_count": "1",
+            "points_value": "45\u2022",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Deathstorm Drop Pod": {
+        "Deathstorm Drop Pod": {
+            "model_count": "1",
+            "points_value": "120",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "0",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Land Speeder Tempest": {
+        "Land Speeder Tempest": {
+            "model_count": "1-3",
+            "points_value": "60",
+            "movement": "15\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Tarantula Air Defence Battery": {
+        "Tarantula Air Defence Battery": {
+            "model_count": "1-3",
+            "points_value": "70",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "-",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Tarantula Sentry Gun": {
+        "Tarantula Sentry Gun": {
+            "model_count": "1-3",
+            "points_value": "20",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "-",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Stormhawk Interceptor": {
+        "Stormhawk Interceptor": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Stormraven Gunship": {
+        "Stormraven Gunship": {
+            "model_count": "1",
+            "points_value": "240",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Stormtalon Gunship": {
+        "Stormtalon Gunship": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Caestus Assault Ram": {
+        "Caestus Assault Ram": {
+            "model_count": "1",
+            "points_value": "250",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Fire Raptor Assault Gunship": {
+        "Fire Raptor Assault Gunship": {
+            "model_count": "1",
+            "points_value": "280",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Storm Eagle Assault Gunship": {
+        "Storm Eagle Assault Gunship": {
+            "model_count": "1",
+            "points_value": "230",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Storm Eagle Assault Gunship \u2013 ROC pattern": {
+        "Storm Eagle Assault Gunship \u2013 ROC pattern": {
+            "model_count": "1",
+            "points_value": "245",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Xiphon Interceptor": {
+        "Xiphon Interceptor": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Centurion Devastator Squad": {
+        "Centurion": {
+            "model_count": "2-5",
+            "points_value": "60",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "2+"
+        },
+        "Centurion Sergeant": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Devastator Squad": {
+        "Space Marine": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Space Marine Sergeant": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Eliminator Squad": {
+        "Eliminator": {
+            "model_count": "2",
+            "points_value": "28",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Eliminator Sergeant": {
+            "model_count": "1",
+            "points_value": "28",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellblaster Squad": {
+        "Hellblaster": {
+            "model_count": "4-9",
+            "points_value": "33",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Hellblaster Sergeant": {
+            "model_count": "1",
+            "points_value": "33",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hunter": {
+        "Hunter": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Land Raider": {
+        "Land Raider": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Land Raider Crusader": {
+        "Land Raider Crusader": {
+            "model_count": "1",
+            "points_value": "215",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Land Raider Redeemer": {
+        "Land Raider Redeemer": {
+            "model_count": "1",
+            "points_value": "245",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Predator": {
+        "Predator": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Repulsor Executioner": {
+        "Repulsor Executioner": {
+            "model_count": "1",
+            "points_value": "250",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Stalker": {
+        "Stalker": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Thunderfire Cannon": {
+        "Thunderfire Cannon": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "3\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "6",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Techmarine Gunner": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Vindicator": {
+        "Vindicator": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Whirlwind": {
+        "Whirlwind": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Eradicator Squad": {
+        "Eradicator": {
+            "model_count": "2",
+            "points_value": "40\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Eradicator Sergeant": {
+            "model_count": "1",
+            "points_value": "40\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Firestrike Servo-turrets": {
+        "Firestrike Servo-turret": {
+            "model_count": "1-3",
+            "points_value": "90",
+            "movement": "3\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Contemptor Mortis Dreadnought": {
+        "Contemptor Mortis Dreadnought": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Deimos Pattern Vindicator Laser Destroyer": {
+        "Deimos Pattern Vindicator Laser Destroyer": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Land Raider Achilles": {
+        "Land Raider Achilles": {
+            "model_count": "1",
+            "points_value": "190",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "19",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Land Raider Helios": {
+        "Land Raider Helios": {
+            "model_count": "1",
+            "points_value": "205",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Land Raider Prometheus": {
+        "Land Raider Prometheus": {
+            "model_count": "1",
+            "points_value": "180",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Mortis Dreadnought": {
+        "Mortis Dreadnought": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Rapier Carrier": {
+        "Rapier Carrier": {
+            "model_count": "1",
+            "points_value": "20",
+            "movement": "3\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Space Marine Gunners": {
+            "model_count": "2",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Relic Land Raider Proteus": {
+        "Relic Land Raider Proteus": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Leviathan Dreadnought": {
+        "Relic Leviathan Dreadnought": {
+            "model_count": "1",
+            "points_value": "220",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Siege Dreadnought": {
+        "Siege Dreadnought": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Whirlwind Hyperios": {
+        "Whirlwind Hyperios": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Roboute Guilliman": {
+        "Roboute Guilliman": {
+            "model_count": "1",
+            "points_value": "380\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "9",
+            "attacks": "6",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Astraeus Super-heavy Tank": {
+        "Astraeus Super-heavy Tank": {
+            "model_count": "1",
+            "points_value": "500",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Cerberus Heavy Tank Destroyer": {
+        "Relic Cerberus Heavy Tank Destroyer": {
+            "model_count": "1",
+            "points_value": "680",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "9",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Falchion Super-heavy Tank Destroyer": {
+        "Relic Falchion Super-heavy Tank Destroyer": {
+            "model_count": "1",
+            "points_value": "790",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "26",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Fellblade Super-heavy Tank": {
+        "Relic Fellblade Super-heavy Tank": {
+            "model_count": "1",
+            "points_value": "690",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "26",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Mastodon Super-heavy Siege Transport": {
+        "Relic Mastodon Super-heavy Siege Transport": {
+            "model_count": "1",
+            "points_value": "915",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "30",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Spartan Assault Tank": {
+        "Relic Spartan Assault Tank": {
+            "model_count": "1",
+            "points_value": "320",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Relic Typhon Heavy Siege Tank": {
+        "Relic Typhon Heavy Siege Tank": {
+            "model_count": "1",
+            "points_value": "720",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "9",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Sokar Pattern Stormbird": {
+        "Sokar Pattern Stormbird": {
+            "model_count": "1",
+            "points_value": "2000",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "10",
+            "toughness": "9",
+            "wounds": "40",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Thunderhawk Assault Gunship": {
+        "Thunderhawk Assault Gunship": {
+            "model_count": "1",
+            "points_value": "1350",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "10",
+            "toughness": "9",
+            "wounds": "30",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Thunderhawk Transporter": {
+        "Thunderhawk Transporter": {
+            "model_count": "1",
+            "points_value": "1000",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "10",
+            "toughness": "9",
+            "wounds": "26",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Terminus Ultra": {
+        "Terminus Ultra": {
+            "model_count": "1",
+            "points_value": "250",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Castellum Stronghold": {
+        "Tacticus Bunker": "error"
+    }
+}

@@ -1,0 +1,702 @@
+{
+    "Canoness": {
+        "Canoness": {
+            "model_count": "1",
+            "points_value": "50",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Celestine": {
+        "Celestine": {
+            "model_count": "1",
+            "points_value": "170\u2022",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Junith Eruita": {
+        "Junith Eruita": {
+            "model_count": "1",
+            "points_value": "115\u2022",
+            "movement": "10\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Missionary": {
+        "Missionary": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Triumph of Saint Katherine": {
+        "Triumph of Saint Katherine": {
+            "model_count": "1",
+            "points_value": "195\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Ephrael Stern and Kyganil": {
+        "Ephrael Stern": "error"
+    },
+    "Arch-Confessor Kyrinov": {
+        "Arch-Confessor Kyrinov": {
+            "model_count": "1",
+            "points_value": "60\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Canoness (Legendary)": {
+        "Canoness": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Uriah Jacobus": {
+        "Uriah Jacobus": {
+            "model_count": "1",
+            "points_value": "50\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Battle Sister Squad": {
+        "Battle Sister": {
+            "model_count": "4-14",
+            "points_value": "11",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Sister Superior": {
+            "model_count": "1",
+            "points_value": "11",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Battle Sister Squad (Legendary)": {
+        "Battle Sister": {
+            "model_count": "4-14",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Sister Superior": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Immolator": {
+        "Immolator": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Sororitas Rhino": {
+        "Sororitas Rhino": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Sororitas Repressor": {
+        "Sororitas Repressor": {
+            "model_count": "1",
+            "points_value": "91",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Arco-flagellants": {
+        "Arco-flagellant": {
+            "model_count": "3-10",
+            "points_value": "15",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "7+"
+        },
+        "Endurant": {
+            "model_count": "0-1",
+            "points_value": "15",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "7+"
+        }
+    },
+    "Celestian Squad": {
+        "Celestian": {
+            "model_count": "5-10",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Celestian Superior": {
+            "model_count": "0-1",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Crusaders": {
+        "Crusader": {
+            "model_count": "2-6",
+            "points_value": "11",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Death Cult Assassins": {
+        "Death Cult Assassin": {
+            "model_count": "2-6",
+            "points_value": "13",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Dialogus": {
+        "Dialogus": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Geminae Superia": {
+        "Geminae Superia": {
+            "model_count": "1-2",
+            "points_value": "18",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Hospitaller": {
+        "Hospitaller": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Imagifier": {
+        "Imagifier": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Preacher": {
+        "Preacher": {
+            "model_count": "1",
+            "points_value": "35",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Repentia Superior": {
+        "Repentia Superior": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Sister Repentia": {
+        "Sister Repentia": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "7+"
+        }
+    },
+    "Zephyrim Squad": {
+        "Zephyrim": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Zephyrim Superior": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Celestian Squad (Legendary)": {
+        "Celestian": {
+            "model_count": "5-10",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Celestian Superior": {
+            "model_count": "0-1",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Preacher (Legendary)": {
+        "Preacher": {
+            "model_count": "1",
+            "points_value": "30",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Ministorum Priest": {
+        "Ministorum Priest": {
+            "model_count": "1",
+            "points_value": "35",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Dominion Squad": {
+        "Dominion": {
+            "model_count": "4-9",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Dominion Superior": {
+            "model_count": "1",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Seraphim Squad": {
+        "Seraphim": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Seraphim Superior": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Dominion Squad (Legendary)": {
+        "Dominion": {
+            "model_count": "4-9",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Dominion Superior": {
+            "model_count": "1",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Exorcist": {
+        "Exorcist": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Mortifiers": {
+        "Mortifier": {
+            "model_count": "1-4",
+            "points_value": "30",
+            "movement": "9\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        },
+        "Anchorite": {
+            "model_count": "0-1",
+            "points_value": "35",
+            "movement": "9\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Penitent Engines": {
+        "Penitent Engine": {
+            "model_count": "1-4",
+            "points_value": "20",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Retributor Squad": {
+        "Retributor": {
+            "model_count": "4-9",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Retributor Superior": {
+            "model_count": "1",
+            "points_value": "12",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Retributor Squad (Legendary)": {
+        "Retributor": {
+            "model_count": "4-9",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Retributor Superior": {
+            "model_count": "1",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Battle Sanctum": {}
+}

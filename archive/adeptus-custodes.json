@@ -1,0 +1,395 @@
+{
+    "Captain-General Trajann Valoris": {
+        "Captain-General Trajann Valoris": {
+            "model_count": "1",
+            "points_value": "190\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Shield-Captain": {
+        "Shield-Captain": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Shield-Captain in Allarus Terminator Armour": {
+        "Shield-Captain in Allarus Terminator Armour": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Shield-Captain on Dawneagle Jetbike": {
+        "Shield-Captain on Dawneagle Jetbike": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Valerian and Aleya": {
+        "Valerian": "error"
+    },
+    "Custodian Guard": {
+        "Custodian Guard": {
+            "model_count": "3-10",
+            "points_value": "44",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Custodian Guard with Adrasite and Pyrithite Spears": {
+        "Custodian Guard": {
+            "model_count": "3-5",
+            "points_value": "55",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Sagittarum Custodians": {
+        "Sagittarum Custodian": {
+            "model_count": "3-5",
+            "points_value": "50",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Coronus Grav-carrier": {
+        "Coronus Grav-carrier": {
+            "model_count": "1",
+            "points_value": "265",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Allarus Custodians": {
+        "Allarus Custodian": {
+            "model_count": "3-10",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Custodian Wardens": {
+        "Custodian Warden": {
+            "model_count": "3-10",
+            "points_value": "47",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Venerable Contemptor Dreadnought": {
+        "Venerable Contemptor Dreadnought": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Vexilus Praetor": {
+        "Vexilus Praetor": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Vexilus Praetor in Allarus Terminator Armour": {
+        "Vexilus Praetor in Allarus Terminator Armour": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Aquilon Custodians": {
+        "Aquilon Custodian": {
+            "model_count": "3-6",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Contemptor-Achillus Dreadnought": {
+        "Contemptor-Achillus Dreadnought": {
+            "model_count": "1",
+            "points_value": "160",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Contemptor-Galatus Dreadnought": {
+        "Contemptor-Galatus Dreadnought": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Contemptor-Exemplar Dreadnought": {
+        "Contemptor-Exemplar Dreadnought": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Vertus Praetors": {
+        "Vertus Praetor": {
+            "model_count": "3-10",
+            "points_value": "95",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Agamatus Custodians": {
+        "Agamatus Custodians": {
+            "model_count": "3-6",
+            "points_value": "100",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Pallas Grav-attack": {
+        "Pallas Grav-attack": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "16\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Venatari Custodians": {
+        "Venatari Custodian": {
+            "model_count": "3-6",
+            "points_value": "55",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Ares Gunship": {
+        "Ares Gunship": {
+            "model_count": "1",
+            "points_value": "430",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Orion Assault Dropship": {
+        "Orion Assault Dropship": {
+            "model_count": "1",
+            "points_value": "500",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Venerable Land Raider": {
+        "Venerable Land Raider": {
+            "model_count": "1",
+            "points_value": "300",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Caladius Grav-tank": {
+        "Caladius Grav-tank": {
+            "model_count": "1",
+            "points_value": "225",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Telemon Heavy Dreadnought": {
+        "Telemon Heavy Dreadnought": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    }
+}

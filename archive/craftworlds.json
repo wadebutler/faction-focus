@@ -1,0 +1,1366 @@
+{
+    "Asurmen": {
+        "Asurmen": {
+            "model_count": "1",
+            "points_value": "160\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Autarch": {
+        "Autarch": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Autarch Skyrunner": {
+        "Autarch Skyrunner": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "16\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Autarch with Swooping Hawk Wings": {
+        "Autarch with Swooping Hawk Wings": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Avatar of Khaine": {
+        "Avatar of Khaine": {
+            "model_count": "1",
+            "points_value": "235\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Baharroth": {
+        "Baharroth": {
+            "model_count": "1",
+            "points_value": "120\u2022",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Eldrad Ulthran": {
+        "Eldrad Ulthran": {
+            "model_count": "1",
+            "points_value": "155\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "6+"
+        }
+    },
+    "Farseer": {
+        "Farseer": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "6+"
+        }
+    },
+    "Farseer Skyrunner": {
+        "Farseer Skyrunner": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "16\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Fuegan": {
+        "Fuegan": {
+            "model_count": "1",
+            "points_value": "135\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Illic Nightspear": {
+        "Illic Nightspear": {
+            "model_count": "1",
+            "points_value": "70\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Karandras": {
+        "Karandras": {
+            "model_count": "1",
+            "points_value": "135\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Maugan Ra": {
+        "Maugan Ra": {
+            "model_count": "1",
+            "points_value": "150\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Prince Yriel": {
+        "Prince Yriel": {
+            "model_count": "1",
+            "points_value": "85\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Spiritseer": {
+        "Spiritseer": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Warlock": {
+        "Warlock": {
+            "model_count": "1",
+            "points_value": "50",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Warlock Conclave": {
+        "Warlock": {
+            "model_count": "2-10",
+            "points_value": "40",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Warlock Skyrunner": {
+        "Warlock Skyrunner": {
+            "model_count": "1",
+            "points_value": "65",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Warlock Skyrunner Conclave": {
+        "Warlock Skyrunner": {
+            "model_count": "2-10",
+            "points_value": "55",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Jain Zar": {
+        "Jain Zar": {
+            "model_count": "1",
+            "points_value": "125\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Irillyth": {
+        "Irillyth": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Wraithseer": {
+        "Wraithseer": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Autarch (Legendary)": {
+        "Autarch": {
+            "model_count": "1",
+            "points_value": "65",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Autarch Skyrunner (Legendary)": {
+        "Autarch Skyrunner": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "16\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Autarch with Swooping Hawk Wings (Legendary)": {
+        "Autarch with Swooping Hawk Wings": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Autarch with Warp Jump Generator": {
+        "Autarch with Warp Jump Generator": {
+            "model_count": "1",
+            "points_value": "73",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Dire Avengers": {
+        "Dire Avenger": {
+            "model_count": "5-10",
+            "points_value": "13",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "4+"
+        },
+        "Dire Avenger Exarch": {
+            "model_count": "0-1",
+            "points_value": "13",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Guardian Defenders": {
+        "Guardian": {
+            "model_count": "10-20",
+            "points_value": "10",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Heavy Weapon Platform": {
+            "model_count": "0-2",
+            "points_value": "12",
+            "movement": "7\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Rangers": {
+        "Ranger": {
+            "model_count": "5-10",
+            "points_value": "15",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Storm Guardians": {
+        "Guardian": {
+            "model_count": "8-24",
+            "points_value": "9",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Corsair Reaver Band": {
+        "Corsair Reaver": {
+            "model_count": "5-15",
+            "points_value": "10",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "5+"
+        },
+        "Corsair Reaver Felarch": {
+            "model_count": "0-1",
+            "points_value": "10",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Corsair Skyreaver Band": {
+        "Corsair Skyreaver": {
+            "model_count": "5-10",
+            "points_value": "13",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "5+"
+        },
+        "Corsair Skyreaver Felarch": {
+            "model_count": "0-1",
+            "points_value": "13",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Storm Guardians (Legendary)": {
+        "Guardian": {
+            "model_count": "8-24",
+            "points_value": "6",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Wave Serpent": {
+        "Wave Serpent": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Corsair Venom": {
+        "Venom": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "16\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Fire Dragons": {
+        "Fire Dragon": {
+            "model_count": "5-10",
+            "points_value": "23",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Fire Dragon Exarch": {
+            "model_count": "0-1",
+            "points_value": "23",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Striking Scorpions": {
+        "Striking Scorpion": {
+            "model_count": "5-10",
+            "points_value": "13",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Striking Scorpion Exarch": {
+            "model_count": "0-1",
+            "points_value": "13",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Wraithblades": {
+        "Wraithblade": {
+            "model_count": "5-10",
+            "points_value": "40",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Wraithguard": {
+        "Wraithguard": {
+            "model_count": "5-10",
+            "points_value": "38",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Howling Banshees": {
+        "Howling Banshee": {
+            "model_count": "5-10",
+            "points_value": "15",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        },
+        "Howling Banshee Exarch": {
+            "model_count": "0-1",
+            "points_value": "15",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Amallyn Shadowguide": {
+        "Amallyn Shadowguide": {
+            "model_count": "1",
+            "points_value": "55\u2022",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Shadow Spectres": {
+        "Shadow Spectre": {
+            "model_count": "3-10",
+            "points_value": "27",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Shadow Spectre Exarch": {
+            "model_count": "0-1",
+            "points_value": "27",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Bonesinger": {
+        "Bonesinger": {
+            "model_count": "1",
+            "points_value": "70\u2022",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Striking Scorpions (Legendary)": {
+        "Striking Scorpion": {
+            "model_count": "5-10",
+            "points_value": "8",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Striking Scorpion Exarch": {
+            "model_count": "0-1",
+            "points_value": "8",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Shining Spears": {
+        "Shining Spear": {
+            "model_count": "3-9",
+            "points_value": "35",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Shining Spear Exarch": {
+            "model_count": "0-1",
+            "points_value": "35",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Swooping Hawks": {
+        "Swooping Hawk": {
+            "model_count": "5-10",
+            "points_value": "16",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "4+"
+        },
+        "Swooping Hawk Exarch": {
+            "model_count": "0-1",
+            "points_value": "16",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Vypers": {
+        "Vyper": {
+            "model_count": "1-3",
+            "points_value": "40",
+            "movement": "16\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Warp Spiders": {
+        "Warp Spider": {
+            "model_count": "5-10",
+            "points_value": "18",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Warp Spider Exarch": {
+            "model_count": "0-1",
+            "points_value": "18",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Windriders": {
+        "Windrider": {
+            "model_count": "3-9",
+            "points_value": "20",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Corsair Cloud Dancer Band": {
+        "Corsair Cloud Dancer": {
+            "model_count": "3-9",
+            "points_value": "23",
+            "movement": "18\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Corsair Cloud Dancer Felarch": {
+            "model_count": "0-1",
+            "points_value": "23",
+            "movement": "18\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Hornet": {
+        "Hornet": {
+            "model_count": "1-3",
+            "points_value": "65",
+            "movement": "18\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Wasp Assault Walker": {
+        "Wasp Assault Walker": {
+            "model_count": "1-3",
+            "points_value": "65",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Swooping Hawks (Legendary)": {
+        "Swooping Hawk": {
+            "model_count": "5-10",
+            "points_value": "6",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "4+"
+        },
+        "Swooping Hawk Exarch": {
+            "model_count": "-",
+            "points_value": "6",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Warp Spiders (Legendary)": {
+        "Warp Spider": {
+            "model_count": "5-10",
+            "points_value": "9",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Warp Spider Exarch": {
+            "model_count": "0-1",
+            "points_value": "9",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Crimson Hunter": {
+        "Crimson Hunter": {
+            "model_count": "1",
+            "points_value": "140",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Crimson Hunter Exarch": {
+        "Crimson Hunter Exarch": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hemlock Wraithfighter": {
+        "Hemlock Wraithfighter": {
+            "model_count": "1",
+            "points_value": "230",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Nightwing": {
+        "Nightwing": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Phoenix": {
+        "Phoenix": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "16",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Dark Reapers": {
+        "Dark Reaper": {
+            "model_count": "3-10",
+            "points_value": "35",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Dark Reaper Exarch": {
+            "model_count": "0-1",
+            "points_value": "35",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Falcon": {
+        "Falcon": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Fire Prism": {
+        "Fire Prism": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Night Spinner": {
+        "Night Spinner": {
+            "model_count": "1",
+            "points_value": "145",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Support Weapons": {
+        "Support Weapon": {
+            "model_count": "1-3",
+            "points_value": "30",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "War Walkers": {
+        "War Walker": {
+            "model_count": "1-3",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Wraithlord": {
+        "Wraithlord": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Corsair Falcon": {
+        "Falcon": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Firestorm": "error",
+    "Lynx": {
+        "Lynx": {
+            "model_count": "1",
+            "points_value": "360",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Warp Hunter": {
+        "Warp Hunter": {
+            "model_count": "1",
+            "points_value": "205",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Wraithknight": {
+        "Wraithknight": {
+            "model_count": "1",
+            "points_value": "315",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cobra": {
+        "Cobra": {
+            "model_count": "1",
+            "points_value": "600",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "26",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Phantom Titan": {
+        "Phantom Titan": {
+            "model_count": "1",
+            "points_value": "2400",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "60",
+            "attacks": "6",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Revenant Titan": {
+        "Revenant Titan": {
+            "model_count": "1",
+            "points_value": "2000",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "32",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Scorpion": {
+        "Scorpion": {
+            "model_count": "1",
+            "points_value": "700",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "26",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Skathach Wraithknight": {
+        "Skathach Wraithknight": {
+            "model_count": "1",
+            "points_value": "470",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Vampire Hunter": {
+        "Vampire Hunter": {
+            "model_count": "1",
+            "points_value": "1500",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "8",
+            "wounds": "32",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Vampire Raider": {
+        "Vampire Raider": {
+            "model_count": "1",
+            "points_value": "850",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "8",
+            "wounds": "32",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    }
+}

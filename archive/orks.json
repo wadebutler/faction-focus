@@ -1,0 +1,1461 @@
+{
+    "Big Mek in Mega Armour": {
+        "Big Mek in Mega Armour": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Grot Oiler": {
+            "model_count": "0-1",
+            "points_value": "5",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Big Mek with Shokk Attack Gun": {
+        "Big Mek with Shokk Attack Gun": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Grot Oiler": {
+            "model_count": "0-1",
+            "points_value": "5",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Boss Snikrot": {
+        "Boss Snikrot": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Boss Zagstruk": {
+        "Boss Zagstruk": {
+            "model_count": "1",
+            "points_value": "95\u2022",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Deffkilla Wartrike": {
+        "Deffkilla Wartrike": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "5",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Kaptin Badrukk": {
+        "Kaptin Badrukk": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Ammo Runt": {
+            "model_count": "0-1",
+            "points_value": "5\u2022",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Warboss": {
+        "Warboss": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Weirdboy": {
+        "Weirdboy": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Big Mek with Kustom Force Field": {
+        "Big Mek with Kustom Force Field": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Grot Oiler": {
+            "model_count": "0-1",
+            "points_value": "5\u2022",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Ghazghkull Thraka": {
+        "Ghazghkull Thraka": {
+            "model_count": "1",
+            "points_value": "300\u2022",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Makari": {
+        "Makari": {
+            "model_count": "1",
+            "points_value": "65\u2022",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Ork Mek Boss Buzzgob": {
+        "Buzzgob": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        },
+        "Nitnuckle/Lunk": {
+            "model_count": "1/1",
+            "points_value": "0/0",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "5",
+            "save": "6+"
+        }
+    },
+    "Zhadsnark da Ripper": {
+        "Zhadsnark da Ripper": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "15\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Big Mek": {
+        "Big Mek": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Grot Oiler": {
+            "model_count": "0-1",
+            "points_value": "4",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Big Mek on Warbike": {
+        "Big Mek on Warbike": {
+            "model_count": "1",
+            "points_value": "81",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Warboss in Mega Armour": {
+        "Warboss in Mega Armour": {
+            "model_count": "1",
+            "points_value": "107",
+            "movement": "4\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Warboss on Warbike": {
+        "Warboss on Warbike": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Boyz": {
+        "Ork Boy": {
+            "model_count": "10-30",
+            "points_value": "8",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Boss Nob": {
+            "model_count": "0-1",
+            "points_value": "8",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Gretchin": {
+        "Gretchin": {
+            "model_count": "10-30",
+            "points_value": "5",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Trukk": {
+        "Trukk": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Kart": "error",
+    "\u2018Chinork\u2019 Warkopta": {
+        "\u2018Chinork\u2019 Warkopta": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "16\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Burna Boyz": {
+        "Burna Boy": {
+            "model_count": "5-15",
+            "points_value": "11",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Spanner": {
+            "model_count": "0-3",
+            "points_value": "11",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Kommandos": {
+        "Kommando": {
+            "model_count": "5-15",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Boss Nob": {
+            "model_count": "0-1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Mad Dok Grotsnik": {
+        "Mad Dok Grotsnik": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Meganobz": {
+        "Meganob": {
+            "model_count": "2-9",
+            "points_value": "25",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "2+"
+        },
+        "Boss Meganob": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "2+"
+        }
+    },
+    "Mek": {
+        "Mek": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Grot Oiler": {
+            "model_count": "0-1",
+            "points_value": "5",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Nob with Waaagh! Banner": {
+        "Nob with Waaagh! Banner": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Nobz": {
+        "Nob": {
+            "model_count": "4-9",
+            "points_value": "17",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Boss Nob": {
+            "model_count": "1",
+            "points_value": "17",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Ammo Runt": {
+            "model_count": "0-2",
+            "points_value": "5",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Nobz on Warbikes": {
+        "Nob on Warbike": {
+            "model_count": "2-8",
+            "points_value": "35",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Boss Nob on Warbike": {
+            "model_count": "1",
+            "points_value": "35",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Painboy": {
+        "Painboy": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Runtherd": {
+        "Runtherd": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Tankbustas": {
+        "Tankbusta": {
+            "model_count": "5-15",
+            "points_value": "7",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Boss Nob": {
+            "model_count": "0-1",
+            "points_value": "7",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Bomb Squig": {
+            "model_count": "0-6",
+            "points_value": "10",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Burna Boyz (Legendary)": {
+        "Burna Boy": {
+            "model_count": "5-15",
+            "points_value": "10",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Spanner": {
+            "model_count": "0-3",
+            "points_value": "10",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Da Red Gobbo": {
+        "Da Red Gobbo": {
+            "model_count": "1",
+            "points_value": "30\u2022",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "5+"
+        }
+    },
+    "Kommandos (Legendary)": {
+        "Kommando": {
+            "model_count": "5-15",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Boss Nob": {
+            "model_count": "0-1",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Mek (Legendary)": {
+        "Mek": {
+            "model_count": "1",
+            "points_value": "22",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Grot Oiler": {
+            "model_count": "0-1",
+            "points_value": "4",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Painboy on Warbike": {
+        "Painboy on Warbike": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Boomdakka Snazzwagons": {
+        "Boomdakka Snazzwagon": {
+            "model_count": "1-3",
+            "points_value": "85",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Deffkoptas": {
+        "Deffkopta": {
+            "model_count": "1-5",
+            "points_value": "25",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Kustom Boosta-blastas": {
+        "Kustom Boosta-blasta": {
+            "model_count": "1-3",
+            "points_value": "90",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Megatrakk Scrapjets": {
+        "Megatrakk Scrapjet": {
+            "model_count": "1-3",
+            "points_value": "90",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Rukkatrukk Squigbuggies": {
+        "Rukkatrukk Squigbuggy": {
+            "model_count": "1-3",
+            "points_value": "110",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Shokkjump Dragstas": {
+        "Shokkjump Dragsta": {
+            "model_count": "1-3",
+            "points_value": "100",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Stormboyz": {
+        "Stormboy": {
+            "model_count": "5-30",
+            "points_value": "12",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Boss Nob": {
+            "model_count": "0-1",
+            "points_value": "12",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Warbikers": {
+        "Warbiker": {
+            "model_count": "3-12",
+            "points_value": "27",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Boss Nob": {
+            "model_count": "0-1",
+            "points_value": "27",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Grot Bomm Launcha": "error",
+    "Grot Mega-tank": {
+        "Grot Mega-tank": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "2D6",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "5",
+            "save": "4+"
+        }
+    },
+    "Grot Tanks": {
+        "Grot Tank": {
+            "model_count": "4-8",
+            "points_value": "35",
+            "movement": "2D6\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "4",
+            "save": "4+"
+        },
+        "Kommanda": {
+            "model_count": "0-1",
+            "points_value": "35",
+            "movement": "2D6\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "5",
+            "save": "4+"
+        }
+    },
+    "Deffkoptas (Legendary)": {
+        "Deffkopta": {
+            "model_count": "1-5",
+            "points_value": "20",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Skorchas": {
+        "Skorcha": {
+            "model_count": "1-5",
+            "points_value": "37",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Warbuggies": {
+        "Warbuggy": {
+            "model_count": "1-5",
+            "points_value": "33",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Wartrakks": {
+        "Wartrakk": {
+            "model_count": "1-5",
+            "points_value": "37",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Blitza-bommer": {
+        "Blitza-bommer": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Burna-bommer": {
+        "Burna-bommer": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Dakkajet": {
+        "Dakkajet": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Wazbom Blastajet": {
+        "Wazbom Blastajet": {
+            "model_count": "1",
+            "points_value": "140",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Attack Fighta": "error",
+    "Fighta-Bommer": "error",
+    "Battlewagon": {
+        "Battlewagon": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Bonebreaka": {
+        "Bonebreaka": {
+            "model_count": "1",
+            "points_value": "160",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Deff Dreads": {
+        "Deff Dread": {
+            "model_count": "1-3",
+            "points_value": "55",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "5",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Flash Gitz": {
+        "Flash Git": {
+            "model_count": "4-9",
+            "points_value": "32",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Kaptin": {
+            "model_count": "1",
+            "points_value": "32",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Ammo Runt": {
+            "model_count": "0-2",
+            "points_value": "5",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Gorkanaut": {
+        "Gorkanaut": {
+            "model_count": "1",
+            "points_value": "285",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "5+",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Gunwagon": {
+        "Gunwagon": {
+            "model_count": "1",
+            "points_value": "160",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Killa Kans": {
+        "Killa Kan": {
+            "model_count": "1-6",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Lootas": {
+        "Loota": {
+            "model_count": "5-15",
+            "points_value": "20",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Spanner": {
+            "model_count": "0-3",
+            "points_value": "20",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Mek Gunz": {
+        "Mek Gun": {
+            "model_count": "1-6",
+            "points_value": "20",
+            "movement": "3\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "4",
+            "save": "5+"
+        }
+    },
+    "Morkanaut": {
+        "Morkanaut": {
+            "model_count": "1",
+            "points_value": "270",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "5+",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Wagon": "error",
+    "Battlewagon with Supa-kannon": {
+        "Battlewagon with Supa-kannon": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Big Trakk": {
+        "Big Trakk": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "6",
+            "wounds": "15",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Lifta Wagon": {
+        "Lifta Wagon": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Meka-Dread": {
+        "Meka-Dread": {
+            "model_count": "1",
+            "points_value": "250",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "5",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Squiggoth": {
+        "Squiggoth": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Big Gunz": {
+        "Big Gun": {
+            "model_count": "1-6",
+            "points_value": "8",
+            "movement": "3\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "4",
+            "save": "5+"
+        }
+    },
+    "Stompa": {
+        "Stompa": {
+            "model_count": "1",
+            "points_value": "850",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "5+",
+            "strength": "10",
+            "toughness": "8",
+            "wounds": "40",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Battle Fortress": "error",
+    "Dethrolla Battle Fortress": "error",
+    "Gargantuan Squiggoth": {
+        "Gargantuan Squiggoth": {
+            "model_count": "1",
+            "points_value": "360",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "35",
+            "attacks": "8",
+            "leadership": "5",
+            "save": "4+"
+        }
+    },
+    "Kill Krusha": "error",
+    "Kill Tank": {
+        "Kill Tank": {
+            "model_count": "1",
+            "points_value": "420",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "8",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Kustom Stompa": {
+        "Kustom Stompa": {
+            "model_count": "1",
+            "points_value": "960",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "40",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Mekboy Workshop": {}
+}

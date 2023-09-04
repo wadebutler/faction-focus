@@ -1,0 +1,1339 @@
+{
+    "Aun\u2019Shi": {
+        "Aun\u2019Shi": {
+            "model_count": "1",
+            "points_value": "55\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "-"
+        }
+    },
+    "Aun\u2019Va": {
+        "Aun\u2019Va": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "6\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "3",
+            "wounds": "6",
+            "attacks": "1",
+            "leadership": "9",
+            "save": "5+"
+        },
+        "Ethereal Guard": {
+            "model_count": "2",
+            "points_value": "5\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Cadre Fireblade": {
+        "Cadre Fireblade": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Commander Farsight": {
+        "Commander Farsight": {
+            "model_count": "1",
+            "points_value": "130\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Commander in XV8 Crisis Battlesuit": {
+        "Commander in XV8 Crisis Battlesuit": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Commander in XV85 Enforcer Battlesuit": {
+        "Commander in XV85 Enforcer Battlesuit": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Commander in XV86 Coldstar Battlesuit": {
+        "Commander in XV86 Coldstar Battlesuit": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "20\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Darkstrider": {
+        "Darkstrider": {
+            "model_count": "1",
+            "points_value": "60\u2022",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Ethereal": {
+        "Ethereal": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Longstrike": {
+        "Longstrike\u2019s Gunship": {
+            "model_count": "1",
+            "points_value": "185",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "-",
+            "points_value": "10",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Commander Shadowsun": {
+        "Commander Shadowsun": "error"
+    },
+    "Commander in XV81 Crisis Battlesuit": {
+        "Commander in XV81 Crisis Battlesuit": {
+            "model_count": "1",
+            "points_value": "76",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Commander in XV84 Crisis Battlesuit": {
+        "Commander in XV84 Crisis Battlesuit": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Shas\u2019o R\u2019alai": {
+        "Shas\u2019o R\u2019alai": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        },
+        "Blacklight Marker Drone": {
+            "model_count": "2",
+            "points_value": "10",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Shas\u2019o R\u2019myr": {
+        "Shas\u2019o R\u2019myr": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Breacher Team": {
+        "Fire Warrior": {
+            "model_count": "5-10",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Fire Warrior Shas\u2019ui": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "DS8 Tactical Support Turret": {
+            "model_count": "0-1",
+            "points_value": "0",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "0",
+            "leadership": "4",
+            "save": "4+"
+        },
+        "MV36 Guardian Drone": {
+            "model_count": "0-1",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Kroot Carnivores": {
+        "Kroot": {
+            "model_count": "10-20",
+            "points_value": "6",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Strike Team": {
+        "Fire Warrior": {
+            "model_count": "5-12",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Fire Warrior Shas\u2019ui": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "DS8 Tactical Support Turret": {
+            "model_count": "0-1",
+            "points_value": "0",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "0",
+            "leadership": "4",
+            "save": "4+"
+        },
+        "MV36 Guardian Drone": {
+            "model_count": "0-1",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "TY7 Devilfish": {
+        "TY7 Devilfish": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "2",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Firesight Marksman": {
+        "Firesight Marksman": {
+            "model_count": "1",
+            "points_value": "30",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Kroot Shaper": {
+        "Kroot Shaper": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Krootox Riders": {
+        "Krootox Rider": {
+            "model_count": "1-3",
+            "points_value": "28",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "XV104 Riptide Battlesuit": {
+        "Riptide Shas\u2019vre": {
+            "model_count": "1",
+            "points_value": "245",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "MV84 Shielded Missile Drone": {
+            "model_count": "0-2",
+            "points_value": "30\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "XV25 Stealth Battlesuits": {
+        "Stealth Shas\u2019ui": {
+            "model_count": "3-6",
+            "points_value": "18",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Stealth Shas\u2019vre": {
+            "model_count": "0-1",
+            "points_value": "18",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "XV8 Crisis Battlesuits": {
+        "Crisis Shas\u2019ui": {
+            "model_count": "3-9",
+            "points_value": "30",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Crisis Shas\u2019vre": {
+            "model_count": "0-1",
+            "points_value": "30",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "XV8 Crisis Bodyguards": {
+        "Crisis Bodyguard": {
+            "model_count": "3-9",
+            "points_value": "33",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "XV95 Ghostkeel Battlesuit": {
+        "Ghostkeel Shas\u2019vre": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV5 Stealth Drones": {
+            "model_count": "2",
+            "points_value": "10",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Dahyak Grekh": {
+        "Dahyak Grekh": {
+            "model_count": "1",
+            "points_value": "40\u2022",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "DX-4 Technical Drones": {
+        "DX-4 Technical Drone": {
+            "model_count": "2-10",
+            "points_value": "20",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "XV9 Hazard Support Team": {
+        "XV9 Hazard Battlesuit": {
+            "model_count": "1-3",
+            "points_value": "70",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Kroot Hounds": {
+        "Kroot Hound": {
+            "model_count": "4-12",
+            "points_value": "6",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "5",
+            "save": "6+"
+        }
+    },
+    "Pathfinder Team": {
+        "Pathfinder": {
+            "model_count": "5-10",
+            "points_value": "11",
+            "movement": "7\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "5+"
+        },
+        "Pathfinder Shas\u2019ui": {
+            "model_count": "0-1",
+            "points_value": "11",
+            "movement": "7\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "MV31 Pulse Accelerator Drone": {
+            "model_count": "0-1",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MV33 Grav-inhibitor Drone": {
+            "model_count": "0-1",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MB3 Recon Drone": {
+            "model_count": "0-1",
+            "points_value": "15\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Tactical Drones": {
+        "MV1 Gun Drone": {
+            "model_count": "0-12",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MV4 Shield Drone": {
+            "model_count": "0-12",
+            "points_value": "15\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MV7 Marker Drone": {
+            "model_count": "0-12",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "TX4 Piranhas": {
+        "TX4 Piranha": {
+            "model_count": "1-5",
+            "points_value": "35",
+            "movement": "16\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "2",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Vespid Stingwings": {
+        "Vespid Stingwing": {
+            "model_count": "4-12",
+            "points_value": "14",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "5",
+            "save": "4+"
+        },
+        "Vespid Strain Leader": {
+            "model_count": "0-1",
+            "points_value": "14",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Knarloc Riders": "error",
+    "Piranha TX-42 Light Skimmer": {
+        "Piranha TX-42 Light Skimmer": {
+            "model_count": "1-5",
+            "points_value": "70",
+            "movement": "16\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Tetra Scout Speeder Team": {
+        "Tetra Scout Speeder": {
+            "model_count": "2-4",
+            "points_value": "45",
+            "movement": "18\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "XV109 Y\u2019vahra Battlesuit": {
+        "XV109 Y\u2019vahra Battlesuit": {
+            "model_count": "1",
+            "points_value": "395",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "MV84 Shielded Missile Drone": {
+            "model_count": "0-2",
+            "points_value": "30\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MV52 Shield Drone": {
+            "model_count": "0-2",
+            "points_value": "15\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "AX3 Razorshark Strike Fighter": {
+        "AX3 Razorshark Strike Fighter": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "AX39 Sun Shark Bomber": {
+        "AX39 Sun Shark Bomber": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "MV17 Interceptor Drone": {
+            "model_count": "2",
+            "points_value": "15\u2022",
+            "movement": "20\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Barracuda AX-5-2": {
+        "Barracuda AX-5-2": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "DX-6 Remora Stealth Drone Squadron": {
+        "DX-6 \u2018Remora\u2019 Stealth Drone": {
+            "model_count": "1-6",
+            "points_value": "60",
+            "movement": "20\"-30\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Orca Dropship": {
+        "Orca Dropship": {
+            "model_count": "1",
+            "points_value": "325",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Tiger Shark": {
+        "Tiger Shark": {
+            "model_count": "1",
+            "points_value": "340",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Tiger Shark AX-1-0": {
+        "Tiger Shark AX-1-0": {
+            "model_count": "1",
+            "points_value": "530",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "MV71 Sniper Drones": {
+        "MV71 Sniper Drone": {
+            "model_count": "3-9",
+            "points_value": "16\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "TX7 Hammerhead Gunship": {
+        "TX7 Hammerhead Gunship": {
+            "model_count": "1",
+            "points_value": "155",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "0-2",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "TX78 Sky Ray Gunship": {
+        "TX78 Sky Ray Gunship": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "0-2",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "XV88 Broadside Battlesuits": {
+        "Broadside Shas\u2019ui": {
+            "model_count": "1-3",
+            "points_value": "45",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "2+"
+        },
+        "Broadside Shas\u2019vre": {
+            "model_count": "0-1",
+            "points_value": "45",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "MV8 Missile Drone": {
+            "model_count": "0-2",
+            "points_value": "20\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Great Knarloc": "error",
+    "Heavy Gun Drone Squadron": {
+        "Heavy Gun Drone": {
+            "model_count": "2-6",
+            "points_value": "18",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "TX7 Fire Support Hammerhead Gunship": {
+        "TX7 Fire Support Hammerhead Gunship": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "2",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "TX7 Heavy Bombardment Hammerhead Gunship": {
+        "TX7 Heavy Bombardment Hammerhead Gunship": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "13",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "MV1 Gun Drone": {
+            "model_count": "2",
+            "points_value": "10\u2022",
+            "movement": "8\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "XV107 R\u2019varna Battlesuit": {
+        "XV107 R\u2019varna Battlesuit": {
+            "model_count": "1",
+            "points_value": "430",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "15",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "MV84 Shielded Missile Drone": {
+            "model_count": "0-2",
+            "points_value": "30\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "KV128 Stormsurge": {
+        "KV128 Stormsurge": {
+            "model_count": "1",
+            "points_value": "280",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "20",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "The Eight": {
+        "Commander Farsight": "error"
+    },
+    "KX139 Ta\u2019unar Supremacy Armour": {
+        "Ta\u2019unar Supremacy Armour": {
+            "model_count": "1",
+            "points_value": "1040",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "30",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Manta Super-heavy Dropship": {
+        "Manta Super-heavy Dropship": {
+            "model_count": "1",
+            "points_value": "2000",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "60",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Tidewall Droneport": {
+        "Tidewall Droneport": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "-",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Tidewall Gunrig": {
+        "Tidewall Gunrig": {
+            "model_count": "1",
+            "points_value": "125",
+            "movement": "6\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Tidewall Shieldline": {
+        "Tidewall Shieldline": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "-",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        },
+        "Tidewall Defence Platform": {
+            "model_count": "0-1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "-",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Drone Sentry Turret": {
+        "Drone Sentry Turret": {
+            "model_count": "1-4",
+            "points_value": "20",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "6",
+            "wounds": "3",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Remote sensor tower": {
+        "Remote sensor tower": {
+            "model_count": "1",
+            "points_value": "33",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "-",
+            "toughness": "6",
+            "wounds": "3",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    }
+}

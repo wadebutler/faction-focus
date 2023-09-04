@@ -1,0 +1,291 @@
+{
+    "Armiger Helverin": {
+        "Armiger Helverin": {
+            "model_count": "1-3",
+            "points_value": "170",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Armiger Warglaive": {
+        "Armiger Warglaive": {
+            "model_count": "1-3",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Canis Rex": {
+        "Canis Rex": "error"
+    },
+    "Knight Castellan": {
+        "Knight Castellan": {
+            "model_count": "1",
+            "points_value": "545",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "28",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Crusader": {
+        "Knight Crusader": {
+            "model_count": "1",
+            "points_value": "395",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Errant": {
+        "Knight Errant": {
+            "model_count": "1",
+            "points_value": "310",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Gallant": {
+        "Knight Gallant": {
+            "model_count": "1",
+            "points_value": "330",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Paladin": {
+        "Knight Paladin": {
+            "model_count": "1",
+            "points_value": "310",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Preceptor": {
+        "Knight Preceptor": {
+            "model_count": "1",
+            "points_value": "370",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Valiant": {
+        "Knight Valiant": {
+            "model_count": "1",
+            "points_value": "535",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "28",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Warden": {
+        "Knight Warden": {
+            "model_count": "1",
+            "points_value": "395",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Acastus Knight Asterius": {
+        "Acastus Knight Asterius": {
+            "model_count": "1",
+            "points_value": "850",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "30",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Acastus Knight Porphyrion": {
+        "Acastus Knight Porphyrion": {
+            "model_count": "1",
+            "points_value": "820",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "30",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Armiger Moirax": {
+        "Armiger Moirax": {
+            "model_count": "1-3",
+            "points_value": "155",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Acheron": {
+        "Cerastus Knight-Acheron": {
+            "model_count": "1",
+            "points_value": "520",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Atrapos": {
+        "Cerastus Knight-Atrapos": {
+            "model_count": "1",
+            "points_value": "580",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Castigator": {
+        "Cerastus Knight-Castigator": {
+            "model_count": "1",
+            "points_value": "460",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Lancer": {
+        "Cerastus Knight-Lancer": {
+            "model_count": "1",
+            "points_value": "460",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Questoris Knight Magaera": {
+        "Questoris Knight Magaera": {
+            "model_count": "1",
+            "points_value": "435",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Questoris Knight Styrix": {
+        "Questoris Knight Styrix": {
+            "model_count": "1",
+            "points_value": "420",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Sacristan Forgeshrine": {}
+}

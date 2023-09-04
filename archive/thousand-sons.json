@@ -1,0 +1,974 @@
+{
+    "Ahriman": {
+        "Ahriman": {
+            "model_count": "1",
+            "points_value": "150\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Daemon Prince of Tzeentch": {
+        "Daemon Prince of Tzeentch": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Exalted Sorcerer": {
+        "Exalted Sorcerer": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Sorcerer": {
+        "Sorcerer": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Sorcerer in Terminator Armour": {
+        "Sorcerer in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Sorcerer (Legendary)": {
+        "Sorcerer": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Sorcerer in Terminator Armour (Legendary)": {
+        "Sorcerer in Terminator Armour": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Sorcerer on Disc of Tzeentch": {
+        "Sorcerer on Disc of Tzeentch": {
+            "model_count": "1",
+            "points_value": "146",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaos Cultists": {
+        "Chaos Cultist": {
+            "model_count": "9-39",
+            "points_value": "6",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "5",
+            "save": "6+"
+        },
+        "Cultist Champion": {
+            "model_count": "1",
+            "points_value": "6",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Rubric Marines": {
+        "Rubric Marine": {
+            "model_count": "4-19",
+            "points_value": "18",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        },
+        "Aspiring Sorcerer": {
+            "model_count": "1",
+            "points_value": "18",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Tzaangors": {
+        "Tzaangor": {
+            "model_count": "9-29",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "6+"
+        },
+        "Twistbray": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Horrors": {
+        "Pink Horror": {
+            "model_count": "10-30",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Blue Horror": {
+            "model_count": "10-30",
+            "points_value": "7",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "-",
+            "strength": "2",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Pair of Brimstone Horrors": {
+            "model_count": "10-30",
+            "points_value": "5",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "-",
+            "strength": "1",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Iridescent Horror": {
+            "model_count": "10-30",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Chaos Rhino": {
+        "Chaos Rhino": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Terrax-pattern Termite Assault Drill": {
+        "Terrax-pattern Termite Assault Drill": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Flamers": {
+        "Flamer": {
+            "model_count": "2-8",
+            "points_value": "23\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Pyrocaster": {
+            "model_count": "1",
+            "points_value": "23\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Helbrute": {
+        "Helbrute": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Scarab Occult Terminators": {
+        "Scarab Occult Terminator": {
+            "model_count": "4-9",
+            "points_value": "30",
+            "movement": "4\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        },
+        "Scarab Occult Sorcerer": {
+            "model_count": "1",
+            "points_value": "30",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Tzaangor Shaman": {
+        "Tzaangor Shaman": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Chaos Decimator": {
+        "Chaos Decimator": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Contemptor Dreadnought": {
+        "Hellforged Contemptor Dreadnought": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Predator": {
+        "Hellforged Predator": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Sicaran": {
+        "Hellforged Sicaran": {
+            "model_count": "1",
+            "points_value": "180",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chaos Spawn": {
+        "Chaos Spawn": {
+            "model_count": "1-5",
+            "points_value": "23",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "D6",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Screamers": {
+        "Screamer": {
+            "model_count": "3-9",
+            "points_value": "26\u2022",
+            "movement": "16\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Tzaangor Enlightened": {
+        "Enlightened": {
+            "model_count": "2-8",
+            "points_value": "18",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Aviarch": {
+            "model_count": "1",
+            "points_value": "18",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Hellforged Dreadclaw Drop Pod": {
+        "Hellforged Dreadclaw Drop Pod": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "15\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "5+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Kharybdis Assault Claw": {
+        "Hellforged Kharybdis Assault Claw": {
+            "model_count": "1",
+            "points_value": "350",
+            "movement": "15\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Heldrake": {
+        "Heldrake": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chaos Fire Raptor Assault Gunship": {
+        "Chaos Fire Raptor Assault Gunship": {
+            "model_count": "1",
+            "points_value": "280",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaos Hell Blade": {
+        "Chaos Hell Blade": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "18-60\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chaos Hell Talon": {
+        "Chaos Hell Talon": {
+            "model_count": "1",
+            "points_value": "195",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chaos Storm Eagle Assault Gunship": {
+        "Chaos Storm Eagle Assault Gunship": {
+            "model_count": "1",
+            "points_value": "230",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaos Xiphon Interceptor": {
+        "Chaos Xiphon Interceptor": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chaos Land Raider": {
+        "Chaos Land Raider": {
+            "model_count": "1",
+            "points_value": "175",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Chaos Predator": {
+        "Chaos Predator": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Chaos Vindicator": {
+        "Chaos Vindicator": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Defiler": {
+        "Defiler": {
+            "model_count": "1",
+            "points_value": "120",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Forgefiend": {
+        "Forgefiend": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Maulerfiend": {
+        "Maulerfiend": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Mutalith Vortex Beast": {
+        "Mutalith Vortex Beast": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Chaos Vindicator Laser Destroyer": {
+        "Chaos Vindicator Laser Destroyer": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Deredeo Dreadnought": {
+        "Hellforged Deredeo Dreadnought": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Land Raider Achilles": {
+        "Hellforged Land Raider Achilles": {
+            "model_count": "1",
+            "points_value": "190",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "19",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Land Raider Proteus": {
+        "Hellforged Land Raider Proteus": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "16",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Leviathan Dreadnought": {
+        "Hellforged Leviathan Dreadnought": {
+            "model_count": "1",
+            "points_value": "220",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Hellforged Scorpius": {
+        "Hellforged Scorpius": {
+            "model_count": "1",
+            "points_value": "195",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Hellforged Sicaran Venator": {
+        "Hellforged Sicaran Venator": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Magnus the Red": {
+        "Magnus the Red": {
+            "model_count": "1",
+            "points_value": "465\u2022",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Aetaos\u2019rau\u2019keres": {
+        "Aetaos\u2019rau\u2019keres": {
+            "model_count": "1",
+            "points_value": "1500",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Chaos Sokar Pattern Stormbird Gunship": {
+        "Chaos Sokar Pattern Stormbird Gunship": {
+            "model_count": "1",
+            "points_value": "2100",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "10",
+            "toughness": "9",
+            "wounds": "40",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Chaos Thunderhawk Assault Gunship": {
+        "Chaos Thunderhawk Assault Gunship": {
+            "model_count": "1",
+            "points_value": "1350",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "10",
+            "toughness": "9",
+            "wounds": "30",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Hellforged Cerberus Heavy Destroyer": {
+        "Hellforged Cerberus Heavy Destroyer": {
+            "model_count": "1",
+            "points_value": "680",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "9",
+            "wounds": "22",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Falchion": {
+        "Hellforged Falchion": {
+            "model_count": "1",
+            "points_value": "790",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "26",
+            "attacks": "8",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Fellblade": {
+        "Hellforged Fellblade": {
+            "model_count": "1",
+            "points_value": "690",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "26",
+            "attacks": "8",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Mastodon": {
+        "Hellforged Mastodon": {
+            "model_count": "1",
+            "points_value": "915",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "9",
+            "toughness": "9",
+            "wounds": "30",
+            "attacks": "8",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Spartan Assault Tank": {
+        "Hellforged Spartan Assault Tank": {
+            "model_count": "1",
+            "points_value": "320",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Hellforged Typhon Heavy Siege Tank": {
+        "Hellforged Typhon Heavy Siege Tank": {
+            "model_count": "1",
+            "points_value": "720",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "9",
+            "wounds": "22",
+            "attacks": "7",
+            "leadership": "9",
+            "save": "2+"
+        }
+    }
+}

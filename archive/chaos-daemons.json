@@ -1,0 +1,1210 @@
+{
+    "Herald of Nurgle": {
+        "Herald of Nurgle": {
+            "model_count": "1",
+            "points_value": "70\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Be\u2019lakor": {
+        "Be\u2019lakor": {
+            "model_count": "1",
+            "points_value": "220\u2022",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Blood Throne": {
+        "Blood Throne": {
+            "model_count": "1",
+            "points_value": "115\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "7",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Bloodmaster": {
+        "Bloodmaster": {
+            "model_count": "1",
+            "points_value": "60\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Bloodthirster of Insensate Rage": {
+        "Bloodthirster of Insensate Rage": {
+            "model_count": "1",
+            "points_value": "250\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Bloodthirster of Unfettered Fury": {
+        "Bloodthirster of Unfettered Fury": {
+            "model_count": "1",
+            "points_value": "240\u2022",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Changecaster": {
+        "Changecaster": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Daemon Prince of Chaos": {
+        "Daemon Prince of Chaos": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Epidemius": {
+        "Epidemius": {
+            "model_count": "1",
+            "points_value": "105\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Fateskimmer": {
+        "Fateskimmer": {
+            "model_count": "1",
+            "points_value": "160",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Fluxmaster": {
+        "Fluxmaster": {
+            "model_count": "1",
+            "points_value": "105",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Great Unclean One": {
+        "Great Unclean One": {
+            "model_count": "1",
+            "points_value": "260",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Herald of Slaanesh": {
+        "Herald of Slaanesh": {
+            "model_count": "1",
+            "points_value": "55\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Horticulous Slimux": {
+        "Horticulous Slimux": {
+            "model_count": "1",
+            "points_value": "160\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Kairos Fateweaver": {
+        "Kairos Fateweaver": {
+            "model_count": "1",
+            "points_value": "270\u2022",
+            "movement": "*",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Karanak": {
+        "Karanak": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "10\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "-",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Lord of Change": {
+        "Lord of Change": {
+            "model_count": "1",
+            "points_value": "270",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Poxbringer": {
+        "Poxbringer": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Rotigus": {
+        "Rotigus": {
+            "model_count": "1",
+            "points_value": "270\u2022",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "*",
+            "toughness": "7",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Skarbrand": {
+        "Skarbrand": {
+            "model_count": "1",
+            "points_value": "310\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Skullmaster": {
+        "Skullmaster": {
+            "model_count": "1",
+            "points_value": "95\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Skulltaker": {
+        "Skulltaker": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Sloppity Bilepiper": {
+        "Sloppity Bilepiper": {
+            "model_count": "1",
+            "points_value": "65\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Spoilpox Scrivener": {
+        "Spoilpox Scrivener": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "The Blue Scribes": {
+        "The Blue Scribes": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "The Changeling": {
+        "The Changeling": {
+            "model_count": "1",
+            "points_value": "105\u2022",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "The Masque of Slaanesh": {
+        "The Masque of Slaanesh": {
+            "model_count": "1",
+            "points_value": "85\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Wrath of Khorne Bloodthirster": {
+        "Wrath of Khorne Bloodthirster": {
+            "model_count": "1",
+            "points_value": "230\u2022",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Contorted Epitome": {
+        "Contorted Epitome": {
+            "model_count": "1",
+            "points_value": "210\u2022",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "8",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Herald of Slaanesh on Exalted Seeker Chariot": {
+        "Herald of Slaanesh on Exalted Seeker Chariot": {
+            "model_count": "1",
+            "points_value": "130\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Herald of Slaanesh on Hellflayer": {
+        "Herald of Slaanesh on Hellflayer": {
+            "model_count": "1",
+            "points_value": "105\u2022",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Herald of Slaanesh on Seeker Chariot": {
+        "Herald of Slaanesh on Seeker Chariot": {
+            "model_count": "1",
+            "points_value": "95\u2022",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "7",
+            "attacks": "6",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Infernal Enrapturess": {
+        "Infernal Enrapturess": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Keeper of Secrets": {
+        "Keeper of Secrets": {
+            "model_count": "1",
+            "points_value": "230",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Shalaxi Helbane": {
+        "Shalaxi Helbane": {
+            "model_count": "1",
+            "points_value": "240",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "16",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Syll\u2019Esske, the Vengeful Allegiance": {
+        "Syll\u2019Esske": {
+            "model_count": "1",
+            "points_value": "230\u2022",
+            "movement": "9\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "8",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Cor\u2019bax Utterblight": {
+        "Cor\u2019bax Utterblight": {
+            "model_count": "1",
+            "points_value": "230",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Samus": {
+        "Samus": {
+            "model_count": "1",
+            "points_value": "155",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "4+"
+        }
+    },
+    "Uraka the Warfiend": {
+        "Uraka the Warfiend": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Herald of Slaanesh on Steed": {
+        "Herald of Slaanesh on Steed": {
+            "model_count": "1",
+            "points_value": "82\u2022",
+            "movement": "14\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Bloodletters": {
+        "Bloodletter": {
+            "model_count": "9-29",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Bloodreaper": {
+            "model_count": "1",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Daemonettes": {
+        "Daemonette": {
+            "model_count": "9-29",
+            "points_value": "7",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Alluress": {
+            "model_count": "1",
+            "points_value": "7",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Nurglings": {
+        "Nurgling Swarm": {
+            "model_count": "3-9",
+            "points_value": "18\u2022",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Plaguebearers": {
+        "Plaguebearer": {
+            "model_count": "9-29",
+            "points_value": "9",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Plagueridden": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Horrors": {
+        "Pink Horror": {
+            "model_count": "10-30",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Blue Horror": {
+            "model_count": "10-30",
+            "points_value": "7",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "-",
+            "strength": "2",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Pair of Brimstone Horrors": {
+            "model_count": "10-30",
+            "points_value": "5",
+            "movement": "6\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "-",
+            "strength": "1",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Iridescent Horror": {
+            "model_count": "10-30",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Beasts of Nurgle": {
+        "Beast of Nurgle": {
+            "model_count": "1-9",
+            "points_value": "35\u2022",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "D6",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Exalted Flamer": {
+        "Exalted Flamer": {
+            "model_count": "1",
+            "points_value": "60\u2022",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Flamers": {
+        "Flamer": {
+            "model_count": "2-8",
+            "points_value": "23\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Pyrocaster": {
+            "model_count": "1",
+            "points_value": "23\u2022",
+            "movement": "12\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Bloodcrushers": {
+        "Bloodcrusher": {
+            "model_count": "2-11",
+            "points_value": "45",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Bloodhunter": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Fiends": {
+        "Fiend": {
+            "model_count": "1-9",
+            "points_value": "40\u2022",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Blissbringer": {
+            "model_count": "0-1",
+            "points_value": "45\u2022",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "5",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Furies": {
+        "Fury": {
+            "model_count": "5-20",
+            "points_value": "9\u2022",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "6+"
+        }
+    },
+    "Hellflayer": {
+        "Hellflayer": {
+            "model_count": "1",
+            "points_value": "80\u2022",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Plague Drones": {
+        "Plague Drone": {
+            "model_count": "2-8",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Plaguebringer": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Screamers": {
+        "Screamer": {
+            "model_count": "3-9",
+            "points_value": "26\u2022",
+            "movement": "16\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Flesh Hounds": {
+        "Flesh Hound": {
+            "model_count": "5-20",
+            "points_value": "18\u2022",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Gore Hound": {
+            "model_count": "0-4",
+            "points_value": "28\u2022",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Seekers": {
+        "Seeker": {
+            "model_count": "4-19",
+            "points_value": "18",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Heartseeker": {
+            "model_count": "1",
+            "points_value": "18",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Plague Toads of Nurgle": {
+        "Plague Toad": {
+            "model_count": "3-9",
+            "points_value": "58",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Pox Riders of Nurgle": {
+        "Pox Rider": {
+            "model_count": "3-9",
+            "points_value": "63",
+            "movement": "7\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "6+"
+        }
+    },
+    "Burning Chariot": {
+        "Burning Chariot": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Exalted Seeker Chariot": {
+        "Exalted Seeker Chariot": {
+            "model_count": "1",
+            "points_value": "80\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Seeker Chariot": {
+        "Seeker Chariot": {
+            "model_count": "1",
+            "points_value": "60\u2022",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Skull Cannon": {
+        "Skull Cannon": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "7",
+            "wounds": "7",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Soul Grinder": {
+        "Soul Grinder": {
+            "model_count": "1",
+            "points_value": "190\u2022",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Giant Chaos Spawn": {
+        "Giant Chaos Spawn": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "*",
+            "toughness": "5",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Plague Hulk of Nurgle": {
+        "Plague Hulk of Nurgle": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Spined Chaos Beast": {
+        "Spined Chaos Beast": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "-",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Aetaos\u2019rau\u2019keres": {
+        "Aetaos\u2019rau\u2019keres": {
+            "model_count": "1",
+            "points_value": "1500",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "An\u2019ggrath the Unbound": {
+        "An\u2019ggrath the Unbound": {
+            "model_count": "1",
+            "points_value": "888",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "4+",
+            "strength": "*",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Scabeiathrax the Bloated": {
+        "Scabeiathrax the Bloated": {
+            "model_count": "1",
+            "points_value": "777",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "*",
+            "toughness": "9",
+            "wounds": "22",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Zarakynel the Bringer of Torments": {
+        "Zarakynel the Bringer of Torments": {
+            "model_count": "1",
+            "points_value": "666",
+            "movement": "*",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Feculent Gnarlmaw": {},
+    "Skull Altar": {}
+}

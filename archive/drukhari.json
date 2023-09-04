@@ -1,0 +1,673 @@
+{
+    "Archon": {
+        "Archon": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Haemonculus": {
+        "Haemonculus": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Lelith Hesperax": {
+        "Lelith Hesperax": {
+            "model_count": "1",
+            "points_value": "85\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Succubus": {
+        "Succubus": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Urien Rakarth": {
+        "Urien Rakarth": {
+            "model_count": "1",
+            "points_value": "95\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Drazhar": {
+        "Drazhar": {
+            "model_count": "1",
+            "points_value": "105\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Archon (Legendary)": {
+        "Archon": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Kabalite Warriors": {
+        "Kabalite Warrior": {
+            "model_count": "4-19",
+            "points_value": "9",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Sybarite": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Wracks": {
+        "Wrack": {
+            "model_count": "4-9",
+            "points_value": "12",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Acothyst": {
+            "model_count": "1",
+            "points_value": "12",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Wyches": {
+        "Wych": {
+            "model_count": "4-19",
+            "points_value": "11",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "6+"
+        },
+        "Hekatrix": {
+            "model_count": "1",
+            "points_value": "11",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Raider": {
+        "Raider": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Venom": {
+        "Venom": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "16\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Beastmaster": {
+        "Beastmaster": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Grotesques": {
+        "Grotesque": {
+            "model_count": "3-10",
+            "points_value": "40",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Lhamaean": {
+        "Lhamaean": {
+            "model_count": "1",
+            "points_value": "16",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Mandrakes": {
+        "Mandrake": {
+            "model_count": "4-9",
+            "points_value": "17",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "7+"
+        },
+        "Nightfiend": {
+            "model_count": "1",
+            "points_value": "17",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "7+"
+        }
+    },
+    "Medusae": {
+        "Medusae": {
+            "model_count": "1",
+            "points_value": "22",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Sslyth": {
+        "Sslyth": {
+            "model_count": "1",
+            "points_value": "21",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "5+"
+        }
+    },
+    "Incubi": {
+        "Incubi": {
+            "model_count": "5-10",
+            "points_value": "16",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "3+"
+        },
+        "Klaivex": {
+            "model_count": "0-1",
+            "points_value": "16",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Ur-Ghul": {
+        "Ur-Ghul": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "4",
+            "save": "7+"
+        }
+    },
+    "Beastmaster (Legendary)": {
+        "Beastmaster": {
+            "model_count": "1",
+            "points_value": "36",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Hekatrix Bloodbrides": {
+        "Hekatrix Bloodbride": {
+            "model_count": "4-19",
+            "points_value": "13",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "6+"
+        },
+        "Syren": {
+            "model_count": "1",
+            "points_value": "13",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Kabalite Trueborn": {
+        "Kabalite Trueborn": {
+            "model_count": "4-19",
+            "points_value": "11",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "5+"
+        },
+        "Dracon": {
+            "model_count": "1",
+            "points_value": "11",
+            "movement": "7\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Clawed Fiends": {
+        "Clawed Fiend": {
+            "model_count": "1-6",
+            "points_value": "35",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "5",
+            "leadership": "4",
+            "save": "5+"
+        }
+    },
+    "Hellions": {
+        "Hellion": {
+            "model_count": "4-19",
+            "points_value": "15",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Helliarch": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Khymerae": {
+        "Khymera": {
+            "model_count": "2-12",
+            "points_value": "12",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "4",
+            "save": "6+"
+        }
+    },
+    "Razorwing Flocks": {
+        "Razorwing Flock": {
+            "model_count": "1-12",
+            "points_value": "14",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "2",
+            "toughness": "2",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "4",
+            "save": "7+"
+        }
+    },
+    "Reavers": {
+        "Reaver": {
+            "model_count": "2-11",
+            "points_value": "20",
+            "movement": "18\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Arena Champion": {
+            "model_count": "1",
+            "points_value": "20",
+            "movement": "18\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Scourges": {
+        "Scourge": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "4+"
+        },
+        "Solarite": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Razorwing Jetfighter": {
+        "Razorwing Jetfighter": {
+            "model_count": "1",
+            "points_value": "120",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Voidraven Bomber": {
+        "Voidraven Bomber": {
+            "model_count": "1",
+            "points_value": "185",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Raven Strike Fighter": "error",
+    "Cronos": {
+        "Cronos": {
+            "model_count": "1-3",
+            "points_value": "70",
+            "movement": "8\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Ravager": {
+        "Ravager": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Talos": {
+        "Talos": {
+            "model_count": "1-3",
+            "points_value": "85",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "5",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Reaper": {
+        "Reaper": {
+            "model_count": "1",
+            "points_value": "150\u2022",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Tantalus": {
+        "Tantalus": {
+            "model_count": "1",
+            "points_value": "400\u2022",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "18",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    }
+}

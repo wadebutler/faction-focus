@@ -1,0 +1,687 @@
+{
+    "Belisarius Cawl": {
+        "Belisarius Cawl": {
+            "model_count": "1",
+            "points_value": "200\u2022",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "2+"
+        }
+    },
+    "Tech-Priest Dominus": {
+        "Tech-Priest Dominus": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Tech-Priest Enginseer": {
+        "Tech-Priest Enginseer": {
+            "model_count": "1",
+            "points_value": "35",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Tech-Priest Manipulus": {
+        "Tech-Priest Manipulus": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Daedalosus": {
+        "Daedalosus": {
+            "model_count": "1",
+            "points_value": "55\u2022",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Kataphron Breachers": {
+        "Kataphron Breacher": {
+            "model_count": "3-12",
+            "points_value": "25",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Kataphron Destroyers": {
+        "Kataphron Destroyer": {
+            "model_count": "3-12",
+            "points_value": "20",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Skitarii Rangers": {
+        "Skitarii Ranger": {
+            "model_count": "4-9",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Ranger Alpha": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Skitarii Vanguard": {
+        "Skitarii Vanguard": {
+            "model_count": "4-9",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Vanguard Alpha": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Skorpius Dunerider": {
+        "Skorpius Dunerider": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Terrax-pattern Termite Assault Drill": {
+        "Terrax-pattern Termite Assault Drill": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Corpuscarii Electro-Priests": {
+        "Corpuscarii Electro-Priest": {
+            "model_count": "5-20",
+            "points_value": "14",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Cybernetica Datasmith": {
+        "Cybernetica Datasmith": {
+            "model_count": "1",
+            "points_value": "25",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "2+"
+        }
+    },
+    "Fulgurite Electro-Priests": {
+        "Fulgurite Electro-Priest": {
+            "model_count": "5-20",
+            "points_value": "17",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Servitors": {
+        "Servitor": {
+            "model_count": "4",
+            "points_value": "7",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Sicarian Infiltrators": {
+        "Sicarian Infiltrator": {
+            "model_count": "4-9",
+            "points_value": "15",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Infiltrator Princeps": {
+            "model_count": "1",
+            "points_value": "15",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Sicarian Ruststalkers": {
+        "Sicarian Ruststalker": {
+            "model_count": "4-9",
+            "points_value": "14",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Ruststalker Princeps": {
+            "model_count": "1",
+            "points_value": "14",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "4",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "X-101": {
+        "X-101": {
+            "model_count": "1",
+            "points_value": "25\u2022",
+            "movement": "5\"",
+            "weapon_skill": "5+",
+            "ballistic_skill": "5+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        }
+    },
+    "Secutarii Hoplites": {
+        "Secutarii Hoplite": {
+            "model_count": "9-19",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Hoplite Alpha": {
+            "model_count": "1",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Secutarii Peltasts": {
+        "Secutarii Peltast": {
+            "model_count": "9-19",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Peltast Alpha": {
+            "model_count": "1",
+            "points_value": "9",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Ironstrider Ballistarii": {
+        "Ironstrider Ballistarius": {
+            "model_count": "1-6",
+            "points_value": "35",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Sydonian Dragoons": {
+        "Sydonian Dragoon": {
+            "model_count": "1-6",
+            "points_value": "60",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "4+"
+        }
+    },
+    "Pteraxii Skystalkers": {
+        "Pteraxii Skystalker": {
+            "model_count": "4-9",
+            "points_value": "17",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Pteraxii Skystalker Alpha": {
+            "model_count": "1",
+            "points_value": "17",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Pteraxii Sterylizors": {
+        "Pteraxii Sterylizor": {
+            "model_count": "4-9",
+            "points_value": "19",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Pteraxii Sterylizor Alpha": {
+            "model_count": "1",
+            "points_value": "19",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Serberys Raiders": {
+        "Serberys Raider": {
+            "model_count": "2-8",
+            "points_value": "16",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Serberys Raider Alpha": {
+            "model_count": "1",
+            "points_value": "16",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Serberys Sulphurhounds": {
+        "Serberys Sulphurhound": {
+            "model_count": "2-8",
+            "points_value": "20",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "1",
+            "leadership": "6",
+            "save": "4+"
+        },
+        "Serberys Sulphurhound Alpha": {
+            "model_count": "1",
+            "points_value": "20",
+            "movement": "12\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Archaeopter Fusilave": {
+        "Archaeopter Fusilave": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Archaeopter Stratoraptor": {
+        "Archaeopter Stratoraptor": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Archaeopter Transvector": {
+        "Archaeopter Transvector": {
+            "model_count": "1",
+            "points_value": "100",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Kastelan Robots": {
+        "Kastelan Robot": {
+            "model_count": "2-6",
+            "points_value": "80",
+            "movement": "8\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Onager Dunecrawler": {
+        "Onager Dunecrawler": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "*",
+            "weapon_skill": "5+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "11",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Skorpius Disintegrator": {
+        "Skorpius Disintegrator": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Knight Crusader": {
+        "Knight Crusader": {
+            "model_count": "1",
+            "points_value": "395",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Errant": {
+        "Knight Errant": {
+            "model_count": "1",
+            "points_value": "310",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Gallant": {
+        "Knight Gallant": {
+            "model_count": "1",
+            "points_value": "330",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Paladin": {
+        "Knight Paladin": {
+            "model_count": "1",
+            "points_value": "310",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Warden": {
+        "Knight Warden": {
+            "model_count": "1",
+            "points_value": "395",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    }
+}

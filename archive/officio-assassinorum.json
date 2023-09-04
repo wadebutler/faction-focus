@@ -1,0 +1,62 @@
+{
+    "Callidus Assassin": {
+        "Callidus Assassin": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "6+"
+        }
+    },
+    "Culexus Assassin": {
+        "Culexus Assassin": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "6+"
+        }
+    },
+    "Eversor Assassin": {
+        "Eversor Assassin": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "9",
+            "save": "6+"
+        }
+    },
+    "Vindicare Assassin": {
+        "Vindicare Assassin": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "7\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "6+"
+        }
+    }
+}

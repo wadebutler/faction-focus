@@ -1,0 +1,551 @@
+{
+    "Abominant": {
+        "Abominant": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Acolyte Iconward": {
+        "Acolyte Iconward": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Jackal Alphus": {
+        "Jackal Alphus": {
+            "model_count": "1",
+            "points_value": "75",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Magus": {
+        "Magus": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        },
+        "Familiar": {
+            "model_count": "0-2",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Patriarch": {
+        "Patriarch": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "5+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "6",
+            "leadership": "10",
+            "save": "4+"
+        },
+        "Familiar": {
+            "model_count": "0-2",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Primus": {
+        "Primus": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "5",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Acolyte Hybrids": {
+        "Acolyte Hybrid": {
+            "model_count": "4-19",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Acolyte Leader": {
+            "model_count": "1",
+            "points_value": "8",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Brood Brothers Infantry Squad": {
+        "Brood Brothers": {
+            "model_count": "9-19",
+            "points_value": "5",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Brood Brothers Leader": {
+            "model_count": "1",
+            "points_value": "5",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "5+"
+        },
+        "Brood Brothers Weapons Team": {
+            "model_count": "0-1",
+            "points_value": "10",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Neophyte Hybrids": {
+        "Neophyte Hybrid": {
+            "model_count": "9-19",
+            "points_value": "6",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Neophyte Leader": {
+            "model_count": "1",
+            "points_value": "6",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Cult Chimera": {
+        "Cult Chimera": {
+            "model_count": "1",
+            "points_value": "65",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Goliath Truck": {
+        "Goliath Truck": {
+            "model_count": "1",
+            "points_value": "50",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Aberrants": {
+        "Aberrant": {
+            "model_count": "5-10",
+            "points_value": "22",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Aberrant Hypermorph": {
+            "model_count": "0-2",
+            "points_value": "22",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Biophagus": {
+        "Biophagus": {
+            "model_count": "1",
+            "points_value": "40",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        },
+        "Alchemicus Familiar": {
+            "model_count": "0-1",
+            "points_value": "15",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "6+"
+        }
+    },
+    "Clamavus": {
+        "Clamavus": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Hybrid Metamorphs": {
+        "Hybrid Metamorph": {
+            "model_count": "4-9",
+            "points_value": "11",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Metamorph Leader": {
+            "model_count": "1",
+            "points_value": "11",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "1",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Kelermorph": {
+        "Kelermorph": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Locus": {
+        "Locus": {
+            "model_count": "1",
+            "points_value": "45",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Nexos": {
+        "Nexos": {
+            "model_count": "1",
+            "points_value": "55",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Purestrain Genestealers": {
+        "Purestrain Genestealer": {
+            "model_count": "5-20",
+            "points_value": "17",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "-",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "5+"
+        }
+    },
+    "Sanctus": {
+        "Sanctus": {
+            "model_count": "1",
+            "points_value": "60",
+            "movement": "6\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "5+"
+        }
+    },
+    "Achilles Ridgerunners": {
+        "Achilles Ridgerunner": {
+            "model_count": "1-3",
+            "points_value": "40",
+            "movement": "14\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "8",
+            "attacks": "3",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Atalan Jackals": {
+        "Atalan Jackal": {
+            "model_count": "3-11",
+            "points_value": "14",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        },
+        "Atalan Leader": {
+            "model_count": "1",
+            "points_value": "14",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "8",
+            "save": "5+"
+        },
+        "Atalan Wolfquad": {
+            "model_count": "0-3",
+            "points_value": "20",
+            "movement": "14\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Cult Armoured Sentinels": {
+        "Cult Armoured Sentinel": {
+            "model_count": "1-3",
+            "points_value": "30",
+            "movement": "8\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Cult Scout Sentinels": {
+        "Cult Scout Sentinel": {
+            "model_count": "1-3",
+            "points_value": "30",
+            "movement": "9\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "1",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Brood Brothers Heavy Weapons Squad": {
+        "Brood Brothers Weapons Team": {
+            "model_count": "3",
+            "points_value": "6",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "7",
+            "save": "5+"
+        }
+    },
+    "Cult Leman Russ": {
+        "Cult Leman Russ": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "3+"
+        }
+    },
+    "Goliath Rockgrinder": {
+        "Goliath Rockgrinder": {
+            "model_count": "1",
+            "points_value": "90",
+            "movement": "*",
+            "weapon_skill": "4+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "7",
+            "save": "4+"
+        }
+    },
+    "Tectonic Fragdrill": {}
+}

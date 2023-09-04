@@ -1,0 +1,874 @@
+{
+    "Anrakyr the Traveller": {
+        "Anrakyr the Traveller": {
+            "model_count": "1",
+            "points_value": "130\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Catacomb Command Barge": {
+        "Catacomb Command Barge": {
+            "model_count": "1",
+            "points_value": "145",
+            "movement": "12\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Cryptek": {
+        "Cryptek": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Destroyer Lord": {
+        "Destroyer Lord": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Imotekh the Stormlord": {
+        "Imotekh the Stormlord": {
+            "model_count": "1",
+            "points_value": "150\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Lord": {
+        "Lord": {
+            "model_count": "1",
+            "points_value": "70",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Nemesor Zahndrekh": {
+        "Nemesor Zahndrekh": {
+            "model_count": "1",
+            "points_value": "135\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Orikan the Diviner": {
+        "Orikan the Diviner": "error"
+    },
+    "Overlord": {
+        "Overlord": {
+            "model_count": "1",
+            "points_value": "85",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Trazyn the Infinite": {
+        "Trazyn the Infinite": {
+            "model_count": "1",
+            "points_value": "100\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Vargard Obyron": {
+        "Vargard Obyron": {
+            "model_count": "1",
+            "points_value": "120\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Illuminor Szeras": {
+        "Illuminor Szeras": {
+            "model_count": "1",
+            "points_value": "145\u2022",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Overlord (Indomitus)": {
+        "Overlord": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "5",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Plasmancer": {
+        "Plasmancer": {
+            "model_count": "1",
+            "points_value": "80\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "4",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Royal Warden": {
+        "Royal Warden": {
+            "model_count": "1",
+            "points_value": "80\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Skorpekh Lord": {
+        "Skorpekh Lord": {
+            "model_count": "1",
+            "points_value": "130\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Kutlakh the World Killer": {
+        "Kutlakh the World Killer": {
+            "model_count": "1",
+            "points_value": "200\u2022",
+            "movement": "5\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "2+"
+        }
+    },
+    "Toholk the Blinded": {
+        "Toholk the Blinded": {
+            "model_count": "1",
+            "points_value": "125\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Immortals": {
+        "Immortal": {
+            "model_count": "5-10",
+            "points_value": "18",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Necron Warriors": {
+        "Necron Warrior": {
+            "model_count": "10-20",
+            "points_value": "12",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Necron Warriors (Indomitus)": {
+        "Necron Warrior": {
+            "model_count": "10-20",
+            "points_value": "12\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Ghost Ark": {
+        "Ghost Ark": {
+            "model_count": "1",
+            "points_value": "140",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "C\u2019tan Shard of the Deceiver": {
+        "C\u2019tan Shard of the Deceiver": {
+            "model_count": "1",
+            "points_value": "190\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "C\u2019tan Shard of the Nightbringer": {
+        "C\u2019tan Shard of the Nightbringer": {
+            "model_count": "1",
+            "points_value": "165\u2022",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Deathmarks": {
+        "Deathmarks": {
+            "model_count": "5-10",
+            "points_value": "16",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Flayed Ones": {
+        "Flayed One": {
+            "model_count": "5-20",
+            "points_value": "14",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "1",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Lychguard": {
+        "Lychguard": {
+            "model_count": "5-10",
+            "points_value": "30",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Triarch Praetorians": {
+        "Triarch Praetorian": {
+            "model_count": "5-10",
+            "points_value": "23",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Triarch Stalker": {
+        "Triarch Stalker": {
+            "model_count": "1",
+            "points_value": "95",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "7",
+            "toughness": "6",
+            "wounds": "10",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Canoptek Reanimator": {
+        "Canoptek Reanimator": {
+            "model_count": "1",
+            "points_value": "110\u2022",
+            "movement": "8\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Cryptothralls": {
+        "Cryptothrall": {
+            "model_count": "2",
+            "points_value": "20\u2022",
+            "movement": "5\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Skorpekh Destroyers": {
+        "Skorpekh Destroyer": {
+            "model_count": "3",
+            "points_value": "40\u2022",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        },
+        "Plasmacyte": {
+            "model_count": "0-1",
+            "points_value": "15\u2022",
+            "movement": "8\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "1",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Canoptek Tomb Stalker": {
+        "Canoptek Tomb Stalker": {
+            "model_count": "1",
+            "points_value": "130",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "9",
+            "attacks": "6",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Canoptek Scarabs": {
+        "Canoptek Scarab Swarm": {
+            "model_count": "3-9",
+            "points_value": "15",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "3",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Canoptek Wraiths": {
+        "Canoptek Wraith": {
+            "model_count": "3-6",
+            "points_value": "45",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Destroyers": {
+        "Destroyer": {
+            "model_count": "1-6",
+            "points_value": "55",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        },
+        "Heavy Destroyer": {
+            "model_count": "0-1",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Tomb Blades": {
+        "Tomb Blades": {
+            "model_count": "3-9",
+            "points_value": "17",
+            "movement": "14\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "2",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Canoptek Scarab Swarms": {
+        "Scarab Swarm": {
+            "model_count": "3-6",
+            "points_value": "15",
+            "movement": "10\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "-",
+            "strength": "3",
+            "toughness": "3",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "6+"
+        }
+    },
+    "Canoptek Acanthrites": {
+        "Canoptek Acanthrite": {
+            "model_count": "3-9",
+            "points_value": "55",
+            "movement": "12\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Canoptek Tomb Sentinel": {
+        "Canoptek Tomb Sentinel": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "9",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Doom Scythe": {
+        "Doom Scythe": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Night Scythe": {
+        "Night Scythe": {
+            "model_count": "1",
+            "points_value": "135",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Night Shroud": {
+        "Night Shroud": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Annihilation Barge": {
+        "Annihilation Barge": {
+            "model_count": "1",
+            "points_value": "115",
+            "movement": "12\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "6",
+            "wounds": "8",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Canoptek Spyders": {
+        "Canoptek Spyder": {
+            "model_count": "1-3",
+            "points_value": "50",
+            "movement": "6\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "4",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Doomsday Ark": {
+        "Doomsday Ark": {
+            "model_count": "1",
+            "points_value": "180",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "14",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Heavy Destroyers": {
+        "Heavy Destroyer": {
+            "model_count": "1-3",
+            "points_value": "40",
+            "movement": "10\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "3",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Monolith": {
+        "Monolith": {
+            "model_count": "1",
+            "points_value": "270",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Transcendent C\u2019tan": {
+        "Transcendent C\u2019tan": {
+            "model_count": "1",
+            "points_value": "195",
+            "movement": "8\"",
+            "weapon_skill": "2+",
+            "ballistic_skill": "2+",
+            "strength": "7",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "4",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Canoptek Doomstalker": {
+        "Canoptek Doomstalker": {
+            "model_count": "1",
+            "points_value": "130\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "4+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "12",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Lokhust Heavy Destroyers": {
+        "Lokhust Heavy Destroyer": {
+            "model_count": "1-3",
+            "points_value": "70\u2022",
+            "movement": "8\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "5",
+            "wounds": "4",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Sentry Pylon": {
+        "Sentry Pylon": {
+            "model_count": "1-3",
+            "points_value": "80",
+            "movement": "3\"",
+            "weapon_skill": "6+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "7",
+            "wounds": "8",
+            "attacks": "1",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Tesseract Ark": {
+        "Tesseract Ark": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "5",
+            "toughness": "7",
+            "wounds": "10",
+            "attacks": "*",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Obelisk": {
+        "Obelisk": {
+            "model_count": "1",
+            "points_value": "390",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Tesseract Vault": {
+        "Tesseract Vault": {
+            "model_count": "1",
+            "points_value": "550",
+            "movement": "*",
+            "weapon_skill": "6+",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "7",
+            "wounds": "28",
+            "attacks": "3",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Gauss Pylon": {
+        "Gauss Pylon": {
+            "model_count": "1",
+            "points_value": "500",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "8",
+            "wounds": "30",
+            "attacks": "0",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Seraptek Heavy Construct": {
+        "Seraptek Heavy Construct": {
+            "model_count": "1",
+            "points_value": "660\u2022",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "28",
+            "attacks": "6",
+            "leadership": "10",
+            "save": "3+"
+        }
+    },
+    "Tomb Citadel": {
+        "Tomb Ziggurat": "error"
+    }
+}

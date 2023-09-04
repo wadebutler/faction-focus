@@ -1,0 +1,257 @@
+{
+    "Knight Desecrator": {
+        "Knight Desecrator": {
+            "model_count": "1",
+            "points_value": "370",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Despoiler": {
+        "Knight Despoiler": {
+            "model_count": "1",
+            "points_value": "310/330",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Rampager": {
+        "Knight Rampager": {
+            "model_count": "1",
+            "points_value": "345",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "5",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Knight Tyrant": {
+        "Knight Tyrant": {
+            "model_count": "1",
+            "points_value": "535",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "28",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "War Dog": {
+        "War Dog": {
+            "model_count": "1-3",
+            "points_value": "150",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Renegade Armiger": {
+        "Renegade Armiger": {
+            "model_count": "1-3",
+            "points_value": "160",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    },
+    "Renegade Knight": {
+        "Renegade Knight": {
+            "model_count": "1",
+            "points_value": "285",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Renegade Knight Dominus": {
+        "Renegade Knight Dominus": {
+            "model_count": "1",
+            "points_value": "500",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "28",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Acastus Knight Asterius": {
+        "Acastus Knight Asterius": {
+            "model_count": "1",
+            "points_value": "850",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "30",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Acastus Knight Porphyrion": {
+        "Acastus Knight Porphyrion": {
+            "model_count": "1",
+            "points_value": "820",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "30",
+            "attacks": "3",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Acheron": {
+        "Cerastus Knight-Acheron": {
+            "model_count": "1",
+            "points_value": "520",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Atrapos": {
+        "Cerastus Knight-Atrapos": {
+            "model_count": "1",
+            "points_value": "580",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Castigator": {
+        "Cerastus Knight-Castigator": {
+            "model_count": "1",
+            "points_value": "460",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Cerastus Knight-Lancer": {
+        "Cerastus Knight-Lancer": {
+            "model_count": "1",
+            "points_value": "460",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "27",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Questoris Knight Magaera": {
+        "Questoris Knight Magaera": {
+            "model_count": "1",
+            "points_value": "435",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Questoris Knight Styrix": {
+        "Questoris Knight Styrix": {
+            "model_count": "1",
+            "points_value": "420",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "8",
+            "toughness": "8",
+            "wounds": "24",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "War Dog Moirax": {
+        "War Dog Moirax": {
+            "model_count": "1-3",
+            "points_value": "155",
+            "movement": "*",
+            "weapon_skill": "*",
+            "ballistic_skill": "*",
+            "strength": "6",
+            "toughness": "7",
+            "wounds": "12",
+            "attacks": "4",
+            "leadership": "8",
+            "save": "3+"
+        }
+    }
+}

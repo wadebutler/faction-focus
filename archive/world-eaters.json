@@ -1,0 +1,258 @@
+{
+    "Spindle Drones": {
+        "Spindle Drone": {
+            "model_count": "4",
+            "points_value": "65\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "4",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "2",
+            "leadership": "10",
+            "save": "4+"
+        }
+    },
+    "Ambull": {
+        "Ambull": {
+            "model_count": "1",
+            "points_value": "75\u2022",
+            "movement": "6\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "6+",
+            "strength": "6",
+            "toughness": "6",
+            "wounds": "7",
+            "attacks": "4",
+            "leadership": "6",
+            "save": "3+"
+        }
+    },
+    "Borewyrm Infestation": {
+        "Borewyrm Infestation": {
+            "model_count": "1-2",
+            "points_value": "15\u2022",
+            "movement": "4\"",
+            "weapon_skill": "4+",
+            "ballistic_skill": "6+",
+            "strength": "3",
+            "toughness": "4",
+            "wounds": "2",
+            "attacks": "3",
+            "leadership": "5",
+            "save": "4+"
+        }
+    },
+    "The Archivist": {
+        "The Archivist": {
+            "model_count": "1",
+            "points_value": "90\u2022",
+            "movement": "5\"",
+            "weapon_skill": "3+",
+            "ballistic_skill": "3+",
+            "strength": "5",
+            "toughness": "4",
+            "wounds": "6",
+            "attacks": "4",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Aegis Defence Line": {
+        "Gun Emplacement": {
+            "model_count": "1",
+            "points_value": "80",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "7",
+            "wounds": "3",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Firestorm Redoubt": {
+        "Firestorm Redoubt": {
+            "model_count": "1",
+            "points_value": "170",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Fortress of Redemption": {
+        "Fortress of Redemption": {
+            "model_count": "1",
+            "points_value": "440",
+            "movement": "0\"",
+            "weapon_skill": "-",
+            "ballistic_skill": "*",
+            "strength": "-",
+            "toughness": "10",
+            "wounds": "30",
+            "attacks": "0",
+            "leadership": "9",
+            "save": "3+"
+        }
+    },
+    "Imperial Bastion": {
+        "Imperial Bastion": {
+            "model_count": "1",
+            "points_value": "150",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "9",
+            "wounds": "20",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Imperial Bunker": {
+        "Imperial Bunker": {
+            "model_count": "1",
+            "points_value": "110",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "8",
+            "wounds": "12",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Imperial Defence Line": {},
+    "Macro-cannon Aquila Strongpoint": {
+        "Macro-cannon Aquila Strongpoint": {
+            "model_count": "1",
+            "points_value": "440",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "10",
+            "wounds": "30",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Plasma Obliterator": {
+        "Plasma Obliterator": {
+            "model_count": "1",
+            "points_value": "210",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "9",
+            "wounds": "20",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Skyshield Landing Pad": {
+        "Skyshield Landing Pad": {
+            "model_count": "1",
+            "points_value": "120",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "-",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Vengeance Weapon Batteries": {
+        "Vengeance Weapon Battery": {
+            "model_count": "1-2",
+            "points_value": "88",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "8",
+            "wounds": "10",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Void Shield Generator": {
+        "Void Shield Generator": {
+            "model_count": "1",
+            "points_value": "200",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "-",
+            "strength": "-",
+            "toughness": "8",
+            "wounds": "18",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "4+"
+        }
+    },
+    "Vortex Missile Aquila Strongpoint": {
+        "Vortex Missile Aquila Strongpoint": {
+            "model_count": "1",
+            "points_value": "470",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "5+",
+            "strength": "-",
+            "toughness": "10",
+            "wounds": "30",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    },
+    "Imperial Fortress Walls": {
+        "Imperial Fortress Wall": {
+            "model_count": "1",
+            "points_value": "800",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "-",
+            "toughness": "10",
+            "wounds": "40",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "2+"
+        }
+    },
+    "Primaris Redoubt": {
+        "Primaris Redoubt": {
+            "model_count": "1",
+            "points_value": "700",
+            "movement": "-",
+            "weapon_skill": "-",
+            "ballistic_skill": "4+",
+            "strength": "-",
+            "toughness": "8",
+            "wounds": "20",
+            "attacks": "-",
+            "leadership": "-",
+            "save": "3+"
+        }
+    }
+}
