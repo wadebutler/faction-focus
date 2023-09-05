@@ -13,11 +13,16 @@ export default function DetachmentSelect() {
     const [listName, setListName] = useState("");
     const [detachment, setDetachment] = useState(data.detachments[0]);
 
-    const detachmentItem = (item) => {
+    const detachmentItem = (item, index) => {
         return (
             <TouchableOpacity
                 onPress={() => setDetachment(item)}
-                style={styles.select}
+                style={[
+                    styles.select,
+                    index + 1 === data.detachments.length
+                        ? { marginBottom: 80 }
+                        : null,
+                ]}
             >
                 <Text>{item?.name}</Text>
 
@@ -44,11 +49,17 @@ export default function DetachmentSelect() {
 
             <FlatList
                 data={data.detachments}
-                renderItem={({ item }) => detachmentItem(item)}
+                renderItem={({ item, index }) => detachmentItem(item, index)}
                 keyExtractor={(item) => item?.id}
             />
 
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity
+                disabled={listName === "" ? true : false}
+                style={[
+                    styles.button,
+                    listName === "" ? { backgroundColor: "red" } : null,
+                ]}
+            >
                 <Text>Create Army</Text>
             </TouchableOpacity>
         </View>
@@ -84,5 +95,9 @@ const styles = StyleSheet.create({
     },
     select: {
         margin: 10,
+        borderColor: "black",
+        borderWidth: 1,
+        padding: 10,
+        borderRadius: 4,
     },
 });
