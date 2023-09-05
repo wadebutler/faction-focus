@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import ArmyList from "../../Archive/army-list.json";
 
-export default function ArmyListScreen() {
+export default function ArmySelectScreen() {
     const armyListItem = (item) => {
         return (
             <TouchableOpacity style={styles.button}>
@@ -30,7 +30,7 @@ export default function ArmyListScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: 60,
+        paddingTop: "10%",
     },
     button: {
         backgroundColor: "orange",
