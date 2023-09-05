@@ -1,20 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Home from "./src/Screens/home";
+import ArmyList from "./src/Screens/army-list-screen";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>hello</Text>
-
-      <Text>+</Text>
-    </View>
-  );
+    // return <Home />;
+    return <ArmyList />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+// const styles = StyleSheet.create({
+
+// });

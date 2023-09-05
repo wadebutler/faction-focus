@@ -1,7 +1,15 @@
 [
     {
-        "army name": "Death Gaurd",
+        "name": "Death Gaurd",
         "id": 14,
         "army rule": "Nurgle's Gift"
+    },
+    {
+        "name": "World Eaters",
+        "id": 8
+    },
+    {
+        "name": "Thousand Suns",
+        "id": 9
     }
 ]
