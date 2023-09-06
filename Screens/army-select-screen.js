@@ -5,13 +5,27 @@ import {
     View,
     FlatList,
 } from "react-native";
-import ArmyList from "../../Archive/army-list.json";
+import Archive from "../Archive/index.json";
+import { useNavigation } from "@react-navigation/native";
+import { selectedArmyState } from "../Atoms";
+import { useRecoilState } from "recoil";
 
 export default function ArmySelectScreen() {
+    const navigation = useNavigation();
+    const [army, setArmy] = useRecoilState(selectedArmyState);
+
     const armyListItem = (item) => {
+        const handleSelect = () => {
+            setArmy(item);
+            navigation.navigate("DetachmentSelect");
+        };
+
         return (
-            <TouchableOpacity style={styles.button}>
-                <Text style={styles.text}>{item?.name}</Text>
+            <TouchableOpacity
+                onPress={() => handleSelect()}
+                style={styles.button}
+            >
+                <Text style={styles.text}>{item.name}</Text>
             </TouchableOpacity>
         );
     };
@@ -19,7 +33,7 @@ export default function ArmySelectScreen() {
     return (
         <View style={styles.container}>
             <FlatList
-                data={ArmyList}
+                data={Archive}
                 renderItem={({ item }) => armyListItem(item)}
                 keyExtractor={(item) => item?.id}
             />

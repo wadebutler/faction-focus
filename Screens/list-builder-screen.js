@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import data from "../../Archive/Factions/death-guard.json";
+import data from "../Archive/Factions/death-guard.json";
 
 export default function ListBuilderScreen() {
     return <View style={styles.container}></View>;

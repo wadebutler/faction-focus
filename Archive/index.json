@@ -1,8 +1,8 @@
 [
     {
-        "army name": "Death Gaurd",
+        "name": "Death Gaurd",
         "id": 14,
-        "army rule": {
+        "rule": {
             "name": "Nurgle's Gift",
             "effect": "All Death Guard units in your army reduce the toughness of enemy models by 1 within Contagion Range (this effect does not stack).",
             "range": [
@@ -14,6 +14,7 @@
         "detachments": [
             {
                 "name": "Plague Company",
+                "id": 1,
                 "rule": "Spread The Sickness",
                 "effect": "if a Death Guard unit is controlling an objective marker in your Command Phase it inffects the objective marker with the Nurgle's Gift Army Rule, while it is inffected the objective stays under your control even if no models are controlling it. An opponent can cleanse the objective of Nurgle's Gift by controlling it at the start of end on any turn."
             }
