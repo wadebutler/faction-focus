@@ -5,9 +5,9 @@ import ListBuilder from "./src/Screens/list-builder-screen";
 import DetachmentSelect from "./src/Screens/detachment-select-screen";
 
 export default function App() {
-    // return <Home />;
+    return <Home />;
     // return <ArmySelect />;
-    return <DetachmentSelect />;
+    // return <DetachmentSelect />;
     // return <ListBuilder />;
 }
 

@@ -45,12 +45,12 @@ export default function DetachmentSelect() {
 
             <Text>{data?.army_name}</Text>
 
-            <Text>{detachment?.name}</Text>
+            <Text>{detachment.name}</Text>
 
             <FlatList
                 data={data.detachments}
                 renderItem={({ item, index }) => detachmentItem(item, index)}
-                keyExtractor={(item) => item?.id}
+                keyExtractor={(item) => item.id}
             />
 
             <TouchableOpacity
