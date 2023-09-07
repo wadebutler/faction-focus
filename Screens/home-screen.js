@@ -1,7 +1,14 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import ArmyCard from "../Component/Home/ArmyCard";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -19,9 +26,12 @@ export default function Home() {
 
     return (
         <View style={styles.container}>
-            {armyList?.map((item, index) => {
-                return <Text key={index}>{item.name}</Text>;
-            })}
+            <ScrollView contentContainerStyle={styles.scrollContainer}>
+                {armyList?.map((item, index) => {
+                    return <ArmyCard key={index} item={item} />;
+                })}
+            </ScrollView>
+
             <TouchableOpacity
                 onPress={() => navigation.navigate("ArmySelect")}
                 style={styles.button}
@@ -35,16 +45,19 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+    },
+    scrollContainer: {
         alignItems: "center",
-        justifyContent: "center",
+        paddingTop: 80,
+        paddingBottom: 80,
     },
     button: {
         position: "absolute",
-        bottom: 20,
+        bottom: 0,
         backgroundColor: "orange",
-        width: "90%",
-        padding: 10,
+        width: "100%",
+        height: 60,
         alignItems: "center",
-        borderRadius: 4,
+        justifyContent: "center",
     },
 });

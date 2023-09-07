@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Boarding Actions",
+        "value": 500
+    },
+    {
+        "name": "Incursion",
+        "value": 1000
+    },
+    {
+        "name": "Strike Force",
+        "value": 2000
+    },
+    {
+        "name": "Onslaught",
+        "value": 3000
+    }
+]

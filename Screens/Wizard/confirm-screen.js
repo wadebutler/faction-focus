@@ -6,17 +6,19 @@ import {
     FlatList,
     TextInput,
 } from "react-native";
-import { useState } from "react";
-import { selectedArmyState } from "../Atoms";
+import { useEffect, useState } from "react";
+import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export default function DetachmentSelect() {
-    const [army, setArmy] = useRecoilState(selectedArmyState);
+export default function Confirm() {
+    const [army, setArmy] = useRecoilState(armyBuilderState);
     const [listName, setListName] = useState("");
     const [selectedDetachment, setSelectedDetachment] = useState("");
     const navigation = useNavigation();
+
+    useEffect(() => {}, []);
 
     const detachmentItem = (item, index) => {
         return (
@@ -42,16 +44,11 @@ export default function DetachmentSelect() {
         const tempData = await AsyncStorage.getItem("lists");
         const listData = tempData ? JSON.parse(tempData) : null;
         const tempArr = listData ? [...listData] : [];
-        const armyObj = {
-            army: army.name,
-            id: tempArr.length,
-            uid: army.id,
-            name: listName,
-        };
-
-        await tempArr.push(armyObj);
+        let tempObj = { ...army };
+        tempObj.uid = Date.now();
+        tempObj.title = listName;
+        await tempArr.push(tempObj);
         const data = await JSON.stringify(tempArr);
-
         await AsyncStorage.setItem("lists", data);
         navigation.navigate("Home");
     };
@@ -59,6 +56,7 @@ export default function DetachmentSelect() {
     return (
         <View style={styles.container}>
             <TextInput
+                placeholder="Name"
                 style={styles.input}
                 onChangeText={(e) => {
                     setListName(e);
@@ -66,23 +64,20 @@ export default function DetachmentSelect() {
                 value={listName}
             />
 
-            <Text>{army.name}</Text>
+            <Text>{army.army}</Text>
 
-            <Text>{selectedDetachment}</Text>
+            <Text>{army.detachment.name}</Text>
 
-            <FlatList
-                data={army.detachments}
-                renderItem={({ item, index }) => detachmentItem(item, index)}
-                keyExtractor={(item) => item.id}
-            />
+            <View>
+                <Text>{army.points.name}</Text>
+                <Text>{army.points.value} points</Text>
+            </View>
 
             <TouchableOpacity
                 disabled={listName === "" ? true : false}
                 style={[
                     styles.button,
-                    listName === "" || selectedDetachment === ""
-                        ? { backgroundColor: "red" }
-                        : null,
+                    listName === "" ? { backgroundColor: "red" } : null,
                 ]}
                 onPress={() => handleCreateArmy()}
             >
