@@ -16,8 +16,23 @@ export default function Home() {
 
     const fetchData = async () => {
         const data = await AsyncStorage.getItem("lists");
-        const tempArr = JSON.parse(data);
+        const tempArr = await JSON.parse(data);
         setArmyList(tempArr);
+    };
+
+    const handleDelete = async (uid) => {
+        const tempArr = [...armyList];
+        const newArr = [];
+
+        await tempArr.map((list) => {
+            if (list.uid !== uid) {
+                newArr.push(list);
+            }
+        });
+
+        const data = await JSON.stringify(newArr);
+        await AsyncStorage.setItem("lists", data);
+        setArmyList(newArr);
     };
 
     useEffect(() => {
@@ -28,7 +43,13 @@ export default function Home() {
         <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 {armyList?.map((item, index) => {
-                    return <ArmyCard key={index} item={item} />;
+                    return (
+                        <ArmyCard
+                            key={item.uid}
+                            item={item}
+                            handleDelete={handleDelete}
+                        />
+                    );
                 })}
             </ScrollView>
 

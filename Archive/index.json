@@ -19,8 +19,9 @@
                 "effect": "if a Death Guard unit is controlling an objective marker in your Command Phase it inffects the objective marker with the Nurgle's Gift Army Rule, while it is inffected the objective stays under your control even if no models are controlling it. An opponent can cleanse the objective of Nurgle's Gift by controlling it at the start of end on any turn."
             }
         ],
-        "roster": {
-            "HQ": {
+        "roster": [
+            {
+                "id": "HQ",
                 "Daemon Prince of Nurgle": {
                     "model count": 1,
                     "points": 150,
@@ -113,7 +114,8 @@
                     }
                 }
             },
-            "Battleline": {
+            {
+                "id": "Battleline",
                 "Plague Marine": {
                     "model count": [5, 7, 10],
                     "points": [100, 140, 200],
@@ -128,7 +130,8 @@
                     }
                 }
             },
-            "Characters": {
+            {
+                "id": "Characters",
                 "Biologus Putrifier": {
                     "model count": 1,
                     "points": 50,
@@ -208,7 +211,8 @@
                     }
                 }
             },
-            "Infantry": {
+            {
+                "id": "Infantry",
                 "Chaos Cultist": {
                     "model count": [10, 20],
                     "points": [55, 110],
@@ -275,7 +279,8 @@
                     }
                 }
             },
-            "Vehicles": {
+            {
+                "id": "Vehicles",
                 "Chaos Rhino": {
                     "model count": 1,
                     "points": 120,
@@ -394,6 +399,6 @@
                     }
                 }
             }
-        }
+        ]
     }
 ]

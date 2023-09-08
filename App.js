@@ -3,10 +3,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { RecoilRoot } from "recoil";
 import Home from "./Screens/home-screen";
 import ArmySelect from "./Screens/Wizard/army-select-screen";
-import ListBuilder from "./Screens/list-builder-screen";
+import ListBuilder from "./Screens/ListBuilder/list-builder-screen";
 import DetachmentSelect from "./Screens/Wizard/detachment-select-screen";
 import PointSelect from "./Screens/Wizard/point-select-screen";
 import Confirm from "./Screens/Wizard/confirm-screen";
+import UnitSelect from "./Screens/ListBuilder/unit-select-screen";
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,11 @@ export default function App() {
                     <Stack.Screen
                         name="ListBuilder"
                         component={ListBuilder}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="UnitSelect"
+                        component={UnitSelect}
                         options={{ headerShown: false }}
                     />
                 </Stack.Navigator>
