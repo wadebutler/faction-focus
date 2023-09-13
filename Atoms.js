@@ -14,3 +14,8 @@ export const rosterArmyState = atom({
     key: "rosterArmyState",
     default: null,
 });
+
+export const unitSelectListState = atom({
+    key: "unitSelectListState",
+    default: null,
+});

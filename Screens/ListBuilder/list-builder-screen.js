@@ -12,10 +12,8 @@ export default function ListBuilder() {
         <View style={styles.container}>
             <Text style={styles.title}>{list.title}</Text>
 
-            <Bar title={"Rules"} />
-
             {roster.roster.map((item) => {
-                return <Bar title={item.id} key={item.id} />;
+                return <Bar title={item.id} key={item.id} item={item} />;
             })}
         </View>
     );

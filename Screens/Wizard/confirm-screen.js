@@ -18,28 +18,6 @@ export default function Confirm() {
     const [selectedDetachment, setSelectedDetachment] = useState("");
     const navigation = useNavigation();
 
-    useEffect(() => {}, []);
-
-    const detachmentItem = (item, index) => {
-        return (
-            <TouchableOpacity
-                onPress={() => setSelectedDetachment(item.name)}
-                style={[
-                    styles.select,
-                    index + 1 === army.detachments.length
-                        ? { marginBottom: 80 }
-                        : null,
-                ]}
-            >
-                <Text>{item?.name}</Text>
-
-                <Text>Rule: {item.rule}</Text>
-
-                <Text>Effect: {item.effect}</Text>
-            </TouchableOpacity>
-        );
-    };
-
     const handleCreateArmy = async () => {
         const tempData = await AsyncStorage.getItem("lists");
         const listData = tempData ? JSON.parse(tempData) : null;
@@ -47,6 +25,13 @@ export default function Confirm() {
         let tempObj = { ...army };
         tempObj.uid = Date.now();
         tempObj.title = listName;
+        tempObj.roster = {
+            HQ: [],
+            Battleline: [],
+            Characters: [],
+            Infantry: [],
+            Vehicles: [],
+        };
         await tempArr.push(tempObj);
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);

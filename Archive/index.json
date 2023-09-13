@@ -118,7 +118,7 @@
                 "id": "Battleline",
                 "Plague Marine": {
                     "model count": [5, 7, 10],
-                    "points": [100, 140, 200],
+                    "points": 100,
                     "data": {
                         "movement": 5,
                         "toughness": 5,
@@ -215,7 +215,7 @@
                 "id": "Infantry",
                 "Chaos Cultist": {
                     "model count": [10, 20],
-                    "points": [55, 110],
+                    "points": 55,
                     "data": {
                         "movement": 6,
                         "toughness": 3,
@@ -228,7 +228,7 @@
                 },
                 "Poxwalker": {
                     "model count": [10, 20],
-                    "points": [55, 110],
+                    "points": 55,
                     "data": {
                         "movement": 4,
                         "toughness": 4,
@@ -241,7 +241,7 @@
                 },
                 "Blightlord Terminator": {
                     "model count": [5, 10],
-                    "points": [175, 350],
+                    "points": 175,
                     "data": {
                         "movement": 4,
                         "toughness": 6,
@@ -254,7 +254,7 @@
                 },
                 "Deathshroud Terminator": {
                     "model count": [3, 6],
-                    "points": [140, 280],
+                    "points": 140,
                     "data": {
                         "movement": 4,
                         "toughness": 6,

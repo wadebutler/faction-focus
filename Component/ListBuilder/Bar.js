@@ -1,20 +1,25 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import { unitSelectListState } from "../../Atoms";
+import { useRecoilState } from "recoil";
 
-export default function Bar({ title }) {
+export default function Bar({ title, item }) {
     const navigation = useNavigation();
+    const [unitList, setUnitList] = useRecoilState(unitSelectListState);
+
+    const handleNavigation = () => {
+        setUnitList(item);
+        navigation.navigate("UnitSelect");
+    };
 
     return (
-        <View style={styles.bar}>
+        <TouchableOpacity onPress={() => handleNavigation()} style={styles.bar}>
             <Text>{title}</Text>
 
-            <TouchableOpacity
-                onPress={() => navigation.navigate("UnitSelect")}
-                style={styles.button}
-            >
+            <View style={styles.button}>
                 <Text>+</Text>
-            </TouchableOpacity>
-        </View>
+            </View>
+        </TouchableOpacity>
     );
 }
 
