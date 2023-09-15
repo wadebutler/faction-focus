@@ -2,11 +2,28 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
+import { orgIdState } from "../../Atoms";
 
 export default function UnitCard({ item, key }) {
     const [list, setList] = useRecoilState(listArmyState);
+    const [orgId, setOrgId] = useRecoilState(orgIdState);
 
-    const handleAdd = async (unit) => {
+    const handleAdd = (unit) => {
+        let tempObj = {
+            army: list.army,
+            detachment: list.detachment,
+            id: list.id,
+            points: list.points,
+            roster: [...list.roster],
+            title: list.title,
+            uid: list.uid,
+        };
+        tempObj.roster.push(unit);
+        console.log(tempObj);
+        setList(tempObj);
+
+        // tempList.roster = tempArr;
+        // setList(tempArr);
         // let tempUnit = {
         //     name: unit[0],
         //     data: unit[1].data,
