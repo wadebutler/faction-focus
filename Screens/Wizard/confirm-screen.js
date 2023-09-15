@@ -25,13 +25,7 @@ export default function Confirm() {
         let tempObj = { ...army };
         tempObj.uid = Date.now();
         tempObj.title = listName;
-        tempObj.roster = {
-            HQ: [],
-            Battleline: [],
-            Characters: [],
-            Infantry: [],
-            Vehicles: [],
-        };
+        tempObj.roster = [];
         await tempArr.push(tempObj);
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);

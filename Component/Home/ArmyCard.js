@@ -3,22 +3,13 @@ import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
-import { rosterArmyState } from "../../Atoms";
-import data from "../../Archive/index.json";
 
 export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();
     const [confirm, setConfirm] = useState(false);
     const [list, setList] = useRecoilState(listArmyState);
-    const [roster, setRoster] = useRecoilState(rosterArmyState);
 
     const handleSelect = (item) => {
-        data.map((armyData) => {
-            if (armyData.id === item.id) {
-                setRoster(armyData);
-            }
-        });
-
         setList(item);
         navigation.navigate("ListBuilder");
     };

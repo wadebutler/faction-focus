@@ -1,14 +1,14 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { unitSelectListState } from "../../Atoms";
 import { useRecoilState } from "recoil";
+import { orgIdState } from "../../Atoms";
 
-export default function Bar({ title, item }) {
+export default function Bar({ title }) {
     const navigation = useNavigation();
-    const [unitList, setUnitList] = useRecoilState(unitSelectListState);
+    const [orgId, setOrgId] = useRecoilState(orgIdState);
 
     const handleNavigation = () => {
-        setUnitList(item);
+        setOrgId(title);
         navigation.navigate("UnitSelect");
     };
 

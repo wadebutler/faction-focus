@@ -21,382 +21,423 @@
         ],
         "roster": [
             {
-                "id": "HQ",
-                "Daemon Prince of Nurgle": {
-                    "model count": 1,
-                    "points": 150,
-                    "data": {
-                        "movement": 7,
-                        "toughness": 11,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 10,
-                        "leadership": 6,
-                        "objective control": 3
-                    }
-                },
-                "Typhus": {
-                    "model count": 1,
-                    "points": 115,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 6,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 6,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Lord of Virulence": {
-                    "model count": 1,
-                    "points": 100,
-                    "data": {
-                        "movement": 4,
-                        "toughness": 6,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 6,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Lord of Contagion": {
-                    "model count": 1,
-                    "points": 100,
-                    "data": {
-                        "movement": 4,
-                        "toughness": 6,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 6,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Sorcerer in Terminator Armour": {
-                    "model count": 1,
-                    "points": 80,
-                    "data": {
-                        "movement": 4,
-                        "toughness": 6,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 5,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Malignant Plaguecaster": {
-                    "model count": 1,
-                    "points": 100,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Mortarion": {
-                    "model count": 1,
-                    "points": 380,
-                    "data": {
-                        "movement": 10,
-                        "toughness": 12,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 16,
-                        "leadership": 5,
-                        "objective control": 6
-                    }
+                "name": "Daemon Prince of Nurgle",
+                "org": "HQ",
+                "model count": 1,
+                "points": 150,
+                "data": {
+                    "movement": 7,
+                    "toughness": 11,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "objective control": 3
                 }
             },
             {
-                "id": "Battleline",
-                "Plague Marine": {
-                    "model count": [5, 7, 10],
-                    "points": 100,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 2,
-                        "leadership": 6,
-                        "objective control": 2
-                    }
+                "name": "Typhus",
+                "org": "HQ",
+                "model count": 1,
+                "points": 115,
+                "data": {
+                    "movement": 5,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 6,
+                    "leadership": 6,
+                    "objective control": 1
                 }
             },
             {
-                "id": "Characters",
-                "Biologus Putrifier": {
-                    "model count": 1,
-                    "points": 50,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 5,
-                        "objective control": 1
-                    }
-                },
-                "Foul Blightspawn": {
-                    "model count": 1,
-                    "points": 50,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 5,
-                        "objective control": 1
-                    }
-                },
-                "Noxious Blightbringer": {
-                    "model count": 1,
-                    "points": 50,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 5,
-                        "objective control": 1
-                    }
-                },
-                "Plague Surgeon": {
-                    "model count": 1,
-                    "points": 50,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 5,
-                        "objective control": 1
-                    }
-                },
-                "Tallyman": {
-                    "model count": 1,
-                    "points": 50,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 5,
-                        "objective control": 1
-                    }
-                },
-                "Death Guard Icon Bearer": {
-                    "model count": 1,
-                    "points": 50,
-                    "data": {
-                        "movement": 5,
-                        "toughness": 5,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 5,
-                        "objective control": 1
-                    }
+                "name": "Lord of Virulence",
+                "org": "HQ",
+                "model count": 1,
+                "points": 100,
+                "data": {
+                    "movement": 4,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 6,
+                    "leadership": 6,
+                    "objective control": 1
                 }
             },
             {
-                "id": "Infantry",
-                "Chaos Cultist": {
-                    "model count": [10, 20],
-                    "points": 55,
-                    "data": {
-                        "movement": 6,
-                        "toughness": 3,
-                        "save": 6,
-                        "invulnerable save": null,
-                        "wounds": 1,
-                        "leadership": 7,
-                        "objective control": 1
-                    }
-                },
-                "Poxwalker": {
-                    "model count": [10, 20],
-                    "points": 55,
-                    "data": {
-                        "movement": 4,
-                        "toughness": 4,
-                        "save": 7,
-                        "invulnerable save": null,
-                        "wounds": 1,
-                        "leadership": 8,
-                        "objective control": 1
-                    }
-                },
-                "Blightlord Terminator": {
-                    "model count": [5, 10],
-                    "points": 175,
-                    "data": {
-                        "movement": 4,
-                        "toughness": 6,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 3,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Deathshroud Terminator": {
-                    "model count": [3, 6],
-                    "points": 140,
-                    "data": {
-                        "movement": 4,
-                        "toughness": 6,
-                        "save": 2,
-                        "invulnerable save": 4,
-                        "wounds": 3,
-                        "leadership": 6,
-                        "objective control": 1
-                    }
-                },
-                "Chaos Spawn": {
-                    "model count": 2,
-                    "points": 75,
-                    "data": {
-                        "movement": 8,
-                        "toughness": 5,
-                        "save": 4,
-                        "invulnerable save": null,
-                        "wounds": 4,
-                        "leadership": 7,
-                        "objective control": 1
-                    }
+                "name": "Lord of Contagion",
+                "org": "HQ",
+                "model count": 1,
+                "points": 100,
+                "data": {
+                    "movement": 4,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 6,
+                    "leadership": 6,
+                    "objective control": 1
                 }
             },
             {
-                "id": "Vehicles",
-                "Chaos Rhino": {
-                    "model count": 1,
-                    "points": 120,
-                    "data": {
-                        "movement": 6,
-                        "toughness": 9,
-                        "save": 2,
-                        "invulnerable save": null,
-                        "wounds": 8,
-                        "leadership": 6,
-                        "objective control": 3
-                    }
-                },
-                "Helbrute": {
-                    "model count": 1,
-                    "points": 120,
-                    "data": {
-                        "movement": 6,
-                        "toughness": 9,
-                        "save": 2,
-                        "invulnerable save": null,
-                        "wounds": 8,
-                        "leadership": 6,
-                        "objective control": 3
-                    }
-                },
-                "Foetid Bloat-drone": {
-                    "model count": 1,
-                    "points": 115,
-                    "data": {
-                        "movement": 10,
-                        "toughness": 9,
-                        "save": 3,
-                        "invulnerable save": 5,
-                        "wounds": 10,
-                        "leadership": 6,
-                        "objective control": 3
-                    }
-                },
-                "Myphitic Blight-Haulers": {
-                    "model count": [1, 3],
-                    "points": [50, 150],
-                    "data": {
-                        "movement": 10,
-                        "toughness": 9,
-                        "save": 3,
-                        "invulnerable save": 5,
-                        "wounds": 10,
-                        "leadership": 6,
-                        "objective control": 3
-                    }
-                },
-                "Plagueburst Crawler": {
-                    "model count": 1,
-                    "points": 140,
-                    "data": {
-                        "movement": 10,
-                        "toughness": 10,
-                        "save": 2,
-                        "invulnerable save": 5,
-                        "wounds": 12,
-                        "leadership": 6,
-                        "objective control": 4
-                    }
-                },
-                "Chaos Land Raider": {
-                    "model count": 1,
-                    "points": 200,
-                    "data": {
-                        "movement": 10,
-                        "toughness": 12,
-                        "save": 2,
-                        "invulnerable save": null,
-                        "wounds": 16,
-                        "leadership": 6,
-                        "objective control": 5
-                    }
-                },
-                "Chaos Predator Annihilator": {
-                    "model count": 1,
-                    "points": 150,
-                    "data": {
-                        "movement": 10,
-                        "toughness": 10,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 11,
-                        "leadership": 6,
-                        "objective control": 4
-                    }
-                },
-                "Chaos Predator Destructor": {
-                    "model count": 1,
-                    "points": 150,
-                    "data": {
-                        "movement": 10,
-                        "toughness": 10,
-                        "save": 3,
-                        "invulnerable save": null,
-                        "wounds": 11,
-                        "leadership": 6,
-                        "objective control": 4
-                    }
-                },
-                "Defiler": {
-                    "model count": 1,
-                    "points": 150,
-                    "data": {
-                        "movement": 8,
-                        "toughness": 10,
-                        "save": 3,
-                        "invulnerable save": 5,
-                        "wounds": 14,
-                        "leadership": 6,
-                        "objective control": 5
-                    }
+                "name": "Sorcerer in Terminator Armour",
+                "org": "HQ",
+                "model count": 1,
+                "points": 80,
+                "data": {
+                    "movement": 4,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Malignant Plaguecaster",
+                "org": "HQ",
+                "model count": 1,
+                "points": 100,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 6,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Mortarion",
+                "org": "HQ",
+                "model count": 1,
+                "points": 380,
+                "data": {
+                    "movement": 10,
+                    "toughness": 12,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 16,
+                    "leadership": 5,
+                    "objective control": 6
+                }
+            },
+            {
+                "name": "Plague Marine",
+                "org": "Battleline",
+                "model count": [5, 7, 10],
+                "points": 100,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 2,
+                    "leadership": 6,
+                    "objective control": 2
+                }
+            },
+            {
+                "name": "Biologus Putrifier",
+                "org": "Character",
+                "model count": 1,
+                "points": 50,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 5,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Foul Blightspawn",
+                "org": "Character",
+                "model count": 1,
+                "points": 50,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 5,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Noxious Blightbringer",
+                "org": "Character",
+                "model count": 1,
+                "points": 50,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 5,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Plague Surgeon",
+                "org": "Character",
+                "model count": 1,
+                "points": 50,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 5,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Tallyman",
+                "org": "Character",
+                "model count": 1,
+                "points": 50,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 5,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Death Guard Icon Bearer",
+                "org": "Character",
+                "model count": 1,
+                "points": 50,
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 5,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Chaos Cultist",
+                "org": "Infantry",
+                "model count": [10, 20],
+                "points": 55,
+                "data": {
+                    "movement": 6,
+                    "toughness": 3,
+                    "save": 6,
+                    "invulnerable save": null,
+                    "wounds": 1,
+                    "leadership": 7,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Poxwalker",
+                "org": "Infantry",
+                "model count": [10, 20],
+                "points": 55,
+                "data": {
+                    "movement": 4,
+                    "toughness": 4,
+                    "save": 7,
+                    "invulnerable save": null,
+                    "wounds": 1,
+                    "leadership": 8,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Blightlord Terminator",
+                "org": "Infantry",
+                "model count": [5, 10],
+                "points": 175,
+                "data": {
+                    "movement": 4,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 3,
+                    "leadership": 6,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Deathshroud Terminator",
+                "org": "Infantry",
+                "model count": [3, 6],
+                "points": 140,
+                "data": {
+                    "movement": 4,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable save": 4,
+                    "wounds": 3,
+                    "leadership": 6,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Chaos Spawn",
+                "org": "Infantry",
+                "model count": 2,
+                "points": 75,
+                "data": {
+                    "movement": 8,
+                    "toughness": 5,
+                    "save": 4,
+                    "invulnerable save": null,
+                    "wounds": 4,
+                    "leadership": 7,
+                    "objective control": 1
+                }
+            },
+            {
+                "name": "Chaos Rhino",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 120,
+                "data": {
+                    "movement": 6,
+                    "toughness": 9,
+                    "save": 2,
+                    "invulnerable save": null,
+                    "wounds": 8,
+                    "leadership": 6,
+                    "objective control": 3
+                }
+            },
+            {
+                "name": "Helbrute",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 120,
+                "data": {
+                    "movement": 6,
+                    "toughness": 9,
+                    "save": 2,
+                    "invulnerable save": null,
+                    "wounds": 8,
+                    "leadership": 6,
+                    "objective control": 3
+                }
+            },
+            {
+                "name": "Foetid Bloat-drone",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 115,
+                "data": {
+                    "movement": 10,
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable save": 5,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "objective control": 3
+                }
+            },
+            {
+                "name": "Myphitic Blight-Haulers",
+                "org": "Vehicle",
+                "model count": [1, 3],
+                "points": [50, 150],
+                "data": {
+                    "movement": 10,
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable save": 5,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "objective control": 3
+                }
+            },
+            {
+                "name": "Plagueburst Crawler",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 140,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 2,
+                    "invulnerable save": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "objective control": 4
+                }
+            },
+            {
+                "name": "Chaos Land Raider",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 200,
+                "data": {
+                    "movement": 10,
+                    "toughness": 12,
+                    "save": 2,
+                    "invulnerable save": null,
+                    "wounds": 16,
+                    "leadership": 6,
+                    "objective control": 5
+                }
+            },
+            {
+                "name": "Chaos Predator Annihilator",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 150,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "objective control": 4
+                }
+            },
+            {
+                "name": "Chaos Predator Destructor",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 150,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable save": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "objective control": 4
+                }
+            },
+            {
+                "name": "Defiler",
+                "org": "Vehicle",
+                "model count": 1,
+                "points": 150,
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable save": 5,
+                    "wounds": 14,
+                    "leadership": 6,
+                    "objective control": 5
                 }
             }
         ]

@@ -1,21 +1,32 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { unitSelectListState } from "../../Atoms";
 import { useRecoilState } from "recoil";
+import { orgIdState } from "../../Atoms";
+import { listArmyState } from "../../Atoms";
 import UnitCard from "../../Component/ListBuilder/UnitCard";
+import data from "../../Archive/index.json";
+import { useEffect, useState } from "react";
 
 export default function UnitSelect() {
     const navigation = useNavigation();
-    const [unitList, setUnitList] = useRecoilState(unitSelectListState);
+    const [orgId, setOrgId] = useRecoilState(orgIdState);
+    const [list, setList] = useRecoilState(listArmyState);
+    const [units, setUnits] = useState(null);
+
+    useEffect(() => {
+        data.map((item) => {
+            if (item.id === list.id) {
+                setUnits(item.roster);
+            }
+        });
+    }, []);
 
     return (
         <View style={styles.container}>
-            {Object.entries(unitList).map((item) => {
-                // if (item[0] !== "id") {
-                //     console.log(item);
-
-                // }
-                return <UnitCard item={item} key={item.name} />;
+            {units?.map((item) => {
+                if (item.org === orgId) {
+                    return <UnitCard item={item} />;
+                }
             })}
         </View>
     );

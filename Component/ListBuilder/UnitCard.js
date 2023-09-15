@@ -1,20 +1,30 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useRecoilState } from "recoil";
+import { listArmyState } from "../../Atoms";
 
-export default function UnitCard({ item }) {
-    console.log(item);
+export default function UnitCard({ item, key }) {
+    const [list, setList] = useRecoilState(listArmyState);
 
-    const handleAdd = () => {
-        // get roster
-        // add unit to roster based on ID
-        // set roster to localstorage
+    const handleAdd = async (unit) => {
+        // let tempUnit = {
+        //     name: unit[0],
+        //     data: unit[1].data,
+        //     model_count: unit[1]["model count"],
+        //     points: unit[1].points,
+        // };
+        // const tempData = await AsyncStorage.getItem("lists");
+        // const listData = tempData ? JSON.parse(tempData) : null;
+        // const tempArr = listData ? [...listData] : [];
+        // unitList["id"]
+        // console.log(tempArr);
     };
 
-    if (item[0] === "id") return null;
     return (
-        <TouchableOpacity onPress={() => handleAdd()} style={styles.button}>
-            <Text>{item[0]}</Text>
+        <TouchableOpacity onPress={() => handleAdd(item)} style={styles.button}>
+            <Text>{item.name}</Text>
             <View style={{ flexDirection: "row" }}>
-                <Text style={{ marginRight: 10 }}>{item[1]["points"]}</Text>
+                <Text style={{ marginRight: 10 }}>{item.points}</Text>
                 <Text>+</Text>
             </View>
         </TouchableOpacity>
