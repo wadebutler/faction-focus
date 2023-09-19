@@ -8,27 +8,19 @@ import { useEffect, useState } from "react";
 export default function UnitList({ org, unit, id }) {
     const [list, setList] = useRecoilState(listArmyState);
 
-    // const handleDelete = (unit) => {
-    //     let tempObj = {
-    //         army: list.army,
-    //         detachment: list.detachment,
-    //         id: list.id,
-    //         points: list.points,
-    //         roster: [...list.roster],
-    //         title: list.title,
-    //         uid: list.uid,
-    //     };
-    // };
-
     return (
-        <TouchableOpacity style={styles.container} key={id}>
-            <View>
+        <View key={id}>
+            <View style={styles.titleContainer}>
                 <Text style={{ maxWidth: 200 }}>{unit?.name}</Text>
 
                 <Text>{unit?.points} points</Text>
             </View>
 
             <View style={styles.buttonContainer}>
+                <TouchableOpacity style={styles.button}>
+                    <Text>View</Text>
+                </TouchableOpacity>
+
                 <TouchableOpacity style={styles.button}>
                     <Text>Edit</Text>
                 </TouchableOpacity>
@@ -41,26 +33,24 @@ export default function UnitList({ org, unit, id }) {
                     <Text>Del</Text>
                 </TouchableOpacity>
             </View>
-        </TouchableOpacity>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
+    titleContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
-        alignItems: "center",
         padding: 10,
+        paddingTop: 20,
     },
     buttonContainer: {
         flexDirection: "row",
     },
     button: {
         borderWidth: 1,
-        borderRadius: 4,
-        width: 50,
-        height: 50,
-        marginLeft: 15,
+        width: "25%",
+        height: 40,
         alignItems: "center",
         justifyContent: "center",
     },
