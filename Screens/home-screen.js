@@ -42,10 +42,11 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContainer}>
-                {armyList?.map((item, index) => {
+                {armyList?.map((item) => {
+                    // console.log(item);
                     return (
                         <ArmyCard
-                            key={item.uid}
+                            id={item.uid}
                             item={item}
                             handleDelete={handleDelete}
                         />

@@ -4,11 +4,11 @@ import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { orgIdState } from "../../Atoms";
 
-export default function UnitCard({ item, key }) {
+export default function UnitSelectBar({ item, id }) {
     const [list, setList] = useRecoilState(listArmyState);
     const [orgId, setOrgId] = useRecoilState(orgIdState);
 
-    const handleAdd = (unit) => {
+    const handleAdd = async (unit) => {
         let tempObj = {
             army: list.army,
             detachment: list.detachment,
@@ -19,27 +19,32 @@ export default function UnitCard({ item, key }) {
             uid: list.uid,
         };
         tempObj.roster.push(unit);
-        console.log(tempObj);
-        setList(tempObj);
 
-        // tempList.roster = tempArr;
-        // setList(tempArr);
-        // let tempUnit = {
-        //     name: unit[0],
-        //     data: unit[1].data,
-        //     model_count: unit[1]["model count"],
-        //     points: unit[1].points,
-        // };
-        // const tempData = await AsyncStorage.getItem("lists");
-        // const listData = tempData ? JSON.parse(tempData) : null;
-        // const tempArr = listData ? [...listData] : [];
-        // unitList["id"]
-        // console.log(tempArr);
+        const tempData = await AsyncStorage.getItem("lists");
+        const listData = tempData ? await JSON.parse(tempData) : null;
+        let tempArr = [];
+
+        listData.map((listItem) => {
+            if (listItem.uid !== list.uid) {
+                tempArr.push(listItem);
+            }
+        });
+
+        tempArr.push(tempObj);
+
+        const data = await JSON.stringify(tempArr);
+        await AsyncStorage.setItem("lists", data);
+        setList(tempObj);
     };
 
     return (
-        <TouchableOpacity onPress={() => handleAdd(item)} style={styles.button}>
+        <TouchableOpacity
+            key={id}
+            onPress={() => handleAdd(item)}
+            style={styles.button}
+        >
             <Text>{item.name}</Text>
+
             <View style={{ flexDirection: "row" }}>
                 <Text style={{ marginRight: 10 }}>{item.points}</Text>
                 <Text>+</Text>

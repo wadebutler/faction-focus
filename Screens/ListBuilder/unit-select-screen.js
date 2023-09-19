@@ -3,9 +3,9 @@ import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { orgIdState } from "../../Atoms";
 import { listArmyState } from "../../Atoms";
-import UnitCard from "../../Component/ListBuilder/UnitCard";
 import data from "../../Archive/index.json";
 import { useEffect, useState } from "react";
+import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";
 
 export default function UnitSelect() {
     const navigation = useNavigation();
@@ -23,9 +23,9 @@ export default function UnitSelect() {
 
     return (
         <View style={styles.container}>
-            {units?.map((item) => {
+            {units?.map((item, index) => {
                 if (item.org === orgId) {
-                    return <UnitCard item={item} />;
+                    return <UnitSelectBar item={item} id={index} />;
                 }
             })}
         </View>

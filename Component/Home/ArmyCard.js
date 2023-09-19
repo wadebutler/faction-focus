@@ -4,18 +4,19 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 
-export default function ArmyCard({ item, handleDelete }) {
+export default function ArmyCard({ item, handleDelete, id }) {
     const navigation = useNavigation();
     const [confirm, setConfirm] = useState(false);
     const [list, setList] = useRecoilState(listArmyState);
 
-    const handleSelect = (item) => {
-        setList(item);
+    const handleSelect = (listItem) => {
+        setList(listItem);
         navigation.navigate("ListBuilder");
     };
 
     return (
         <TouchableOpacity
+            key={id}
             style={styles.container}
             onPress={() => handleSelect(item)}
         >
