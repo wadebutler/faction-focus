@@ -46,7 +46,7 @@ export default function UnitList({ org, unit, id }) {
     };
 
     return (
-        <View key={id}>
+        <TouchableOpacity onPress={() => handleNavigate(unit)} key={id}>
             <View style={styles.titleContainer}>
                 <Text style={{ maxWidth: 200 }}>{unit?.name}</Text>
 
@@ -54,20 +54,13 @@ export default function UnitList({ org, unit, id }) {
             </View>
 
             <View style={styles.buttonContainer}>
-                <TouchableOpacity
-                    onPress={() => handleNavigate(unit)}
-                    style={styles.button}
-                >
-                    <Text>View</Text>
-                </TouchableOpacity>
-
                 <TouchableOpacity style={styles.button}>
                     <Text>Edit</Text>
                 </TouchableOpacity>
 
-                {/* <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button}>
                     <Text>Dup</Text>
-                </TouchableOpacity> */}
+                </TouchableOpacity>
 
                 <TouchableOpacity
                     onPress={() => handleDelete()}
@@ -76,7 +69,7 @@ export default function UnitList({ org, unit, id }) {
                     <Text>Del</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </TouchableOpacity>
     );
 }
 
@@ -85,7 +78,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 10,
-        paddingTop: 20,
+        paddingTop: 30,
+        paddingBottom: 30,
     },
     buttonContainer: {
         flexDirection: "row",
