@@ -43,7 +43,6 @@ export default function Home() {
         <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 {armyList?.map((item) => {
-                    // console.log(item);
                     return (
                         <ArmyCard
                             id={item.uid}

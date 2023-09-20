@@ -42,11 +42,7 @@ export default function ListBuilder() {
                 {list?.roster.map((item, index) => {
                     if (item.org === "Infantry") {
                         return (
-                            <UnitList
-                                org={"Infantry"}
-                                armyList={list}
-                                id={index}
-                            />
+                            <UnitList org={"Infantry"} unit={item} id={index} />
                         );
                     }
                 })}

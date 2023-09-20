@@ -2,12 +2,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { RecoilRoot } from "recoil";
 import Home from "./Screens/home-screen";
-import ArmySelect from "./Screens/Wizard/army-select-screen";
-import ListBuilder from "./Screens/ListBuilder/list-builder-screen";
-import DetachmentSelect from "./Screens/Wizard/detachment-select-screen";
-import PointSelect from "./Screens/Wizard/point-select-screen";
-import Confirm from "./Screens/Wizard/confirm-screen";
-import UnitSelect from "./Screens/ListBuilder/unit-select-screen";
+import ArmySelect from "./Screens/Wizard/ArmySelectScreen";
+import ListBuilder from "./Screens/ListBuilder/ListBuilderScreen";
+import DetachmentSelect from "./Screens/Wizard/DetachmentSelectScreen";
+import PointSelect from "./Screens/Wizard/PointSelectScreen";
+import Confirm from "./Screens/Wizard/ConfirmScreen";
+import UnitSelect from "./Screens/ListBuilder/UnitSelectScreen";
+import ViewUnit from "./Screens/ListBuilder/UnitViewScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -51,12 +52,13 @@ export default function App() {
                         component={UnitSelect}
                         options={{ headerShown: false }}
                     />
+                    <Stack.Screen
+                        name="ViewUnit"
+                        component={ViewUnit}
+                        options={{ headerShown: false }}
+                    />
                 </Stack.Navigator>
             </NavigationContainer>
         </RecoilRoot>
     );
 }
-
-// const styles = StyleSheet.create({
-
-// });

@@ -26,10 +26,10 @@
                     "movement": 7,
                     "toughness": 11,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 10,
                     "leadership": 6,
-                    "objective control": 3
+                    "OC": 3
                 }
             },
             "Typhus": {
@@ -39,10 +39,10 @@
                     "movement": 5,
                     "toughness": 6,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 6,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Lord of Virulence": {
@@ -52,10 +52,10 @@
                     "movement": 4,
                     "toughness": 6,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 6,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Lord of Contagion": {
@@ -65,10 +65,10 @@
                     "movement": 4,
                     "toughness": 6,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 6,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Sorcerer in Terminator Armour": {
@@ -78,10 +78,10 @@
                     "movement": 4,
                     "toughness": 6,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 5,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Malignant Plaguecaster": {
@@ -91,10 +91,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Mortarion": {
@@ -104,10 +104,10 @@
                     "movement": 10,
                     "toughness": 12,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 16,
                     "leadership": 5,
-                    "objective control": 6
+                    "OC": 6
                 }
             }
         },
@@ -119,10 +119,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 2,
                     "leadership": 6,
-                    "objective control": 2
+                    "OC": 2
                 }
             }
         },
@@ -134,10 +134,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 5,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Foul Blightspawn": {
@@ -147,10 +147,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 5,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Noxious Blightbringer": {
@@ -160,10 +160,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 5,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Plague Surgeon": {
@@ -173,10 +173,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 5,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Tallyman": {
@@ -186,10 +186,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 5,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Death Guard Icon Bearer": {
@@ -199,10 +199,10 @@
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 5,
-                    "objective control": 1
+                    "OC": 1
                 }
             }
         },
@@ -214,10 +214,10 @@
                     "movement": 6,
                     "toughness": 3,
                     "save": 6,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 1,
                     "leadership": 7,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Poxwalker": {
@@ -227,10 +227,10 @@
                     "movement": 4,
                     "toughness": 4,
                     "save": 7,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 1,
                     "leadership": 8,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Blightlord Terminator": {
@@ -240,10 +240,10 @@
                     "movement": 4,
                     "toughness": 6,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 3,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Deathshroud Terminator": {
@@ -253,10 +253,10 @@
                     "movement": 4,
                     "toughness": 6,
                     "save": 2,
-                    "invulnerable save": 4,
+                    "invulnerable": 4,
                     "wounds": 3,
                     "leadership": 6,
-                    "objective control": 1
+                    "OC": 1
                 }
             },
             "Chaos Spawn": {
@@ -266,10 +266,10 @@
                     "movement": 8,
                     "toughness": 5,
                     "save": 4,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 4,
                     "leadership": 7,
-                    "objective control": 1
+                    "OC": 1
                 }
             }
         },
@@ -281,10 +281,10 @@
                     "movement": 6,
                     "toughness": 9,
                     "save": 2,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 8,
                     "leadership": 6,
-                    "objective control": 3
+                    "OC": 3
                 }
             },
             "Helbrute": {
@@ -294,10 +294,10 @@
                     "movement": 6,
                     "toughness": 9,
                     "save": 2,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 8,
                     "leadership": 6,
-                    "objective control": 3
+                    "OC": 3
                 }
             },
             "Foetid Bloat-drone": {
@@ -307,10 +307,10 @@
                     "movement": 10,
                     "toughness": 9,
                     "save": 3,
-                    "invulnerable save": 5,
+                    "invulnerable": 5,
                     "wounds": 10,
                     "leadership": 6,
-                    "objective control": 3
+                    "OC": 3
                 }
             },
             "Myphitic Blight-Haulers": {
@@ -320,10 +320,10 @@
                     "movement": 10,
                     "toughness": 9,
                     "save": 3,
-                    "invulnerable save": 5,
+                    "invulnerable": 5,
                     "wounds": 10,
                     "leadership": 6,
-                    "objective control": 3
+                    "OC": 3
                 }
             },
             "Plagueburst Crawler": {
@@ -333,10 +333,10 @@
                     "movement": 10,
                     "toughness": 10,
                     "save": 2,
-                    "invulnerable save": 5,
+                    "invulnerable": 5,
                     "wounds": 12,
                     "leadership": 6,
-                    "objective control": 4
+                    "OC": 4
                 }
             },
             "Chaos Land Raider": {
@@ -346,10 +346,10 @@
                     "movement": 10,
                     "toughness": 12,
                     "save": 2,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 16,
                     "leadership": 6,
-                    "objective control": 5
+                    "OC": 5
                 }
             },
             "Chaos Predator Annihilator": {
@@ -359,10 +359,10 @@
                     "movement": 10,
                     "toughness": 10,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 11,
                     "leadership": 6,
-                    "objective control": 4
+                    "OC": 4
                 }
             },
             "Chaos Predator Destructor": {
@@ -372,10 +372,10 @@
                     "movement": 10,
                     "toughness": 10,
                     "save": 3,
-                    "invulnerable save": null,
+                    "invulnerable": null,
                     "wounds": 11,
                     "leadership": 6,
-                    "objective control": 4
+                    "OC": 4
                 }
             },
             "Defiler": {
@@ -385,10 +385,10 @@
                     "movement": 8,
                     "toughness": 10,
                     "save": 3,
-                    "invulnerable save": 5,
+                    "invulnerable": 5,
                     "wounds": 14,
                     "leadership": 6,
-                    "objective control": 5
+                    "OC": 5
                 }
             }
         }

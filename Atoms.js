@@ -14,3 +14,8 @@ export const orgIdState = atom({
     key: "orgIdState",
     default: "",
 });
+
+export const unitViewState = atom({
+    key: "unitViewState",
+    default: "",
+});
