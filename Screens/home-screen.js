@@ -45,7 +45,7 @@ export default function Home() {
                 {armyList?.map((item) => {
                     return (
                         <ArmyCard
-                            id={item.uid}
+                            keyId={item.uid}
                             item={item}
                             handleDelete={handleDelete}
                         />

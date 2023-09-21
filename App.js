@@ -9,6 +9,7 @@ import PointSelect from "./Screens/Wizard/PointSelectScreen";
 import Confirm from "./Screens/Wizard/ConfirmScreen";
 import UnitSelect from "./Screens/ListBuilder/UnitSelectScreen";
 import ViewUnit from "./Screens/ListBuilder/UnitViewScreen";
+import { StatusBar } from "react-native";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ export default function App() {
     return (
         <RecoilRoot>
             <NavigationContainer>
+                <StatusBar backgroundColor={"#000"} />
                 <Stack.Navigator>
                     <Stack.Screen
                         name="Home"

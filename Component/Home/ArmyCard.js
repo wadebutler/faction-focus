@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 
-export default function ArmyCard({ item, handleDelete, id }) {
+export default function ArmyCard({ item, handleDelete, keyId }) {
     const navigation = useNavigation();
     const [confirm, setConfirm] = useState(false);
     const [list, setList] = useRecoilState(listArmyState);
@@ -16,7 +16,7 @@ export default function ArmyCard({ item, handleDelete, id }) {
 
     return (
         <TouchableOpacity
-            key={id}
+            key={keyId}
             style={styles.container}
             onPress={() => handleSelect(item)}
         >

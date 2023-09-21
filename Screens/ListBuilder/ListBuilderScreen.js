@@ -21,7 +21,9 @@ export default function ListBuilder() {
                 <Bar title={"HQ"} />
                 {list?.roster.map((item, index) => {
                     if (item.org === "HQ") {
-                        return <UnitList org={"HQ"} unit={item} id={index} />;
+                        return (
+                            <UnitList org={"HQ"} unit={item} keyId={index} />
+                        );
                     }
                 })}
 
@@ -89,7 +91,6 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 10,
-        paddingRight: 20,
-        paddingLeft: 20,
+        paddingHorizontal: 20,
     },
 });
