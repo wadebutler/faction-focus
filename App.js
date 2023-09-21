@@ -9,7 +9,8 @@ import PointSelect from "./Screens/Wizard/PointSelectScreen";
 import Confirm from "./Screens/Wizard/ConfirmScreen";
 import UnitSelect from "./Screens/ListBuilder/UnitSelectScreen";
 import ViewUnit from "./Screens/ListBuilder/UnitViewScreen";
-import { StatusBar } from "react-native";
+import EditUnit from "./Screens/ListBuilder/UnitEditScreen";
+import { StatusBar, Text } from "react-native";
 
 const Stack = createNativeStackNavigator();
 
@@ -57,6 +58,11 @@ export default function App() {
                     <Stack.Screen
                         name="ViewUnit"
                         component={ViewUnit}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="EditUnit"
+                        component={EditUnit}
                         options={{ headerShown: false }}
                     />
                 </Stack.Navigator>

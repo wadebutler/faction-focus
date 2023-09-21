@@ -70,13 +70,18 @@ export default function UnitList({ org, unit, keyId }) {
         setList(tempObj);
     };
 
-    const handleNavigate = (item) => {
+    const handleView = (item) => {
         setViewUnit(item);
         navigation.navigate("ViewUnit");
     };
 
+    const handleEdit = (item) => {
+        setViewUnit(item);
+        navigation.navigate("EditUnit");
+    };
+
     return (
-        <TouchableOpacity onPress={() => handleNavigate(unit)} key={keyId}>
+        <TouchableOpacity onPress={() => handleView(unit)} key={keyId}>
             <View style={styles.titleContainer}>
                 <Text style={{ maxWidth: 200 }}>{unit?.name}</Text>
 
@@ -84,7 +89,10 @@ export default function UnitList({ org, unit, keyId }) {
             </View>
 
             <View style={styles.buttonContainer}>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity
+                    onPress={() => handleEdit(unit)}
+                    style={styles.button}
+                >
                     <Text>Edit</Text>
                 </TouchableOpacity>
 

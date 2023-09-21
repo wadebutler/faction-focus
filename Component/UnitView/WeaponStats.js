@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function WeaponView({ weapon, type }) {
+export default function WeaponStats({ weapon, type }) {
     return (
         <View style={styles.container}>
             {type === "r" ? <Text style={styles.typeText}>Ranged</Text> : null}
@@ -9,7 +9,7 @@ export default function WeaponView({ weapon, type }) {
                 if (item.active) {
                     return (
                         <View style={styles.wpnContainer}>
-                            <Text style={{ paddingTop: 5 }}>{item.name}</Text>
+                            <Text style={styles.nameText}>{item.name}</Text>
 
                             <View style={styles.statRow}>
                                 <View style={styles.statContainer}>
@@ -76,28 +76,35 @@ const styles = StyleSheet.create({
     container: {
         marginBottom: 20,
     },
+    nameText: {
+        padding: 10,
+        backgroundColor: "#000",
+        color: "#fff",
+    },
     typeText: {
         backgroundColor: "orange",
         padding: 10,
     },
     wpnContainer: {
-        paddingHorizontal: 10,
         paddingBottom: 10,
         borderBottomWidth: 1,
     },
     statRow: {
         flexDirection: "row",
         justifyContent: "space-between",
-        paddingTop: 10,
+        backgroundColor: "#cfcfcf",
+        marginBottom: 5,
     },
     statContainer: {
         alignItems: "center",
+        margin: 10,
     },
     keywordContainer: {
         flexDirection: "row",
         paddingTop: 5,
         alignItems: "center",
         flexWrap: "wrap",
+        paddingHorizontal: 10,
     },
     keyText: {
         fontSize: 12,

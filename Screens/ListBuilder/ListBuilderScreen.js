@@ -34,7 +34,7 @@ export default function ListBuilder() {
                             <UnitList
                                 org={"Battleline"}
                                 unit={item}
-                                id={index}
+                                keyId={index}
                             />
                         );
                     }
@@ -44,7 +44,11 @@ export default function ListBuilder() {
                 {list?.roster.map((item, index) => {
                     if (item.org === "Infantry") {
                         return (
-                            <UnitList org={"Infantry"} unit={item} id={index} />
+                            <UnitList
+                                org={"Infantry"}
+                                unit={item}
+                                keyId={index}
+                            />
                         );
                     }
                 })}
@@ -56,7 +60,7 @@ export default function ListBuilder() {
                             <UnitList
                                 org={"Character"}
                                 unit={item}
-                                id={index}
+                                keyId={index}
                             />
                         );
                     }
@@ -66,7 +70,11 @@ export default function ListBuilder() {
                 {list?.roster.map((item, index) => {
                     if (item.org === "Vehicle") {
                         return (
-                            <UnitList org={"Vehicle"} unit={item} id={index} />
+                            <UnitList
+                                org={"Vehicle"}
+                                unit={item}
+                                keyId={index}
+                            />
                         );
                     }
                 })}
@@ -81,7 +89,7 @@ const styles = StyleSheet.create({
     },
     title: {
         textAlign: "center",
-        marginTop: 40,
+        marginTop: 10,
         paddingBottom: 10,
         fontSize: 20,
         borderBottomWidth: 1,
