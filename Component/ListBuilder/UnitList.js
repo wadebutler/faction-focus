@@ -40,6 +40,36 @@ export default function UnitList({ org, unit, keyId }) {
         setList(tempObj);
     };
 
+    const handleDuplicate = async () => {
+        let tempObj = {
+            army: list.army,
+            detachment: list.detachment,
+            id: list.id,
+            points: list.points,
+            roster: [...list.roster],
+            title: list.title,
+            uid: list.uid,
+        };
+
+        tempObj.roster.push(unit);
+
+        const tempData = await AsyncStorage.getItem("lists");
+        const listData = tempData ? await JSON.parse(tempData) : null;
+        const tempArr = [];
+
+        listData.map((listItem) => {
+            if (listItem.uid !== list.uid) {
+                tempArr.push(listItem);
+            }
+        });
+
+        tempArr.push(tempObj);
+
+        const data = await JSON.stringify(tempArr);
+        await AsyncStorage.setItem("lists", data);
+        setList(tempObj);
+    };
+
     const handleNavigate = (item) => {
         setViewUnit(item);
         navigation.navigate("ViewUnit");
@@ -58,7 +88,10 @@ export default function UnitList({ org, unit, keyId }) {
                     <Text>Edit</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity
+                    onPress={() => handleDuplicate()}
+                    style={styles.button}
+                >
                     <Text>Dup</Text>
                 </TouchableOpacity>
 

@@ -27,7 +27,10 @@ export default function UnitViewUnit() {
             <AbilityView ability={unitView.ability} />
             <WeaponView weapon={unitView.ranged} type={"r"} />
             <WeaponView weapon={unitView.melee} type={"m"} />
-            <KeywordView keywords={unitView.keywords} />
+            <KeywordView
+                keywords={unitView.keywords}
+                factionKey={unitView.factionKey}
+            />
         </ScrollView>
     );
 }

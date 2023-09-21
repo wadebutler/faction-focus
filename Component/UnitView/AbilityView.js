@@ -3,33 +3,43 @@ import { StyleSheet, Text, View } from "react-native";
 export default function AbilityView({ ability }) {
     return (
         <View style={styles.container}>
-            <View style={styles.dataContainer}>
-                <Text>Core: </Text>
-                {ability.core.map((item, index) => {
-                    return (
-                        <Text style={styles.dashText} key={index}>
-                            {item}
-                        </Text>
-                    );
-                })}
-            </View>
+            {!ability.core ? null : (
+                <View style={styles.dataContainer}>
+                    <Text>Core: </Text>
+                    {ability.core.map((item, index) => {
+                        return (
+                            <Text style={styles.dashText} key={index}>
+                                {item}
+                            </Text>
+                        );
+                    })}
+                </View>
+            )}
 
             <View style={styles.dataContainer}>
                 <Text>Faction Ability: </Text>
                 <Text style={styles.dashText}>{ability.faction}</Text>
             </View>
 
-            <View>
-                <Text style={styles.datasheetText}>Datasheet Abilities:</Text>
-                {ability.data.map((item, index) => {
-                    return (
-                        <View style={styles.datasheetContainer} key={index}>
-                            <Text style={styles.abilityName}>{item.name}</Text>
-                            <Text style={styles.effectText}>{item.effect}</Text>
-                        </View>
-                    );
-                })}
-            </View>
+            {!ability.data ? null : (
+                <View>
+                    <Text style={styles.datasheetText}>
+                        Datasheet Abilities:
+                    </Text>
+                    {ability.data.map((item, index) => {
+                        return (
+                            <View style={styles.datasheetContainer} key={index}>
+                                <Text style={styles.abilityName}>
+                                    {item.name}
+                                </Text>
+                                <Text style={styles.effectText}>
+                                    {item.effect}
+                                </Text>
+                            </View>
+                        );
+                    })}
+                </View>
+            )}
         </View>
     );
 }

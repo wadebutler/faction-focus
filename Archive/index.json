@@ -129,7 +129,16 @@
                 "name": "Plague Marine",
                 "org": "Battleline",
                 "model count": [5, 7, 10],
-                "points": 100,
+                "points": 80,
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Chaos",
+                    "Nurgle",
+                    "Grenade",
+                    "Battleline",
+                    "Plague Marines"
+                ],
                 "data": {
                     "movement": 5,
                     "toughness": 5,
@@ -138,6 +147,196 @@
                     "wounds": 2,
                     "leadership": 6,
                     "oc": 2
+                },
+                "ranged": [
+                    {
+                        "name": "Blight Launcher",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal hits"]
+                        }
+                    },
+                    {
+                        "name": "Metlagun",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
+                        }
+                    },
+                    {
+                        "name": "Plague Belcher",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Plague Spewer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Plague Bolt Pistol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague Boltgun",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal hits"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Gun - Standard",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 1"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Gun - Supercharge",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Rapid Fire 1", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Bubonic Weapon",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Lethal hits"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Plague Weapon",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague Knives",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal hits"]
+                        }
+                    }
+                ],
+                "ability": {
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Remorseless",
+                            "effect": "While this unit is in range of an objective marker you control, each time you take a Battle-shock test for this unit, add 1 to that test."
+                        }
+                    ]
                 }
             },
             {
@@ -280,6 +479,7 @@
                 "org": "Infantry",
                 "model count": [3, 6],
                 "points": 125,
+                "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
                     "Chaos",
@@ -302,7 +502,7 @@
                         "range": 12,
                         "active": true,
                         "data": {
-                            "a": "d6",
+                            "a": "D6",
                             "bs": "N/A",
                             "s": 3,
                             "ap": 0,

@@ -6,59 +6,67 @@ export default function WeaponView({ weapon, type }) {
             {type === "r" ? <Text style={styles.typeText}>Ranged</Text> : null}
             {type === "m" ? <Text style={styles.typeText}>Melee</Text> : null}
             {weapon.map((item) => {
-                return (
-                    <View style={styles.wpnContainer}>
-                        <Text style={{ paddingTop: 5 }}>{item.name}</Text>
+                if (item.active) {
+                    return (
+                        <View style={styles.wpnContainer}>
+                            <Text style={{ paddingTop: 5 }}>{item.name}</Text>
 
-                        <View style={styles.statRow}>
-                            <View style={styles.statContainer}>
-                                <Text>Range</Text>
-                                {item.range === "m" ? (
-                                    <Text>Melee</Text>
-                                ) : (
-                                    <Text>{item.range}"</Text>
+                            <View style={styles.statRow}>
+                                <View style={styles.statContainer}>
+                                    <Text>Range</Text>
+                                    {item.range === "m" ? (
+                                        <Text>Melee</Text>
+                                    ) : (
+                                        <Text>{item.range}"</Text>
+                                    )}
+                                </View>
+                                <View style={styles.statContainer}>
+                                    <Text>A</Text>
+                                    <Text>{item.data.a}</Text>
+                                </View>
+                                {!item.data.bs ? null : (
+                                    <View style={styles.statContainer}>
+                                        <Text>BS</Text>
+                                        <Text>{item.data.bs}</Text>
+                                    </View>
                                 )}
-                            </View>
-                            <View style={styles.statContainer}>
-                                <Text>A</Text>
-                                <Text>{item.data.a}</Text>
-                            </View>
-                            {!item.data.bs ? null : (
+                                {!item.data.ws ? null : (
+                                    <View style={styles.statContainer}>
+                                        <Text>WS</Text>
+                                        <Text>{item.data.ws}</Text>
+                                    </View>
+                                )}
                                 <View style={styles.statContainer}>
-                                    <Text>BS</Text>
-                                    <Text>{item.data.bs}</Text>
+                                    <Text>S</Text>
+                                    <Text>{item.data.s}</Text>
                                 </View>
-                            )}
-                            {!item.data.ws ? null : (
                                 <View style={styles.statContainer}>
-                                    <Text>WS</Text>
-                                    <Text>{item.data.ws}</Text>
+                                    <Text>AP</Text>
+                                    <Text>{item.data.ap}</Text>
                                 </View>
-                            )}
-                            <View style={styles.statContainer}>
-                                <Text>S</Text>
-                                <Text>{item.data.s}</Text>
+                                <View style={styles.statContainer}>
+                                    <Text>D</Text>
+                                    <Text>{item.data.d}</Text>
+                                </View>
                             </View>
-                            <View style={styles.statContainer}>
-                                <Text>AP</Text>
-                                <Text>{item.data.ap}</Text>
-                            </View>
-                            <View style={styles.statContainer}>
-                                <Text>D</Text>
-                                <Text>{item.data.d}</Text>
-                            </View>
-                        </View>
 
-                        <View style={styles.keywordContainer}>
-                            <Text style={{ fontSize: 12 }}>Keywords: </Text>
-                            {item.data.keywords.map((word, index) => {
-                                return (
-                                    <Text style={styles.keyText}>{word}</Text>
-                                );
-                            })}
+                            {!item.data.keywords ? null : (
+                                <View style={styles.keywordContainer}>
+                                    <Text style={{ fontSize: 12 }}>
+                                        Keywords:{" "}
+                                    </Text>
+                                    {item.data.keywords.map((word, index) => {
+                                        return (
+                                            <Text style={styles.keyText}>
+                                                {word}
+                                            </Text>
+                                        );
+                                    })}
+                                </View>
+                            )}
                         </View>
-                    </View>
-                );
+                    );
+                }
             })}
         </View>
     );

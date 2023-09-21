@@ -1,16 +1,29 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function KeywordView({ keywords }) {
+export default function KeywordView({ keywords, factionKey }) {
     return (
-        <View style={styles.keywordContainer}>
-            <Text style={{ fontSize: 12 }}>Keywords: </Text>
-            {keywords.map((word, index) => {
-                return (
-                    <Text key={index} style={styles.keyText}>
-                        {word}
-                    </Text>
-                );
-            })}
+        <View>
+            <View style={[styles.keywordContainer, { marginBottom: 5 }]}>
+                <Text style={{ fontSize: 12 }}>Faction Keywords: </Text>
+                {factionKey.map((item, index) => {
+                    return (
+                        <Text style={styles.keyText} key={index}>
+                            {item}
+                        </Text>
+                    );
+                })}
+            </View>
+
+            <View style={[styles.keywordContainer, { marginBottom: 15 }]}>
+                <Text style={{ fontSize: 12 }}>Keywords: </Text>
+                {keywords.map((word, index) => {
+                    return (
+                        <Text key={index} style={styles.keyText}>
+                            {word}
+                        </Text>
+                    );
+                })}
+            </View>
         </View>
     );
 }
@@ -18,12 +31,9 @@ export default function KeywordView({ keywords }) {
 const styles = StyleSheet.create({
     keywordContainer: {
         flexDirection: "row",
-        paddingTop: 5,
-        paddingBottom: 5,
         alignItems: "center",
         flexWrap: "wrap",
         marginHorizontal: 10,
-        marginBottom: 15,
     },
     keyText: {
         fontSize: 12,
