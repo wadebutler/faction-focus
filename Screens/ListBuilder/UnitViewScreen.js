@@ -5,9 +5,12 @@ import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WeaponStats from "../../Component/UnitView/WeaponStats";
 import AbilityView from "../../Component/UnitView/AbilityView";
 import KeywordView from "../../Component/UnitView/KeywordView";
+import { useEffect } from "react";
 
 export default function UnitView() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
+
+    useEffect(() => {}, [unitView]);
 
     return (
         <ScrollView>

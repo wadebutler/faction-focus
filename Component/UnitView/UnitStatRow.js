@@ -1,44 +1,44 @@
 import { StyleSheet, Text, View } from "react-native";
 
 export default function UnitStatRow({ unit }) {
-    const data = unit.data;
+    const data = unit?.data;
 
     return (
         <View style={styles.container}>
-            <Text style={styles.unitNameText}>{unit.name}</Text>
+            <Text style={styles.unitNameText}>{unit?.name}</Text>
 
             <View style={styles.statRow}>
                 <View style={styles.container}>
                     <Text style={styles.text}>M</Text>
-                    <Text style={styles.textStat}>{data.movement}"</Text>
+                    <Text style={styles.textStat}>{data?.movement}"</Text>
                 </View>
                 <View style={styles.container}>
                     <Text style={styles.text}>T</Text>
-                    <Text style={styles.textStat}>{data.toughness}</Text>
+                    <Text style={styles.textStat}>{data?.toughness}</Text>
                 </View>
                 <View style={styles.container}>
                     <Text style={styles.text}>SV</Text>
-                    <Text style={styles.textStat}>{data.save}+</Text>
+                    <Text style={styles.textStat}>{data?.save}+</Text>
                 </View>
-                {!data.invulnerable ? null : (
+                {!data?.invulnerable ? null : (
                     <View style={styles.container}>
                         <Text style={styles.text}>INV</Text>
                         <Text style={styles.textStat}>
-                            {data.invulnerable}+
+                            {data?.invulnerable}+
                         </Text>
                     </View>
                 )}
                 <View style={styles.container}>
                     <Text style={styles.text}>W</Text>
-                    <Text style={styles.textStat}>{data.wounds}</Text>
+                    <Text style={styles.textStat}>{data?.wounds}</Text>
                 </View>
                 <View style={styles.container}>
                     <Text style={styles.text}>LD</Text>
-                    <Text style={styles.textStat}>{data.leadership}+</Text>
+                    <Text style={styles.textStat}>{data?.leadership}+</Text>
                 </View>
                 <View style={styles.container}>
                     <Text style={styles.text}>OC</Text>
-                    <Text style={styles.textStat}>{data.oc}</Text>
+                    <Text style={styles.textStat}>{data?.oc}</Text>
                 </View>
             </View>
         </View>

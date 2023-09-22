@@ -19,3 +19,8 @@ export const unitViewState = atom({
     key: "unitViewState",
     default: "",
 });
+
+export const unitEditState = atom({
+    key: "unitEditState",
+    default: "",
+});

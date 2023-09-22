@@ -5,32 +5,36 @@ import { useRecoilState } from "recoil";
 import { unitViewState } from "../../Atoms";
 import WeaponCheckbox from "./WeaponCheckbox";
 
-export default function WargearSelect({ type }) {
-    const [unitView, setUnitView] = useRecoilState(unitViewState);
-
+export default function WargearSelect({ unit, type }) {
     return (
         <View style={{ marginBottom: 20 }}>
             <Text
-                style={[styles.title, type === "r" ? { marginTop: 20 } : null]}
+                style={[
+                    styles.title,
+                    type === "ranged" ? { marginTop: 20 } : null,
+                ]}
             >
-                {type === "r" ? "Ranged" : "Melee"}
+                {type === "ranged" ? "Ranged" : "Melee"}
             </Text>
-            {type === "r"
-                ? unitView.ranged.map((item, index) => {
+            {type === "ranged"
+                ? unit?.ranged.map((item, index) => {
                       return (
                           <WeaponCheckbox
                               keyId={index}
                               item={item}
-                              disabled={unitView.ranged.length}
+                              type={type}
+                              disabled={unit?.ranged.length}
                           />
                       );
                   })
-                : unitView.melee.map((item, index) => {
+                : unit?.melee.map((item, index) => {
                       return (
                           <WeaponCheckbox
                               keyId={index}
                               item={item}
-                              disabled={unitView.melee.length}
+                              unit={unit}
+                              type={type}
+                              disabled={unit?.melee.length}
                           />
                       );
                   })}

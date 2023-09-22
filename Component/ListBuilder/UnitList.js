@@ -4,11 +4,13 @@ import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { useNavigation } from "@react-navigation/native";
 import { unitViewState } from "../../Atoms";
+import { unitEditState } from "../../Atoms";
 
 export default function UnitList({ org, unit, keyId }) {
     const navigation = useNavigation();
     const [list, setList] = useRecoilState(listArmyState);
     const [unitView, setViewUnit] = useRecoilState(unitViewState);
+    const [unitEdit, setEditUnit] = useRecoilState(unitEditState);
 
     const handleDelete = async () => {
         let tempObj = {
@@ -75,8 +77,9 @@ export default function UnitList({ org, unit, keyId }) {
         navigation.navigate("ViewUnit");
     };
 
-    const handleEdit = (item) => {
-        setViewUnit(item);
+    const handleEdit = (item, id) => {
+        let unit = { unit: item, unitId: id };
+        setEditUnit(unit);
         navigation.navigate("EditUnit");
     };
 
@@ -90,7 +93,7 @@ export default function UnitList({ org, unit, keyId }) {
 
             <View style={styles.buttonContainer}>
                 <TouchableOpacity
-                    onPress={() => handleEdit(unit)}
+                    onPress={() => handleEdit(unit, keyId)}
                     style={styles.button}
                 >
                     <Text>Edit</Text>

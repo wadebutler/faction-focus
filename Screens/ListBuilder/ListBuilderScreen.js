@@ -9,9 +9,12 @@ import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import Bar from "../../Component/ListBuilder/Bar";
 import UnitList from "../../Component/ListBuilder/UnitList";
+import { useEffect } from "react";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
+
+    useEffect(() => {}, [list]);
 
     return (
         <View style={styles.container}>

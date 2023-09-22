@@ -1,12 +1,14 @@
 import { ScrollView, StyleSheet, TouchableOpacity, Text } from "react-native";
 import { useRecoilState } from "recoil";
 import { unitViewState } from "../../Atoms";
+import { unitEditState } from "../../Atoms";
 import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WargearSelect from "../../Component/UnitEdit/WargearSelect";
 import { useNavigation } from "@react-navigation/native";
+import { useEffect } from "react";
 
 export default function UnitEdit() {
-    const [unitView, setUnitView] = useRecoilState(unitViewState);
+    const [unitEdit, setEditView] = useRecoilState(unitEditState);
     const navigation = useNavigation();
 
     return (
@@ -18,9 +20,9 @@ export default function UnitEdit() {
                 <Text>View</Text>
             </TouchableOpacity>
 
-            <UnitStatRow unit={unitView} />
-            <WargearSelect type={"r"} />
-            <WargearSelect type={"m"} />
+            <UnitStatRow unit={unitEdit.unit} />
+            <WargearSelect unit={unitEdit.unit} type={"ranged"} />
+            <WargearSelect unit={unitEdit.unit} type={"melee"} />
         </ScrollView>
     );
 }
