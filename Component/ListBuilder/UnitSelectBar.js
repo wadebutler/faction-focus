@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { orgIdState } from "../../Atoms";
 
-export default function UnitSelectBar({ item, id }) {
+export default function UnitSelectBar({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
     const [orgId, setOrgId] = useRecoilState(orgIdState);
 
@@ -38,11 +38,7 @@ export default function UnitSelectBar({ item, id }) {
     };
 
     return (
-        <TouchableOpacity
-            key={id}
-            onPress={() => handleAdd(item)}
-            style={styles.button}
-        >
+        <TouchableOpacity onPress={() => handleAdd(item)} style={styles.button}>
             <Text>{item.name}</Text>
 
             <View style={{ flexDirection: "row" }}>

@@ -4,6 +4,7 @@ import {
     Text,
     TouchableOpacity,
     View,
+    FlatList,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useEffect, useState } from "react";
@@ -41,17 +42,17 @@ export default function Home() {
 
     return (
         <View style={styles.container}>
-            <ScrollView contentContainerStyle={styles.scrollContainer}>
-                {armyList?.map((item) => {
-                    return (
-                        <ArmyCard
-                            keyId={item.uid}
-                            item={item}
-                            handleDelete={handleDelete}
-                        />
-                    );
-                })}
-            </ScrollView>
+            <FlatList
+                data={armyList}
+                renderItem={({ item }) => (
+                    <ArmyCard
+                        keyId={item.uid}
+                        item={item}
+                        handleDelete={handleDelete}
+                    />
+                )}
+                keyExtractor={(item) => item?.uid}
+            />
 
             <TouchableOpacity
                 onPress={() => navigation.navigate("ArmySelect")}
@@ -66,10 +67,8 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-    },
-    scrollContainer: {
-        alignItems: "center",
-        padding: 20,
+        paddingVertical: 50,
+        paddingHorizontal: 0,
     },
     button: {
         position: "absolute",

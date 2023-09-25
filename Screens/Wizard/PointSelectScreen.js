@@ -23,17 +23,19 @@ export default function PointSelect() {
 
     return (
         <View style={styles.container}>
-            {points.map((item, index) => {
-                return (
+            <FlatList
+                data={points}
+                renderItem={({ item }) => (
                     <TouchableOpacity
-                        key={index}
+                        style={styles.itemContainer}
                         onPress={() => handleSelect(item)}
                     >
-                        <Text>{item.name}</Text>
+                        <Text style={styles.text}>{item.name}</Text>
                         <Text>{item.value}</Text>
                     </TouchableOpacity>
-                );
-            })}
+                )}
+                keyExtractor={(item) => item.uid}
+            />
         </View>
     );
 }
@@ -42,6 +44,18 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
-        justifyContent: "center",
+        paddingTop: 40,
+    },
+    itemContainer: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        backgroundColor: "orange",
+        marginBottom: 40,
+        paddingVertical: 30,
+        paddingHorizontal: 60,
+        borderRadius: 4,
+    },
+    text: {
+        paddingRight: 60,
     },
 });

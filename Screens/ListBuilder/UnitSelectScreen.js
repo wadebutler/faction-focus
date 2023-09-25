@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { orgIdState } from "../../Atoms";
@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";
 
 export default function UnitSelect() {
-    const navigation = useNavigation();
     const [orgId, setOrgId] = useRecoilState(orgIdState);
     const [list, setList] = useRecoilState(listArmyState);
     const [units, setUnits] = useState(null);
@@ -23,11 +22,16 @@ export default function UnitSelect() {
 
     return (
         <View style={styles.container}>
-            {units?.map((item, index) => {
-                if (item.org === orgId) {
-                    return <UnitSelectBar item={item} id={index} />;
-                }
-            })}
+            <FlatList
+                data={units}
+                renderItem={({ item }) => {
+                    console.log(item);
+                    if (item.org === orgId) {
+                        return <UnitSelectBar item={item} />;
+                    }
+                }}
+                keyExtractor={(item) => item.uid}
+            />
         </View>
     );
 }
@@ -35,7 +39,7 @@ export default function UnitSelect() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 40,
+        paddingTop: 10,
         backgroundColor: "#000",
     },
 });

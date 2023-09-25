@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import { unitViewState } from "../../Atoms";
 import { unitEditState } from "../../Atoms";
 
-export default function UnitList({ org, unit, keyId }) {
+export default function UnitList({ unit, id }) {
     const navigation = useNavigation();
     const [list, setList] = useRecoilState(listArmyState);
     const [unitView, setViewUnit] = useRecoilState(unitViewState);
@@ -23,7 +23,7 @@ export default function UnitList({ org, unit, keyId }) {
             uid: list.uid,
         };
 
-        tempObj.roster.splice(keyId, 1);
+        tempObj.roster.splice(id, 1);
 
         const tempData = await AsyncStorage.getItem("lists");
         const listData = tempData ? await JSON.parse(tempData) : null;
@@ -84,7 +84,7 @@ export default function UnitList({ org, unit, keyId }) {
     };
 
     return (
-        <TouchableOpacity onPress={() => handleView(unit)} key={keyId}>
+        <TouchableOpacity onPress={() => handleView(unit)} id={id}>
             <View style={styles.titleContainer}>
                 <Text style={{ maxWidth: 200 }}>{unit?.name}</Text>
 
@@ -93,7 +93,7 @@ export default function UnitList({ org, unit, keyId }) {
 
             <View style={styles.buttonContainer}>
                 <TouchableOpacity
-                    onPress={() => handleEdit(unit, keyId)}
+                    onPress={() => handleEdit(unit, id)}
                     style={styles.button}
                 >
                     <Text>Edit</Text>

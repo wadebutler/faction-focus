@@ -4,7 +4,6 @@ import {
     TouchableOpacity,
     View,
     FlatList,
-    TextInput,
 } from "react-native";
 import { useEffect, useState } from "react";
 import { armyBuilderState } from "../../Atoms";
@@ -34,21 +33,26 @@ export default function DetachmentSelect() {
 
     return (
         <View style={styles.container}>
-            {detachments?.map((item, index) => {
-                return (
+            <FlatList
+                data={detachments}
+                renderItem={({ item }) => (
                     <TouchableOpacity
-                        key={index}
                         onPress={() => handleSelect(item)}
-                        style={styles.select}
+                        style={styles.button}
                     >
-                        <Text>{item.name}</Text>
+                        <Text style={{ paddingTop: 10 }}>{item.name}</Text>
 
-                        <Text>Rule: {item.rule}</Text>
+                        <Text style={{ paddingVertical: 10 }}>
+                            Rule: {item.rule}
+                        </Text>
 
-                        <Text>Effect: {item.effect}</Text>
+                        <Text style={{ paddingBottom: 10 }}>
+                            Effect: {item.effect}
+                        </Text>
                     </TouchableOpacity>
-                );
-            })}
+                )}
+                keyExtractor={(item) => item.uid}
+            />
         </View>
     );
 }
@@ -56,34 +60,11 @@ export default function DetachmentSelect() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center",
-        paddingTop: "10%",
-    },
-    text: {
-        color: "black",
-    },
-    input: {
-        height: 40,
-        margin: 12,
-        borderWidth: 1,
-        padding: 10,
-        width: "70%",
-        textAlign: "center",
     },
     button: {
-        position: "absolute",
-        bottom: 20,
         backgroundColor: "orange",
-        width: "90%",
-        padding: 10,
-        alignItems: "center",
-        borderRadius: 4,
-    },
-    select: {
         margin: 10,
-        borderColor: "black",
-        borderWidth: 1,
-        padding: 10,
+        paddingHorizontal: 10,
         borderRadius: 4,
     },
 });

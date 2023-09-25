@@ -3,10 +3,9 @@ import {
     Text,
     TouchableOpacity,
     View,
-    FlatList,
     TextInput,
 } from "react-native";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
@@ -43,13 +42,15 @@ export default function Confirm() {
                 value={listName}
             />
 
-            <Text>{army.army}</Text>
+            <View style={styles.summaryContainer}>
+                <Text style={styles.text}>{army.army}</Text>
 
-            <Text>{army.detachment.name}</Text>
+                <Text style={styles.text}>{army.detachment.name}</Text>
 
-            <View>
-                <Text>{army.points.name}</Text>
-                <Text>{army.points.value} points</Text>
+                <Text style={styles.text}>{army.points.name}</Text>
+                <Text style={{ paddingBottom: 5 }}>
+                    {army.points.value} points
+                </Text>
             </View>
 
             <TouchableOpacity
@@ -73,16 +74,24 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         paddingTop: "10%",
     },
-    text: {
-        color: "black",
+    summaryContainer: {
+        backgroundColor: "orange",
+        width: "80%",
+        padding: 10,
+        borderBottomRightRadius: 4,
+        borderBottomLeftRadius: 4,
     },
     input: {
-        height: 40,
-        margin: 12,
         borderWidth: 1,
+        borderBottomColor: "orange",
+        borderTopRightRadius: 4,
+        borderTopLeftRadius: 4,
         padding: 10,
-        width: "70%",
+        width: "80%",
         textAlign: "center",
+    },
+    text: {
+        paddingBottom: 10,
     },
     button: {
         position: "absolute",
@@ -91,13 +100,6 @@ const styles = StyleSheet.create({
         width: "90%",
         padding: 10,
         alignItems: "center",
-        borderRadius: 4,
-    },
-    select: {
-        margin: 10,
-        borderColor: "black",
-        borderWidth: 1,
-        padding: 10,
         borderRadius: 4,
     },
 });

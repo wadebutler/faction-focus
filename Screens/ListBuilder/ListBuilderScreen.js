@@ -1,10 +1,4 @@
-import {
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-} from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import Bar from "../../Component/ListBuilder/Bar";
@@ -25,7 +19,12 @@ export default function ListBuilder() {
                 {list?.roster.map((item, index) => {
                     if (item.org === "HQ") {
                         return (
-                            <UnitList org={"HQ"} unit={item} keyId={index} />
+                            <UnitList
+                                org={"HQ"}
+                                unit={item}
+                                key={index}
+                                id={index}
+                            />
                         );
                     }
                 })}
@@ -37,7 +36,8 @@ export default function ListBuilder() {
                             <UnitList
                                 org={"Battleline"}
                                 unit={item}
-                                keyId={index}
+                                key={index}
+                                id={index}
                             />
                         );
                     }
@@ -50,7 +50,8 @@ export default function ListBuilder() {
                             <UnitList
                                 org={"Infantry"}
                                 unit={item}
-                                keyId={index}
+                                key={index}
+                                id={index}
                             />
                         );
                     }
@@ -63,7 +64,8 @@ export default function ListBuilder() {
                             <UnitList
                                 org={"Character"}
                                 unit={item}
-                                keyId={index}
+                                key={index}
+                                id={index}
                             />
                         );
                     }
@@ -76,7 +78,8 @@ export default function ListBuilder() {
                             <UnitList
                                 org={"Vehicle"}
                                 unit={item}
-                                keyId={index}
+                                key={index}
+                                id={index}
                             />
                         );
                     }

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 
-export default function ArmyCard({ item, handleDelete, keyId }) {
+export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();
     const [confirm, setConfirm] = useState(false);
     const [list, setList] = useRecoilState(listArmyState);
@@ -16,7 +16,6 @@ export default function ArmyCard({ item, handleDelete, keyId }) {
 
     return (
         <TouchableOpacity
-            key={keyId}
             style={styles.container}
             onPress={() => handleSelect(item)}
         >
@@ -59,21 +58,21 @@ export default function ArmyCard({ item, handleDelete, keyId }) {
 
 const styles = StyleSheet.create({
     container: {
-        borderColor: "#000",
-        borderWidth: 1,
-        width: "100%",
         paddingVertical: 20,
         borderRadius: 4,
         marginBottom: 20,
         flexDirection: "row",
         justifyContent: "space-around",
         alignItems: "center",
+        marginHorizontal: 20,
+        backgroundColor: "orange",
     },
     trash: {
         backgroundColor: "#000",
         borderRadius: 4,
         padding: 15,
         width: 60,
+        height: 60,
         alignItems: "center",
         justifyContent: "center",
     },
