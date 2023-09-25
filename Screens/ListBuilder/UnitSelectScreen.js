@@ -22,16 +22,11 @@ export default function UnitSelect() {
 
     return (
         <View style={styles.container}>
-            <FlatList
-                data={units}
-                renderItem={({ item }) => {
-                    console.log(item);
-                    if (item.org === orgId) {
-                        return <UnitSelectBar item={item} />;
-                    }
-                }}
-                keyExtractor={(item) => item.uid}
-            />
+            {units?.map((item, index) => {
+                if (item.org === orgId) {
+                    return <UnitSelectBar item={item} key={index} />;
+                }
+            })}
         </View>
     );
 }

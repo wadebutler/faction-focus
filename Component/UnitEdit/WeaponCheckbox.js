@@ -63,7 +63,6 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
 
         let unit = { unit: tempUnit, unitId: tempId };
         setList(tempObj);
-        console.log(tempObj, list);
         setUnitEdit(unit);
         setUnitView(tempUnit);
         setChecked(!checked);

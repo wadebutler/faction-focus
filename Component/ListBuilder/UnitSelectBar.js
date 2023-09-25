@@ -42,8 +42,8 @@ export default function UnitSelectBar({ item }) {
             <Text>{item.name}</Text>
 
             <View style={{ flexDirection: "row" }}>
-                <Text style={{ marginRight: 10 }}>{item.points}</Text>
                 <Text>+</Text>
+                <Text style={{ marginRight: 10 }}> {item.points} points</Text>
             </View>
         </TouchableOpacity>
     );

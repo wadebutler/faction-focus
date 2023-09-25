@@ -12,7 +12,17 @@ export default function ListBuilder() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>{list?.title}</Text>
+            <View style={styles.titleContainer}>
+                <Text style={styles.title}>{list?.title}</Text>
+
+                <View style={styles.pointContainer}>
+                    <Text>
+                        {list.roster.reduce((a, b) => (a = a + b.points), 0)}
+                    </Text>
+                    <Text style={styles.pointSeperator}>/</Text>
+                    <Text>{list.points.value}</Text>
+                </View>
+            </View>
 
             <ScrollView>
                 <Bar title={"HQ"} />
@@ -93,12 +103,25 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    title: {
+    titleContainer: {
         textAlign: "center",
         marginTop: 10,
         paddingBottom: 10,
-        fontSize: 20,
         borderBottomWidth: 1,
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "center",
+    },
+    title: {
+        fontSize: 20,
+    },
+    pointContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    pointSeperator: {
+        paddingHorizontal: 4,
+        fontSize: 20,
     },
     bar: {
         backgroundColor: "orange",
