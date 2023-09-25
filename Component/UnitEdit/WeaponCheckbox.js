@@ -70,7 +70,6 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
 
     return (
         <CheckBox
-            key={keyId}
             title={item.name}
             checked={checked}
             checkedColor="#0F0"

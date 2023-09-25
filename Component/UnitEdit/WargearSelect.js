@@ -1,4 +1,8 @@
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { useState } from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { CheckBox } from "@rneui/themed";
+import { useRecoilState } from "recoil";
+import { unitViewState } from "../../Atoms";
 import WeaponCheckbox from "./WeaponCheckbox";
 
 export default function WargearSelect({ unit, type }) {
@@ -12,33 +16,29 @@ export default function WargearSelect({ unit, type }) {
             >
                 {type === "ranged" ? "Ranged" : "Melee"}
             </Text>
-            {type === "ranged" ? (
-                <FlatList
-                    data={unit?.ranged}
-                    renderItem={({ item, index }) => (
-                        <WeaponCheckbox
-                            keyId={index}
-                            item={item}
-                            type={type}
-                            disabled={unit?.ranged.length}
-                        />
-                    )}
-                    keyExtractor={(item) => item?.uid}
-                />
-            ) : (
-                <FlatList
-                    data={unit?.melee}
-                    renderItem={({ item, index }) => (
-                        <WeaponCheckbox
-                            keyId={index}
-                            item={item}
-                            type={type}
-                            disabled={unit?.ranged.length}
-                        />
-                    )}
-                    keyExtractor={(item) => item?.uid}
-                />
-            )}
+            {type === "ranged"
+                ? unit?.ranged.map((item, index) => {
+                      return (
+                          <WeaponCheckbox
+                              key={index}
+                              keyId={index}
+                              item={item}
+                              type={type}
+                              disabled={unit?.ranged.length}
+                          />
+                      );
+                  })
+                : unit?.melee.map((item, index) => {
+                      return (
+                          <WeaponCheckbox
+                              key={index}
+                              keyId={index}
+                              item={item}
+                              type={type}
+                              disabled={unit?.melee.length}
+                          />
+                      );
+                  })}
         </View>
     );
 }

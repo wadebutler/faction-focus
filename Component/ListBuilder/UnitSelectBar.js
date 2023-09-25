@@ -3,10 +3,12 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { orgIdState } from "../../Atoms";
+import { useEffect, useState } from "react";
 
 export default function UnitSelectBar({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
     const [orgId, setOrgId] = useRecoilState(orgIdState);
+    const [disabled, setDisabled] = useState(true);
 
     const handleAdd = async (unit) => {
         let tempObj = {
@@ -37,8 +39,19 @@ export default function UnitSelectBar({ item }) {
         setList(tempObj);
     };
 
+    useEffect(() => {
+        list.roster.map((unit) => {
+            if (unit.name === item.name) {
+                setDisabled(false);
+            }
+        });
+    }, [list]);
+
     return (
-        <TouchableOpacity onPress={() => handleAdd(item)} style={styles.button}>
+        <TouchableOpacity
+            onPress={() => handleAdd(item)}
+            style={[styles.button, { opacity: disabled ? 0.7 : 1 }]}
+        >
             <Text>{item.name}</Text>
 
             <View style={{ flexDirection: "row" }}>

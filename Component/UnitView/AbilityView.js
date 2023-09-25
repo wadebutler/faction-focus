@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function AbilityView({ ability }) {
     return (
@@ -6,14 +6,13 @@ export default function AbilityView({ ability }) {
             {!ability.core ? null : (
                 <View style={styles.dataContainer}>
                     <Text>Core: </Text>
-
-                    <FlatList
-                        data={ability.core}
-                        renderItem={({ item }) => (
-                            <Text style={styles.dashText}>{item}</Text>
-                        )}
-                        keyExtractor={(index) => index}
-                    />
+                    {ability.core.map((item, index) => {
+                        return (
+                            <Text style={styles.dashText} key={index}>
+                                {item}
+                            </Text>
+                        );
+                    })}
                 </View>
             )}
 
@@ -27,22 +26,18 @@ export default function AbilityView({ ability }) {
                     <Text style={styles.datasheetText}>
                         Datasheet Abilities:
                     </Text>
-
-                    <FlatList
-                        data={ability.data}
-                        renderItem={({ item }) => (
-                            <View style={styles.datasheetContainer}>
+                    {ability.data.map((item, index) => {
+                        return (
+                            <View style={styles.datasheetContainer} key={index}>
                                 <Text style={styles.abilityName}>
                                     {item.name}
                                 </Text>
-
                                 <Text style={styles.effectText}>
                                     {item.effect}
                                 </Text>
                             </View>
-                        )}
-                        keyExtractor={(index) => index}
-                    />
+                        );
+                    })}
                 </View>
             )}
         </View>
