@@ -4,6 +4,7 @@ import { listArmyState } from "../../Atoms";
 import Bar from "../../Component/ListBuilder/Bar";
 import UnitList from "../../Component/ListBuilder/UnitList";
 import { useEffect } from "react";
+import PointCalculator from "../../Component/ListBuilder/PointCalculator";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -15,13 +16,7 @@ export default function ListBuilder() {
             <View style={styles.titleContainer}>
                 <Text style={styles.title}>{list?.title}</Text>
 
-                <View style={styles.pointContainer}>
-                    <Text>
-                        {list.roster.reduce((a, b) => (a = a + b.points), 0)}
-                    </Text>
-                    <Text style={styles.pointSeperator}>/</Text>
-                    <Text>{list.points.value}</Text>
-                </View>
+                <PointCalculator />
             </View>
 
             <ScrollView>

@@ -20,21 +20,25 @@
                 "enhancements": [
                     {
                         "name": "Living Plague",
+                        "active": null,
                         "cost": 20,
-                        "effect": "Death Guard Model Only. Add 3\" to the range of the bearer's Aura Abilities (including Nurgle's Gift)"
+                        "effect": "Death Guard Model Only. Add 3 to the range of the bearer's Aura Abilities (including Nurgle's Gift)"
                     },
                     {
                         "name": "Deadly Pathogen",
+                        "active": null,
                         "cost": 15,
                         "effect": "Death Guard Model Only. Add 1 to the Strength and Attacks characteristics of the bearer’s melee weapons. While the bearer is within range of an Infected objective marker you control, add 2 to the Strength and Attacks characteristics of the bearer’s melee weapons instead."
                     },
                     {
                         "name": "The Droning",
+                        "active": null,
                         "cost": 10,
                         "effect": "Death Guard Model Only. While an enemy unit is within Contagion Range of the bearer, each time that unit fails a Battle-shock test, roll one D6: on a 2-5, that unit suffers 1 mortal wound; on a 6, that unit suffers D3 mortal wounds."
                     },
                     {
                         "name": "Shamblerot",
+                        "active": null,
                         "cost": 25,
                         "effect": "Death Guard Model Only. Each time the bearer’s unit is selected as a target of an enemy unit’s charge, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit."
                     }
@@ -110,10 +114,23 @@
             {
                 "name": "Typhus",
                 "org": "HQ",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 100,
                 "leader": [
-                    "Blightlord Terminator, Deathshroud Terminator, Poxwalker"
+                    "Blightlord Terminator",
+                    "Deathshroud Terminator",
+                    "Poxwalker"
+                ],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Epic Hero",
+                    "Chaos",
+                    "Nurgle",
+                    "Psyker",
+                    "Terminator",
+                    "Typhus"
                 ],
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
@@ -186,9 +203,19 @@
             {
                 "name": "Lord of Contagion",
                 "org": "HQ",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 80,
-                "leader": ["Blightlord Terminator, Deathshroud Terminator"],
+                "leader": ["Blightlord Terminator", "Deathshroud Terminator"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Terminator",
+                    "Grenades",
+                    "Lord of Contagion"
+                ],
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": "Nurgle's Gift",
@@ -294,13 +321,11 @@
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
-                    "Character",
-                    "Epic Hero",
                     "Chaos",
                     "Nurgle",
-                    "Psyker",
-                    "Terminator",
-                    "Typhus"
+                    "Grenades",
+                    "Battleline",
+                    "Plague Marines"
                 ],
                 "ability": {
                     "faction": "Nurgle's Gift",

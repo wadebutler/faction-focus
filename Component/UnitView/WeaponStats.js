@@ -5,10 +5,10 @@ export default function WeaponStats({ weapon, type }) {
         <View style={styles.container}>
             {type === "r" ? <Text style={styles.typeText}>Ranged</Text> : null}
             {type === "m" ? <Text style={styles.typeText}>Melee</Text> : null}
-            {weapon.map((item) => {
+            {weapon.map((item, index) => {
                 if (item.active) {
                     return (
-                        <View style={styles.wpnContainer}>
+                        <View style={styles.wpnContainer} key={index}>
                             <Text style={styles.nameText}>{item.name}</Text>
 
                             <View style={styles.statRow}>

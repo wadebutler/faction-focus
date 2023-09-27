@@ -1,13 +1,11 @@
-import { useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
-import { CheckBox } from "@rneui/themed";
-import { useRecoilState } from "recoil";
-import { unitViewState } from "../../Atoms";
+import { StyleSheet, Text, View } from "react-native";
 import WeaponCheckbox from "./WeaponCheckbox";
 
 export default function WargearSelect({ unit, type }) {
     return (
-        <View style={{ marginBottom: 20 }}>
+        <View
+            style={unit.ranged ? { marginBottom: 20 } : { marginVertical: 20 }}
+        >
             <Text
                 style={[
                     styles.title,

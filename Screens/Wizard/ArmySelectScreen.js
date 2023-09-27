@@ -39,7 +39,7 @@ export default function ArmySelectScreen() {
             <FlatList
                 data={Archive}
                 renderItem={({ item }) => armyListItem(item)}
-                keyExtractor={(item) => item?.id}
+                keyExtractor={(item) => item.id}
             />
         </View>
     );

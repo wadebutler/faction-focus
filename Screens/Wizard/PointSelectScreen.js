@@ -34,7 +34,7 @@ export default function PointSelect() {
                         <Text>{item.value}</Text>
                     </TouchableOpacity>
                 )}
-                keyExtractor={(item) => item.uid}
+                keyExtractor={(item) => item.value}
             />
         </View>
     );

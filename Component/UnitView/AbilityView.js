@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function AbilityView({ ability }) {
     return (
-        <View style={styles.container}>
+        <View>
             {!ability.core ? null : (
                 <View style={styles.dataContainer}>
                     <Text>Core: </Text>
@@ -20,6 +20,24 @@ export default function AbilityView({ ability }) {
                 <Text>Faction Ability: </Text>
                 <Text style={styles.dashText}>{ability.faction}</Text>
             </View>
+
+            {!ability.leader ? null : (
+                <View>
+                    <Text style={styles.datasheetText}>Leader Abilities:</Text>
+                    {ability.data.map((item, index) => {
+                        return (
+                            <View style={styles.datasheetContainer} key={index}>
+                                <Text style={styles.abilityName}>
+                                    {item.name}
+                                </Text>
+                                <Text style={styles.effectText}>
+                                    {item.effect}
+                                </Text>
+                            </View>
+                        );
+                    })}
+                </View>
+            )}
 
             {!ability.data ? null : (
                 <View>
@@ -45,25 +63,19 @@ export default function AbilityView({ ability }) {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        marginTop: 10,
-    },
     dataContainer: {
-        padding: 10,
-        paddingTop: 0,
-        paddingBottom: 15,
+        paddingHorizontal: 10,
+        paddingVertical: 5,
         flexDirection: "row",
-        marginBottom: 15,
-
         borderBottomWidth: 1,
         alignItems: "center",
     },
     datasheetContainer: {
-        marginBottom: 15,
+        marginBottom: 5,
         paddingHorizontal: 10,
     },
     datasheetText: {
-        marginBottom: 15,
+        marginBottom: 5,
         paddingLeft: 10,
     },
     dashText: {
@@ -71,9 +83,9 @@ const styles = StyleSheet.create({
         borderColor: "#000",
         borderStyle: "dashed",
         borderRadius: 4,
-        paddingTop: 2,
         paddingBottom: 1,
         paddingHorizontal: 4,
+        marginRight: 6,
     },
     abilityName: {
         color: "#fff",

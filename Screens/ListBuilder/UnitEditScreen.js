@@ -5,7 +5,7 @@ import { unitEditState } from "../../Atoms";
 import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WargearSelect from "../../Component/UnitEdit/WargearSelect";
 import { useNavigation } from "@react-navigation/native";
-import { useEffect } from "react";
+import Enhancements from "../../Component/UnitEdit/Enhancements";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -21,8 +21,16 @@ export default function UnitEdit() {
             </TouchableOpacity>
 
             <UnitStatRow unit={unitEdit.unit} />
-            <WargearSelect unit={unitEdit.unit} type={"ranged"} />
-            <WargearSelect unit={unitEdit.unit} type={"melee"} />
+            {!unitEdit.unit.ranged ? null : (
+                <WargearSelect unit={unitEdit.unit} type={"ranged"} />
+            )}
+            {!unitEdit.unit.melee ? null : (
+                <WargearSelect unit={unitEdit.unit} type={"melee"} />
+            )}
+            {unitEdit.unit.org === "HQ" &&
+            unitEdit.unit.keywords.includes("Epic Hero") === false ? (
+                <Enhancements />
+            ) : null}
         </ScrollView>
     );
 }

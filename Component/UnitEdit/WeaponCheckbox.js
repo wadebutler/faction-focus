@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
@@ -29,12 +29,13 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
             data: { ...unitEdit.unit.data },
             factionKey: [...unitEdit.unit.factionKey],
             keywords: [...unitEdit.unit.keywords],
-            melee: [...unitEdit.unit.melee],
-            "model count": [...unitEdit.unit["model count"]],
+            melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
+            modelCount: [...unitEdit.unit["modelCount"]],
+            leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : null,
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
             points: unitEdit.unit.points,
-            ranged: [...unitEdit.unit.ranged],
+            ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
         let tempWpn = {
             active: !item.active,

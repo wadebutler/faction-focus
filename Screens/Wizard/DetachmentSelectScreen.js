@@ -41,17 +41,15 @@ export default function DetachmentSelect() {
                         style={styles.button}
                     >
                         <Text style={{ paddingTop: 10 }}>{item.name}</Text>
-
                         <Text style={{ paddingVertical: 10 }}>
                             Rule: {item.rule}
                         </Text>
-
                         <Text style={{ paddingBottom: 10 }}>
                             Effect: {item.effect}
                         </Text>
                     </TouchableOpacity>
                 )}
-                keyExtractor={(item) => item.uid}
+                keyExtractor={(item) => item.id}
             />
         </View>
     );
