@@ -57,7 +57,10 @@ export default function WeaponStats({ weapon, type }) {
                                     </Text>
                                     {item.data.keywords.map((word, index) => {
                                         return (
-                                            <Text style={styles.keyText}>
+                                            <Text
+                                                key={index}
+                                                style={styles.keyText}
+                                            >
                                                 {word}
                                             </Text>
                                         );

@@ -329,6 +329,7 @@
                 ],
                 "ability": {
                     "faction": "Nurgle's Gift",
+                    "leader": [],
                     "data": [
                         {
                             "name": "Remorseless",
@@ -687,6 +688,7 @@
                 "ability": {
                     "core": ["Deep Strike"],
                     "faction": "Nurgle's Gift",
+                    "leader": [],
                     "data": [
                         {
                             "name": "Silent Bodyguard",

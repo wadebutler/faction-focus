@@ -1,17 +1,15 @@
-import { useState } from "react";
 import { StyleSheet } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
-import { listArmyState } from "../../Atoms";
-import { unitEditState } from "../../Atoms";
-import { unitViewState } from "../../Atoms";
+import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect, useState } from "react";
 
-export default function WeaponCheckbox({ keyId, item, disabled, type }) {
-    const [checked, setChecked] = useState(item.active);
+export default function LeaderCheckbox({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
+    const [checked, setChecked] = useState(false);
 
     const handleCheck = async () => {
         const tempId = unitEdit.unitId;
@@ -37,14 +35,27 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
             points: unitEdit.unit.points,
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
-        let tempWpn = {
-            active: !item.active,
-            data: { ...item.data },
-            name: item.name,
-            range: item.range,
+        let tempAbility = {
+            unit: item.name,
+            name: item.ability.leader.name,
+            effect: item.ability.leader.effect,
         };
 
-        tempUnit[type].splice(keyId, 1, tempWpn);
+        if (!checked) {
+            tempUnit.ability.leader = [...tempUnit.ability.leader, tempAbility];
+        } else {
+            let ldrArr = [];
+
+            tempUnit.ability.leader.map((char) => {
+                if (char.unit !== item.name) {
+                    console.log("test", char);
+                    ldrArr.push(char);
+                }
+            });
+
+            tempUnit.ability.leader = [...ldrArr];
+        }
+
         tempObj.roster.splice(tempId, 1, tempUnit);
 
         const tempData = await AsyncStorage.getItem("lists");
@@ -64,20 +75,30 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
 
         let unit = { unit: tempUnit, unitId: tempId };
         setList(tempObj);
-        setUnitEdit(unit);
         setUnitView(tempUnit);
+        setUnitEdit(unit);
         setChecked(!checked);
     };
+
+    useEffect(() => {
+        list.roster.map((unit, index) => {
+            if (index === unitEdit.unitId) {
+                // console.log(unit.ability.leader);
+                if (unit?.ability?.leader.some((e) => e?.unit === item.name)) {
+                    setChecked(true);
+                }
+            }
+        });
+    }, []);
+
+    console.log(unitEdit);
 
     return (
         <CheckBox
             title={item.name}
             checked={checked}
             checkedColor="#0F0"
-            containerStyle={[
-                styles.check,
-                disabled === keyId + 1 ? { ...styles.last } : null,
-            ]}
+            containerStyle={styles.check}
             onPress={() => handleCheck()}
             size={30}
             uncheckedColor="gray"
@@ -86,13 +107,19 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
 }
 
 const styles = StyleSheet.create({
+    title: {
+        backgroundColor: "#000",
+        width: "95%",
+        marginLeft: 10,
+        color: "#fff",
+        textAlign: "center",
+        paddingVertical: 10,
+        borderTopLeftRadius: 4,
+        borderTopRightRadius: 4,
+    },
     check: {
         width: "95%",
         margin: 0,
         justifyContent: "space-between",
-    },
-    last: {
-        borderBottomRightRadius: 4,
-        borderBottomLeftRadius: 4,
     },
 });

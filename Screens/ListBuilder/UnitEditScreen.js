@@ -1,11 +1,11 @@
 import { ScrollView, StyleSheet, TouchableOpacity, Text } from "react-native";
 import { useRecoilState } from "recoil";
-import { unitViewState } from "../../Atoms";
-import { unitEditState } from "../../Atoms";
 import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WargearSelect from "../../Component/UnitEdit/WargearSelect";
 import { useNavigation } from "@react-navigation/native";
 import Enhancements from "../../Component/UnitEdit/Enhancements";
+import LeaderRule from "../../Component/UnitEdit/LeaderRule";
+import { unitEditState } from "../../Atoms";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -21,12 +21,20 @@ export default function UnitEdit() {
             </TouchableOpacity>
 
             <UnitStatRow unit={unitEdit.unit} />
+
+            {unitEdit.unit.org === "Infantry" ||
+            unitEdit.unit.org === "Battleline" ? (
+                <LeaderRule />
+            ) : null}
+
             {!unitEdit.unit.ranged ? null : (
                 <WargearSelect unit={unitEdit.unit} type={"ranged"} />
             )}
+
             {!unitEdit.unit.melee ? null : (
                 <WargearSelect unit={unitEdit.unit} type={"melee"} />
             )}
+
             {unitEdit.unit.org === "HQ" &&
             unitEdit.unit.keywords.includes("Epic Hero") === false ? (
                 <Enhancements />

@@ -13,13 +13,11 @@ export default function UnitView() {
 
     useEffect(() => {}, [unitView]);
 
-    console.log(unitView);
-
     return (
         <ScrollView>
             <UnitStatRow unit={unitView} name={unitView?.name} />
 
-            <AbilityView ability={unitView.ability} />
+            <AbilityView ability={unitView.ability} org={unitView.org} />
 
             {!unitView.enhancement ? null : (
                 <EnhancementView item={unitView.enhancement} />

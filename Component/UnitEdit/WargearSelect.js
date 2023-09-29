@@ -4,12 +4,16 @@ import WeaponCheckbox from "./WeaponCheckbox";
 export default function WargearSelect({ unit, type }) {
     return (
         <View
-            style={unit.ranged ? { marginBottom: 20 } : { marginVertical: 20 }}
+            style={
+                type === "ranged" || unit.ranged === null
+                    ? { marginVertical: 10 }
+                    : { marginBottom: 10 }
+            }
         >
             <Text
                 style={[
                     styles.title,
-                    type === "ranged" ? { marginTop: 20 } : null,
+                    type === "ranged" ? { marginTop: 0 } : null,
                 ]}
             >
                 {type === "ranged" ? "Ranged" : "Melee"}

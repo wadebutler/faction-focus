@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
 export default function EnhancementView({ item }) {
-    console.log(item);
     return (
         <View style={{ marginHorizontal: 10 }}>
             <Text style={{ paddingBottom: 5 }}>Enhancement:</Text>

@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function AbilityView({ ability }) {
+export default function AbilityView({ ability, org }) {
     return (
         <View>
-            {!ability.core ? null : (
+            {!ability?.core ? null : (
                 <View style={styles.dataContainer}>
                     <Text>Core: </Text>
                     {ability.core.map((item, index) => {
@@ -18,15 +18,28 @@ export default function AbilityView({ ability }) {
 
             <View style={styles.dataContainer}>
                 <Text>Faction Ability: </Text>
-                <Text style={styles.dashText}>{ability.faction}</Text>
+                <Text style={styles.dashText}>{ability?.faction}</Text>
             </View>
 
-            {!ability.leader ? null : (
+            {org === "HQ" || org === "Character" ? (
                 <View>
                     <Text style={styles.datasheetText}>Leader Abilities:</Text>
-                    {ability.data.map((item, index) => {
+
+                    <View style={styles.datasheetContainer}>
+                        <Text style={styles.abilityName}>
+                            {ability?.leader.name}
+                        </Text>
+                        <Text style={styles.effectText}>
+                            {ability?.leader.effect}
+                        </Text>
+                    </View>
+                </View>
+            ) : ability?.leader.length === 0 ? null : (
+                <View>
+                    <Text style={styles.datasheetText}>Leader Abilities:</Text>
+                    {ability?.leader.map((item, index) => {
                         return (
-                            <View style={styles.datasheetContainer} key={index}>
+                            <View key={index} style={styles.datasheetContainer}>
                                 <Text style={styles.abilityName}>
                                     {item.name}
                                 </Text>
@@ -39,12 +52,12 @@ export default function AbilityView({ ability }) {
                 </View>
             )}
 
-            {!ability.data ? null : (
+            {!ability?.data ? null : (
                 <View>
                     <Text style={styles.datasheetText}>
                         Datasheet Abilities:
                     </Text>
-                    {ability.data.map((item, index) => {
+                    {ability?.data.map((item, index) => {
                         return (
                             <View style={styles.datasheetContainer} key={index}>
                                 <Text style={styles.abilityName}>

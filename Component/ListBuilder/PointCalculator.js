@@ -26,7 +26,7 @@ export default function PointCalculator() {
         <View style={styles.pointContainer}>
             <Text>{points}</Text>
             <Text style={styles.pointSeperator}>/</Text>
-            <Text>{list.points.value}</Text>
+            <Text>{list.points.value} points</Text>
         </View>
     );
 }

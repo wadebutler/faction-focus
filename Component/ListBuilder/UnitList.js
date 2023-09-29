@@ -9,8 +9,8 @@ import { unitEditState } from "../../Atoms";
 export default function UnitList({ unit, id }) {
     const navigation = useNavigation();
     const [list, setList] = useRecoilState(listArmyState);
-    const [unitView, setViewUnit] = useRecoilState(unitViewState);
-    const [unitEdit, setEditUnit] = useRecoilState(unitEditState);
+    const [unitView, setUnitView] = useRecoilState(unitViewState);
+    const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
 
     const handleDelete = async () => {
         let tempObj = {
@@ -73,13 +73,13 @@ export default function UnitList({ unit, id }) {
     };
 
     const handleView = (item) => {
-        setViewUnit(item);
+        setUnitView(item);
         navigation.navigate("ViewUnit");
     };
 
     const handleEdit = (item, id) => {
         let unit = { unit: item, unitId: id };
-        setEditUnit(unit);
+        setUnitEdit(unit);
         navigation.navigate("EditUnit");
     };
 

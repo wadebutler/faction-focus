@@ -30,7 +30,7 @@ export default function Enhancements() {
             keywords: [...unitEdit.unit.keywords],
             melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
             modelCount: [...unitEdit.unit["modelCount"]],
-            leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : null,
+            leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : [],
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
             points: unitEdit.unit.points,

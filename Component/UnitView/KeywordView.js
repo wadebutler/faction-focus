@@ -5,7 +5,7 @@ export default function KeywordView({ keywords, factionKey }) {
         <View>
             <View style={[styles.keywordContainer, { marginBottom: 5 }]}>
                 <Text style={{ fontSize: 12 }}>Faction Keywords: </Text>
-                {factionKey.map((item, index) => {
+                {factionKey?.map((item, index) => {
                     return (
                         <Text style={styles.keyText} key={index}>
                             {item}
@@ -16,7 +16,7 @@ export default function KeywordView({ keywords, factionKey }) {
 
             <View style={[styles.keywordContainer, { marginBottom: 15 }]}>
                 <Text style={{ fontSize: 12 }}>Keywords: </Text>
-                {keywords.map((word, index) => {
+                {keywords?.map((word, index) => {
                     return (
                         <Text key={index} style={styles.keyText}>
                             {word}
