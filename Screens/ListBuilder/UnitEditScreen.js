@@ -6,6 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import Enhancements from "../../Component/UnitEdit/Enhancements";
 import LeaderRule from "../../Component/UnitEdit/LeaderRule";
 import { unitEditState } from "../../Atoms";
+import WarlordCheckbox from "../../Component/UnitEdit/WarlordCheckbox";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -21,6 +22,8 @@ export default function UnitEdit() {
             </TouchableOpacity>
 
             <UnitStatRow unit={unitEdit.unit} />
+
+            {unitEdit.unit.org !== "HQ" ? null : <WarlordCheckbox />}
 
             {unitEdit.unit.org === "Infantry" ||
             unitEdit.unit.org === "Battleline" ? (

@@ -121,6 +121,7 @@
                     "Deathshroud Terminator",
                     "Poxwalker"
                 ],
+                "warlord": false,
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
@@ -318,6 +319,7 @@
                 "org": "Battleline",
                 "modelCount": [5, 7, 10],
                 "points": 80,
+                "warlord": false,
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",

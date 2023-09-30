@@ -3,13 +3,13 @@ import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export default function LeaderCheckbox({ item }) {
+export default function WarlordCheckbox() {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState(unitEdit.unit.warlord);
 
     const handleCheck = async () => {
         const tempId = unitEdit.unitId;
@@ -25,6 +25,7 @@ export default function LeaderCheckbox({ item }) {
         let tempUnit = {
             ability: { ...unitEdit.unit.ability },
             data: { ...unitEdit.unit.data },
+            warlord: unitEdit.unit.warlord,
             factionKey: [...unitEdit.unit.factionKey],
             keywords: [...unitEdit.unit.keywords],
             melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
@@ -35,25 +36,11 @@ export default function LeaderCheckbox({ item }) {
             points: unitEdit.unit.points,
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
-        let tempAbility = {
-            unit: item.name,
-            name: item.ability.leader.name,
-            effect: item.ability.leader.effect,
-        };
 
         if (!checked) {
-            tempUnit.ability.leader = [...tempUnit.ability.leader, tempAbility];
+            tempUnit.warlord = true;
         } else {
-            let ldrArr = [];
-
-            tempUnit.ability.leader.map((char) => {
-                if (char.unit !== item.name) {
-                    console.log("test", char);
-                    ldrArr.push(char);
-                }
-            });
-
-            tempUnit.ability.leader = [...ldrArr];
+            tempUnit.warlord = false;
         }
 
         tempObj.roster.splice(tempId, 1, tempUnit);
@@ -80,20 +67,9 @@ export default function LeaderCheckbox({ item }) {
         setChecked(!checked);
     };
 
-    useEffect(() => {
-        list.roster.map((unit, index) => {
-            if (index === unitEdit.unitId) {
-                // console.log(unit.ability.leader);
-                if (unit?.ability?.leader.some((e) => e?.unit === item.name)) {
-                    setChecked(true);
-                }
-            }
-        });
-    }, []);
-
     return (
         <CheckBox
-            title={item.name}
+            title={"Warlord"}
             checked={checked}
             checkedColor="#0F0"
             containerStyle={styles.check}
@@ -105,19 +81,10 @@ export default function LeaderCheckbox({ item }) {
 }
 
 const styles = StyleSheet.create({
-    title: {
-        backgroundColor: "#000",
-        width: "95%",
-        marginLeft: 10,
-        color: "#fff",
-        textAlign: "center",
-        paddingVertical: 10,
-        borderTopLeftRadius: 4,
-        borderTopRightRadius: 4,
-    },
     check: {
         width: "95%",
         margin: 0,
-        justifyContent: "space-between",
+        marginTop: 10,
+        borderRadius: 4,
     },
 });

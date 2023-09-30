@@ -2,13 +2,10 @@ import { StyleSheet, Text, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitEditState } from "../../Atoms";
 import LeaderCheckbox from "./LeaderCheckbox";
-import { useEffect } from "react";
 
 export default function LeaderRule() {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
-
-    // useEffect(() => {}, [unitEdit]);
 
     return (
         <View style={{ marginTop: 10 }}>

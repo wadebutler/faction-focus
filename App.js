@@ -10,7 +10,8 @@ import Confirm from "./Screens/Wizard/ConfirmScreen";
 import UnitSelect from "./Screens/ListBuilder/UnitSelectScreen";
 import ViewUnit from "./Screens/ListBuilder/UnitViewScreen";
 import EditUnit from "./Screens/ListBuilder/UnitEditScreen";
-import { StatusBar, Text } from "react-native";
+import { StatusBar } from "react-native";
+import RuleView from "./Screens/ListBuilder/RuleViewScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -63,6 +64,11 @@ export default function App() {
                     <Stack.Screen
                         name="EditUnit"
                         component={EditUnit}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="Rule"
+                        component={RuleView}
                         options={{ headerShown: false }}
                     />
                 </Stack.Navigator>

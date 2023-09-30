@@ -5,7 +5,7 @@ export default function WargearSelect({ unit, type }) {
     return (
         <View
             style={
-                type === "ranged" || unit.ranged === null
+                type === "ranged" || unit.ranged === null || !unit.ranged
                     ? { marginVertical: 10 }
                     : { marginBottom: 10 }
             }

@@ -18,8 +18,10 @@ export default function ArmySelectScreen() {
         const handleSelect = () => {
             let tempObj = {
                 army: item.name,
+                rule: item.rule,
                 id: item.id,
             };
+
             setArmy(tempObj);
             navigation.navigate("PointSelect");
         };

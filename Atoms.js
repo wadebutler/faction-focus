@@ -24,3 +24,8 @@ export const unitEditState = atom({
     key: "unitEditState",
     default: "",
 });
+
+export const ruleState = atom({
+    key: "ruleState",
+    default: "",
+});

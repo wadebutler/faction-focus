@@ -1,5 +1,4 @@
-import { StyleSheet, View, FlatList } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { orgIdState } from "../../Atoms";
 import { listArmyState } from "../../Atoms";

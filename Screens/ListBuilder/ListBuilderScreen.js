@@ -2,14 +2,14 @@ import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import Bar from "../../Component/ListBuilder/Bar";
+import RuleBar from "../../Component/ListBuilder/RuleBar";
 import UnitList from "../../Component/ListBuilder/UnitList";
-import { useEffect } from "react";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
 
-    useEffect(() => {}, [list]);
+    console.log(list);
 
     return (
         <View style={styles.container}>
@@ -20,6 +20,9 @@ export default function ListBuilder() {
             </View>
 
             <ScrollView>
+                <RuleBar title={"Army Rule"} item={list.rule} />
+                <RuleBar title={"Detachment Rules"} item={list.detachment} />
+
                 <Bar title={"HQ"} />
                 {list?.roster.map((item, index) => {
                     if (item.org === "HQ") {
