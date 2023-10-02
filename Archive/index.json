@@ -1,7 +1,8 @@
 [
     {
         "name": "Death Gaurd",
-        "id": 14,
+        "id": "DG",
+        "allies": ["CK", "CD"],
         "rule": {
             "name": "Nurgle's Gift",
             "effect": "All Death Guard units in your army reduce the toughness of enemy models by 1 within Contagion Range (this effect does not stack).",
