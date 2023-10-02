@@ -9,8 +9,6 @@ import PointCalculator from "../../Component/ListBuilder/PointCalculator";
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
 
-    console.log(list);
-
     return (
         <View style={styles.container}>
             <View style={styles.titleContainer}>

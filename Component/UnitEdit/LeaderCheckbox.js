@@ -48,7 +48,6 @@ export default function LeaderCheckbox({ item }) {
 
             tempUnit.ability.leader.map((char) => {
                 if (char.unit !== item.name) {
-                    console.log("test", char);
                     ldrArr.push(char);
                 }
             });
@@ -83,7 +82,6 @@ export default function LeaderCheckbox({ item }) {
     useEffect(() => {
         list.roster.map((unit, index) => {
             if (index === unitEdit.unitId) {
-                // console.log(unit.ability.leader);
                 if (unit?.ability?.leader.some((e) => e?.unit === item.name)) {
                     setChecked(true);
                 }

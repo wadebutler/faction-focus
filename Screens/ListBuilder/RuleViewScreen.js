@@ -1,36 +1,97 @@
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList, ScrollView } from "react-native";
 import { useRecoilState } from "recoil";
-import { useNavigation } from "@react-navigation/native";
 import { ruleState } from "../../Atoms";
 
 export default function RuleView() {
     const [rule, setRule] = useRecoilState(ruleState);
 
-    console.log(rule);
-
     return (
-        <View>
-            <Text>{rule.name}</Text>
-            <Text>{rule.effect}</Text>
+        <ScrollView style={styles.container}>
+            <Text style={styles.title}>{rule.name}</Text>
+            <Text style={styles.marginBig}>{rule.effect}</Text>
 
-            <FlatList
-                data={rule.range}
-                renderItem={({ item }) => (
-                    <View style={{ marginVertical: 10 }}>
-                        <Text>Battle Round {item.round}</Text>
-                        <Text>Contagion Range = {item.range}"</Text>
-                    </View>
-                )}
-                keyExtractor={(item) => item.round}
-            />
-        </View>
+            {!rule.range
+                ? null
+                : rule.range.map((item) => {
+                      return (
+                          <View key={item["Battle Round"]}>
+                              <Text>
+                                  {Object.keys(item)[0]} ={" "}
+                                  {Object.values(item)[0]}
+                              </Text>
+                              <Text>
+                                  {Object.keys(item)[1]} ={" "}
+                                  {Object.values(item)[1]}
+                              </Text>
+                          </View>
+                      );
+                  })}
+
+            {!rule.select ? null : (
+                <View>
+                    <Text style={styles.marginBig}>{rule.select.rule}</Text>
+
+                    {rule.select.options.map((item) => {
+                        return (
+                            <View style={styles.marginSmall} key={item.title}>
+                                <Text>{item.title}</Text>
+                                <Text>{item.effect}</Text>
+                            </View>
+                        );
+                    })}
+                </View>
+            )}
+
+            {!rule.stratagems ? null : (
+                <View style={{ marginTop: -20 }}>
+                    <Text style={styles.title}>Stratagems</Text>
+
+                    {rule.stratagems.map((item) => {
+                        return (
+                            <View style={styles.marginBig} key={item.name}>
+                                <Text style={styles.stratTitle}>
+                                    {item.cost}cp - {item.name} - {item.type}
+                                </Text>
+
+                                <Text style={styles.stratText}>
+                                    WHEN: {item.when}
+                                </Text>
+                                <Text style={styles.stratText}>
+                                    TARGET: {item.target}
+                                </Text>
+                                <Text style={styles.stratText}>
+                                    EFFECT: {item.effect}
+                                </Text>
+                            </View>
+                        );
+                    })}
+                </View>
+            )}
+        </ScrollView>
     );
 }
 
 const styles = StyleSheet.create({
-    button: {
-        position: "absolute",
-        right: 10,
-        top: 15,
+    container: {
+        padding: 10,
+    },
+    title: {
+        fontSize: 20,
+        textAlign: "center",
+        marginVertical: 20,
+    },
+    marginBig: {
+        marginBottom: 30,
+    },
+    marginSmall: {
+        marginBottom: 20,
+    },
+    stratTitle: {
+        textTransform: "uppercase",
+        marginTop: 5,
+        fontWeight: "bold",
+    },
+    stratText: {
+        marginVertical: 5,
     },
 });

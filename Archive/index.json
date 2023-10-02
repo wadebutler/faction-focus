@@ -6,9 +6,9 @@
             "name": "Nurgle's Gift",
             "effect": "All Death Guard units in your army reduce the toughness of enemy models by 1 within Contagion Range (this effect does not stack).",
             "range": [
-                { "round": 1, "range": 3 },
-                { "round": 2, "range": 6 },
-                { "round": 3, "range": 9 }
+                { "Battle Round": 1, "Contagion Range": "3" },
+                { "Battle Round": 2, "Contagion Range": "6" },
+                { "Battle Round": 3, "Contagion Range": "9" }
             ]
         },
         "detachments": [
@@ -17,6 +17,23 @@
                 "id": 1,
                 "rule": "Spread The Sickness",
                 "effect": "if a Death Guard unit is controlling an objective marker in your Command Phase it inffects the objective marker with the Nurgle's Gift Army Rule, while it is inffected the objective stays under your control even if no models are controlling it. An opponent can cleanse the objective of Nurgle's Gift by controlling it at the start of end on any turn.",
+                "select": {
+                    "rule": "During the Declare Battle Formations step, select one of the Sicknesses below. Until the end of the battle, all units from your army with the Nurgle’s Gift ability gain the selected Sickness.",
+                    "options": [
+                        {
+                            "title": "Skullsquirm Blight (Aura)",
+                            "effect": "While an enemy unit is within Contagion Range of this unit, worsen the Ballistic Skill and Weapon Skill characteristics of weapons equipped by models in that enemy unit by 1."
+                        },
+                        {
+                            "title": "Rattlejoint Ague (Aura)",
+                            "effect": "While an enemy unit is within Contagion Range of this unit, worsen the Save characteristic of models in that enemy unit by 1."
+                        },
+                        {
+                            "title": "Scabrous Soulrot (Aura)",
+                            "effect": "While an enemy unit is within Contagion Range of this unit, worsen the Leadership and Objective Control characteristics of models in that enemy unit by 1 (to a minimum of 1)."
+                        }
+                    ]
+                },
                 "enhancements": [
                     {
                         "name": "Living Plague",
@@ -43,7 +60,7 @@
                         "effect": "Death Guard Model Only. Each time the bearer’s unit is selected as a target of an enemy unit’s charge, until the end of the phase, subtract 2 from Charge rolls made for that enemy unit."
                     }
                 ],
-                "Stratagems": [
+                "stratagems": [
                     {
                         "name": "ferric blight",
                         "type": "battle tactic",
