@@ -117,8 +117,28 @@
             {
                 "name": "Daemon Prince of Nurgle",
                 "org": "HQ",
-                "modelCount": 1,
-                "points": 150,
+                "modelCount": [1],
+                "points": 160,
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Psyker",
+                    "Daemon",
+                    "Daemon Prince"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Grandfather’s Blessing (Aura, Psychic)",
+                            "effect": "While a friendly Death Guard Infantry unit is within Contagion Range of this model, models in that unit have the Feel No Pain 6+ ability."
+                        }
+                    ]
+                },
                 "data": {
                     "movement": 7,
                     "toughness": 11,
@@ -127,7 +147,141 @@
                     "wounds": 10,
                     "leadership": 6,
                     "oc": 3
-                }
+                },
+                "ranged": [
+                    {
+                        "name": "Plague Spewer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince of Nurgle with Wings",
+                "org": "HQ",
+                "modelCount": [1],
+                "points": 195,
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Fly",
+                    "Chaos",
+                    "Nurgle",
+                    "Psyker",
+                    "Daemon",
+                    "Daemon Prince with Wings"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Warp Horror (Psychic)",
+                            "effect": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it. That unit must take a Battle-shock test."
+                        },
+                        {
+                            "name": "Devastating Assault",
+                            "effect": "Each time this model ends a Charge move, until the end of the turn, its hellforged weapons have the [DEVASTATING WOUNDS] ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 7,
+                    "toughness": 11,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Plague Spewer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Typhus",
@@ -160,8 +314,7 @@
                     },
                     "data": [
                         {
-                            "name": "The Eater Plague",
-                            "keywords": ["Psychic"],
+                            "name": "The Eater Plague (Pschic)",
                             "effect": "In Your Shooting Phase, you can select one enemy unit within 18\" of and visible to the Psyker and roll one D6: on a 1, this Psyker's unit suffers D3 mortal wounds; on a 2-5, that enemy unit suffers D6 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
                         }
                     ]
@@ -186,7 +339,7 @@
                             "s": 9,
                             "ap": 2,
                             "d": 3,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -199,16 +352,206 @@
                             "s": 6,
                             "ap": 1,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
             },
             {
-                "name": "Lord of Virulence",
+                "name": "Death Guard Chaos Lord",
                 "org": "HQ",
-                "modelCount": 1,
-                "points": 100,
+                "modelCount": [1],
+                "points": 65,
+                "leader": ["Plague Marines"],
+                "warlord": false,
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Grenades",
+                    "Chaos Lord"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": {
+                        "name": "Chaos Lord",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1."
+                    },
+                    "data": [
+                        {
+                            "name": "Desiccation Conduit (Aura)",
+                            "effect": "While an enemy unit is within Contagion Range of this model, at the end of the turn, roll one D6: on a 4+, that enemy unit suffers D3 mortal wounds."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Plague Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Astartes Chainsword",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Plague Fist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague-Encrusted Exalted Weapon",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lightning Claws",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Death Guard Chaos Lord in Terminator Armour",
+                "org": "HQ",
+                "modelCount": [1],
+                "points": 85,
+                "leader": ["Blightlord Terminator", "Deathshroud Terminator"],
+                "warlord": false,
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Terminator",
+                    "Chaos Lord"
+                ],
+                "ability": {
+                    "core": ["Leader", "Deep Strike"],
+                    "faction": "Nurgle's Gift",
+                    "leader": {
+                        "name": "Chaos Lord",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1."
+                    },
+                    "data": [
+                        {
+                            "name": "Desiccation Conduit (Aura)",
+                            "effect": "While an enemy unit is within Contagion Range of this model, at the end of the turn, roll one D6: on a 4+, that enemy unit suffers D3 mortal wounds."
+                        }
+                    ]
+                },
                 "data": {
                     "movement": 4,
                     "toughness": 6,
@@ -217,7 +560,167 @@
                     "wounds": 6,
                     "leadership": 6,
                     "oc": 1
-                }
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Chainfist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Anit-Infantry 3+"]
+                        }
+                    },
+                    {
+                        "name": "Plague Fist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague-Encrusted Exalted Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lightning Claws",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Lord of Virulence",
+                "org": "HQ",
+                "modelCount": [1],
+                "points": 80,
+                "leader": ["Blightlord Terminator", "Deathshroud Terminator"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Terminator",
+                    "Lord of Virulence"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": {
+                        "name": "Master of Destruction",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, you can re-roll the Wound roll."
+                    },
+                    "data": [
+                        {
+                            "name": "Blight Bombardment",
+                            "effect": "Each time a friendly Death Guard model makes an attack with a Blast weapon that targets a unit that is visible to this model, add 1 to the Hit roll and that attack has the [IGNORES COVER] ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 4,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 6,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Twin Plague Spewer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent",
+                                "Twin-Linked"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Heavy Plague Fist",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Lord of Contagion",
@@ -269,7 +772,7 @@
                             "s": 8,
                             "ap": 2,
                             "d": 3,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -282,16 +785,41 @@
                             "s": 5,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
             },
             {
-                "name": "Sorcerer in Terminator Armour",
+                "name": "Death Gaurd Sorcerer in Terminator Armour",
                 "org": "HQ",
-                "modelCount": 1,
-                "points": 80,
+                "modelCount": [1],
+                "points": 70,
+                "leader": ["Blightlord Terminator", "Deathshroud Terminator"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Psyker",
+                    "Chaos",
+                    "Nurgle",
+                    "Terminator",
+                    "Sorcerer"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": {
+                        "name": "Putrescent Vitality (Psychic)",
+                        "effect": "At the start of the Fight phase, you can select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, this Psyker’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, each time an attack is allocated to a model in this Psyker’s unit, subtract 1 from the Damage characteristic of that attack."
+                    },
+                    "data": [
+                        {
+                            "name": "Pestilent Familiar (Psychic):",
+                            "effect": "Once per battle, after selecting targets for a Psychic weapon equipped by this model, until the end of the phase, improve the Strength and Damage characteristics of that weapon by 2."
+                        }
+                    ]
+                },
                 "data": {
                     "movement": 4,
                     "toughness": 6,
@@ -300,13 +828,138 @@
                     "wounds": 5,
                     "leadership": 6,
                     "oc": 1
-                }
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Curse of the Leper – Witchfire",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Curse of the Leper – Focused Witchfire",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Hazardous", "Psychic"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Chainfist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Anit-Infantry 3+"]
+                        }
+                    },
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": "D3",
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Plague Fist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague-Encrusted Exalted Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lightning Claws",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Malignant Plaguecaster",
                 "org": "HQ",
-                "modelCount": 1,
-                "points": 100,
+                "modelCount": [1],
+                "points": 65,
                 "data": {
                     "movement": 5,
                     "toughness": 5,
@@ -315,13 +968,141 @@
                     "wounds": 4,
                     "leadership": 6,
                     "oc": 1
-                }
+                },
+                "leader": ["Plague Marines"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Psyker",
+                    "Malignant Plaguecaster"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": null,
+                    "data": [
+                        {
+                            "name": "Gift of Contagion (Psychic)",
+                            "effect": "In your Shooting phase, you can select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, this Psyker’s unit suffers D3 mortal wounds; on a 2+, until the start of your next Shooting phase, each time a model in that enemy unit makes a melee attack, subtract 1 from the Wound roll."
+                        },
+                        {
+                            "name": "Pestilent Fallout (Psychic)",
+                            "effect": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Plague Wind scored a wound against an enemy Infantry unit, until the start of your next turn, subtract 2 from that unit’s Move characteristic and subtract 2 from Advance and Charge rolls made for that unit."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Plague Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague Wind – Witchfire",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 1,
+                            "d": "D3",
+                            "keywords": ["Psychic", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Plague Wind – Focused Witchfire",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Hazardous", "Psychic", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Corrupted Staff",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": "D3",
+                            "keywords": ["Lethal Hits", "Psychic"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Mortarion",
                 "org": "HQ",
-                "modelCount": 1,
-                "points": 380,
+                "modelCount": [1],
+                "points": 325,
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Monster",
+                    "Psyker",
+                    "Fly",
+                    "Character",
+                    "Epic Hero",
+                    "Daemon",
+                    "Grenades",
+                    "Chaos",
+                    "Nurgle",
+                    "Primarch",
+                    "Mortarion"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Feel No Pain 5+"],
+                    "faction": "Nurgle's Gift",
+                    "leader": null,
+                    "data": [
+                        {
+                            "name": "Lord of the Death Guard (Aura)",
+                            "effect": "While a friendly Death Guard unit is within 6\" of this model, that unit can ignore any or all modifiers to its characteristics and to any roll or test made for it (excluding modifiers to saving throws)."
+                        }
+                    ],
+                    "Primarch": {
+                        "title": "Host of Plagues",
+                        "effect": "At the start of the battle round, select one of the abilities in the Host of Plagues section. Until the start of the next battle round, this model has that ability.",
+                        "abilities": [
+                            {
+                                "name": "Miasma of Pestilence (Aura)",
+                                "effect": "While a friendly Death Guard unit is within 6\" of this model, each time a ranged attack targets that unit, models in that unit have the Benefit of Cover against that attack."
+                            },
+                            {
+                                "name": "Diseased Influence (Aura)",
+                                "effect": "While a friendly Death Guard unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Wound roll of 1."
+                            },
+                            {
+                                "name": "Toxic Presence (Aura)",
+                                "effect": "While a friendly Death Guard unit is within 12\" of this model, add 3\" to the Contagion Range of that unit."
+                            }
+                        ]
+                    },
+                    "damaged": {
+                        "range": [1, 6],
+                        "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
                 "data": {
                     "movement": 10,
                     "toughness": 12,
@@ -333,11 +1114,10 @@
                 }
             },
             {
-                "name": "Plague Marine",
+                "name": "Plague Marines",
                 "org": "Battleline",
                 "modelCount": [5, 7, 10],
                 "points": 80,
-                "warlord": false,
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
@@ -349,22 +1129,12 @@
                 ],
                 "ability": {
                     "faction": "Nurgle's Gift",
-                    "leader": [],
                     "data": [
                         {
                             "name": "Remorseless",
                             "effect": "While this unit is in range of an objective marker you control, each time you take a Battle-shock test for this unit, add 1 to that test."
                         }
                     ]
-                },
-                "data": {
-                    "movement": 5,
-                    "toughness": 5,
-                    "save": 3,
-                    "invulnerable": null,
-                    "wounds": 2,
-                    "leadership": 6,
-                    "oc": 2
                 },
                 "ranged": [
                     {
@@ -377,7 +1147,7 @@
                             "s": 6,
                             "ap": 1,
                             "d": 2,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -437,7 +1207,7 @@
                             "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -450,7 +1220,7 @@
                             "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -517,7 +1287,7 @@
                             "s": 5,
                             "ap": 2,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -530,7 +1300,7 @@
                             "s": 8,
                             "ap": 2,
                             "d": 2,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -543,7 +1313,7 @@
                             "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
@@ -551,37 +1321,168 @@
             {
                 "name": "Biologus Putrifier",
                 "org": "Character",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 50,
+                "leader": ["Plague Marines"],
                 "data": {
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
                     "invulnerable": null,
                     "wounds": 4,
-                    "leadership": 5,
+                    "leadership": 6,
                     "oc": 1
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Grenades",
+                    "Biologus Putrifier"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise 1", "Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": [
+                        {
+                            "name": "Foul Infusion",
+                            "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability. In addition, each time a model in that unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Explosive Maladies",
+                            "effect": "Once per battle, in your Shooting phase, you can target this model with the Grenade Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+                        },
+                        {
+                            "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Hyper Blight Grenades",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Assault", "Blast", "Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Injector Pistol",
+                        "range": 3,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Plague Knives",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Foul Blightspawn",
                 "org": "Character",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 50,
+                "leader": ["Plague Marines"],
                 "data": {
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
                     "invulnerable": null,
                     "wounds": 4,
-                    "leadership": 5,
+                    "leadership": 6,
                     "oc": 1
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Grenades",
+                    "Nurgle",
+                    "Foul Blightspawn"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": [
+                        {
+                            "name": "Putrefying Stink",
+                            "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Plague Sprayer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 7,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Noxious Blightbringer",
                 "org": "Character",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 50,
                 "data": {
                     "movement": 5,
@@ -589,14 +1490,85 @@
                     "save": 3,
                     "invulnerable": null,
                     "wounds": 4,
-                    "leadership": 5,
+                    "leadership": 6,
                     "oc": 1
-                }
+                },
+                "leader": ["Plague Marines"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Noxious Blightbringer"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": [
+                        {
+                            "name": "Sickening Vitality",
+                            "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "The Bell Tolls (Aura)",
+                            "effect": "While an enemy unit is within Contagion Range of this model, each time a Battle-shock or Leadership test is taken for that enemy unit, subtract 2 from that test."
+                        },
+                        {
+                            "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same Leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Plague Surgeon",
                 "org": "Character",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 50,
                 "data": {
                     "movement": 5,
@@ -604,30 +1576,165 @@
                     "save": 3,
                     "invulnerable": null,
                     "wounds": 4,
-                    "leadership": 5,
+                    "leadership": 6,
                     "oc": 1
-                }
+                },
+                "leader": ["Plague Marines"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Cultists",
+                    "Plague Surgeon"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": [
+                        {
+                            "name": "Tainted Narthecium",
+                            "effect": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Diseased Healing",
+                            "effect": "At the end of your Movement phase, you can select one friendly Death Guard Infantry Character model within 3\" of this model. That model regains up to 3 lost wounds. Each model can only be selected for this ability once per turn."
+                        },
+                        {
+                            "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Plague Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Balesword",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Tallyman",
                 "org": "Character",
-                "modelCount": 1,
-                "points": 50,
+                "modelCount": [1],
+                "points": 45,
                 "data": {
                     "movement": 5,
                     "toughness": 5,
                     "save": 3,
                     "invulnerable": null,
                     "wounds": 4,
-                    "leadership": 5,
+                    "leadership": 6,
                     "oc": 1
-                }
+                },
+                "leader": ["Plague Marines"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Cultists",
+                    "Tallyman"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": [
+                        {
+                            "name": "Malicious Calculations",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "The Seven-fold Chant",
+                            "effect": "In your Command phase, if this model is on the battlefield, roll 2D6: on a 7+, you gain 1CP."
+                        },
+                        {
+                            "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Infected Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol", "Sustained Hits D3"]
+                        }
+                    },
+                    {
+                        "name": "Infected Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": [
+                                "Hazardous",
+                                "Pistol",
+                                "Sustained Hits D3"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Death Guard Icon Bearer",
                 "org": "Character",
-                "modelCount": 1,
-                "points": 50,
+                "modelCount": [1],
+                "points": 45,
                 "data": {
                     "movement": 5,
                     "toughness": 5,
@@ -636,13 +1743,72 @@
                     "wounds": 4,
                     "leadership": 5,
                     "oc": 1
-                }
+                },
+                "leader": ["Plague Marines"],
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Nurgle",
+                    "Grenades",
+                    "Death Guard Icon Bearer"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": "Nurgle's Gift",
+                    "leader": [
+                        {
+                            "name": "Unclean Icon",
+                            "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Seed the Disease",
+                            "effect": "Once per battle, at the end of your Movement phase, this model can use this ability. If it does, until the start of your next Command phase, this model’s unit is treated as having a Contagion Range of 12\"."
+                        },
+                        {
+                            "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Plague Boltgun",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Plague Knife",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Chaos Cultist",
                 "org": "Infantry",
                 "modelCount": [10, 20],
-                "points": 55,
+                "points": 50,
                 "data": {
                     "movement": 6,
                     "toughness": 3,
@@ -651,7 +1817,101 @@
                     "wounds": 1,
                     "leadership": 7,
                     "oc": 1
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Poxwalker",
@@ -666,7 +1926,37 @@
                     "wounds": 1,
                     "leadership": 8,
                     "oc": 1
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Poxwalker"],
+                "ability": {
+                    "core": ["Feel No Pain 5+"],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Curse of the Walking Pox",
+                            "effect": "Each time a model in this unit makes an attack that destroys an enemy model (excluding Monster and Vehicle models), you can return one destroyed Poxwalker model to this unit."
+                        },
+                        {
+                            "effect": "While Typhus is leading this unit, enemy models destroyed as a result of Typhus’ The Eater Plague ability count as enemy models destroyed by an attack made by a model in this unit for the purposes of this ability."
+                        }
+                    ]
+                },
+                "melee": [
+                    {
+                        "name": "Improvised Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 5,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    }
+                ]
             },
             {
                 "name": "Blightlord Terminator",
@@ -681,7 +1971,101 @@
                     "wounds": 3,
                     "leadership": 6,
                     "oc": 1
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Deathshroud Terminator",
@@ -747,7 +2131,7 @@
                             "s": 8,
                             "ap": 2,
                             "d": 2,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
@@ -760,7 +2144,7 @@
                             "s": 5,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Lethal hits"]
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
@@ -768,7 +2152,7 @@
             {
                 "name": "Chaos Spawn",
                 "org": "Infantry",
-                "modelCount": 2,
+                "modelCount": [2],
                 "points": 75,
                 "data": {
                     "movement": 8,
@@ -778,12 +2162,106 @@
                     "wounds": 4,
                     "leadership": 7,
                     "oc": 1
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Chaos Rhino",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 120,
                 "data": {
                     "movement": 6,
@@ -793,12 +2271,106 @@
                     "wounds": 8,
                     "leadership": 6,
                     "oc": 3
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Helbrute",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 120,
                 "data": {
                     "movement": 6,
@@ -808,12 +2380,106 @@
                     "wounds": 8,
                     "leadership": 6,
                     "oc": 3
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Foetid Bloat-drone",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 115,
                 "data": {
                     "movement": 10,
@@ -823,7 +2489,101 @@
                     "wounds": 10,
                     "leadership": 6,
                     "oc": 3
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Myphitic Blight-Haulers",
@@ -838,12 +2598,106 @@
                     "wounds": 10,
                     "leadership": 6,
                     "oc": 3
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Plagueburst Crawler",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 140,
                 "data": {
                     "movement": 10,
@@ -853,12 +2707,106 @@
                     "wounds": 12,
                     "leadership": 6,
                     "oc": 4
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Chaos Land Raider",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 200,
                 "data": {
                     "movement": 10,
@@ -868,12 +2816,106 @@
                     "wounds": 16,
                     "leadership": 6,
                     "oc": 5
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Chaos Predator Annihilator",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 150,
                 "data": {
                     "movement": 10,
@@ -883,12 +2925,106 @@
                     "wounds": 11,
                     "leadership": 6,
                     "oc": 4
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Chaos Predator Destructor",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 150,
                 "data": {
                     "movement": 10,
@@ -898,12 +3034,106 @@
                     "wounds": 11,
                     "leadership": 6,
                     "oc": 4
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             },
             {
                 "name": "Defiler",
                 "org": "Vehicle",
-                "modelCount": 1,
+                "modelCount": [1],
                 "points": 150,
                 "data": {
                     "movement": 8,
@@ -913,7 +3143,101 @@
                     "wounds": 14,
                     "leadership": 6,
                     "oc": 5
-                }
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Silent Bodyguard",
+                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
             }
         ]
     }

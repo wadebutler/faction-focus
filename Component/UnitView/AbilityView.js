@@ -25,14 +25,16 @@ export default function AbilityView({ ability, org }) {
                 <View>
                     <Text style={styles.datasheetText}>Leader Abilities:</Text>
 
-                    <View style={styles.datasheetContainer}>
-                        <Text style={styles.abilityName}>
-                            {ability?.leader.name}
-                        </Text>
-                        <Text style={styles.effectText}>
-                            {ability?.leader.effect}
-                        </Text>
-                    </View>
+                    {!ability?.leader ? null : (
+                        <View style={styles.datasheetContainer}>
+                            <Text style={styles.abilityName}>
+                                {ability?.leader.name}
+                            </Text>
+                            <Text style={styles.effectText}>
+                                {ability?.leader.effect}
+                            </Text>
+                        </View>
+                    )}
                 </View>
             ) : ability?.leader.length === 0 ? null : (
                 <View>
@@ -71,6 +73,41 @@ export default function AbilityView({ ability, org }) {
                     })}
                 </View>
             )}
+
+            {!ability.Primarch ? null : (
+                <View style={{ marginTop: 5 }}>
+                    <Text style={styles.datasheetText}>
+                        {ability.Primarch.title}
+                    </Text>
+                    <Text style={styles.datasheetText}>
+                        {ability.Primarch.effect}
+                    </Text>
+                    {ability.Primarch.abilities.map((item, index) => {
+                        return (
+                            <View style={styles.datasheetContainer} key={index}>
+                                <Text style={styles.abilityName}>
+                                    {item.name}
+                                </Text>
+                                <Text style={styles.effectText}>
+                                    {item.effect}
+                                </Text>
+                            </View>
+                        );
+                    })}
+                </View>
+            )}
+
+            {!ability.damaged ? null : (
+                <View style={styles.damageContainer}>
+                    <Text style={styles.abilityName}>
+                        Damaged {ability.damaged.range[0]}-
+                        {ability.damaged.range[1]} Wounds Remaining
+                    </Text>
+                    <Text style={styles.effectText}>
+                        {ability.damaged.effect}
+                    </Text>
+                </View>
+            )}
         </View>
     );
 }
@@ -85,6 +122,10 @@ const styles = StyleSheet.create({
     },
     datasheetContainer: {
         marginBottom: 5,
+        paddingHorizontal: 10,
+    },
+    damageContainer: {
+        marginVertical: 5,
         paddingHorizontal: 10,
     },
     datasheetText: {
