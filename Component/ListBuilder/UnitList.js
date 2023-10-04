@@ -1,10 +1,8 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
-import { listArmyState } from "../../Atoms";
 import { useNavigation } from "@react-navigation/native";
-import { unitViewState } from "../../Atoms";
-import { unitEditState } from "../../Atoms";
+import { unitViewState, listArmyState, unitEditState } from "../../Atoms";
 
 export default function UnitList({ unit, id }) {
     const navigation = useNavigation();
@@ -90,7 +88,7 @@ export default function UnitList({ unit, id }) {
             <View style={styles.titleContainer}>
                 <Text style={{ maxWidth: "80%" }}>{unit?.name}</Text>
 
-                <Text>{unit?.points} points</Text>
+                <Text>{unit?.points[unit.modelCountIndex]} points</Text>
             </View>
 
             <View style={styles.buttonContainer}>

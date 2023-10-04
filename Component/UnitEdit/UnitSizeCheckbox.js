@@ -1,15 +1,15 @@
+import { useEffect, useState } from "react";
 import { StyleSheet } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
-import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
+import { listArmyState, unitEditState, unitViewState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useEffect, useState } from "react";
 
-export default function LeaderCheckbox({ item }) {
+export default function UnitSizeCheckbox({ item, keyId }) {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState();
 
     const handleCheck = async () => {
         const tempId = unitEdit.unitId;
@@ -37,24 +37,9 @@ export default function LeaderCheckbox({ item }) {
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
-        let tempAbility = {
-            unit: item.name,
-            name: item.ability.leader.name,
-            effect: item.ability.leader.effect,
-        };
 
         if (!checked) {
-            tempUnit.ability.leader = [...tempUnit.ability.leader, tempAbility];
-        } else {
-            let ldrArr = [];
-
-            tempUnit.ability.leader.map((char) => {
-                if (char.unit !== item.name) {
-                    ldrArr.push(char);
-                }
-            });
-
-            tempUnit.ability.leader = [...ldrArr];
+            tempUnit.modelCountIndex = keyId;
         }
 
         tempObj.roster.splice(tempId, 1, tempUnit);
@@ -76,27 +61,30 @@ export default function LeaderCheckbox({ item }) {
 
         let unit = { unit: tempUnit, unitId: tempId };
         setList(tempObj);
-        setUnitView(tempUnit);
         setUnitEdit(unit);
+        setUnitView(tempUnit);
         setChecked(!checked);
     };
 
     useEffect(() => {
-        list.roster.map((unit, index) => {
-            if (index === unitEdit.unitId) {
-                if (unit?.ability?.leader.some((e) => e?.unit === item.name)) {
-                    setChecked(true);
-                }
-            }
-        });
-    }, []);
+        if (unitEdit.unit.modelCountIndex === keyId) {
+            setChecked(true);
+        } else {
+            setChecked(false);
+        }
+    }, [unitEdit]);
 
     return (
         <CheckBox
-            title={item.name}
+            title={item}
             checked={checked}
             checkedColor="#0F0"
-            containerStyle={styles.check}
+            containerStyle={[
+                styles.check,
+                unitEdit.unit.modelCount.length === keyId + 1
+                    ? { ...styles.last }
+                    : null,
+            ]}
             onPress={() => handleCheck()}
             size={30}
             uncheckedColor="gray"
@@ -105,19 +93,13 @@ export default function LeaderCheckbox({ item }) {
 }
 
 const styles = StyleSheet.create({
-    title: {
-        backgroundColor: "#000",
-        width: "95%",
-        marginLeft: 10,
-        color: "#fff",
-        textAlign: "center",
-        paddingVertical: 10,
-        borderTopLeftRadius: 4,
-        borderTopRightRadius: 4,
-    },
     check: {
         width: "95%",
         margin: 0,
         justifyContent: "space-between",
+    },
+    last: {
+        borderBottomRightRadius: 4,
+        borderBottomLeftRadius: 4,
     },
 });

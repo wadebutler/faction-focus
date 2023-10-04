@@ -1,7 +1,6 @@
 import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
-import { orgIdState } from "../../Atoms";
-import { listArmyState } from "../../Atoms";
+import { orgIdState, listArmyState } from "../../Atoms";
 import data from "../../Archive/index.json";
 import { useEffect, useState } from "react";
 import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";

@@ -34,7 +34,8 @@ export default function WarlordCheckbox() {
             leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : [],
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
-            points: unitEdit.unit.points,
+            modelCountIndex: unitEdit.unit.modelCountIndex,
+            points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
 

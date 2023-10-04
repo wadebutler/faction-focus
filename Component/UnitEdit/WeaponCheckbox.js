@@ -2,9 +2,7 @@ import { useState } from "react";
 import { StyleSheet } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
-import { listArmyState } from "../../Atoms";
-import { unitEditState } from "../../Atoms";
-import { unitViewState } from "../../Atoms";
+import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function WeaponCheckbox({ keyId, item, disabled, type }) {
@@ -35,7 +33,8 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
             leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : [],
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
-            points: unitEdit.unit.points,
+            modelCountIndex: unitEdit.unit.modelCountIndex,
+            points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
         let tempWpn = {

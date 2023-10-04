@@ -10,7 +10,7 @@ export default function PointCalculator() {
     useEffect(() => {
         let tempArr = [];
         list.roster.map((item) => {
-            tempArr.push(item.points);
+            tempArr.push(item.points[item.modelCountIndex]);
 
             if (item.enhancement) {
                 tempArr.push(item.enhancement.cost);

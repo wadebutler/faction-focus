@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList, ScrollView } from "react-native";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
 import { useRecoilState } from "recoil";
 import { ruleState } from "../../Atoms";
 

@@ -7,6 +7,7 @@ import Enhancements from "../../Component/UnitEdit/Enhancements";
 import LeaderRule from "../../Component/UnitEdit/LeaderRule";
 import { unitEditState } from "../../Atoms";
 import WarlordCheckbox from "../../Component/UnitEdit/WarlordCheckbox";
+import UnitSize from "../../Component/UnitEdit/UnitSize";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -24,6 +25,8 @@ export default function UnitEdit() {
             <UnitStatRow unit={unitEdit.unit} />
 
             {unitEdit.unit.org !== "HQ" ? null : <WarlordCheckbox />}
+
+            {unitEdit.unit.modelCount.length === 1 ? null : <UnitSize />}
 
             {unitEdit.unit.org === "Infantry" ||
             unitEdit.unit.org === "Battleline" ? (

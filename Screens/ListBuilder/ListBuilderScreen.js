@@ -96,6 +96,20 @@ export default function ListBuilder() {
                         );
                     }
                 })}
+
+                <Bar title={"Fortification"} />
+                {list?.roster.map((item, index) => {
+                    if (item.org === "Fortification") {
+                        return (
+                            <UnitList
+                                org={"Fortification"}
+                                unit={item}
+                                key={index}
+                                id={index}
+                            />
+                        );
+                    }
+                })}
             </ScrollView>
         </View>
     );
@@ -107,11 +121,10 @@ const styles = StyleSheet.create({
     },
     titleContainer: {
         textAlign: "center",
-        marginTop: 10,
-        paddingBottom: 10,
+        padding: 10,
         borderBottomWidth: 1,
         flexDirection: "row",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         alignItems: "center",
     },
     title: {

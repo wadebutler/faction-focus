@@ -1,8 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
-import { listArmyState } from "../../Atoms";
-import { orgIdState } from "../../Atoms";
+import { listArmyState, orgIdState } from "../../Atoms";
 import { useEffect, useState } from "react";
 
 export default function UnitSelectBar({ item }) {
@@ -57,7 +56,10 @@ export default function UnitSelectBar({ item }) {
 
             <View style={{ flexDirection: "row" }}>
                 <Text>+</Text>
-                <Text style={{ marginRight: 10 }}> {item.points} points</Text>
+                <Text style={{ marginRight: 10 }}>
+                    {" "}
+                    {item.points[item.modelCountIndex]} points
+                </Text>
             </View>
         </TouchableOpacity>
     );
