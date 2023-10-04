@@ -1973,96 +1973,126 @@
                     "oc": 1
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Infantry",
+                    "Chaos",
+                    "Nurgle",
+                    "Terminator",
+                    "Blightlord Terminator"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deep Strike"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Blistering Fusillade",
+                            "effect": "Each time a model in this unit makes a ranged attack, if it targets the closest eligible enemy unit, re-roll a Wound roll of 1."
                         }
                     ]
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
+                        "name": "Blight Launcher",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
                         "range": 24,
                         "active": true,
                         "data": {
                             "a": 1,
-                            "bs": 4,
-                            "s": 3,
+                            "bs": 2,
+                            "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": []
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
                         }
                     },
                     {
-                        "name": "Flamer",
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Plague Spewer",
                         "range": 12,
                         "active": false,
                         "data": {
                             "a": "D6",
                             "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
+                            "s": 5,
+                            "ap": 1,
                             "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
                         }
                     },
                     {
-                        "name": "Heavy Stubber",
+                        "name": "Reaper Autocannon",
                         "range": 36,
                         "active": false,
                         "data": {
-                            "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
+                            "a": 4,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
                             "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Sustained Hits 1"
+                            ]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Bubonic Blade",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
-                            "ws": 4,
-                            "s": 3,
-                            "ap": 0,
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
                             "d": 1,
-                            "keywords": []
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Flail of Corruption",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
@@ -2153,7 +2183,7 @@
                 "name": "Chaos Spawn",
                 "org": "Infantry",
                 "modelCount": [2],
-                "points": 75,
+                "points": 70,
                 "data": {
                     "movement": 8,
                     "toughness": 5,
@@ -2164,204 +2194,28 @@
                     "oc": 1
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": ["Beast", "Chaos", "Nurgle", "Spawn"],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Feel No Pain 5+"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Regenerating Monstrosities",
+                            "effect": "At the start of each player’s Command phase, one model in this unit regains up to D3 lost wounds."
                         }
                     ]
                 },
-                "ranged": [
-                    {
-                        "name": "Cultist Firearm",
-                        "range": 24,
-                        "active": true,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": []
-                        }
-                    },
-                    {
-                        "name": "Flamer",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Heavy Stubber",
-                        "range": 36,
-                        "active": false,
-                        "data": {
-                            "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
-                        }
-                    }
-                ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Hideous Mutations",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
+                            "a": "D6+2",
                             "ws": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": []
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "Chaos Rhino",
-                "org": "Vehicle",
-                "modelCount": [1],
-                "points": 120,
-                "data": {
-                    "movement": 6,
-                    "toughness": 9,
-                    "save": 2,
-                    "invulnerable": null,
-                    "wounds": 8,
-                    "leadership": 6,
-                    "oc": 3
-                },
-                "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
-                "ability": {
-                    "core": ["Scout 6\""],
-                    "faction": "Nurgle's Gift",
-                    "data": [
-                        {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
-                        }
-                    ]
-                },
-                "ranged": [
-                    {
-                        "name": "Cultist Firearm",
-                        "range": 24,
-                        "active": true,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": []
-                        }
-                    },
-                    {
-                        "name": "Flamer",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Heavy Stubber",
-                        "range": 36,
-                        "active": false,
-                        "data": {
-                            "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
-                        }
-                    }
-                ],
-                "melee": [
-                    {
-                        "name": "Brutal Assault Weapon",
-                        "range": "m",
-                        "active": true,
-                        "data": {
-                            "a": 2,
-                            "ws": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
                             "keywords": []
                         }
                     }
@@ -2371,7 +2225,7 @@
                 "name": "Helbrute",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 120,
+                "points": 140,
                 "data": {
                     "movement": 6,
                     "toughness": 9,
@@ -2382,95 +2236,204 @@
                     "oc": 3
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Chaos",
+                    "Nurgle",
+                    "Helbrute"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise 1"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Infused with the Blessings of Nurgle",
+                            "effect": "Each time this model is selected to shoot or fight, after it has finished making its attacks, select one enemy unit that was hit by one or more of those attacks. Until the start of your next turn, that enemy unit is always considered to be within Contagion Range of a unit from your army."
+                        },
+                        {
+                            "name": "Enraged Impact",
+                            "effect": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds."
+                        },
+                        {
+                            "name": "Helbrute Fists",
+                            "effect": "If this model is equipped with two Helbrute fists, those weapons have the [TWIN-LINKED] ability."
                         }
                     ]
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
-                        "range": 24,
+                        "name": "Heavy Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Helbrute Plasma Cannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": ["Blast", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Frag",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Krak",
+                        "range": 48,
                         "active": true,
                         "data": {
                             "a": 1,
-                            "bs": 4,
-                            "s": 3,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D6",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Multi-Melta",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Twin Autocannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Plague Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": [
+                                "Lethal Hits",
+                                "Sustained Hits 1",
+                                "Twin-Linked"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 6,
                             "ap": 0,
                             "d": 1,
                             "keywords": []
                         }
                     },
                     {
-                        "name": "Flamer",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Heavy Stubber",
-                        "range": 36,
-                        "active": false,
-                        "data": {
-                            "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
-                        }
-                    }
-                ],
-                "melee": [
-                    {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Helbrute Fist",
                         "range": "m",
-                        "active": true,
+                        "active": false,
                         "data": {
-                            "a": 2,
+                            "a": 5,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Helbrute Hammer",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
                             "ws": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Power Scourge",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
                             "keywords": []
                         }
                     }
@@ -2480,7 +2443,7 @@
                 "name": "Foetid Bloat-drone",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 115,
+                "points": 100,
                 "data": {
                     "movement": 10,
                     "toughness": 9,
@@ -2491,96 +2454,81 @@
                     "oc": 3
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Fly",
+                    "Chaos",
+                    "Nurgle",
+                    "Daemon",
+                    "Foetid Bloat-drone"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise 1"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Hovering Death",
+                            "effect": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back."
                         }
                     ]
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
-                        "range": 24,
-                        "active": true,
+                        "name": "Heavy Blight Launcher",
+                        "range": 36,
+                        "active": false,
                         "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": []
+                            "a": 6,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
                         }
                     },
                     {
-                        "name": "Flamer",
+                        "name": "Plaguespitter",
                         "range": 12,
                         "active": false,
                         "data": {
                             "a": "D6",
                             "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
+                            "s": 6,
+                            "ap": 1,
                             "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Heavy Stubber",
-                        "range": 36,
-                        "active": false,
-                        "data": {
-                            "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Fleshmower",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
-                            "ws": 4,
-                            "s": 3,
-                            "ap": 0,
+                            "a": 10,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Plague Probe",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
                             "d": 1,
-                            "keywords": []
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
@@ -2588,8 +2536,8 @@
             {
                 "name": "Myphitic Blight-Haulers",
                 "org": "Vehicle",
-                "modelCount": [1, 3],
-                "points": [50, 150],
+                "modelCount": [1, 2, 3],
+                "points": [100, 200, 300],
                 "data": {
                     "movement": 10,
                     "toughness": 9,
@@ -2600,96 +2548,90 @@
                     "oc": 3
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Daemon",
+                    "Smoke",
+                    "Myphitic Blight-Haulers"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise 1"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Tank Hunters",
+                            "effect": "Each time a model in this unit makes a ranged attack that targets a Vehicle unit, add 1 to the Wound roll."
                         }
                     ]
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
-                        "range": 24,
+                        "name": "Bile Spurt",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Frag",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Krak",
+                        "range": 48,
                         "active": true,
                         "data": {
                             "a": 1,
-                            "bs": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D6",
                             "keywords": []
                         }
                     },
                     {
-                        "name": "Flamer",
-                        "range": 12,
-                        "active": false,
+                        "name": "Multi-Melta",
+                        "range": 18,
+                        "active": true,
                         "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Heavy Stubber",
-                        "range": 36,
-                        "active": false,
-                        "data": {
-                            "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
+                            "a": 2,
+                            "bs": 3,
                             "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Gnashing Maw",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
-                            "ws": 4,
-                            "s": 3,
-                            "ap": 0,
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
                             "d": 1,
-                            "keywords": []
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
@@ -2698,7 +2640,7 @@
                 "name": "Plagueburst Crawler",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 140,
+                "points": 165,
                 "data": {
                     "movement": 10,
                     "toughness": 10,
@@ -2709,93 +2651,111 @@
                     "oc": 4
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Daemon",
+                    "Plagueburst Crawler"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise D3"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Spore-laced Shock Waves",
+                            "effect": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Plagueburst mortar scored a hit against an enemy Infantry unit, that Infantry unit must take a Battle-shock test."
                         }
-                    ]
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
+                        "name": "Entropy Cannon",
                         "range": 24,
                         "active": true,
                         "data": {
                             "a": 1,
-                            "bs": 4,
-                            "s": 3,
-                            "ap": 0,
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Slugger",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
                             "d": 1,
                             "keywords": []
                         }
                     },
                     {
-                        "name": "Flamer",
+                        "name": "Plagueburst Mortar",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": [
+                                "Blast",
+                                "Ignores Cover",
+                                "Lethal Hits"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Plaguespitter",
                         "range": 12,
                         "active": false,
                         "data": {
                             "a": "D6",
                             "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
+                            "s": 6,
+                            "ap": 1,
                             "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
+                            "keywords": [
+                                "Anit-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
                         }
                     },
                     {
-                        "name": "Heavy Stubber",
-                        "range": 36,
+                        "name": "Rothail Volley Gun",
+                        "range": 24,
                         "active": false,
                         "data": {
                             "a": 3,
-                            "bs": 4,
-                            "s": 4,
+                            "bs": 3,
+                            "s": 5,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "keywords": ["Lethal Hits", "Rapid Fire 3"]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Armoured Tracks",
                         "range": "m",
                         "active": true,
                         "data": {
                             "a": 2,
                             "ws": 4,
-                            "s": 3,
+                            "s": 6,
                             "ap": 0,
                             "d": 1,
                             "keywords": []
@@ -2807,7 +2767,7 @@
                 "name": "Chaos Land Raider",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 200,
+                "points": 240,
                 "data": {
                     "movement": 10,
                     "toughness": 12,
@@ -2818,93 +2778,112 @@
                     "oc": 5
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Transport",
+                    "Smoke",
+                    "Land Raider"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise D6"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Assault Ramp",
+                            "effect": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
                         }
-                    ]
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
+                        "name": "Combi-Weapon",
                         "range": 24,
-                        "active": true,
+                        "active": false,
                         "data": {
                             "a": 1,
-                            "bs": 4,
-                            "s": 3,
+                            "bs": 2,
+                            "s": 4,
                             "ap": 0,
                             "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Soulshatter Lascannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
                             "keywords": []
                         }
                     },
                     {
-                        "name": "Flamer",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Heavy Stubber",
+                        "name": "Twin Plague Heavy Bolter",
                         "range": 36,
-                        "active": false,
+                        "active": true,
                         "data": {
                             "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": [
+                                "Lethal Hits",
+                                "Sustained Hits 1",
+                                "Twin-Linked"
+                            ]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Armoured Tracks",
                         "range": "m",
                         "active": true,
                         "data": {
                             "a": 2,
                             "ws": 4,
-                            "s": 3,
+                            "s": 6,
                             "ap": 0,
                             "d": 1,
                             "keywords": []
@@ -2916,7 +2895,7 @@
                 "name": "Chaos Predator Annihilator",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 150,
+                "points": 130,
                 "data": {
                     "movement": 10,
                     "toughness": 10,
@@ -2927,93 +2906,121 @@
                     "oc": 4
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Transport",
+                    "Smoke",
+                    "Predator Annihilator"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise D3"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Annihilator",
+                            "effect": "Each time this model makes a ranged attack that targets a Monster or Vehicle unit, re-roll a Damage roll of 1."
                         }
-                    ]
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
+                        "name": "Combi-Weapon",
                         "range": 24,
-                        "active": true,
+                        "active": false,
                         "data": {
                             "a": 1,
                             "bs": 4,
-                            "s": 3,
+                            "s": 4,
                             "ap": 0,
                             "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
                             "keywords": []
                         }
                     },
                     {
-                        "name": "Flamer",
-                        "range": 12,
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
                         "active": false,
                         "data": {
-                            "a": "D6",
-                            "bs": "N/A",
+                            "a": 2,
+                            "bs": 3,
                             "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
                         }
                     },
                     {
-                        "name": "Heavy Stubber",
+                        "name": "Plague Heavy Bolter",
                         "range": 36,
                         "active": false,
                         "data": {
                             "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal Hits", "Sustained Hits 1"]
                         }
                     },
                     {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
+                        "name": "Predator Twin Lascannon",
+                        "range": 48,
                         "active": false,
                         "data": {
                             "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Armoured Tracks",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
+                            "a": 3,
                             "ws": 4,
-                            "s": 3,
+                            "s": 6,
                             "ap": 0,
                             "d": 1,
                             "keywords": []
@@ -3025,7 +3032,7 @@
                 "name": "Chaos Predator Destructor",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 150,
+                "points": 130,
                 "data": {
                     "movement": 10,
                     "toughness": 10,
@@ -3036,93 +3043,121 @@
                     "oc": 4
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Transport",
+                    "Smoke",
+                    "Predator Destructor"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise D3"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Destructor",
+                            "effect": "Each time this model makes a ranged attack that targets an Infantry unit, improve the Armour Penetration characteristic of that attack by 1."
                         }
-                    ]
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
+                        "name": "Combi-Weapon",
                         "range": 24,
-                        "active": true,
+                        "active": false,
                         "data": {
                             "a": 1,
                             "bs": 4,
-                            "s": 3,
+                            "s": 4,
                             "ap": 0,
                             "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
                             "keywords": []
                         }
                     },
                     {
-                        "name": "Flamer",
-                        "range": 12,
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
                         "active": false,
                         "data": {
-                            "a": "D6",
-                            "bs": "N/A",
+                            "a": 2,
+                            "bs": 3,
                             "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
                         }
                     },
                     {
-                        "name": "Heavy Stubber",
+                        "name": "Plague Heavy Bolter",
                         "range": 36,
                         "active": false,
                         "data": {
                             "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal Hits", "Sustained Hits 1"]
                         }
                     },
                     {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
+                        "name": "Predator Autocannon",
+                        "range": 48,
+                        "active": true,
                         "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
+                            "a": 4,
+                            "bs": 3,
                             "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Rapid Fire 2"]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Armoured Tracks",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
+                            "a": 3,
                             "ws": 4,
-                            "s": 3,
+                            "s": 6,
                             "ap": 0,
                             "d": 1,
                             "keywords": []
@@ -3134,7 +3169,7 @@
                 "name": "Defiler",
                 "org": "Vehicle",
                 "modelCount": [1],
-                "points": 150,
+                "points": 190,
                 "data": {
                     "movement": 8,
                     "toughness": 10,
@@ -3145,96 +3180,329 @@
                     "oc": 5
                 },
                 "factionKey": ["Death Guard"],
-                "keywords": ["Infantry", "Chaos", "Nurgle", "Cultists"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Transport",
+                    "Smoke",
+                    "Defiler"
+                ],
                 "ability": {
-                    "core": ["Scout 6\""],
+                    "core": ["Deadly Demise D3"],
                     "faction": "Nurgle's Gift",
                     "data": [
                         {
-                            "name": "Silent Bodyguard",
-                            "effect": "While a Character is leading this unit, if the Strength of an attack targeting this unit exceeds this unit's toughness, remove 1 from the wound roll."
+                            "name": "Scuttling Walker",
+                            "effect": "Each time this model makes a Normal, Advance or Fall Back move, it can move over friendly Monster and Vehicle models and terrain features that are 4\" or less in height as if they were not there."
                         }
-                    ]
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
                 },
                 "ranged": [
                     {
-                        "name": "Cultist Firearm",
+                        "name": "Combi-Weapon",
                         "range": 24,
-                        "active": true,
+                        "active": false,
                         "data": {
                             "a": 1,
                             "bs": 4,
-                            "s": 3,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": []
-                        }
-                    },
-                    {
-                        "name": "Flamer",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
                             "s": 4,
                             "ap": 0,
                             "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
                         }
                     },
                     {
-                        "name": "Heavy Stubber",
+                        "name": "Defiler Cannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Reaper Autocannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Sustained Hits 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Heavy Flamer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Ignores Cover",
+                                "Torrent",
+                                "Twin-Linked"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Plague Heavy Bolter",
                         "range": 36,
                         "active": false,
                         "data": {
                             "a": 3,
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Rapid Fire 3"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Frag",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": "D3",
-                            "bs": 4,
-                            "s": 4,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": ["Blast"]
-                        }
-                    },
-                    {
-                        "name": "Grenade Launcher - Krak",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 4,
-                            "s": 9,
-                            "ap": 2,
-                            "d": "D3",
-                            "keywords": ["Blast"]
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": [
+                                "Lethal Hits",
+                                "Sustained Hits 1",
+                                "Twin-Linked"
+                            ]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Defiler Claws",
                         "range": "m",
                         "active": true,
                         "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 16,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Defiler Scourge",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Death Gaurd Rhino",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": 75,
+                "data": {
+                    "movement": 12,
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Vehicle",
+                    "Chaos",
+                    "Nurgle",
+                    "Transport",
+                    "Smoke",
+                    "Rhino"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Firing Deck 2"],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Self Repair",
+                            "effect": "At the start of your Command phase, this model regains 1 lost wound."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Plague Combi-Bolter",
+                        "range": 24,
+                        "active": true,
+                        "data": {
                             "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Lethal Hits", "Rapid Fire 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
                             "ws": 4,
-                            "s": 3,
+                            "s": 6,
                             "ap": 0,
                             "d": 1,
                             "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Miasmic Malignifier",
+                "org": "Fortification",
+                "modelCount": [1],
+                "points": 115,
+                "data": {
+                    "movement": "-",
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 0
+                },
+                "factionKey": ["Death Guard"],
+                "keywords": [
+                    "Fortification",
+                    "Chaos",
+                    "Nurgle",
+                    "Miasmic Malignifier"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Infiltrators"],
+                    "faction": "Nurgle's Gift",
+                    "data": [
+                        {
+                            "name": "Putrescent Fog (Aura)",
+                            "effect": "While a friendly Death Guard unit is wholly within 6\" of this Fortification, each time an attack targets that unit, subtract 1 from the Hit roll."
+                        },
+                        {
+                            "name": "Diseased Cover",
+                            "effect": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack."
+                        },
+                        {
+                            "name": "Fortification",
+                            "effect": "While an enemy unit is only within Engagement Range of one or more Fortifications from your army:"
+                        },
+                        {
+                            "effect": "That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll."
+                        },
+                        {
+                            "effect": "Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Noxious Stink",
+                        "range": 6,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": "N/A",
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
                         }
                     }
                 ]
