@@ -27,7 +27,6 @@ export default function Confirm() {
         tempObj.roster = [];
         await tempArr.push(tempObj);
 
-        console.log(tempArr, tempObj);
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);
         navigation.navigate("Home");

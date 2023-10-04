@@ -24,7 +24,6 @@ export default function ListBuilder() {
             </View>
 
             <ScrollView>
-                {console.log(list)}
                 <RuleBar title={"Army Rule"} item={list.rule} />
                 <RuleBar title={"Detachment Rules"} item={list.detachment} />
 

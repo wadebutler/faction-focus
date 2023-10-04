@@ -5,8 +5,6 @@ import { ruleState } from "../../Atoms";
 export default function RuleView() {
     const [rule, setRule] = useRecoilState(ruleState);
 
-    console.log(rule);
-
     return (
         <ScrollView style={styles.container}>
             <Text style={styles.title}>{rule?.name}</Text>

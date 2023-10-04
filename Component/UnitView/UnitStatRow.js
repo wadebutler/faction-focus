@@ -3,8 +3,6 @@ import { StyleSheet, Text, View } from "react-native";
 export default function UnitStatRow({ unit }) {
     const data = unit?.data;
 
-    console.log("TEST", unit, data);
-
     return (
         <View style={styles.container}>
             <Text style={styles.unitNameText}>{unit?.name}</Text>

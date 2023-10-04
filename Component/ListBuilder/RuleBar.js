@@ -8,9 +8,7 @@ export default function RuleBar({ title, item }) {
     const [rule, setRule] = useRecoilState(ruleState);
 
     const handleNavigation = (rule) => {
-        console.log("test", rule, item);
         setRule(rule);
-
         navigation.navigate("Rule");
     };
 
