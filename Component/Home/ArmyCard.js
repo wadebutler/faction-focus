@@ -58,11 +58,11 @@ export default function ArmyCard({ item, handleDelete }) {
 
 const styles = StyleSheet.create({
     container: {
-        paddingVertical: 20,
+        padding: 20,
         borderRadius: 4,
         marginBottom: 20,
         flexDirection: "row",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         alignItems: "center",
         marginHorizontal: 20,
         backgroundColor: "orange",

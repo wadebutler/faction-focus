@@ -20,6 +20,7 @@ export default function WarlordCheckbox() {
             points: { ...list.points },
             roster: [...list.roster],
             title: list.title,
+            rule: list.rule,
             uid: list.uid,
         };
         let tempUnit = {

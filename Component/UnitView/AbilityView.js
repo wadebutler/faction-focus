@@ -36,7 +36,7 @@ export default function AbilityView({ ability, org }) {
                         </View>
                     )}
                 </View>
-            ) : ability?.leader.length === 0 ? null : (
+            ) : ability?.leader?.length === 0 || !ability.leader ? null : (
                 <View>
                     <Text style={styles.datasheetText}>Leader Abilities:</Text>
                     {ability?.leader.map((item, index) => {

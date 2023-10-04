@@ -20,6 +20,7 @@ export default function UnitList({ unit, id }) {
             points: list.points,
             roster: [...list.roster],
             title: list.title,
+            rule: list.rule,
             uid: list.uid,
         };
 
@@ -50,6 +51,7 @@ export default function UnitList({ unit, id }) {
             points: list.points,
             roster: [...list.roster],
             title: list.title,
+            rule: list.rule,
             uid: list.uid,
         };
 
@@ -86,7 +88,7 @@ export default function UnitList({ unit, id }) {
     return (
         <TouchableOpacity onPress={() => handleView(unit)} id={id}>
             <View style={styles.titleContainer}>
-                <Text style={{ maxWidth: 200 }}>{unit?.name}</Text>
+                <Text style={{ maxWidth: "80%" }}>{unit?.name}</Text>
 
                 <Text>{unit?.points} points</Text>
             </View>

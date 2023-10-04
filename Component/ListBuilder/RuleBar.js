@@ -7,13 +7,18 @@ export default function RuleBar({ title, item }) {
     const navigation = useNavigation();
     const [rule, setRule] = useRecoilState(ruleState);
 
-    const handleNavigation = () => {
-        setRule(item);
+    const handleNavigation = (rule) => {
+        console.log("test", rule, item);
+        setRule(rule);
+
         navigation.navigate("Rule");
     };
 
     return (
-        <TouchableOpacity onPress={() => handleNavigation()} style={styles.bar}>
+        <TouchableOpacity
+            onPress={() => handleNavigation(item)}
+            style={styles.bar}
+        >
             <Text>{title}</Text>
 
             <View style={styles.button}>

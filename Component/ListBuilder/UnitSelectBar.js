@@ -18,6 +18,7 @@ export default function UnitSelectBar({ item }) {
             points: list.points,
             roster: [...list.roster],
             title: list.title,
+            rule: list.rule,
             uid: list.uid,
         };
         tempObj.roster.push(unit);
@@ -52,7 +53,7 @@ export default function UnitSelectBar({ item }) {
             onPress={() => handleAdd(item)}
             style={[styles.button, { opacity: disabled ? 0.7 : 1 }]}
         >
-            <Text>{item.name}</Text>
+            <Text style={styles.maxText}>{item.name}</Text>
 
             <View style={{ flexDirection: "row" }}>
                 <Text>+</Text>
@@ -70,5 +71,9 @@ const styles = StyleSheet.create({
         padding: 10,
         margin: 10,
         borderRadius: 4,
+    },
+    maxText: {
+        flexWrap: "wrap",
+        maxWidth: "80%",
     },
 });

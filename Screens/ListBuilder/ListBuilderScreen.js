@@ -12,12 +12,19 @@ export default function ListBuilder() {
     return (
         <View style={styles.container}>
             <View style={styles.titleContainer}>
-                <Text style={styles.title}>{list?.title}</Text>
+                <Text
+                    numberOfLines={1}
+                    ellipsizeMode="tail"
+                    style={styles.title}
+                >
+                    {list?.title}
+                </Text>
 
                 <PointCalculator />
             </View>
 
             <ScrollView>
+                {console.log(list)}
                 <RuleBar title={"Army Rule"} item={list.rule} />
                 <RuleBar title={"Detachment Rules"} item={list.detachment} />
 
@@ -110,6 +117,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
+        maxWidth: "70%",
     },
     pointContainer: {
         flexDirection: "row",

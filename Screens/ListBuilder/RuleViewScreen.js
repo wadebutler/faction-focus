@@ -5,14 +5,16 @@ import { ruleState } from "../../Atoms";
 export default function RuleView() {
     const [rule, setRule] = useRecoilState(ruleState);
 
+    console.log(rule);
+
     return (
         <ScrollView style={styles.container}>
-            <Text style={styles.title}>{rule.name}</Text>
-            <Text style={styles.marginBig}>{rule.effect}</Text>
+            <Text style={styles.title}>{rule?.name}</Text>
+            <Text style={styles.marginBig}>{rule?.effect}</Text>
 
-            {!rule.range
+            {!rule?.range
                 ? null
-                : rule.range.map((item) => {
+                : rule?.range.map((item) => {
                       return (
                           <View key={item["Battle Round"]}>
                               <Text>
@@ -27,11 +29,11 @@ export default function RuleView() {
                       );
                   })}
 
-            {!rule.select ? null : (
+            {!rule?.select ? null : (
                 <View>
-                    <Text style={styles.marginBig}>{rule.select.rule}</Text>
+                    <Text style={styles.marginBig}>{rule?.select.rule}</Text>
 
-                    {rule.select.options.map((item) => {
+                    {rule?.select.options.map((item) => {
                         return (
                             <View style={styles.marginSmall} key={item.title}>
                                 <Text>{item.title}</Text>
@@ -42,11 +44,11 @@ export default function RuleView() {
                 </View>
             )}
 
-            {!rule.stratagems ? null : (
+            {!rule?.stratagems ? null : (
                 <View style={{ marginTop: -20 }}>
                     <Text style={styles.title}>Stratagems</Text>
 
-                    {rule.stratagems.map((item) => {
+                    {rule?.stratagems.map((item) => {
                         return (
                             <View style={styles.marginBig} key={item.name}>
                                 <Text style={styles.stratTitle}>
