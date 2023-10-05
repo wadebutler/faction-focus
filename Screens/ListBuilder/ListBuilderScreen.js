@@ -5,6 +5,7 @@ import Bar from "../../Component/ListBuilder/Bar";
 import RuleBar from "../../Component/ListBuilder/RuleBar";
 import UnitList from "../../Component/ListBuilder/UnitList";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
+import AllyBar from "../../Component/ListBuilder/AllyBar";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -109,6 +110,16 @@ export default function ListBuilder() {
                             />
                         );
                     }
+                })}
+
+                {list.allies.map((item, index) => {
+                    return (
+                        <AllyBar
+                            key={index}
+                            id={item.id}
+                            keyword={item.keyword}
+                        />
+                    );
                 })}
             </ScrollView>
         </View>

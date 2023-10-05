@@ -12,6 +12,7 @@ import ViewUnit from "./Screens/ListBuilder/UnitViewScreen";
 import EditUnit from "./Screens/ListBuilder/UnitEditScreen";
 import { StatusBar } from "react-native";
 import RuleView from "./Screens/ListBuilder/RuleViewScreen";
+import AllySelect from "./Screens/ListBuilder/AllySelectScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -69,6 +70,11 @@ export default function App() {
                     <Stack.Screen
                         name="Rule"
                         component={RuleView}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="Ally"
+                        component={AllySelect}
                         options={{ headerShown: false }}
                     />
                 </Stack.Navigator>

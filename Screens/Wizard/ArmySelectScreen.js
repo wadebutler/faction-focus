@@ -18,6 +18,7 @@ export default function ArmySelectScreen() {
         const handleSelect = () => {
             let tempObj = {
                 army: item.name,
+                allies: item.allies,
                 rule: item.rule,
                 id: item.id,
             };
@@ -25,6 +26,10 @@ export default function ArmySelectScreen() {
             setArmy(tempObj);
             navigation.navigate("PointSelect");
         };
+
+        if (item.ignore) {
+            return;
+        }
 
         return (
             <TouchableOpacity

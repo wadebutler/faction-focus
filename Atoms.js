@@ -29,3 +29,8 @@ export const ruleState = atom({
     key: "ruleState",
     default: "",
 });
+
+export const allyRosterState = atom({
+    key: "allyRosterState",
+    default: "",
+});
