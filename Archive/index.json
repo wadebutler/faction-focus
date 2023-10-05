@@ -3555,6 +3555,7 @@
     },
     {
         "name": "Chaos Knights",
+        "ignore": true,
         "id": "CK",
         "rule": {
             "name": "Harbingers of Dread",

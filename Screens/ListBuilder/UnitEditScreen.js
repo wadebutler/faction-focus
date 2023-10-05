@@ -8,6 +8,7 @@ import LeaderRule from "../../Component/UnitEdit/LeaderRule";
 import { unitEditState } from "../../Atoms";
 import WarlordCheckbox from "../../Component/UnitEdit/WarlordCheckbox";
 import UnitSize from "../../Component/UnitEdit/UnitSize";
+import ViewIcon from "../../Component/Icons/ViewIcon";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -19,7 +20,7 @@ export default function UnitEdit() {
                 onPress={() => navigation.navigate("ViewUnit")}
                 style={styles.button}
             >
-                <Text>View</Text>
+                <ViewIcon />
             </TouchableOpacity>
 
             <UnitStatRow unit={unitEdit.unit} />

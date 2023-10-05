@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { ruleState } from "../../Atoms";
+import ViewIcon from "../Icons/ViewIcon";
 
 export default function RuleBar({ title, item }) {
     const navigation = useNavigation();
@@ -20,7 +21,7 @@ export default function RuleBar({ title, item }) {
             <Text>{title}</Text>
 
             <View style={styles.button}>
-                <Text>view</Text>
+                <ViewIcon />
             </View>
         </TouchableOpacity>
     );
