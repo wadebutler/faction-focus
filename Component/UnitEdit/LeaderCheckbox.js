@@ -15,6 +15,7 @@ export default function LeaderCheckbox({ item }) {
         const tempId = unitEdit.unitId;
         let tempObj = {
             army: list.army,
+            allies: [...list.allies],
             detachment: { ...list.detachment },
             id: list.id,
             points: { ...list.points },

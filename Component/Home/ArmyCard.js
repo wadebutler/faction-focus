@@ -3,6 +3,9 @@ import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
+import TrashIcon from "../Icons/TrashIcon";
+import CheckIcon from "../Icons/CheckIcon";
+import CloseIcon from "../Icons/CloseIcon";
 
 export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();
@@ -10,6 +13,7 @@ export default function ArmyCard({ item, handleDelete }) {
     const [list, setList] = useRecoilState(listArmyState);
 
     const handleSelect = (listItem) => {
+        setConfirm(false);
         setList(listItem);
         navigation.navigate("ListBuilder");
     };
@@ -35,13 +39,13 @@ export default function ArmyCard({ item, handleDelete }) {
                             { backgroundColor: "green", marginRight: 10 },
                         ]}
                     >
-                        <Text style={{ color: "#fff" }}>Y</Text>
+                        <CheckIcon />
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={() => setConfirm(false)}
                         style={[styles.trash, { backgroundColor: "red" }]}
                     >
-                        <Text style={{ color: "#fff" }}>X</Text>
+                        <CloseIcon />
                     </TouchableOpacity>
                 </View>
             ) : (
@@ -49,7 +53,7 @@ export default function ArmyCard({ item, handleDelete }) {
                     onPress={() => setConfirm(true)}
                     style={styles.trash}
                 >
-                    <Text style={{ color: "#fff" }}>T</Text>
+                    <TrashIcon />
                 </TouchableOpacity>
             )}
         </TouchableOpacity>

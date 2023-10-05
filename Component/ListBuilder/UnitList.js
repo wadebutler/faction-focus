@@ -13,6 +13,7 @@ export default function UnitList({ unit, id }) {
     const handleDelete = async () => {
         let tempObj = {
             army: list.army,
+            allies: [...list.allies],
             detachment: list.detachment,
             id: list.id,
             points: list.points,
@@ -44,6 +45,7 @@ export default function UnitList({ unit, id }) {
     const handleDuplicate = async () => {
         let tempObj = {
             army: list.army,
+            allies: [...list.allies],
             detachment: list.detachment,
             id: list.id,
             points: list.points,

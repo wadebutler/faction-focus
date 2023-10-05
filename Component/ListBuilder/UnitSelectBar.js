@@ -12,6 +12,7 @@ export default function UnitSelectBar({ item }) {
     const handleAdd = async (unit) => {
         let tempObj = {
             army: list.army,
+            allies: [...list.allies],
             detachment: list.detachment,
             id: list.id,
             points: list.points,
