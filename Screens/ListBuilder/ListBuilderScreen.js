@@ -111,7 +111,7 @@ export default function ListBuilder() {
                         );
                     }
                 })}
-                {list?.allies.map((item, index) => {
+                {/* {list?.allies.map((item, index) => {
                     return (
                         <AllyBar
                             key={index}
@@ -119,7 +119,7 @@ export default function ListBuilder() {
                             keyword={item.keyword}
                         />
                     );
-                })}
+                })} */}
             </ScrollView>
         </View>
     );

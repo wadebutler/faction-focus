@@ -4,6 +4,7 @@ import { useRecoilState } from "recoil";
 import { listArmyState, allyRosterState } from "../../Atoms";
 import { useEffect, useState } from "react";
 import data from "../../Archive/index.json";
+import PlusIcon from "../Icons/PlusIcon";
 
 export default function AllyBar({ id, keyword }) {
     const navigation = useNavigation();
@@ -30,7 +31,7 @@ export default function AllyBar({ id, keyword }) {
             <Text>Ally {allies?.name}</Text>
 
             <View style={styles.button}>
-                <Text>+</Text>
+                <PlusIcon />
             </View>
         </TouchableOpacity>
     );

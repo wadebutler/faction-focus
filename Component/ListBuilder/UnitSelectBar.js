@@ -3,6 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
 import { listArmyState, orgIdState } from "../../Atoms";
 import { useEffect, useState } from "react";
+import PlusIcon from "../Icons/PlusIcon";
 
 export default function UnitSelectBar({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
@@ -56,7 +57,7 @@ export default function UnitSelectBar({ item }) {
             <Text style={styles.maxText}>{item.name}</Text>
 
             <View style={{ flexDirection: "row" }}>
-                <Text>+</Text>
+                <PlusIcon />
                 <Text style={{ marginRight: 10 }}>
                     {" "}
                     {item.points[item.modelCountIndex]} points

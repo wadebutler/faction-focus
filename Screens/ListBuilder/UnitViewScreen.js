@@ -11,7 +11,7 @@ import EnhancementView from "../../Component/UnitView/EnhancementView";
 export default function UnitView() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
 
-    useEffect(() => {}, [unitView]);
+    // useEffect(() => {}, [unitView]);
 
     return (
         <ScrollView>

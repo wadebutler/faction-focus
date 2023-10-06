@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
 export default function AbilityView({ ability, org }) {
-    console.log(ability);
     return (
         <View>
             {!ability?.core ? null : (

@@ -1461,12 +1461,10 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": [
-                        {
-                            "name": "Sickening Vitality",
-                            "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Sickening Vitality",
+                        "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
+                    },
                     "data": [
                         {
                             "name": "The Bell Tolls (Aura)",
@@ -1549,12 +1547,10 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": [
-                        {
-                            "name": "Putrefying Stink",
-                            "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Putrefying Stink",
+                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                    },
                     "data": [
                         {
                             "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
@@ -1624,12 +1620,10 @@
                 "ability": {
                     "core": ["Deadly Demise 1", "Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": [
-                        {
-                            "name": "Foul Infusion",
-                            "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability. In addition, each time a model in that unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Foul Infusion",
+                        "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability. In addition, each time a model in that unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6."
+                    },
                     "data": [
                         {
                             "name": "Explosive Maladies",
@@ -1712,12 +1706,10 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": [
-                        {
-                            "name": "Malicious Calculations",
-                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Malicious Calculations",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
+                    },
                     "data": [
                         {
                             "name": "The Seven-fold Chant",
@@ -1804,12 +1796,10 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": [
-                        {
-                            "name": "Tainted Narthecium",
-                            "effect": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Tainted Narthecium",
+                        "effect": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit."
+                    },
                     "data": [
                         {
                             "name": "Diseased Healing",
@@ -3504,12 +3494,10 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": [
-                        {
-                            "name": "Unclean Icon",
-                            "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Unclean Icon",
+                        "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+                    },
                     "data": [
                         {
                             "name": "Seed the Disease",

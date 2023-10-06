@@ -44,7 +44,7 @@ export default function Confirm() {
             />
 
             <View style={styles.summaryContainer}>
-                <Text style={styles.text}>{army.army}</Text>
+                <Text style={styles.text}>{army.name}</Text>
 
                 <Text style={styles.text}>{army.detachment.name}</Text>
 

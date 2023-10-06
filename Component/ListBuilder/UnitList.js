@@ -22,8 +22,20 @@ export default function UnitList({ unit, id }) {
             rule: list.rule,
             uid: list.uid,
         };
+        let tempRoster = JSON.parse(JSON.stringify(tempObj));
+        tempRoster.roster.splice(id, 1);
 
-        tempObj.roster.splice(id, 1);
+        if (unit.org === "Character") {
+            tempRoster.roster.map((item, index) => {
+                if (item.org === "Battleline" || item.org === "infantry") {
+                    item.ability.leader.map((x, i) => {
+                        if (x.unit === unit.name) {
+                            item.ability.leader.splice(i, 1);
+                        }
+                    });
+                }
+            });
+        }
 
         const tempData = await AsyncStorage.getItem("lists");
         const listData = tempData ? await JSON.parse(tempData) : null;
@@ -35,11 +47,11 @@ export default function UnitList({ unit, id }) {
             }
         });
 
-        tempArr.push(tempObj);
+        tempArr.push(tempRoster);
 
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);
-        setList(tempObj);
+        setList(tempRoster);
     };
 
     const handleDuplicate = async () => {

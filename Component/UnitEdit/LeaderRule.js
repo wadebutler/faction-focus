@@ -9,6 +9,7 @@ export default function LeaderRule() {
 
     return (
         <View style={{ marginTop: 10 }}>
+            {console.log(unitEdit)}
             <Text style={styles.title}>Assign Leader</Text>
 
             {list.roster.map((item, index) => {

@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { orgIdState } from "../../Atoms";
+import PlusIcon from "../Icons/PlusIcon";
 
 export default function Bar({ title }) {
     const navigation = useNavigation();
@@ -17,7 +18,7 @@ export default function Bar({ title }) {
             <Text>{title}</Text>
 
             <View style={styles.button}>
-                <Text>+</Text>
+                <PlusIcon />
             </View>
         </TouchableOpacity>
     );
