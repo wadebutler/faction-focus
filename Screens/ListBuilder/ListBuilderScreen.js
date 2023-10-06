@@ -9,7 +9,6 @@ import AllyBar from "../../Component/ListBuilder/AllyBar";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
-
     return (
         <View style={styles.container}>
             <View style={styles.titleContainer}>
@@ -28,12 +27,15 @@ export default function ListBuilder() {
                 <RuleBar title={"Army Rule"} item={list.rule} />
                 <RuleBar title={"Detachment Rules"} item={list.detachment} />
 
-                <Bar title={"HQ"} />
+                <Bar title={"Character"} />
                 {list?.roster.map((item, index) => {
-                    if (item.org === "HQ") {
+                    if (
+                        item.org === "Character" &&
+                        list.name === item.factionKey[0]
+                    ) {
                         return (
                             <UnitList
-                                org={"HQ"}
+                                org={"Character"}
                                 unit={item}
                                 key={index}
                                 id={index}
@@ -44,7 +46,10 @@ export default function ListBuilder() {
 
                 <Bar title={"Battleline"} />
                 {list?.roster.map((item, index) => {
-                    if (item.org === "Battleline") {
+                    if (
+                        item.org === "Battleline" &&
+                        list.name === item.factionKey[0]
+                    ) {
                         return (
                             <UnitList
                                 org={"Battleline"}
@@ -58,7 +63,10 @@ export default function ListBuilder() {
 
                 <Bar title={"Infantry"} />
                 {list?.roster.map((item, index) => {
-                    if (item.org === "Infantry") {
+                    if (
+                        item.org === "Infantry" &&
+                        list.name === item.factionKey[0]
+                    ) {
                         return (
                             <UnitList
                                 org={"Infantry"}
@@ -70,23 +78,12 @@ export default function ListBuilder() {
                     }
                 })}
 
-                <Bar title={"Character"} />
-                {list?.roster.map((item, index) => {
-                    if (item.org === "Character") {
-                        return (
-                            <UnitList
-                                org={"Character"}
-                                unit={item}
-                                key={index}
-                                id={index}
-                            />
-                        );
-                    }
-                })}
-
                 <Bar title={"Vehicle"} />
                 {list?.roster.map((item, index) => {
-                    if (item.org === "Vehicle") {
+                    if (
+                        item.org === "Vehicle" &&
+                        list.name === item.factionKey[0]
+                    ) {
                         return (
                             <UnitList
                                 org={"Vehicle"}
@@ -100,7 +97,10 @@ export default function ListBuilder() {
 
                 <Bar title={"Fortification"} />
                 {list?.roster.map((item, index) => {
-                    if (item.org === "Fortification") {
+                    if (
+                        item.org === "Fortification" &&
+                        list.name === item.factionKey[0]
+                    ) {
                         return (
                             <UnitList
                                 org={"Fortification"}

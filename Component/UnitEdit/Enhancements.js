@@ -15,7 +15,7 @@ export default function Enhancements() {
     const handleCheck = async (num, item) => {
         const tempId = unitEdit.unitId;
         let tempObj = {
-            army: list.army,
+            name: list.name,
             allies: [...list.allies],
             detachment: { ...list.detachment },
             id: list.id,
@@ -32,7 +32,6 @@ export default function Enhancements() {
             keywords: [...unitEdit.unit.keywords],
             melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
             modelCount: [...unitEdit.unit["modelCount"]],
-            leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : [],
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
             modelCountIndex: unitEdit.unit.modelCountIndex,

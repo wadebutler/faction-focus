@@ -13,10 +13,8 @@ export default function LeaderRule() {
 
             {list.roster.map((item, index) => {
                 if (
-                    (item.org === "HQ" &&
-                        item.leader.includes(unitEdit.unit.name)) ||
-                    (item.org === "Character" &&
-                        item.leader.includes(unitEdit.unit.name))
+                    item.org === "Character" &&
+                    item.leader.includes(unitEdit.unit.name)
                 ) {
                     return <LeaderCheckbox key={index} item={item} />;
                 }

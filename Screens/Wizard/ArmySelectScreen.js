@@ -17,7 +17,7 @@ export default function ArmySelectScreen() {
     const armyListItem = (item) => {
         const handleSelect = () => {
             let tempObj = {
-                army: item.name,
+                name: item.name,
                 allies: item.allies,
                 rule: item.rule,
                 id: item.id,

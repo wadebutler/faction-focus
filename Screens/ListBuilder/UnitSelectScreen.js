@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { orgIdState, listArmyState } from "../../Atoms";
 import data from "../../Archive/index.json";
@@ -19,13 +19,13 @@ export default function UnitSelect() {
     }, []);
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             {units?.map((item, index) => {
                 if (item.org === orgId) {
                     return <UnitSelectBar item={item} key={index} />;
                 }
             })}
-        </View>
+        </ScrollView>
     );
 }
 
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         paddingTop: 10,
+        paddingBottom: 20,
         backgroundColor: "#000",
     },
 });

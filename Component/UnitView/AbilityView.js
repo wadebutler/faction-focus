@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
 export default function AbilityView({ ability, org }) {
+    console.log(ability);
     return (
         <View>
             {!ability?.core ? null : (
@@ -18,10 +19,14 @@ export default function AbilityView({ ability, org }) {
 
             <View style={styles.dataContainer}>
                 <Text>Faction Ability: </Text>
-                <Text style={styles.dashText}>{ability?.faction}</Text>
+                {ability?.faction.map((item) => (
+                    <Text key={item} style={styles.dashText}>
+                        {item}
+                    </Text>
+                ))}
             </View>
 
-            {org === "HQ" || org === "Character" ? (
+            {org === "Character" ? (
                 <View>
                     <Text style={styles.datasheetText}>Leader Abilities:</Text>
 
@@ -36,7 +41,7 @@ export default function AbilityView({ ability, org }) {
                         </View>
                     )}
                 </View>
-            ) : ability?.leader?.length === 0 || !ability.leader ? null : (
+            ) : ability?.leader?.length === 0 ? null : (
                 <View>
                     <Text style={styles.datasheetText}>Leader Abilities:</Text>
                     {ability?.leader.map((item, index) => {

@@ -25,7 +25,7 @@ export default function UnitEdit() {
 
             <UnitStatRow unit={unitEdit.unit} />
 
-            {unitEdit.unit.org !== "HQ" ? null : <WarlordCheckbox />}
+            {unitEdit.unit.org !== "Character" ? null : <WarlordCheckbox />}
 
             {unitEdit.unit.modelCount.length === 1 ? null : <UnitSize />}
 
@@ -42,7 +42,7 @@ export default function UnitEdit() {
                 <WargearSelect unit={unitEdit.unit} type={"melee"} />
             )}
 
-            {unitEdit.unit.org === "HQ" &&
+            {unitEdit.unit.org === "Character" &&
             unitEdit.unit.keywords.includes("Epic Hero") === false ? (
                 <Enhancements />
             ) : null}

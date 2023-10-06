@@ -12,7 +12,7 @@ export default function UnitList({ unit, id }) {
 
     const handleDelete = async () => {
         let tempObj = {
-            army: list.army,
+            name: list.name,
             allies: [...list.allies],
             detachment: list.detachment,
             id: list.id,
@@ -44,7 +44,7 @@ export default function UnitList({ unit, id }) {
 
     const handleDuplicate = async () => {
         let tempObj = {
-            army: list.army,
+            name: list.name,
             allies: [...list.allies],
             detachment: list.detachment,
             id: list.id,
@@ -84,7 +84,6 @@ export default function UnitList({ unit, id }) {
         setUnitEdit(unit);
         navigation.navigate("EditUnit");
     };
-
     return (
         <TouchableOpacity onPress={() => handleView(unit)} id={id}>
             <View style={styles.titleContainer}>

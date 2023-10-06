@@ -14,7 +14,7 @@ export default function LeaderCheckbox({ item }) {
     const handleCheck = async () => {
         const tempId = unitEdit.unitId;
         let tempObj = {
-            army: list.army,
+            name: list.name,
             allies: [...list.allies],
             detachment: { ...list.detachment },
             id: list.id,
@@ -31,7 +31,6 @@ export default function LeaderCheckbox({ item }) {
             keywords: [...unitEdit.unit.keywords],
             melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
             modelCount: [...unitEdit.unit["modelCount"]],
-            leader: unitEdit.unit.leader ? [...unitEdit.unit.leader] : [],
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
             modelCountIndex: unitEdit.unit.modelCountIndex,
@@ -85,7 +84,7 @@ export default function LeaderCheckbox({ item }) {
     useEffect(() => {
         list.roster.map((unit, index) => {
             if (index === unitEdit.unitId) {
-                if (unit?.ability?.leader.some((e) => e?.unit === item.name)) {
+                if (unit?.ability?.leader?.some((e) => e?.unit === item.name)) {
                     setChecked(true);
                 }
             }
