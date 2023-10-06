@@ -56,7 +56,7 @@ export default function UnitSelectBar({ item }) {
         >
             <Text style={styles.maxText}>{item.name}</Text>
 
-            <View style={{ flexDirection: "row" }}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <PlusIcon />
                 <Text style={{ marginRight: 10 }}>
                     {" "}

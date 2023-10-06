@@ -100,10 +100,26 @@ export default function UnitList({ unit, id }) {
     return (
         <TouchableOpacity onPress={() => handleView(unit)} id={id}>
             <View style={styles.titleContainer}>
-                <Text style={{ maxWidth: "80%" }}>{unit?.name}</Text>
+                <Text
+                    style={{
+                        maxWidth: "80%",
+                        fontSize: 15,
+                        fontWeight: "bold",
+                    }}
+                >
+                    {unit?.name}
+                </Text>
 
-                <Text>{unit?.points[unit.modelCountIndex]} points</Text>
+                <Text style={{ fontSize: 15, fontWeight: "bold" }}>
+                    {unit?.points[unit.modelCountIndex]} points
+                </Text>
             </View>
+
+            {!unit?.ability?.leader.length
+                ? null
+                : unit?.ability?.leader.map((item) => {
+                      return <Text style={styles.leaderText}>{item.unit}</Text>;
+                  })}
 
             <View style={styles.buttonContainer}>
                 <TouchableOpacity
@@ -135,9 +151,8 @@ const styles = StyleSheet.create({
     titleContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
-        padding: 10,
-        paddingTop: 30,
-        paddingBottom: 30,
+        paddingVertical: 20,
+        paddingHorizontal: 10,
     },
     buttonContainer: {
         flexDirection: "row",
@@ -145,9 +160,12 @@ const styles = StyleSheet.create({
     button: {
         borderWidth: 1,
         width: "33.3%",
-        // width: "25%",
         height: 40,
         alignItems: "center",
         justifyContent: "center",
+    },
+    leaderText: {
+        paddingLeft: 10,
+        paddingBottom: 10,
     },
 });

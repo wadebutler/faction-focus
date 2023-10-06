@@ -6,9 +6,10 @@ import {
     FlatList,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import ArmyCard from "../Component/Home/ArmyCard";
+import { useFocusEffect } from "@react-navigation/native";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -35,9 +36,11 @@ export default function Home() {
         setArmyList(newArr);
     };
 
-    useEffect(() => {
-        fetchData();
-    }, [armyList]);
+    useFocusEffect(
+        useCallback(() => {
+            fetchData();
+        }, [])
+    );
 
     return (
         <View style={styles.container}>
