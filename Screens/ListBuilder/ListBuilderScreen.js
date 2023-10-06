@@ -5,7 +5,6 @@ import Bar from "../../Component/ListBuilder/Bar";
 import RuleBar from "../../Component/ListBuilder/RuleBar";
 import UnitList from "../../Component/ListBuilder/UnitList";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
-import AllyBar from "../../Component/ListBuilder/AllyBar";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -33,14 +32,7 @@ export default function ListBuilder() {
                         item.org === "Character" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return (
-                            <UnitList
-                                org={"Character"}
-                                unit={item}
-                                key={index}
-                                id={index}
-                            />
-                        );
+                        return <UnitList unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -50,14 +42,7 @@ export default function ListBuilder() {
                         item.org === "Battleline" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return (
-                            <UnitList
-                                org={"Battleline"}
-                                unit={item}
-                                key={index}
-                                id={index}
-                            />
-                        );
+                        return <UnitList unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -67,14 +52,7 @@ export default function ListBuilder() {
                         item.org === "Infantry" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return (
-                            <UnitList
-                                org={"Infantry"}
-                                unit={item}
-                                key={index}
-                                id={index}
-                            />
-                        );
+                        return <UnitList unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -84,14 +62,7 @@ export default function ListBuilder() {
                         item.org === "Vehicle" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return (
-                            <UnitList
-                                org={"Vehicle"}
-                                unit={item}
-                                key={index}
-                                id={index}
-                            />
-                        );
+                        return <UnitList unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -101,25 +72,16 @@ export default function ListBuilder() {
                         item.org === "Fortification" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return (
-                            <UnitList
-                                org={"Fortification"}
-                                unit={item}
-                                key={index}
-                                id={index}
-                            />
-                        );
+                        return <UnitList unit={item} key={index} id={index} />;
                     }
                 })}
-                {/* {list?.allies.map((item, index) => {
-                    return (
-                        <AllyBar
-                            key={index}
-                            id={item.id}
-                            keyword={item.keyword}
-                        />
-                    );
-                })} */}
+
+                <Bar title={"Allies"} />
+                {list?.roster.map((item, index) => {
+                    if (item.factionKey[0] !== list.name) {
+                        return <UnitList unit={item} key={index} id={index} />;
+                    }
+                })}
             </ScrollView>
         </View>
     );

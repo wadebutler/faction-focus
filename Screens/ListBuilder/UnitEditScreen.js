@@ -5,13 +5,14 @@ import WargearSelect from "../../Component/UnitEdit/WargearSelect";
 import { useNavigation } from "@react-navigation/native";
 import Enhancements from "../../Component/UnitEdit/Enhancements";
 import LeaderRule from "../../Component/UnitEdit/LeaderRule";
-import { unitEditState } from "../../Atoms";
+import { unitEditState, listArmyState } from "../../Atoms";
 import WarlordCheckbox from "../../Component/UnitEdit/WarlordCheckbox";
 import UnitSize from "../../Component/UnitEdit/UnitSize";
 import ViewIcon from "../../Component/Icons/ViewIcon";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
+    const [list, setList] = useRecoilState(listArmyState);
     const navigation = useNavigation();
 
     return (
@@ -25,7 +26,10 @@ export default function UnitEdit() {
 
             <UnitStatRow unit={unitEdit.unit} />
 
-            {unitEdit.unit.org !== "Character" ? null : <WarlordCheckbox />}
+            {unitEdit.unit.org !== "Character" ||
+            unitEdit.unit.factionKey[0] !== list.name ? null : (
+                <WarlordCheckbox />
+            )}
 
             {unitEdit.unit.modelCount.length === 1 ? null : <UnitSize />}
 
@@ -43,7 +47,8 @@ export default function UnitEdit() {
             )}
 
             {unitEdit.unit.org === "Character" &&
-            unitEdit.unit.keywords.includes("Epic Hero") === false ? (
+            unitEdit.unit.keywords.includes("Epic Hero") === false &&
+            unitEdit.unit.factionKey[0] === list.name ? (
                 <Enhancements />
             ) : null}
         </ScrollView>

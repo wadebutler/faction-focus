@@ -9,8 +9,12 @@ export default function Bar({ title }) {
     const [orgId, setOrgId] = useRecoilState(orgIdState);
 
     const handleNavigation = () => {
-        setOrgId(title);
-        navigation.navigate("UnitSelect");
+        if (title === "Allies") {
+            navigation.navigate("Ally");
+        } else {
+            setOrgId(title);
+            navigation.navigate("UnitSelect");
+        }
     };
 
     return (

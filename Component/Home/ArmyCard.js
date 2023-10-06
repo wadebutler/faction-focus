@@ -25,7 +25,7 @@ export default function ArmyCard({ item, handleDelete }) {
         >
             <View>
                 <Text>{item.title}</Text>
-                <Text>{item.army}</Text>
+                <Text>{item.name}</Text>
                 <Text>{item?.detachment?.name}</Text>
                 <Text>{item?.points?.value} Points</Text>
             </View>

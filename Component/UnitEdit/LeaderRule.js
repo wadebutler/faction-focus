@@ -9,13 +9,12 @@ export default function LeaderRule() {
 
     return (
         <View style={{ marginTop: 10 }}>
-            {console.log(unitEdit)}
             <Text style={styles.title}>Assign Leader</Text>
 
             {list.roster.map((item, index) => {
                 if (
-                    item.org === "Character" &&
-                    item.leader.includes(unitEdit.unit.name)
+                    item?.org === "Character" &&
+                    item?.leader?.includes(unitEdit.unit.name)
                 ) {
                     return <LeaderCheckbox key={index} item={item} />;
                 }

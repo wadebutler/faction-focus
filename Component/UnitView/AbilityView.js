@@ -40,17 +40,17 @@ export default function AbilityView({ ability, org }) {
                         </View>
                     )}
                 </View>
-            ) : ability?.leader?.length === 0 ? null : (
+            ) : !ability.leader ? null : (
                 <View>
                     <Text style={styles.datasheetText}>Leader Abilities:</Text>
-                    {ability?.leader.map((item, index) => {
+                    {ability?.leader?.map((item, index) => {
                         return (
                             <View key={index} style={styles.datasheetContainer}>
                                 <Text style={styles.abilityName}>
-                                    {item.name}
+                                    {item?.name}
                                 </Text>
                                 <Text style={styles.effectText}>
-                                    {item.effect}
+                                    {item?.effect}
                                 </Text>
                             </View>
                         );

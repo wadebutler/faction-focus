@@ -2,22 +2,31 @@ import { StyleSheet, View, Text } from "react-native";
 import { useRecoilState } from "recoil";
 import { orgIdState, listArmyState, allyRosterState } from "../../Atoms";
 import { useEffect, useState } from "react";
+import data from "../../Archive/index.json";
 import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";
 
 export default function AllySelect() {
-    const [orgId, setOrgId] = useRecoilState(orgIdState);
     const [list, setList] = useRecoilState(listArmyState);
     const [allyRoster, setAllyRoster] = useRecoilState(allyRosterState);
     const [units, setUnits] = useState(null);
 
     useEffect(() => {
-        setUnits([...allyRoster.roster]);
+        let tempArr = [];
+        list.allies.map((ally) => {
+            data.map((army) => {
+                if (ally.id === army.id) {
+                    tempArr = [...army.roster];
+                }
+            });
+        });
+
+        setUnits(tempArr);
     }, []);
 
     return (
         <View style={styles.container}>
-            {units?.map((item, index) => {
-                return <UnitSelectBar item={item} key={index} />;
+            {units?.map((unit, index) => {
+                return <UnitSelectBar item={unit} key={index} />;
             })}
         </View>
     );
