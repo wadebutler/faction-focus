@@ -18,8 +18,8 @@ export default function AbilityView({ ability, org }) {
 
             <View style={styles.dataContainer}>
                 <Text>Faction Ability: </Text>
-                {ability?.faction.map((item) => (
-                    <Text key={item} style={styles.dashText}>
+                {ability?.faction.map((item, index) => (
+                    <Text key={index} style={styles.dashText}>
                         {item}
                     </Text>
                 ))}

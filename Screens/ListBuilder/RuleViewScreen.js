@@ -12,9 +12,9 @@ export default function RuleView() {
 
             {!rule?.range
                 ? null
-                : rule?.range.map((item) => {
+                : rule?.range.map((item, index) => {
                       return (
-                          <View key={item["Battle Round"]}>
+                          <View key={index}>
                               <Text>
                                   {Object.keys(item)[0]} ={" "}
                                   {Object.values(item)[0]}
@@ -31,9 +31,9 @@ export default function RuleView() {
                 <View>
                     <Text style={styles.marginBig}>{rule?.select.rule}</Text>
 
-                    {rule?.select.options.map((item) => {
+                    {rule?.select.options.map((item, index) => {
                         return (
-                            <View style={styles.marginSmall} key={item.title}>
+                            <View style={styles.marginSmall} key={index}>
                                 <Text>{item.title}</Text>
                                 <Text>{item.effect}</Text>
                             </View>
@@ -46,9 +46,9 @@ export default function RuleView() {
                 <View style={{ marginTop: -20 }}>
                     <Text style={styles.title}>Stratagems</Text>
 
-                    {rule?.stratagems.map((item) => {
+                    {rule?.stratagems.map((item, index) => {
                         return (
-                            <View style={styles.marginBig} key={item.name}>
+                            <View style={styles.marginBig} key={index}>
                                 <Text style={styles.stratTitle}>
                                     {item.cost}cp - {item.name} - {item.type}
                                 </Text>

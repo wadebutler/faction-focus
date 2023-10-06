@@ -115,10 +115,16 @@ export default function UnitList({ unit, id }) {
                 </Text>
             </View>
 
-            {!unit?.ability?.leader.length
+            {!unit?.ability?.leader
                 ? null
-                : unit?.ability?.leader.map((item) => {
-                      return <Text style={styles.leaderText}>{item.unit}</Text>;
+                : !unit?.ability?.leader.length
+                ? null
+                : unit?.ability?.leader.map((item, index) => {
+                      return (
+                          <Text key={index} style={styles.leaderText}>
+                              {item.unit}
+                          </Text>
+                      );
                   })}
 
             <View style={styles.buttonContainer}>
