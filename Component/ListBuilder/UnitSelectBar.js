@@ -1,13 +1,13 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
-import { listArmyState, orgIdState } from "../../Atoms";
+import { listArmyState } from "../../Atoms";
 import { useEffect, useState } from "react";
 import PlusIcon from "../Icons/PlusIcon";
+import FFText from "../FFText";
 
 export default function UnitSelectBar({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
-    const [orgId, setOrgId] = useRecoilState(orgIdState);
     const [disabled, setDisabled] = useState(true);
 
     const handleAdd = async (unit) => {
@@ -54,14 +54,14 @@ export default function UnitSelectBar({ item }) {
             onPress={() => handleAdd(item)}
             style={[styles.button, { opacity: disabled ? 0.7 : 1 }]}
         >
-            <Text style={styles.maxText}>{item.name}</Text>
+            <FFText style={styles.maxText}>{item.name}</FFText>
 
             <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <PlusIcon />
-                <Text style={{ marginRight: 10 }}>
+                <FFText style={{ marginRight: 10 }}>
                     {" "}
                     {item.points[item.modelCountIndex]} points
-                </Text>
+                </FFText>
             </View>
         </TouchableOpacity>
     );

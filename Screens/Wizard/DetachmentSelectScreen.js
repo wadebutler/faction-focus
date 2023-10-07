@@ -10,6 +10,7 @@ import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import index from "../../Archive/index.json";
+import FFText from "../../Component/FFText";
 
 export default function DetachmentSelect() {
     const [army, setArmy] = useRecoilState(armyBuilderState);
@@ -40,13 +41,13 @@ export default function DetachmentSelect() {
                         onPress={() => handleSelect(item)}
                         style={styles.button}
                     >
-                        <Text style={{ paddingTop: 10 }}>{item.name}</Text>
-                        <Text style={{ paddingVertical: 10 }}>
+                        <FFText style={{ paddingTop: 10 }}>{item.name}</FFText>
+                        <FFText style={{ paddingVertical: 10 }}>
                             Rule: {item.rule}
-                        </Text>
-                        <Text style={{ paddingBottom: 10 }}>
+                        </FFText>
+                        <FFText style={{ paddingBottom: 10 }}>
                             Effect: {item.effect}
-                        </Text>
+                        </FFText>
                     </TouchableOpacity>
                 )}
                 keyExtractor={(item) => item.id}

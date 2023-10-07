@@ -1,8 +1,9 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import { unitViewState, listArmyState, unitEditState } from "../../Atoms";
+import FFText from "../FFText";
 
 export default function UnitList({ unit, id }) {
     const navigation = useNavigation();
@@ -100,7 +101,7 @@ export default function UnitList({ unit, id }) {
     return (
         <TouchableOpacity onPress={() => handleView(unit)} id={id}>
             <View style={styles.titleContainer}>
-                <Text
+                <FFText
                     style={{
                         maxWidth: "80%",
                         fontSize: 15,
@@ -108,11 +109,11 @@ export default function UnitList({ unit, id }) {
                     }}
                 >
                     {unit?.name}
-                </Text>
+                </FFText>
 
-                <Text style={{ fontSize: 15, fontWeight: "bold" }}>
+                <FFText style={{ fontSize: 15, fontWeight: "bold" }}>
                     {unit?.points[unit.modelCountIndex]} points
-                </Text>
+                </FFText>
             </View>
 
             {!unit?.ability?.leader
@@ -121,9 +122,9 @@ export default function UnitList({ unit, id }) {
                 ? null
                 : unit?.ability?.leader.map((item, index) => {
                       return (
-                          <Text key={index} style={styles.leaderText}>
+                          <FFText key={index} style={styles.leaderText}>
                               {item.unit}
-                          </Text>
+                          </FFText>
                       );
                   })}
 
@@ -132,21 +133,21 @@ export default function UnitList({ unit, id }) {
                     onPress={() => handleEdit(unit, id)}
                     style={styles.button}
                 >
-                    <Text>Edit</Text>
+                    <FFText>Edit</FFText>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     onPress={() => handleDuplicate()}
                     style={styles.button}
                 >
-                    <Text>Dup</Text>
+                    <FFText>Dup</FFText>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     onPress={() => handleDelete()}
                     style={styles.button}
                 >
-                    <Text>Del</Text>
+                    <FFText>Del</FFText>
                 </TouchableOpacity>
             </View>
         </TouchableOpacity>
@@ -157,7 +158,7 @@ const styles = StyleSheet.create({
     titleContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
-        paddingVertical: 20,
+        paddingVertical: 30,
         paddingHorizontal: 10,
     },
     buttonContainer: {
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
     button: {
         borderWidth: 1,
         width: "33.3%",
-        height: 40,
+        height: 50,
         alignItems: "center",
         justifyContent: "center",
     },

@@ -1,16 +1,17 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, View, TouchableOpacity } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import FFText from "../FFText";
 
 export default function Enhancements() {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [enhancement, setEnhancment] = useState(list.detachment.enhancements);
-    const [checked, setChecked] = useState(unitEdit?.unit?.enhancement?.active);
+    const [checked, setChecked] = useState(null);
 
     const handleCheck = async (num, item) => {
         const tempId = unitEdit.unitId;
@@ -35,6 +36,7 @@ export default function Enhancements() {
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
             modelCountIndex: unitEdit.unit.modelCountIndex,
+            leader: unitEdit.unit.leader,
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
             enhancement: {
@@ -44,6 +46,10 @@ export default function Enhancements() {
                 effect: item.effect,
             },
         };
+
+        if (num === checked) {
+            delete tempUnit.enhancement;
+        }
 
         tempObj.roster.splice(tempId, 1, tempUnit);
 
@@ -66,12 +72,21 @@ export default function Enhancements() {
         setList(tempObj);
         setUnitEdit(unit);
         setUnitView(tempUnit);
-        setChecked(num);
+
+        if (num !== checked) {
+            setChecked(num);
+        }
     };
+
+    useEffect(() => {
+        unitEdit?.unit?.enhancement?.active
+            ? setChecked(unitEdit.unit.enhancement.active)
+            : setChecked(null);
+    }, [unitEdit]);
 
     return (
         <View style={{ marginBottom: 20 }}>
-            <Text style={styles.title}>Enhancements</Text>
+            <FFText style={styles.title}>Enhancements</FFText>
 
             <TouchableOpacity onPress={() => handleCheck(0, enhancement[0])}>
                 <CheckBox
@@ -84,7 +99,7 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <Text style={styles.check}>{enhancement[0].effect}</Text>
+                <FFText style={styles.check}>{enhancement[0].effect}</FFText>
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => handleCheck(1, enhancement[1])}>
@@ -98,7 +113,7 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <Text style={styles.check}>{enhancement[1].effect}</Text>
+                <FFText style={styles.check}>{enhancement[1].effect}</FFText>
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => handleCheck(2, enhancement[2])}>
@@ -112,7 +127,7 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <Text style={styles.check}>{enhancement[2].effect}</Text>
+                <FFText style={styles.check}>{enhancement[2].effect}</FFText>
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => handleCheck(3, enhancement[3])}>
@@ -126,7 +141,7 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <Text style={styles.check}>{enhancement[3].effect}</Text>
+                <FFText style={styles.check}>{enhancement[3].effect}</FFText>
             </TouchableOpacity>
         </View>
     );

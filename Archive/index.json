@@ -3350,6 +3350,7 @@
                 "points": [325],
                 "modelCountIndex": 0,
                 "factionKey": ["Death Guard"],
+                "warlord": true,
                 "keywords": [
                     "Monster",
                     "Psyker",

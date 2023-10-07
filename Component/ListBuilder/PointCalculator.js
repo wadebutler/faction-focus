@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { useEffect, useState } from "react";
+import FFText from "../FFText";
 
 export default function PointCalculator() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -12,7 +13,7 @@ export default function PointCalculator() {
         list.roster.map((item) => {
             tempArr.push(item.points[item.modelCountIndex]);
 
-            if (item.enhancement) {
+            if (item.enhancement?.cost) {
                 tempArr.push(item.enhancement.cost);
             }
         });
@@ -24,9 +25,9 @@ export default function PointCalculator() {
 
     return (
         <View style={styles.pointContainer}>
-            <Text>{points}</Text>
-            <Text style={styles.pointSeperator}>/</Text>
-            <Text>{list.points.value} points</Text>
+            <FFText>{points}</FFText>
+            <FFText style={styles.pointSeperator}>/</FFText>
+            <FFText>{list.points.value} points</FFText>
         </View>
     );
 }

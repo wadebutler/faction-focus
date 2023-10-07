@@ -1,20 +1,14 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    TextInput,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View, TextInput } from "react-native";
 import { useState } from "react";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import FFText from "../../Component/FFText";
 
 export default function Confirm() {
     const [army, setArmy] = useRecoilState(armyBuilderState);
     const [listName, setListName] = useState("");
-    const [selectedDetachment, setSelectedDetachment] = useState("");
     const navigation = useNavigation();
 
     const handleCreateArmy = async () => {
@@ -44,14 +38,14 @@ export default function Confirm() {
             />
 
             <View style={styles.summaryContainer}>
-                <Text style={styles.text}>{army.name}</Text>
+                <FFText style={styles.text}>{army.name}</FFText>
 
-                <Text style={styles.text}>{army.detachment.name}</Text>
+                <FFText style={styles.text}>{army.detachment.name}</FFText>
 
-                <Text style={styles.text}>{army.points.name}</Text>
-                <Text style={{ paddingBottom: 5 }}>
+                <FFText style={styles.text}>{army.points.name}</FFText>
+                <FFText style={{ paddingBottom: 5 }}>
                     {army.points.value} points
-                </Text>
+                </FFText>
             </View>
 
             <TouchableOpacity
@@ -62,7 +56,7 @@ export default function Confirm() {
                 ]}
                 onPress={() => handleCreateArmy()}
             >
-                <Text>Create Army</Text>
+                <FFText>Create Army</FFText>
             </TouchableOpacity>
         </View>
     );

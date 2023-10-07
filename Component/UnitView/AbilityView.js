@@ -1,57 +1,57 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import FFText from "../FFText";
 
 export default function AbilityView({ ability, org }) {
     return (
         <View>
             {!ability?.core ? null : (
                 <View style={styles.dataContainer}>
-                    <Text>Core: </Text>
+                    <FFText>Core: </FFText>
                     {ability.core.map((item, index) => {
                         return (
-                            <Text style={styles.dashText} key={index}>
+                            <FFText style={styles.dashText} key={index}>
                                 {item}
-                            </Text>
+                            </FFText>
                         );
                     })}
                 </View>
             )}
 
             <View style={styles.dataContainer}>
-                <Text>Faction Ability: </Text>
+                <FFText>Faction Ability: </FFText>
                 {ability?.faction.map((item, index) => (
-                    <Text key={index} style={styles.dashText}>
+                    <FFText key={index} style={styles.dashText}>
                         {item}
-                    </Text>
+                    </FFText>
                 ))}
             </View>
 
             {org === "Character" ? (
-                <View>
-                    <Text style={styles.datasheetText}>Leader Abilities:</Text>
-
-                    {!ability?.leader ? null : (
-                        <View style={styles.datasheetContainer}>
-                            <Text style={styles.abilityName}>
+                !ability?.leader ? null : (
+                    <View style={styles.container}>
+                        <FFText>Leader Abilities:</FFText>
+                        <View>
+                            <FFText style={styles.abilityName}>
                                 {ability?.leader.name}
-                            </Text>
-                            <Text style={styles.effectText}>
+                            </FFText>
+                            <FFText style={styles.effectText}>
                                 {ability?.leader.effect}
-                            </Text>
+                            </FFText>
                         </View>
-                    )}
-                </View>
+                    </View>
+                )
             ) : !ability.leader ? null : (
-                <View>
-                    <Text style={styles.datasheetText}>Leader Abilities:</Text>
+                <View style={styles.container}>
+                    <FFText>Leader Abilities:</FFText>
                     {ability?.leader?.map((item, index) => {
                         return (
-                            <View key={index} style={styles.datasheetContainer}>
-                                <Text style={styles.abilityName}>
+                            <View key={index}>
+                                <FFText style={styles.abilityName}>
                                     {item?.name}
-                                </Text>
-                                <Text style={styles.effectText}>
+                                </FFText>
+                                <FFText style={styles.effectText}>
                                     {item?.effect}
-                                </Text>
+                                </FFText>
                             </View>
                         );
                     })}
@@ -59,19 +59,17 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {!ability?.data ? null : (
-                <View>
-                    <Text style={styles.datasheetText}>
-                        Datasheet Abilities:
-                    </Text>
+                <View style={styles.container}>
+                    <FFText>Datasheet Abilities:</FFText>
                     {ability?.data.map((item, index) => {
                         return (
-                            <View style={styles.datasheetContainer} key={index}>
-                                <Text style={styles.abilityName}>
+                            <View key={index}>
+                                <FFText style={styles.abilityName}>
                                     {item.name}
-                                </Text>
-                                <Text style={styles.effectText}>
+                                </FFText>
+                                <FFText style={styles.effectText}>
                                     {item.effect}
-                                </Text>
+                                </FFText>
                             </View>
                         );
                     })}
@@ -79,22 +77,18 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {!ability.Primarch ? null : (
-                <View style={{ marginTop: 5 }}>
-                    <Text style={styles.datasheetText}>
-                        {ability.Primarch.title}
-                    </Text>
-                    <Text style={styles.datasheetText}>
-                        {ability.Primarch.effect}
-                    </Text>
+                <View style={styles.container}>
+                    <FFText>{ability.Primarch.title}</FFText>
+                    <FFText>{ability.Primarch.effect}</FFText>
                     {ability.Primarch.abilities.map((item, index) => {
                         return (
-                            <View style={styles.datasheetContainer} key={index}>
-                                <Text style={styles.abilityName}>
+                            <View style={{ marginBottom: 10 }} key={index}>
+                                <FFText style={styles.abilityName}>
                                     {item.name}
-                                </Text>
-                                <Text style={styles.effectText}>
+                                </FFText>
+                                <FFText style={styles.effectText}>
                                     {item.effect}
-                                </Text>
+                                </FFText>
                             </View>
                         );
                     })}
@@ -102,14 +96,14 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {!ability.damaged ? null : (
-                <View style={styles.damageContainer}>
-                    <Text style={styles.abilityName}>
+                <View style={{ paddingHorizontal: 10, marginBottom: 15 }}>
+                    <FFText style={styles.abilityName}>
                         Damaged {ability.damaged.range[0]}-
                         {ability.damaged.range[1]} Wounds Remaining
-                    </Text>
-                    <Text style={styles.effectText}>
+                    </FFText>
+                    <FFText style={styles.effectText}>
                         {ability.damaged.effect}
-                    </Text>
+                    </FFText>
                 </View>
             )}
         </View>
@@ -117,24 +111,15 @@ export default function AbilityView({ ability, org }) {
 }
 
 const styles = StyleSheet.create({
-    dataContainer: {
+    container: {
         paddingHorizontal: 10,
-        paddingVertical: 5,
+        marginVertical: 10,
+    },
+    dataContainer: {
+        padding: 10,
         flexDirection: "row",
         borderBottomWidth: 1,
         alignItems: "center",
-    },
-    datasheetContainer: {
-        marginBottom: 5,
-        paddingHorizontal: 10,
-    },
-    damageContainer: {
-        marginVertical: 5,
-        paddingHorizontal: 10,
-    },
-    datasheetText: {
-        marginBottom: 5,
-        paddingLeft: 10,
     },
     dashText: {
         borderWidth: 1,

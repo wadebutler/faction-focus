@@ -5,19 +5,21 @@ import Bar from "../../Component/ListBuilder/Bar";
 import RuleBar from "../../Component/ListBuilder/RuleBar";
 import UnitList from "../../Component/ListBuilder/UnitList";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
+import FFText from "../../Component/FFText";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
+
     return (
         <View style={styles.container}>
             <View style={styles.titleContainer}>
-                <Text
+                <FFText
                     numberOfLines={1}
                     ellipsizeMode="tail"
                     style={styles.title}
                 >
                     {list?.title}
-                </Text>
+                </FFText>
 
                 <PointCalculator />
             </View>

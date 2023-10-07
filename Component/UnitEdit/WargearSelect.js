@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import WeaponCheckbox from "./WeaponCheckbox";
+import FFText from "../FFText";
 
 export default function WargearSelect({ unit, type }) {
     return (
@@ -10,14 +11,14 @@ export default function WargearSelect({ unit, type }) {
                     : { marginBottom: 10 }
             }
         >
-            <Text
+            <FFText
                 style={[
                     styles.title,
                     type === "ranged" ? { marginTop: 0 } : null,
                 ]}
             >
                 {type === "ranged" ? "Ranged" : "Melee"}
-            </Text>
+            </FFText>
             {type === "ranged"
                 ? unit?.ranged.map((item, index) => {
                       return (

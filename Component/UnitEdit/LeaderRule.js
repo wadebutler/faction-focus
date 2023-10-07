@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitEditState } from "../../Atoms";
 import LeaderCheckbox from "./LeaderCheckbox";
+import FFText from "../FFText";
 
 export default function LeaderRule() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -9,7 +10,7 @@ export default function LeaderRule() {
 
     return (
         <View style={{ marginTop: 10 }}>
-            <Text style={styles.title}>Assign Leader</Text>
+            <FFText style={styles.title}>Assign Leader</FFText>
 
             {list.roster.map((item, index) => {
                 if (

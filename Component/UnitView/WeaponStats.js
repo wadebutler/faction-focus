@@ -1,68 +1,100 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import FFText from "../FFText";
 
 export default function WeaponStats({ weapon, type }) {
     return (
         <View style={styles.container}>
-            {type === "r" ? <Text style={styles.typeText}>Ranged</Text> : null}
-            {type === "m" ? <Text style={styles.typeText}>Melee</Text> : null}
+            {type === "r" ? (
+                <FFText style={styles.typeText}>Ranged</FFText>
+            ) : null}
+            {type === "m" ? (
+                <FFText style={styles.typeText}>Melee</FFText>
+            ) : null}
             {weapon.map((item, index) => {
                 if (item.active) {
                     return (
                         <View style={styles.wpnContainer} key={index}>
-                            <Text style={styles.nameText}>{item.name}</Text>
+                            <FFText style={styles.nameText}>{item.name}</FFText>
 
                             <View style={styles.statRow}>
                                 <View style={styles.statContainer}>
-                                    <Text>Range</Text>
+                                    <FFText style={styles.text}>Range</FFText>
                                     {item.range === "m" ? (
-                                        <Text>Melee</Text>
+                                        <FFText style={styles.text}>
+                                            Melee
+                                        </FFText>
                                     ) : (
-                                        <Text>{item.range}"</Text>
+                                        <FFText style={styles.text}>
+                                            {item.range}"
+                                        </FFText>
                                     )}
                                 </View>
+
                                 <View style={styles.statContainer}>
-                                    <Text>A</Text>
-                                    <Text>{item.data.a}</Text>
+                                    <FFText style={styles.text}>A</FFText>
+                                    <FFText style={styles.text}>
+                                        {item.data.a}
+                                    </FFText>
                                 </View>
+
                                 {!item.data.bs ? null : (
                                     <View style={styles.statContainer}>
-                                        <Text>BS</Text>
-                                        <Text>{item.data.bs}</Text>
+                                        <FFText style={styles.text}>BS</FFText>
+                                        <FFText style={styles.text}>
+                                            {item.data.bs}
+                                        </FFText>
                                     </View>
                                 )}
+
                                 {!item.data.ws ? null : (
                                     <View style={styles.statContainer}>
-                                        <Text>WS</Text>
-                                        <Text>{item.data.ws}</Text>
+                                        <FFText style={styles.text}>WS</FFText>
+                                        <FFText style={styles.text}>
+                                            {item.data.ws}
+                                        </FFText>
                                     </View>
                                 )}
+
                                 <View style={styles.statContainer}>
-                                    <Text>S</Text>
-                                    <Text>{item.data.s}</Text>
+                                    <FFText style={styles.text}>S</FFText>
+                                    <FFText style={styles.text}>
+                                        {item.data.s}
+                                    </FFText>
                                 </View>
+
                                 <View style={styles.statContainer}>
-                                    <Text>AP</Text>
-                                    <Text>{item.data.ap}</Text>
+                                    <FFText style={styles.text}>AP</FFText>
+                                    <FFText style={styles.text}>
+                                        {item.data.ap}
+                                    </FFText>
                                 </View>
+
                                 <View style={styles.statContainer}>
-                                    <Text>D</Text>
-                                    <Text>{item.data.d}</Text>
+                                    <FFText style={styles.text}>D</FFText>
+                                    <FFText style={styles.text}>
+                                        {item.data.d}
+                                    </FFText>
                                 </View>
                             </View>
 
                             {!item.data.keywords ? null : (
                                 <View style={styles.keywordContainer}>
-                                    <Text style={{ fontSize: 12 }}>
+                                    <FFText
+                                        style={{
+                                            fontSize: 12,
+                                            marginBottom: 8,
+                                        }}
+                                    >
                                         Keywords:{" "}
-                                    </Text>
+                                    </FFText>
                                     {item.data.keywords.map((word, index) => {
                                         return (
-                                            <Text
+                                            <FFText
                                                 key={index}
                                                 style={styles.keyText}
                                             >
                                                 {word}
-                                            </Text>
+                                            </FFText>
                                         );
                                     })}
                                 </View>
@@ -83,10 +115,14 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: "#000",
         color: "#fff",
+        fontWeight: "bold",
     },
     typeText: {
         backgroundColor: "orange",
         padding: 10,
+    },
+    text: {
+        fontWeight: "bold",
     },
     wpnContainer: {
         paddingBottom: 10,
@@ -115,10 +151,8 @@ const styles = StyleSheet.create({
         borderColor: "#000",
         borderStyle: "dashed",
         borderRadius: 4,
-        paddingTop: 2,
-        paddingBottom: 1,
-        paddingHorizontal: 4,
         marginLeft: 4,
-        marginBottom: 4,
+        paddingLeft: 4,
+        paddingRight: 2,
     },
 });

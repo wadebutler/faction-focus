@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import FFText from "../FFText";
 
 export default function EnhancementView({ item }) {
     return (
         <View style={{ marginHorizontal: 10 }}>
-            <Text style={{ paddingBottom: 5 }}>Enhancement:</Text>
-            <Text style={styles.abilityName}>
+            <FFText style={{ paddingBottom: 5 }}>Enhancement:</FFText>
+            <FFText style={styles.abilityName}>
                 {item.name} - {item.cost}
-            </Text>
+            </FFText>
 
-            <Text style={styles.effectText}>{item.effect}</Text>
+            <FFText style={styles.effectText}>{item.effect}</FFText>
         </View>
     );
 }

@@ -1,26 +1,27 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import FFText from "../FFText";
 
 export default function KeywordView({ keywords, factionKey }) {
     return (
         <View>
             <View style={[styles.keywordContainer, { marginBottom: 5 }]}>
-                <Text style={{ fontSize: 12 }}>Faction Keywords: </Text>
+                <FFText style={{ fontSize: 12 }}>Faction Keywords: </FFText>
                 {factionKey?.map((item, index) => {
                     return (
-                        <Text style={styles.keyText} key={index}>
+                        <FFText style={styles.keyText} key={index}>
                             {item}
-                        </Text>
+                        </FFText>
                     );
                 })}
             </View>
 
             <View style={[styles.keywordContainer, { marginBottom: 15 }]}>
-                <Text style={{ fontSize: 12 }}>Keywords: </Text>
+                <FFText style={{ fontSize: 12 }}>Keywords: </FFText>
                 {keywords?.map((word, index) => {
                     return (
-                        <Text key={index} style={styles.keyText}>
+                        <FFText key={index} style={styles.keyText}>
                             {word}
-                        </Text>
+                        </FFText>
                     );
                 })}
             </View>

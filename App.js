@@ -11,8 +11,9 @@ import UnitSelect from "./Screens/ListBuilder/UnitSelectScreen";
 import ViewUnit from "./Screens/ListBuilder/UnitViewScreen";
 import EditUnit from "./Screens/ListBuilder/UnitEditScreen";
 import { StatusBar } from "react-native";
-import RuleView from "./Screens/ListBuilder/RuleViewScreen";
+import Detachment from "./Screens/ListBuilder/DetachmentScreen";
 import AllySelect from "./Screens/ListBuilder/AllySelectScreen";
+import ArmyRule from "./Screens/ListBuilder/ArmyRuleScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -68,8 +69,13 @@ export default function App() {
                         options={{ headerShown: false }}
                     />
                     <Stack.Screen
+                        name="Detachment"
+                        component={Detachment}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
                         name="Rule"
-                        component={RuleView}
+                        component={ArmyRule}
                         options={{ headerShown: false }}
                     />
                     <Stack.Screen

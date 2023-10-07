@@ -1,44 +1,51 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import FFText from "../FFText";
 
 export default function UnitStatRow({ unit }) {
     const data = unit?.data;
 
     return (
         <View style={styles.container}>
-            <Text style={styles.unitNameText}>{unit?.name}</Text>
+            <FFText style={styles.unitNameText}>{unit?.name}</FFText>
 
             <View style={styles.statRow}>
                 <View style={styles.container}>
-                    <Text style={styles.text}>M</Text>
-                    <Text style={styles.textStat}>{data?.movement}"</Text>
+                    <FFText style={styles.text}>M</FFText>
+                    <FFText style={styles.textStat}>{data?.movement}"</FFText>
                 </View>
+
                 <View style={styles.container}>
-                    <Text style={styles.text}>T</Text>
-                    <Text style={styles.textStat}>{data?.toughness}</Text>
+                    <FFText style={styles.text}>T</FFText>
+                    <FFText style={styles.textStat}>{data?.toughness}</FFText>
                 </View>
+
                 <View style={styles.container}>
-                    <Text style={styles.text}>SV</Text>
-                    <Text style={styles.textStat}>{data?.save}+</Text>
+                    <FFText style={styles.text}>SV</FFText>
+                    <FFText style={styles.textStat}>{data?.save}+</FFText>
                 </View>
+
                 {!data?.invulnerable ? null : (
                     <View style={styles.container}>
-                        <Text style={styles.text}>INV</Text>
-                        <Text style={styles.textStat}>
+                        <FFText style={styles.text}>INV</FFText>
+                        <FFText style={styles.textStat}>
                             {data?.invulnerable}+
-                        </Text>
+                        </FFText>
                     </View>
                 )}
+
                 <View style={styles.container}>
-                    <Text style={styles.text}>W</Text>
-                    <Text style={styles.textStat}>{data?.wounds}</Text>
+                    <FFText style={styles.text}>W</FFText>
+                    <FFText style={styles.textStat}>{data?.wounds}</FFText>
                 </View>
+
                 <View style={styles.container}>
-                    <Text style={styles.text}>LD</Text>
-                    <Text style={styles.textStat}>{data?.leadership}+</Text>
+                    <FFText style={styles.text}>LD</FFText>
+                    <FFText style={styles.textStat}>{data?.leadership}+</FFText>
                 </View>
+
                 <View style={styles.container}>
-                    <Text style={styles.text}>OC</Text>
-                    <Text style={styles.textStat}>{data?.oc}</Text>
+                    <FFText style={styles.text}>OC</FFText>
+                    <FFText style={styles.textStat}>{data?.oc}</FFText>
                 </View>
             </View>
         </View>
@@ -56,8 +63,8 @@ const styles = StyleSheet.create({
     statRow: {
         flexDirection: "row",
         justifyContent: "space-between",
-        width: "100%",
         backgroundColor: "orange",
+        width: "100%",
         padding: 15,
     },
     text: {
@@ -68,8 +75,9 @@ const styles = StyleSheet.create({
         backgroundColor: "#000",
         borderRadius: 4,
         color: "#fff",
+        width: 45,
+        textAlign: "center",
         paddingVertical: 5,
-        paddingHorizontal: 7,
         marginTop: 5,
     },
 });

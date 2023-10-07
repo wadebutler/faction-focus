@@ -1,14 +1,9 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    FlatList,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import points from "../../Archive/points.json";
+import FFText from "../../Component/FFText";
 
 export default function PointSelect() {
     const navigation = useNavigation();
@@ -30,8 +25,8 @@ export default function PointSelect() {
                         style={styles.itemContainer}
                         onPress={() => handleSelect(item)}
                     >
-                        <Text style={styles.text}>{item.name}</Text>
-                        <Text>{item.value}</Text>
+                        <FFText style={styles.text}>{item.name}</FFText>
+                        <FFText>{item.value}</FFText>
                     </TouchableOpacity>
                 )}
                 keyExtractor={(item) => item.value}

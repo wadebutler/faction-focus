@@ -1,8 +1,9 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { ruleState } from "../../Atoms";
 import ViewIcon from "../Icons/ViewIcon";
+import FFText from "../FFText";
 
 export default function RuleBar({ title, item }) {
     const navigation = useNavigation();
@@ -10,7 +11,12 @@ export default function RuleBar({ title, item }) {
 
     const handleNavigation = (rule) => {
         setRule(rule);
-        navigation.navigate("Rule");
+
+        if (title === "Army Rule") {
+            navigation.navigate("Rule");
+        } else {
+            navigation.navigate("Detachment");
+        }
     };
 
     return (
@@ -18,7 +24,7 @@ export default function RuleBar({ title, item }) {
             onPress={() => handleNavigation(item)}
             style={styles.bar}
         >
-            <Text>{title}</Text>
+            <FFText>{title}</FFText>
 
             <View style={styles.button}>
                 <ViewIcon />
@@ -33,7 +39,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        paddingLeft: 30,
+        paddingLeft: 10,
     },
     button: {
         height: 50,

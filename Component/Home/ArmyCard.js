@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
@@ -6,6 +6,7 @@ import { listArmyState } from "../../Atoms";
 import TrashIcon from "../Icons/TrashIcon";
 import CheckIcon from "../Icons/CheckIcon";
 import CloseIcon from "../Icons/CloseIcon";
+import FFText from "../FFText";
 
 export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();
@@ -24,10 +25,10 @@ export default function ArmyCard({ item, handleDelete }) {
             onPress={() => handleSelect(item)}
         >
             <View>
-                <Text>{item.title}</Text>
-                <Text>{item.name}</Text>
-                <Text>{item?.detachment?.name}</Text>
-                <Text>{item?.points?.value} Points</Text>
+                <FFText>{item.title}</FFText>
+                <FFText>{item.name}</FFText>
+                <FFText>{item?.detachment?.name}</FFText>
+                <FFText>{item?.points?.value} Points</FFText>
             </View>
 
             {confirm ? (

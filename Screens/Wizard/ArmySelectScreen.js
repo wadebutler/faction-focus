@@ -9,6 +9,7 @@ import Archive from "../../Archive/index.json";
 import { useNavigation } from "@react-navigation/native";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
+import FFText from "../../Component/FFText";
 
 export default function ArmySelectScreen() {
     const navigation = useNavigation();
@@ -36,7 +37,7 @@ export default function ArmySelectScreen() {
                 onPress={() => handleSelect(item)}
                 style={styles.button}
             >
-                <Text style={styles.text}>{item.name}</Text>
+                <FFText style={styles.text}>{item.name}</FFText>
             </TouchableOpacity>
         );
     };

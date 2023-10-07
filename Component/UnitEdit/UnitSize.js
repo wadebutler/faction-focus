@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { unitEditState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import UnitSizeCheckbox from "./UnitSizeCheckbox";
+import FFText from "../FFText";
 
 export default function UnitSize() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
 
     return (
         <View style={{ marginTop: 10 }}>
-            <Text style={styles.title}>Unit Size</Text>
+            <FFText style={styles.title}>Unit Size</FFText>
 
             {unitEdit?.unit.modelCount.map((item, index) => {
                 return (

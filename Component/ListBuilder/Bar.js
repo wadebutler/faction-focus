@@ -1,8 +1,9 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { orgIdState } from "../../Atoms";
 import PlusIcon from "../Icons/PlusIcon";
+import FFText from "../FFText";
 
 export default function Bar({ title }) {
     const navigation = useNavigation();
@@ -19,7 +20,7 @@ export default function Bar({ title }) {
 
     return (
         <TouchableOpacity onPress={() => handleNavigation()} style={styles.bar}>
-            <Text>{title}</Text>
+            <FFText>{title}</FFText>
 
             <View style={styles.button}>
                 <PlusIcon />
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        paddingLeft: 30,
+        paddingLeft: 10,
     },
     button: {
         height: 50,

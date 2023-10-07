@@ -10,6 +10,7 @@ import { useCallback, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import ArmyCard from "../Component/Home/ArmyCard";
 import { useFocusEffect } from "@react-navigation/native";
+import FFText from "../Component/FFText";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -60,7 +61,7 @@ export default function Home() {
                 onPress={() => navigation.navigate("ArmySelect")}
                 style={styles.button}
             >
-                <Text>Add New</Text>
+                <FFText>Add New</FFText>
             </TouchableOpacity>
         </View>
     );

@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, TouchableOpacity, Text } from "react-native";
+import { ScrollView, StyleSheet, TouchableOpacity } from "react-native";
 import { useRecoilState } from "recoil";
 import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WargearSelect from "../../Component/UnitEdit/WargearSelect";
