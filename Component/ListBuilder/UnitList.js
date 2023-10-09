@@ -123,7 +123,7 @@ export default function UnitList({ unit, id }) {
                 : unit?.ability?.leader.map((item, index) => {
                       return (
                           <FFText key={index} style={styles.leaderText}>
-                              {item.unit}
+                              Leader: {item.unit}
                           </FFText>
                       );
                   })}
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     titleContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
-        paddingVertical: 30,
+        paddingTop: 30,
         paddingHorizontal: 10,
     },
     buttonContainer: {
@@ -170,9 +170,9 @@ const styles = StyleSheet.create({
         height: 50,
         alignItems: "center",
         justifyContent: "center",
+        marginTop: 30,
     },
     leaderText: {
         paddingLeft: 10,
-        paddingBottom: 10,
     },
 });

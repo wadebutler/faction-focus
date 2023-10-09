@@ -40,8 +40,9 @@ export default function AbilityView({ ability, org }) {
                         </View>
                     </View>
                 )
-            ) : !ability.leader ? null : (
+            ) : !ability.leader || ability.leader.length === 0 ? null : (
                 <View style={styles.container}>
+                    {console.log(ability)}
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader?.map((item, index) => {
                         return (
@@ -64,29 +65,18 @@ export default function AbilityView({ ability, org }) {
                     {ability?.data.map((item, index) => {
                         return (
                             <View key={index}>
-                                <FFText style={styles.abilityName}>
-                                    {item.name}
-                                </FFText>
-                                <FFText style={styles.effectText}>
-                                    {item.effect}
-                                </FFText>
-                            </View>
-                        );
-                    })}
-                </View>
-            )}
-
-            {!ability.Primarch ? null : (
-                <View style={styles.container}>
-                    <FFText>{ability.Primarch.title}</FFText>
-                    <FFText>{ability.Primarch.effect}</FFText>
-                    {ability.Primarch.abilities.map((item, index) => {
-                        return (
-                            <View style={{ marginBottom: 10 }} key={index}>
-                                <FFText style={styles.abilityName}>
-                                    {item.name}
-                                </FFText>
-                                <FFText style={styles.effectText}>
+                                {!item.name ? null : (
+                                    <FFText style={styles.abilityName}>
+                                        {item.name}
+                                    </FFText>
+                                )}
+                                <FFText
+                                    style={
+                                        item.name
+                                            ? styles.effectText
+                                            : styles.effectNoTitle
+                                    }
+                                >
                                     {item.effect}
                                 </FFText>
                             </View>
@@ -104,6 +94,31 @@ export default function AbilityView({ ability, org }) {
                     <FFText style={styles.effectText}>
                         {ability.damaged.effect}
                     </FFText>
+                </View>
+            )}
+
+            {!ability.Primarch ? null : (
+                <View style={styles.container}>
+                    <FFText style={styles.abilityName}>
+                        {ability.Primarch.title}
+                    </FFText>
+
+                    <FFText style={{ backgroundColor: "orange", padding: 10 }}>
+                        {ability.Primarch.effect}
+                    </FFText>
+
+                    {ability.Primarch.abilities.map((item, index) => {
+                        return (
+                            <View key={index}>
+                                <FFText style={styles.abilityName}>
+                                    {item.name}
+                                </FFText>
+                                <FFText style={styles.effectText}>
+                                    {item.effect}
+                                </FFText>
+                            </View>
+                        );
+                    })}
                 </View>
             )}
         </View>
@@ -143,5 +158,11 @@ const styles = StyleSheet.create({
         backgroundColor: "orange",
         borderBottomLeftRadius: 4,
         borderBottomRightRadius: 4,
+    },
+    effectNoTitle: {
+        padding: 10,
+        backgroundColor: "orange",
+        borderRadius: 4,
+        marginTop: 10,
     },
 });

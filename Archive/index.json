@@ -3375,7 +3375,7 @@
                     ],
                     "Primarch": {
                         "title": "Host of Plagues",
-                        "effect": "At the start of the battle round, select one of the abilities in the Host of Plagues section. Until the start of the next battle round, this model has that ability.",
+                        "effect": "At the start of the battle round, select one of the below abilities, until the start of the next battle round, this model has that ability.",
                         "abilities": [
                             {
                                 "name": "Miasma of Pestilence (Aura)",
