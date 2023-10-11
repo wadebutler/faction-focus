@@ -27,7 +27,7 @@ export default function PointCalculator() {
         <View style={styles.pointContainer}>
             <FFText>{points}</FFText>
             <FFText style={styles.pointSeperator}>/</FFText>
-            <FFText>{list.points.value} points</FFText>
+            <FFText>{list.points.value} Points</FFText>
         </View>
     );
 }

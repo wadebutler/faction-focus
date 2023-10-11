@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import Bar from "../../Component/ListBuilder/Bar";
 import RuleBar from "../../Component/ListBuilder/RuleBar";
-import UnitList from "../../Component/ListBuilder/UnitList";
+import UnitCard from "../../Component/ListBuilder/UnitCard";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
 import FFText from "../../Component/FFText";
 
@@ -34,7 +34,7 @@ export default function ListBuilder() {
                         item.org === "Character" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return <UnitList unit={item} key={index} id={index} />;
+                        return <UnitCard unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -44,7 +44,7 @@ export default function ListBuilder() {
                         item.org === "Battleline" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return <UnitList unit={item} key={index} id={index} />;
+                        return <UnitCard unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -54,7 +54,7 @@ export default function ListBuilder() {
                         item.org === "Infantry" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return <UnitList unit={item} key={index} id={index} />;
+                        return <UnitCard unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -64,7 +64,7 @@ export default function ListBuilder() {
                         item.org === "Vehicle" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return <UnitList unit={item} key={index} id={index} />;
+                        return <UnitCard unit={item} key={index} id={index} />;
                     }
                 })}
 
@@ -74,14 +74,14 @@ export default function ListBuilder() {
                         item.org === "Fortification" &&
                         list.name === item.factionKey[0]
                     ) {
-                        return <UnitList unit={item} key={index} id={index} />;
+                        return <UnitCard unit={item} key={index} id={index} />;
                     }
                 })}
 
                 <Bar title={"Allies"} />
                 {list?.roster.map((item, index) => {
                     if (item.factionKey[0] !== list.name) {
-                        return <UnitList unit={item} key={index} id={index} />;
+                        return <UnitCard unit={item} key={index} id={index} />;
                     }
                 })}
             </ScrollView>

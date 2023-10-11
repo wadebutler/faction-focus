@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import { unitViewState, listArmyState, unitEditState } from "../../Atoms";
 import FFText from "../FFText";
 
-export default function UnitList({ unit, id }) {
+export default function UnitCard({ unit, id }) {
     const navigation = useNavigation();
     const [list, setList] = useRecoilState(listArmyState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
@@ -101,15 +101,7 @@ export default function UnitList({ unit, id }) {
     return (
         <TouchableOpacity onPress={() => handleView(unit)} id={id}>
             <View style={styles.titleContainer}>
-                <FFText
-                    style={{
-                        maxWidth: "80%",
-                        fontSize: 15,
-                        fontWeight: "bold",
-                    }}
-                >
-                    {unit?.name}
-                </FFText>
+                <FFText style={styles.nameText}>{unit?.name}</FFText>
 
                 <FFText style={{ fontSize: 15, fontWeight: "bold" }}>
                     {unit?.points[unit.modelCountIndex]} points
@@ -127,6 +119,14 @@ export default function UnitList({ unit, id }) {
                           </FFText>
                       );
                   })}
+
+            {!unit.enhancement ? null : (
+                <View style={styles.enhancementContainer}>
+                    <FFText>Enhancement: {unit.enhancement.name}</FFText>
+
+                    <FFText>{unit.enhancement.cost} Points</FFText>
+                </View>
+            )}
 
             <View style={styles.buttonContainer}>
                 <TouchableOpacity
@@ -164,6 +164,11 @@ const styles = StyleSheet.create({
     buttonContainer: {
         flexDirection: "row",
     },
+    enhancementContainer: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        paddingHorizontal: 10,
+    },
     button: {
         borderWidth: 1,
         width: "33.3%",
@@ -171,6 +176,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         marginTop: 30,
+    },
+    nameText: {
+        maxWidth: "80%",
+        fontSize: 15,
+        fontWeight: "bold",
     },
     leaderText: {
         paddingLeft: 10,

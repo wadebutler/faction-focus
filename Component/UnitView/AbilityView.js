@@ -42,7 +42,6 @@ export default function AbilityView({ ability, org }) {
                 )
             ) : !ability.leader || ability.leader.length === 0 ? null : (
                 <View style={styles.container}>
-                    {console.log(ability)}
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader?.map((item, index) => {
                         return (

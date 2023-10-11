@@ -6,7 +6,7 @@ export default function EnhancementView({ item }) {
         <View style={{ marginHorizontal: 10 }}>
             <FFText style={{ paddingBottom: 5 }}>Enhancement:</FFText>
             <FFText style={styles.abilityName}>
-                {item.name} - {item.cost}
+                {item.name} - {item.cost} Points
             </FFText>
 
             <FFText style={styles.effectText}>{item.effect}</FFText>
