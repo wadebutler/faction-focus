@@ -47,8 +47,11 @@ export default function DetachmentSelect() {
                         style={[
                             styles.button,
                             item.id === select?.id
-                                ? { borderWidth: 1 }
-                                : { borderWidth: 1, borderColor: "orange" },
+                                ? null
+                                : {
+                                      borderColor: "orange",
+                                      //   width: "100%",
+                                  },
                         ]}
                     >
                         <FFText style={{ paddingTop: 10, fontWeight: "bold" }}>
@@ -89,16 +92,18 @@ export default function DetachmentSelect() {
                 keyExtractor={(item) => item.id}
             />
 
-            <TouchableOpacity
-                disabled={select === null ? true : false}
-                style={[
-                    styles.confirmButton,
-                    select === null ? { backgroundColor: "red" } : null,
-                ]}
-                onPress={() => handleConfirm()}
-            >
-                <FFText>Select Detachment</FFText>
-            </TouchableOpacity>
+            <View style={{ alignItems: "center" }}>
+                <TouchableOpacity
+                    disabled={select === null ? true : false}
+                    style={[
+                        styles.confirmButton,
+                        select === null ? { backgroundColor: "red" } : null,
+                    ]}
+                    onPress={() => handleConfirm()}
+                >
+                    <FFText>Select Detachment</FFText>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
@@ -106,19 +111,19 @@ export default function DetachmentSelect() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center",
     },
     button: {
         backgroundColor: "orange",
-        margin: 10,
-        paddingHorizontal: 10,
         borderRadius: 4,
+        borderWidth: 1,
+        padding: 10,
+        margin: 10,
     },
     confirmButton: {
         position: "absolute",
-        bottom: 20,
+        bottom: 10,
         backgroundColor: "orange",
-        width: "90%",
+        width: "95%",
         padding: 10,
         alignItems: "center",
         borderRadius: 4,
