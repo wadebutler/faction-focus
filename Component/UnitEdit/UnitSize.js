@@ -2,7 +2,7 @@ import { StyleSheet, View } from "react-native";
 import { unitEditState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import UnitSizeCheckbox from "./UnitSizeCheckbox";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function UnitSize() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);

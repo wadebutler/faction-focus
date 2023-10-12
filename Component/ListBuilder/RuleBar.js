@@ -3,7 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { ruleState } from "../../Atoms";
 import ViewIcon from "../Icons/ViewIcon";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function RuleBar({ title, item }) {
     const navigation = useNavigation();

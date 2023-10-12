@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
 import WeaponCheckbox from "./WeaponCheckbox";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function WargearSelect({ unit, type }) {
     return (

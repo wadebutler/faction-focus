@@ -3,7 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import points from "../../Archive/points.json";
-import FFText from "../../Component/FFText";
+import FFText from "../../Component/Global/FFText";
 
 export default function PointSelect() {
     const navigation = useNavigation();

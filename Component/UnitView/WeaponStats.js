@@ -1,5 +1,5 @@
 import { StyleSheet, View } from "react-native";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function WeaponStats({ weapon, type }) {
     return (

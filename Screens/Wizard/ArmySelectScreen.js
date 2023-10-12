@@ -9,7 +9,7 @@ import Archive from "../../Archive/index.json";
 import { useNavigation } from "@react-navigation/native";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
-import FFText from "../../Component/FFText";
+import FFText from "../../Component/Global/FFText";
 
 export default function ArmySelectScreen() {
     const navigation = useNavigation();

@@ -5,7 +5,7 @@ import Bar from "../../Component/ListBuilder/Bar";
 import RuleBar from "../../Component/ListBuilder/RuleBar";
 import UnitCard from "../../Component/ListBuilder/UnitCard";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
-import FFText from "../../Component/FFText";
+import FFText from "../../Component/Global/FFText";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);

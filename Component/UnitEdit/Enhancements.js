@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from "react";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function Enhancements() {
     const [list, setList] = useRecoilState(listArmyState);

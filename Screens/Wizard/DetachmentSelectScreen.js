@@ -10,7 +10,7 @@ import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import index from "../../Archive/index.json";
-import FFText from "../../Component/FFText";
+import FFText from "../../Component/Global/FFText";
 
 export default function DetachmentSelect() {
     const [army, setArmy] = useRecoilState(armyBuilderState);

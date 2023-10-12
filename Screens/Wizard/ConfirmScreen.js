@@ -4,7 +4,7 @@ import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import FFText from "../../Component/FFText";
+import FFText from "../../Component/Global/FFText";
 
 export default function Confirm() {
     const [army, setArmy] = useRecoilState(armyBuilderState);

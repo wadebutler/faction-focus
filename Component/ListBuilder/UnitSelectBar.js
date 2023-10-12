@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { useEffect, useState } from "react";
 import PlusIcon from "../Icons/PlusIcon";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function UnitSelectBar({ item }) {
     const [list, setList] = useRecoilState(listArmyState);

@@ -2,7 +2,7 @@ import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import { useEffect, useState } from "react";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function PointCalculator() {
     const [list, setList] = useRecoilState(listArmyState);

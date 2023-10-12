@@ -2,7 +2,7 @@ import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitEditState } from "../../Atoms";
 import LeaderCheckbox from "./LeaderCheckbox";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function LeaderRule() {
     const [list, setList] = useRecoilState(listArmyState);

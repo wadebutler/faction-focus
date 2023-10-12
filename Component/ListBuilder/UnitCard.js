@@ -3,7 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import { unitViewState, listArmyState, unitEditState } from "../../Atoms";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function UnitCard({ unit, id }) {
     const navigation = useNavigation();

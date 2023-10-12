@@ -6,7 +6,7 @@ import { listArmyState } from "../../Atoms";
 import TrashIcon from "../Icons/TrashIcon";
 import CheckIcon from "../Icons/CheckIcon";
 import CloseIcon from "../Icons/CloseIcon";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();

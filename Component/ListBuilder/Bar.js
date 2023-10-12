@@ -3,7 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useRecoilState } from "recoil";
 import { orgIdState } from "../../Atoms";
 import PlusIcon from "../Icons/PlusIcon";
-import FFText from "../FFText";
+import FFText from "../Global/FFText";
 
 export default function Bar({ title }) {
     const navigation = useNavigation();
