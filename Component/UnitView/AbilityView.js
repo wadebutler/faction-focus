@@ -30,18 +30,29 @@ export default function AbilityView({ ability, org }) {
                 !ability?.leader || ability.leader.length === 0 ? null : (
                     <View style={styles.container}>
                         <FFText>Leader Abilities:</FFText>
-                        {ability?.leader.map((item, index) => {
-                            return (
-                                <View key={index}>
-                                    <FFText style={styles.abilityName}>
-                                        {item.name}
-                                    </FFText>
-                                    <FFText style={styles.effectText}>
-                                        {item.effect}
-                                    </FFText>
-                                </View>
-                            );
-                        })}
+                        {!ability?.leader.length ? (
+                            <View>
+                                <FFText style={styles.abilityName}>
+                                    {ability.leader.name}
+                                </FFText>
+                                <FFText style={styles.effectText}>
+                                    {ability.leader.effect}
+                                </FFText>
+                            </View>
+                        ) : (
+                            ability?.leader.map((item, index) => {
+                                return (
+                                    <View key={index}>
+                                        <FFText style={styles.abilityName}>
+                                            {item.name}
+                                        </FFText>
+                                        <FFText style={styles.effectText}>
+                                            {item.effect}
+                                        </FFText>
+                                    </View>
+                                );
+                            })
+                        )}
                     </View>
                 )
             ) : !ability.leader || ability.leader.length === 0 ? null : (
