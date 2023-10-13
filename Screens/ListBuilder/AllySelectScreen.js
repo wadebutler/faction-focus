@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState, allyRosterState } from "../../Atoms";
 import { useEffect, useState } from "react";
@@ -12,10 +12,19 @@ export default function AllySelect() {
 
     useEffect(() => {
         let tempArr = [];
+
         list.allies.map((ally) => {
             data.map((army) => {
                 if (ally.id === army.id) {
-                    tempArr = [...army.roster];
+                    army.roster.map((unit) => {
+                        if (ally.keyword) {
+                            if (unit.keywords.includes(ally.keyword)) {
+                                tempArr.push(unit);
+                            }
+                        } else {
+                            tempArr.push(unit);
+                        }
+                    });
                 }
             });
         });
@@ -24,11 +33,11 @@ export default function AllySelect() {
     }, []);
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             {units?.map((unit, index) => {
                 return <UnitSelectBar item={unit} key={index} />;
             })}
-        </View>
+        </ScrollView>
     );
 }
 

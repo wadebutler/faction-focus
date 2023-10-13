@@ -6,9 +6,28 @@ import RuleBar from "../../Component/ListBuilder/RuleBar";
 import UnitCard from "../../Component/ListBuilder/UnitCard";
 import PointCalculator from "../../Component/ListBuilder/PointCalculator";
 import FFText from "../../Component/Global/FFText";
+import data from "../../Archive/index.json";
+import { useEffect, useState } from "react";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
+    const [orgList, setOrgList] = useState([]);
+
+    useEffect(() => {
+        let tempList = [];
+
+        data.map((army) => {
+            if (army.id === list.id) {
+                army.roster.map((unit) => {
+                    if (!tempList.includes(unit.org)) {
+                        tempList.push(unit.org);
+                    }
+                });
+            }
+        });
+
+        setOrgList(tempList);
+    }, []);
 
     return (
         <View style={styles.container}>
@@ -28,62 +47,162 @@ export default function ListBuilder() {
                 <RuleBar title={"Army Rule"} item={list.rule} />
                 <RuleBar title={"Detachment Rules"} item={list.detachment} />
 
-                <Bar title={"Character"} />
-                {list?.roster.map((item, index) => {
-                    if (
-                        item.org === "Character" &&
-                        list.name === item.factionKey[0]
-                    ) {
-                        return <UnitCard unit={item} key={index} id={index} />;
-                    }
-                })}
+                {!orgList.includes("Character") ? null : (
+                    <View>
+                        <Bar title={"Character"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Character" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
 
-                <Bar title={"Battleline"} />
-                {list?.roster.map((item, index) => {
-                    if (
-                        item.org === "Battleline" &&
-                        list.name === item.factionKey[0]
-                    ) {
-                        return <UnitCard unit={item} key={index} id={index} />;
-                    }
-                })}
+                {!orgList.includes("Battleline") ? null : (
+                    <View>
+                        <Bar title={"Battleline"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Battleline" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
 
-                <Bar title={"Infantry"} />
-                {list?.roster.map((item, index) => {
-                    if (
-                        item.org === "Infantry" &&
-                        list.name === item.factionKey[0]
-                    ) {
-                        return <UnitCard unit={item} key={index} id={index} />;
-                    }
-                })}
+                {!orgList.includes("Infantry") ? null : (
+                    <View>
+                        <Bar title={"Infantry"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Infantry" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
 
-                <Bar title={"Vehicle"} />
-                {list?.roster.map((item, index) => {
-                    if (
-                        item.org === "Vehicle" &&
-                        list.name === item.factionKey[0]
-                    ) {
-                        return <UnitCard unit={item} key={index} id={index} />;
-                    }
-                })}
+                {!orgList.includes("Mounted") ? null : (
+                    <View>
+                        <Bar title={"Mounted"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Mounted" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
 
-                <Bar title={"Fortification"} />
-                {list?.roster.map((item, index) => {
-                    if (
-                        item.org === "Fortification" &&
-                        list.name === item.factionKey[0]
-                    ) {
-                        return <UnitCard unit={item} key={index} id={index} />;
-                    }
-                })}
+                {!orgList.includes("Vehicle") ? null : (
+                    <View>
+                        <Bar title={"Vehicle"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Vehicle" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
 
-                <Bar title={"Allies"} />
-                {list?.roster.map((item, index) => {
-                    if (item.factionKey[0] !== list.name) {
-                        return <UnitCard unit={item} key={index} id={index} />;
-                    }
-                })}
+                {!orgList.includes("Beast") ? null : (
+                    <View>
+                        <Bar title={"Beast"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Beast" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
+
+                {!orgList.includes("Fortification") ? null : (
+                    <View>
+                        <Bar title={"Fortification"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Fortification" &&
+                                list.name === item.factionKey[0]
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
+
+                {!list.allies ? null : (
+                    <View>
+                        <Bar title={"Allies"} />
+                        {list?.roster.map((item, index) => {
+                            if (item.factionKey[0] !== list.name) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
             </ScrollView>
         </View>
     );

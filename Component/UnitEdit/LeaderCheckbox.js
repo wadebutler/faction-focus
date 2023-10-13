@@ -13,6 +13,8 @@ export default function LeaderCheckbox({ item }) {
 
     const handleCheck = async () => {
         const tempId = unitEdit.unitId;
+        let tempAbility = null;
+        let tempAbilityArr = [];
         let tempObj = {
             name: list.name,
             allies: [...list.allies],
@@ -37,14 +39,34 @@ export default function LeaderCheckbox({ item }) {
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
         };
-        let tempAbility = {
-            unit: item.name,
-            name: item.ability.leader.name,
-            effect: item.ability.leader.effect,
-        };
+        if (item.ability.leader.length) {
+            item.ability.leader.map((ldrAblty) => {
+                tempAbilityArr.push({
+                    unit: item.name,
+                    name: ldrAblty.name,
+                    effect: ldrAblty.effect,
+                });
+            });
+        } else {
+            tempAbility = {
+                unit: item.name,
+                name: item.ability.leader ? item.ability.leader.name : null,
+                effect: item.ability.leader ? item.ability.leader.effect : null,
+            };
+        }
 
         if (!checked) {
-            tempUnit.ability.leader = [...tempUnit.ability.leader, tempAbility];
+            if (tempAbilityArr.length > 0) {
+                tempUnit.ability.leader = [
+                    ...tempUnit.ability.leader,
+                    ...tempAbilityArr,
+                ];
+            } else {
+                tempUnit.ability.leader = [
+                    ...tempUnit.ability.leader,
+                    tempAbility,
+                ];
+            }
         } else {
             let ldrArr = [];
 
@@ -56,6 +78,8 @@ export default function LeaderCheckbox({ item }) {
 
             tempUnit.ability.leader = [...ldrArr];
         }
+
+        console.log(tempUnit);
 
         tempObj.roster.splice(tempId, 1, tempUnit);
 

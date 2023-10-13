@@ -4926,7 +4926,7 @@
                 "modelCount": [1],
                 "points": [345],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Monster",
                     "Character",
@@ -5013,7 +5013,7 @@
                 "modelCount": [1],
                 "points": [260],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Monster",
                     "Character",
@@ -5105,7 +5105,7 @@
                 "modelCount": [1],
                 "points": [250],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Monster",
                     "Character",
@@ -5238,7 +5238,8 @@
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "leader": ["Plaguebearers"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Infantry",
                     "Character",
@@ -5293,7 +5294,8 @@
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "leader": ["Plaguebearers"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Infantry",
                     "Character",
@@ -5363,7 +5365,8 @@
                 "modelCount": [1],
                 "points": [85],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "leader": ["Plaguebearers"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Infantry",
                     "Character",
@@ -5376,12 +5379,10 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": [
-                        {
-                            "name": "Blessed by the Plague God",
-                            "effect": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Blessed by the Plague God",
+                        "effect": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
+                    },
                     "data": [
                         {
                             "name": "Tally of Pestilence",
@@ -5420,7 +5421,8 @@
                 "modelCount": [1],
                 "points": [55],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "leader": ["Plaguebearers"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Infantry",
                     "Character",
@@ -5432,12 +5434,10 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": [
-                        {
-                            "name": "Jolly Gutpipes",
-                            "effect": "While this model is leading a unit, add 1 to the Move characteristic of models in that unit and you can re-roll Advance rolls made for that unit."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Jolly Gutpipes",
+                        "effect": "While this model is leading a unit, add 1 to the Move characteristic of models in that unit and you can re-roll Advance rolls made for that unit."
+                    },
                     "data": [
                         {
                             "name": "Disease of Mirth (Aura)",
@@ -5476,7 +5476,8 @@
                 "modelCount": [1],
                 "points": [120],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "leader": ["Beasts of Nurgle"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Mounted",
                     "Character",
@@ -5489,12 +5490,10 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": [
-                        {
-                            "name": "Beast Handler",
-                            "effect": "While this model is leading a unit, you can re-roll Charge rolls made for that unit. In addition, once per battle, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
-                        }
-                    ],
+                    "leader": {
+                        "name": "Beast Handler",
+                        "effect": "While this model is leading a unit, you can re-roll Charge rolls made for that unit. In addition, once per battle, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
+                    },
                     "data": [
                         {
                             "name": "Seed the Garden of Nurgle",
@@ -5546,7 +5545,7 @@
                 "modelCount": [10],
                 "points": [125],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Infantry",
                     "Battleline",
@@ -5607,7 +5606,7 @@
                 "modelCount": [3, 6, 9],
                 "points": [35, 70, 105],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Swarm",
                     "Battleline",
@@ -5658,7 +5657,7 @@
                 "modelCount": [1, 2],
                 "points": [70, 140],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Beast",
                     "Chaos",
@@ -5708,7 +5707,7 @@
                 "modelCount": [1, 2],
                 "points": [70, 140],
                 "modelCountIndex": 0,
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Mounted",
                     "Fly",
@@ -5806,7 +5805,7 @@
                     "leadership": 7,
                     "oc": 0
                 },
-                "factionKey": ["Legiones Daemonica"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Fortification",
                     "Chaos",

@@ -108,7 +108,9 @@ export default function UnitCard({ unit, id }) {
                 </FFText>
             </View>
 
-            {!unit?.ability?.leader
+            {unit.keywords.includes("Character")
+                ? null
+                : !unit?.ability?.leader
                 ? null
                 : !unit?.ability?.leader.length
                 ? null

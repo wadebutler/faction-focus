@@ -6,13 +6,7 @@ export default function KeywordView({ keywords, factionKey }) {
         <View>
             <View style={[styles.keywordContainer, { marginBottom: 5 }]}>
                 <FFText style={{ fontSize: 12 }}>Faction Keywords: </FFText>
-                {factionKey?.map((item, index) => {
-                    return (
-                        <FFText style={styles.keyText} key={index}>
-                            {item}
-                        </FFText>
-                    );
-                })}
+                <FFText style={styles.keyText}>{factionKey[0]}</FFText>
             </View>
 
             <View style={[styles.keywordContainer, { marginBottom: 15 }]}>

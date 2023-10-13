@@ -54,13 +54,13 @@ export default function UnitSelectBar({ item }) {
             onPress={() => handleAdd(item)}
             style={[styles.button, { opacity: disabled ? 0.7 : 1 }]}
         >
-            <FFText style={styles.maxText}>{item.name}</FFText>
+            <FFText style={styles.maxText}>{item?.name}</FFText>
 
             <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <PlusIcon />
                 <FFText style={{ marginRight: 10 }}>
                     {" "}
-                    {item.points[item.modelCountIndex]} points
+                    {item?.points[item?.modelCountIndex]} points
                 </FFText>
             </View>
         </TouchableOpacity>
