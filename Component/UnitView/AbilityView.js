@@ -104,6 +104,34 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
+            {!ability.wargear ? null : (
+                <View style={styles.container}>
+                    <FFText>Wargear Abilities:</FFText>
+                    {ability.wargear.map((item, index) => {
+                        if (item.name !== null || item.effect !== null) {
+                            return (
+                                <View
+                                    style={
+                                        ability.wargear.length > 1 &&
+                                        index !== 0
+                                            ? { marginTop: 10 }
+                                            : null
+                                    }
+                                    key={index}
+                                >
+                                    <FFText style={styles.abilityName}>
+                                        {item.name}
+                                    </FFText>
+                                    <FFText style={styles.effectText}>
+                                        {item.effect}
+                                    </FFText>
+                                </View>
+                            );
+                        }
+                    })}
+                </View>
+            )}
+
             {!ability.damaged ? null : (
                 <View style={{ paddingHorizontal: 10, marginBottom: 15 }}>
                     <FFText style={styles.abilityName}>
