@@ -2,16 +2,19 @@ import { StyleSheet, View, ScrollView } from "react-native";
 import { useRecoilState } from "recoil";
 import { ruleState } from "../../Atoms";
 import FFText from "../../Component/Global/FFText";
+import GoBack from "../../Component/Global/GoBack";
 
 export default function Detachment() {
     const [rule, setRule] = useRecoilState(ruleState);
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView>
+            <GoBack />
+
             <FFText style={styles.title}>{rule?.name}</FFText>
 
             {!rule?.select ? null : (
-                <View>
+                <View style={styles.container}>
                     <FFText style={styles.marginBig}>
                         {rule?.select.rule}
                     </FFText>
@@ -28,7 +31,7 @@ export default function Detachment() {
             )}
 
             {!rule?.stratagems ? null : (
-                <View>
+                <View style={styles.container}>
                     <FFText style={styles.title}>Stratagems</FFText>
 
                     {rule?.stratagems.map((item, index) => {
@@ -72,7 +75,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 20,
         textAlign: "center",
-        marginVertical: 20,
+        marginVertical: 10,
     },
     marginBig: {
         marginBottom: 30,

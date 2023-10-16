@@ -1,9 +1,10 @@
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { orgIdState, listArmyState } from "../../Atoms";
 import data from "../../Archive/index.json";
 import { useEffect, useState } from "react";
 import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";
+import GoBack from "../../Component/Global/GoBack";
 
 export default function UnitSelect() {
     const [orgId, setOrgId] = useRecoilState(orgIdState);
@@ -20,11 +21,15 @@ export default function UnitSelect() {
 
     return (
         <ScrollView style={styles.container}>
-            {units?.map((item, index) => {
-                if (item.org === orgId) {
-                    return <UnitSelectBar item={item} key={index} />;
-                }
-            })}
+            <GoBack color={"white"} />
+
+            <View style={{ marginTop: 40 }}>
+                {units?.map((item, index) => {
+                    if (item.org === orgId) {
+                        return <UnitSelectBar item={item} key={index} />;
+                    }
+                })}
+            </View>
         </ScrollView>
     );
 }

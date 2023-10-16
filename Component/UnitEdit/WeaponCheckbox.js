@@ -4,6 +4,7 @@ import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { SortUnits } from "../../Utils/Sort";
 
 export default function WeaponCheckbox({ keyId, item, disabled, type }) {
     const [checked, setChecked] = useState(item.active);
@@ -63,6 +64,8 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
         await AsyncStorage.setItem("lists", data);
 
         let unit = { unit: tempUnit, unitId: tempId };
+        const sortUnit = SortUnits(tempObj.roster);
+        tempObj.roster = sortUnit;
         setList(tempObj);
         setUnitEdit(unit);
         setUnitView(tempUnit);

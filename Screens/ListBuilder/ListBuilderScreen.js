@@ -8,6 +8,7 @@ import PointCalculator from "../../Component/ListBuilder/PointCalculator";
 import FFText from "../../Component/Global/FFText";
 import data from "../../Archive/index.json";
 import { useEffect, useState } from "react";
+import GoBack from "../../Component/Global/GoBack";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -31,6 +32,7 @@ export default function ListBuilder() {
 
     return (
         <View style={styles.container}>
+            <GoBack />
             <View style={styles.titleContainer}>
                 <FFText
                     numberOfLines={1}
@@ -219,6 +221,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
+        paddingLeft: 40,
     },
     title: {
         fontSize: 20,

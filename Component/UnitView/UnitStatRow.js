@@ -1,11 +1,13 @@
 import { StyleSheet, View } from "react-native";
 import FFText from "../Global/FFText";
+import GoBack from "../Global/GoBack";
 
 export default function UnitStatRow({ unit }) {
     const data = unit?.data;
 
     return (
         <View style={styles.container}>
+            <GoBack />
             <FFText style={styles.unitNameText}>{unit?.name}</FFText>
 
             <View style={styles.statRow}>
