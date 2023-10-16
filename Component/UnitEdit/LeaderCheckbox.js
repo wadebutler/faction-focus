@@ -18,7 +18,7 @@ export default function LeaderCheckbox({ item }) {
         let tempAbilityArr = [];
         let tempObj = {
             name: list.name,
-            allies: [...list.allies],
+            allies: list.allies ? [...list.allies] : null,
             detachment: { ...list.detachment },
             id: list.id,
             points: { ...list.points },

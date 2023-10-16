@@ -14,7 +14,7 @@ export default function UnitSelectBar({ item }) {
     const handleAdd = async (unit) => {
         let tempObj = {
             name: list.name,
-            allies: [...list.allies],
+            allies: list.allies ? [...list.allies] : null,
             detachment: list.detachment,
             id: list.id,
             points: list.points,
@@ -24,7 +24,6 @@ export default function UnitSelectBar({ item }) {
             uid: list.uid,
         };
         tempObj.roster.push(unit);
-
         const tempData = await AsyncStorage.getItem("lists");
         const listData = tempData ? await JSON.parse(tempData) : null;
         let tempArr = [];
@@ -39,8 +38,10 @@ export default function UnitSelectBar({ item }) {
 
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);
+
         const sortUnits = SortUnits(tempObj.roster);
         tempObj.roster = sortUnits;
+
         setList(tempObj);
     };
 

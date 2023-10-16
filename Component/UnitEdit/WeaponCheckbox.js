@@ -16,7 +16,7 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
         const tempId = unitEdit.unitId;
         let tempObj = {
             name: list.name,
-            allies: [...list.allies],
+            allies: list.allies ? [...list.allies] : null,
             detachment: { ...list.detachment },
             id: list.id,
             points: { ...list.points },

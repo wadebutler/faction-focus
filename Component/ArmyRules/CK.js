@@ -1,9 +1,7 @@
-import { StyleSheet, View, ScrollView } from "react-native";
+import { StyleSheet, View } from "react-native";
 import FFText from "../../Component/Global/FFText";
 
 export default CK = ({ rule, walker }) => {
-    console.log(rule, walker);
-
     return (
         <View>
             <View style={styles.walker}>

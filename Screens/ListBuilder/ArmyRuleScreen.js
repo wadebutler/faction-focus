@@ -1,4 +1,4 @@
-import { StyleSheet, View, ScrollView } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { ruleState, listArmyState } from "../../Atoms";
 import FFText from "../../Component/Global/FFText";
@@ -9,7 +9,6 @@ import CK from "../../Component/ArmyRules/CK";
 export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
     const [list, setList] = useRecoilState(listArmyState);
-    console.log(rule);
 
     return (
         <View style={styles.container}>

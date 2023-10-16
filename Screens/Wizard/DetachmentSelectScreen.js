@@ -1,10 +1,4 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    FlatList,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View, FlatList } from "react-native";
 import { useEffect, useState } from "react";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";

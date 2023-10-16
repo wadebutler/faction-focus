@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import { useRecoilState } from "recoil";
 import { listArmyState } from "../../Atoms";
 import Bar from "../../Component/ListBuilder/Bar";

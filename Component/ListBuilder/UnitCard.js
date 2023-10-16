@@ -15,7 +15,7 @@ export default function UnitCard({ unit, id }) {
     const handleDelete = async () => {
         let tempObj = {
             name: list.name,
-            allies: [...list.allies],
+            allies: list.allies ? [...list.allies] : null,
             detachment: list.detachment,
             id: list.id,
             points: list.points,
@@ -61,7 +61,7 @@ export default function UnitCard({ unit, id }) {
     const handleDuplicate = async () => {
         let tempObj = {
             name: list.name,
-            allies: [...list.allies],
+            allies: list.allies ? [...list.allies] : null,
             detachment: list.detachment,
             id: list.id,
             points: list.points,

@@ -1,10 +1,4 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    FlatList,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View, FlatList } from "react-native";
 import Archive from "../../Archive/index.json";
 import { useNavigation } from "@react-navigation/native";
 import { armyBuilderState } from "../../Atoms";
