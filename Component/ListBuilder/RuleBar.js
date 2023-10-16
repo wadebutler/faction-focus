@@ -14,8 +14,10 @@ export default function RuleBar({ title, item }) {
 
         if (title === "Army Rule") {
             navigation.navigate("Rule");
-        } else {
+        } else if (title === "Detachment Rules") {
             navigation.navigate("Detachment");
+        } else if (title === "Core Stratagems") {
+            navigation.navigate("Strats");
         }
     };
 

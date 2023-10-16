@@ -4,10 +4,12 @@ import { ruleState, listArmyState } from "../../Atoms";
 import FFText from "../../Component/Global/FFText";
 import GoBack from "../../Component/Global/GoBack";
 import DG from "../../Component/ArmyRules/DG";
+import CK from "../../Component/ArmyRules/CK";
 
 export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
     const [list, setList] = useRecoilState(listArmyState);
+    console.log(rule);
 
     return (
         <View style={styles.container}>
@@ -17,6 +19,9 @@ export default function ArmyRule() {
             <FFText style={styles.marginBig}>{rule?.effect}</FFText>
 
             {list.id !== "DG" ? null : <DG rule={rule.range} />}
+            {list.id !== "CK" ? null : (
+                <CK rule={rule.range} walker={rule.walker} />
+            )}
         </View>
     );
 }

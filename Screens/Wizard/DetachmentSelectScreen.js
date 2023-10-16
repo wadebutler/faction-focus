@@ -48,10 +48,7 @@ export default function DetachmentSelect() {
                             styles.button,
                             item.id === select?.id
                                 ? null
-                                : {
-                                      borderColor: "orange",
-                                      //   width: "100%",
-                                  },
+                                : { borderColor: "orange" },
                         ]}
                     >
                         <FFText style={{ paddingTop: 10, fontWeight: "bold" }}>
@@ -68,23 +65,27 @@ export default function DetachmentSelect() {
                                 <FFText style={{ paddingBottom: 10 }}>
                                     Effect: {item.effect}
                                 </FFText>
-                                <FFText>{item.select.rule}</FFText>
+                                {!item.select ? null : (
+                                    <FFText>{item.select.rule}</FFText>
+                                )}
 
-                                {item.select.options.map((item, index) => {
-                                    return (
-                                        <View key={index}>
-                                            <FFText
-                                                style={{
-                                                    fontWeight: "bold",
-                                                    paddingTop: 10,
-                                                }}
-                                            >
-                                                {item.title}
-                                            </FFText>
-                                            <FFText>{item.effect}</FFText>
-                                        </View>
-                                    );
-                                })}
+                                {!item.select
+                                    ? null
+                                    : item.select.options.map((item, index) => {
+                                          return (
+                                              <View key={index}>
+                                                  <FFText
+                                                      style={{
+                                                          fontWeight: "bold",
+                                                          paddingTop: 10,
+                                                      }}
+                                                  >
+                                                      {item.title}
+                                                  </FFText>
+                                                  <FFText>{item.effect}</FFText>
+                                              </View>
+                                          );
+                                      })}
                             </View>
                         )}
                     </TouchableOpacity>

@@ -66,48 +66,48 @@
                 ],
                 "stratagems": [
                     {
-                        "name": "ferric blight",
-                        "type": "battle tactic",
+                        "name": "Ferric Blight",
+                        "type": "Battle Tactic",
                         "cost": 1,
                         "when": "Your Shooting phase or the Fight phase.",
                         "target": "One Death Guard unit from your army that has not been selected to shoot or fight this phase.",
                         "effect": "Until the end of the phase, each time a model in your unit makes an attack, improve the Armour Penetration characteristic of that attack by 1. If the target of that attack is within Contagion Range of an Infected objective marker you control and a Critical Wound is scored for that attack, improve the Armour Penetration characteristic of that attack by 2 instead."
                     },
                     {
-                        "name": "disgustingly resilient",
-                        "type": "battle tactic",
+                        "name": "Disgustingly Resilient",
+                        "type": "Battle Tactic",
                         "cost": 2,
                         "when": "Fight phase, just after an enemy unit has selected its targets.",
                         "target": "One Death Guard unit from your army that was selected as the target of one or more of that enemy unit’s attacks.",
                         "effect": "Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack."
                     },
                     {
-                        "name": "sanguous flux",
-                        "type": "battle tactic",
+                        "name": "Sanguous Flux",
+                        "type": "Battle Tactic",
                         "cost": 1,
                         "when": "Fight phase.",
                         "target": "One Death Guard unit from your army that has not been selected to fight this phase.",
                         "effect": "Until the end of the phase, weapons equipped by models in your unit have the [SUSTAINED HITS 1] ability. While your unit is within range of an Infected objective marker you control, those weapons have the [SUSTAINED HITS 2] ability instead."
                     },
                     {
-                        "name": "gifts of decay",
-                        "type": "epic deed",
+                        "name": "Gifts of Decay",
+                        "type": "Epic Deed",
                         "cost": 1,
                         "when": "Your Command phase.",
                         "target": "One Death Guard model from your army.",
                         "effect": "Your model regains up to D3 lost wounds. If your model’s unit is within Contagion Range of an Infected objective marker you control, your model regains up to 3 lost wounds instead."
                     },
                     {
-                        "name": "boilblight",
-                        "type": "strategic ploy",
+                        "name": "Boilblight",
+                        "type": "Strategic Ploy",
                         "cost": 1,
                         "when": "Your Shooting phase.",
                         "target": "One Death Guard unit from your army, and one enemy unit within Contagion Range of that unit.",
                         "effect": "Until the end of the phase, each time a weapon equipped by a Death Guard model from your army targets that enemy unit, that weapon has the [HEAVY] and [IGNORES COVER] abilities."
                     },
                     {
-                        "name": "cloud of flies",
-                        "type": "strategic ploy",
+                        "name": "Cloud of Flies",
+                        "type": "Strategic Ploy",
                         "cost": 1,
                         "when": "Your opponent’s Shooting phase, just after an enemy unit has selected its targets.",
                         "target": "One Death Guard unit from your army that was selected as the target of one or more of that enemy unit’s attacks.",
@@ -2648,7 +2648,7 @@
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
+                            "a": 3,
                             "ws": 4,
                             "s": 6,
                             "ap": 0,
@@ -2777,7 +2777,7 @@
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
+                            "a": 6,
                             "ws": 4,
                             "s": 6,
                             "ap": 0,
@@ -3611,6 +3611,113 @@
         "name": "Chaos Knights",
         "ignore": true,
         "id": "CK",
+        "rule": {
+            "name": "Harbingers of Dread",
+            "effect": "If your Army Faction is Chaos Knights, each model from your army with this ability gains a bonus depending on which Dread abilities are active for your army (see below). Once a Dread ability is active for your army, that ability applies until the end of the battle.",
+            "walker": {
+                "name": "Super-Heavy Walker",
+                "effect": "Each time a model with this ability makes a Normal, Advance or Fall Back move, it can move over models (excluding Titanic models) and terrain features that are 4\" or less in height as if they were not there."
+            },
+            "range": [
+                {
+                    "round": 1,
+                    "name": "Despair (Aura)",
+                    "effect": "While an enemy unit is within 12\" of this model, each time that enemy unit takes a Battle-shock or Leadership test, subtract 1 from that test."
+                },
+                {
+                    "round": 3,
+                    "name": "Doom and Darkness",
+                    "effect": [
+                        "Each time this model makes an attack, if the target is Battle-shocked, add 1 to the Wound roll.",
+                        "Each time an attack targets this model, if the attacking model’s unit is Battle-shocked, subtract 1 from the Hit roll."
+                    ]
+                }
+            ]
+        },
+        "detachments": [
+            {
+                "name": "Traitoris Lance",
+                "id": 1,
+                "rule": "Forged in Terror (Aura)",
+                "effect": "In the Battle-shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 12\" of a Chaos Knights model from your army, that enemy unit must take a Battle- shock test. For the purposes of this ability, if a unit has a Starting Strength of 1, it is considered to be below its Starting Strength while it has lost one or more wounds.",
+                "enhancements": [
+                    {
+                        "name": "Lord of Dread",
+                        "active": null,
+                        "cost": 35,
+                        "effect": "Chaos Knights model only. At the start of the Fight phase, you can select one enemy unit within Engagement Range of the bearer; that enemy unit must take a Battle-shock test."
+                    },
+                    {
+                        "name": "Aura of Terror",
+                        "active": null,
+                        "cost": 25,
+                        "effect": "Chaos Knights model only. If you control an objective marker at the end of your Command phase, and the bearer is within range of that objective marker, that objective marker is said to be Tainted and remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn. In addition, while an objective marker is Tainted and under your control and the Despair Dread ability is active for your army, that objective marker has the Despair Dread ability as if it was a Chaos Knights model from your army (so subtract 1 from Battle-shock and Leadership tests taken for enemy units within 12\" of it)."
+                    },
+                    {
+                        "name": "The Traitor's Mark",
+                        "active": null,
+                        "cost": 30,
+                        "effect": "Chaos Knights model only. The Doom and Darkness ability is active for the bearer from the first battle round onwards, instead of from the third."
+                    },
+                    {
+                        "name": "Panoply of the Cursed Knights",
+                        "active": null,
+                        "cost": 40,
+                        "effect": "Chaos Knights model only. Each time an attack is made against the bearer, subtract 1 from the Armour Penetration characteristic of that attack."
+                    }
+                ],
+                "stratagems": [
+                    {
+                        "name": "Dread Hounds",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "The start of your Shooting phase or the start of the Fight phase.",
+                        "target": "Two or more War Dog units from your army and one enemy unit that is an eligible target for each of those selected War Dog units.",
+                        "effect": "Until the end of the phase, the selected War Dog units can only target that enemy unit, but all weapons equipped by those War Dog models gain the [SUSTAINED HITS 1] ability. In addition, if that enemy unit is Battle-shocked, until the end of the phase, each time a selected War Dog model makes an attack against that enemy unit, an unmodified Hit roll of 5+ scores a Critical Hit."
+                    },
+                    {
+                        "name": "Pterrorshades",
+                        "type": "Wargear",
+                        "cost": 1,
+                        "when": "Any phase, just after an enemy unit fails a Battle-shock test.",
+                        "target": "One Chaos Knights unit from your army that is within 12\" of that enemy unit.",
+                        "effect": "Roll six D6. For each 4+, that enemy unit suffers 1 mortal wound and this model regains up to 1 lost wound."
+                    },
+                    {
+                        "name": "Disdain for the Weak",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Fight phase, just after an enemy unit has selected its targets.",
+                        "target": "One Chaos Knights unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                        "effect": "Until the end of the phase, your model has the Feel No Pain 6+ ability, and the Feel No Pain 5+ ability against attacks made by Battle-shocked models."
+                    },
+                    {
+                        "name": "a Long Leash",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Your Command phase.",
+                        "target": "One Abhorrent model from your army and up to three War Dog models from your army.",
+                        "effect": "Until the start of your next Command phase, those War Dog models count as being within range of any Aura abilities that Abhorrent model has."
+                    },
+                    {
+                        "name": "Diabolic Bulwark",
+                        "type": "Wargear",
+                        "cost": 1,
+                        "when": "Your opponent’s Shooting phase, just after an enemy unit has selected its targets.",
+                        "target": "One Chaos Knights unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                        "effect": "Until the end of the phase, that Chaos Knights model has a 4+ invulnerable save against ranged attacks."
+                    },
+                    {
+                        "name": "Knights of Shade",
+                        "type": "Epic Deed",
+                        "cost": 1,
+                        "when": "Your Movement phase or your Charge phase.",
+                        "target": "Up to two War Dog models from your army or one Titanic Chaos Knights model from your army.",
+                        "effect": "Until the end of the phase, the selected models can move horizontally through models and terrain features as if they were not there."
+                    }
+                ]
+            }
+        ],
         "roster": [
             {
                 "name": "War Dog Executioner",

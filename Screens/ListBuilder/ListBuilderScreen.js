@@ -9,6 +9,7 @@ import FFText from "../../Component/Global/FFText";
 import data from "../../Archive/index.json";
 import { useEffect, useState } from "react";
 import GoBack from "../../Component/Global/GoBack";
+import strats from "../../Archive/strats.json";
 
 export default function ListBuilder() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -33,6 +34,7 @@ export default function ListBuilder() {
     return (
         <View style={styles.container}>
             <GoBack />
+
             <View style={styles.titleContainer}>
                 <FFText
                     numberOfLines={1}
@@ -48,6 +50,7 @@ export default function ListBuilder() {
             <ScrollView>
                 <RuleBar title={"Army Rule"} item={list.rule} />
                 <RuleBar title={"Detachment Rules"} item={list.detachment} />
+                <RuleBar title={"Core Stratagems"} item={strats} />
 
                 {!orgList.includes("Character") ? null : (
                     <View>

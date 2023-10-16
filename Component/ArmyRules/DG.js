@@ -15,3 +15,12 @@ export default DG = ({ rule }) => {
         );
     });
 };
+
+const styles = StyleSheet.create({
+    walker: {
+        borderWidth: 1,
+        padding: 10,
+        borderRadius: 4,
+        marginBottom: 20,
+    },
+});

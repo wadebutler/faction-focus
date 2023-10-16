@@ -13,8 +13,10 @@ export default function Detachment() {
 
             <FFText style={styles.title}>{rule?.name}</FFText>
 
+            <FFText style={styles.container}>{rule.effect}</FFText>
+
             {!rule?.select ? null : (
-                <View style={styles.container}>
+                <View style={styles.ruleContainer}>
                     <FFText style={styles.marginBig}>
                         {rule?.select.rule}
                     </FFText>
@@ -41,24 +43,41 @@ export default function Detachment() {
                                     {item.cost}cp - {item.name} - {item.type}
                                 </FFText>
 
-                                <FFText style={styles.stratText}>
-                                    <FFText style={{ fontWeight: "bold" }}>
-                                        WHEN:
-                                    </FFText>{" "}
-                                    {item.when}
-                                </FFText>
-                                <FFText style={styles.stratText}>
-                                    <FFText style={{ fontWeight: "bold" }}>
-                                        TARGET:
-                                    </FFText>{" "}
-                                    {item.target}
-                                </FFText>
-                                <FFText style={styles.stratText}>
-                                    <FFText style={{ fontWeight: "bold" }}>
-                                        EFFECT:
-                                    </FFText>{" "}
-                                    {item.effect}
-                                </FFText>
+                                {!item.when ? null : (
+                                    <FFText style={styles.stratText}>
+                                        <FFText style={{ fontWeight: "bold" }}>
+                                            WHEN:
+                                        </FFText>{" "}
+                                        {item.when}
+                                    </FFText>
+                                )}
+
+                                {!item.target ? null : (
+                                    <FFText style={styles.stratText}>
+                                        <FFText style={{ fontWeight: "bold" }}>
+                                            TARGET:
+                                        </FFText>{" "}
+                                        {item.target}
+                                    </FFText>
+                                )}
+
+                                {!item.effect ? null : (
+                                    <FFText style={styles.stratText}>
+                                        <FFText style={{ fontWeight: "bold" }}>
+                                            EFFECT:
+                                        </FFText>{" "}
+                                        {item.effect}
+                                    </FFText>
+                                )}
+
+                                {!item.restrictions ? null : (
+                                    <FFText style={styles.stratText}>
+                                        <FFText style={{ fontWeight: "bold" }}>
+                                            RESTRICTION:
+                                        </FFText>{" "}
+                                        {item.restrictions}
+                                    </FFText>
+                                )}
                             </View>
                         );
                     })}
@@ -71,6 +90,12 @@ export default function Detachment() {
 const styles = StyleSheet.create({
     container: {
         padding: 10,
+    },
+    ruleContainer: {
+        borderWidth: 1,
+        marginHorizontal: 10,
+        padding: 10,
+        borderRadius: 4,
     },
     title: {
         fontSize: 20,
