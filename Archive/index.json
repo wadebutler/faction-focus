@@ -5025,6 +5025,109 @@
         "name": "Chaos Daemons",
         "ignore": true,
         "id": "CD",
+        "rule": {
+            "name": "The Shadow of Chaos",
+            "effect": "If your Army Faction is Legiones Daemonica, certain areas of the battlefield are considered to be within your army’s Shadow of Chaos, as follows:",
+            "range": [
+                "Your deployment zone is always within your army’s Shadow of Chaos.",
+                "At the start of any phase, if you control at least half of the objective markers within No Man’s Land, until the end of that phase, No Man’s Land is within your army’s Shadow of Chaos.",
+                "At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Shadow of Chaos."
+            ],
+            "manifest": {
+                "name": "Daemonic Manifestation",
+                "effect": "While a Legiones Daemonica unit from your army is within your army’s Shadow of Chaos, each time that unit takes a Battle-shock test, add 1 to that test and, if that test is passed, one model in that unit regains up to D3 lost wounds (if that unit is a Battleline unit and that test is passed, up to D3 destroyed models can be returned to that unit instead)."
+            },
+            "terror": {
+                "name": "Daemonic Terror",
+                "effect": "While an enemy unit is within your army’s Shadow of Chaos, each time that unit takes a Battle-shock test, subtract 1 from that test and, if that test is failed, that enemy unit suffers D3 mortal wounds."
+            }
+        },
+        "detachments": [
+            {
+                "name": "Daemonic Incursion",
+                "id": 1,
+                "rule": "Warp Rifts",
+                "effect": "Each time a Legiones Daemonica unit from your army is set up on the battlefield using the Deep Strike ability, if it is set up wholly within your army’s Shadow of Chaos, it can be set up anywhere that is more than 6\" horizontally away from all enemy models, instead of more than 9\".",
+                "enhancements": [
+                    {
+                        "name": "A’rgath, the King of Blades",
+                        "active": null,
+                        "cost": 20,
+                        "effect": "Khorne Legiones Daemonica model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is within your army’s Shadow of Chaos, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead."
+                    },
+                    {
+                        "name": "Soulstealer",
+                        "active": null,
+                        "cost": 15,
+                        "effect": "Slaanesh Legiones Daemonica model only. Each time the bearer destroys an enemy model with a melee attack, roll one D6, adding 1 to the result if the bearer is within your army’s Shadow of Chaos. On a 4+, the bearer regains 1 lost wound."
+                    },
+                    {
+                        "name": "The Endless Gift",
+                        "active": null,
+                        "cost": 30,
+                        "effect": "Nurgle Legiones Daemonica model only. The bearer has the Feel No Pain 5+ ability. While the bearer is within your army’s Shadow of Chaos, the bearer has the Feel No Pain 4+ ability instead."
+                    },
+                    {
+                        "name": "The Everstave",
+                        "active": null,
+                        "cost": 25,
+                        "effect": "Tzeentch Legiones Daemonica model only. Add 1 to the Strength characteristic of the bearer’s ranged weapons and increase the Range characteristic of such weapons by 3\". While the bearer is within your army’s Shadow of Chaos, add 2 to the Strength characteristic of the bearer’s ranged weapons and increase the Range characteristic of such weapons by 6\" instead."
+                    }
+                ],
+                "stratagems": [
+                    {
+                        "name": "Corrupt Realspace",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Start of any Command phase.",
+                        "target": "One Legiones Daemonica unit from your army that is within range of an objective marker you control.",
+                        "effect": "That objective marker is said to be Corrupted and remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn. In addition, while an objective marker is Corrupted and under your control, the area of the battlefield within 6\" of that objective marker is considered to be within your army’s Shadow of Chaos."
+                    },
+                    {
+                        "name": "Draught of Terror",
+                        "type": "Battle Tactic",
+                        "cost": 2,
+                        "when": "Your Shooting phase or the Fight phase.",
+                        "target": "One Legiones Daemonica unit from your army that has not been selected to shoot or fight this phase.",
+                        "effect": "Until the end of the phase, improve the Armour Penetration characteristic of weapons equipped by models in that unit by 1. In addition, until the end of the phase, each time such a weapon targets a unit that is Battle-shocked, you can re-roll the Wound roll."
+                    },
+                    {
+                        "name": "Warp Surge",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Your Charge phase.",
+                        "target": "One Legiones Daemonica unit from your army that is within your army’s Shadow of Chaos.",
+                        "effect": "Until the end of the phase, your unit is eligible to declare a charge even if it Advanced this turn."
+                    },
+                    {
+                        "name": "Denizens of the Warp",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Your Movement phase.",
+                        "target": "One Legiones Daemonica unit from your army that is arriving using the Deep Strike ability this phase.",
+                        "effect": "Your unit can be set up anywhere on the battlefield that is more than 3\" horizontally away from all enemy models.",
+                        "restrictions": "A unit targeted by this Stratagem is not eligible to declare a charge in the same turn."
+                    },
+                    {
+                        "name": "The Realm of Chaos",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "End of your opponent’s turn.",
+                        "target": "Up to two Legiones Daemonica units from your army that are within your army’s Shadow of Chaos, or one other Legiones Daemonica unit from your army.",
+                        "effect": "Remove the targeted units from the battlefield and place them into Strategic Reserves. They will arrive back on the battlefield in the Reinforcements step of your next Movement phase using the Deep Strike ability.",
+                        "restrictions": "You cannot target units that are within Engagement Range of one or more enemy units with this Stratagem."
+                    },
+                    {
+                        "name": "Daemonic Invulnerability",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Your opponent’s Shooting phase, just after an enemy unit has selected its targets.",
+                        "target": "One Legiones Daemonica unit from your army that was selected as the target of one or more of that enemy unit’s attacks.",
+                        "effect": "Until the end of the phase, each time an invulnerable saving throw is made for a model in your unit, re-roll a saving throw of 1."
+                    }
+                ]
+            }
+        ],
         "roster": [
             {
                 "name": "Skarbrand",
@@ -5107,6 +5210,145 @@
                             "ws": 2,
                             "s": 8,
                             "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Bloodthirster",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [320],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Fly",
+                    "Chaos",
+                    "Daemon",
+                    "Khorne",
+                    "Bloodthirster"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Daemon Lord of Khorne (Aura)",
+                            "effect": "While a friendly Khorne Legiones Daemonica unit is within 6\" of this model, each time a model in that unit makes a melee attack, add 1 to the Hit roll."
+                        },
+                        {
+                            "name": "Relentless Carnage",
+                            "effect": "At the end of the Fight phase, you can select one enemy unit within Engagement Range of this model and roll eight D6: for each 4+, that enemy unit suffers 1 mortal wound."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 6],
+                        "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 11,
+                    "save": 4,
+                    "invulnerable": 4,
+                    "wounds": 18,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "ranged": [
+                    {
+                        "name": "Bloodflail",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 16,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Hellfire Breath",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 15,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Lash of Khorne",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Axe of Khorne – Strike",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 2,
+                            "s": 14,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Axe of Khorne – Sweep",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 16,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Great Axe of Khorne – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 16,
+                            "ap": 4,
+                            "d": "D6+2",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Great Axe of Khorne – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 10,
+                            "ap": 2,
                             "d": 2,
                             "keywords": []
                         }
