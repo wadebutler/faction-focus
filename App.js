@@ -15,7 +15,17 @@ import Detachment from "./Screens/ListBuilder/DetachmentScreen";
 import AllySelect from "./Screens/ListBuilder/AllySelectScreen";
 import ArmyRule from "./Screens/ListBuilder/ArmyRuleScreen";
 import Stratagems from "./Screens/ListBuilder/Stratagems";
+import "expo-dev-client";
+import {
+    BannerAd,
+    BannerAdSize,
+    TestIds,
+} from "react-native-google-mobile-ads";
+import { ScrollView, StyleSheet, View, Text } from "react-native";
 
+const adUnitId = __DEV__
+    ? TestIds.BANNER
+    : "ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -23,6 +33,7 @@ export default function App() {
         <RecoilRoot>
             <NavigationContainer>
                 <StatusBar backgroundColor={"#000"} />
+
                 <Stack.Navigator>
                     <Stack.Screen
                         name="Home"
@@ -101,6 +112,14 @@ export default function App() {
                         options={{ headerShown: false }}
                     />
                 </Stack.Navigator>
+
+                <BannerAd
+                    unitId={adUnitId}
+                    size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+                    requestOptions={{
+                        requestNonPersonalizedAdsOnly: true,
+                    }}
+                />
             </NavigationContainer>
         </RecoilRoot>
     );
