@@ -8108,6 +8108,277 @@
                         }
                     }
                 ]
+            },
+            {
+                "name": "Keeper of Secrets",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [330],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Psyker",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Keeper of Secrets"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Daemon Lord of Slaanesh (Aura)",
+                            "effect": "While a friendly Slaanesh Legiones Daemonica unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1."
+                        },
+                        {
+                            "name": "Mesmerising Form",
+                            "effect": "Each time an attack targets this model, subtract 1 from the Hit roll."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Shining Aegis",
+                            "effect": "The bearer has the Feel No Pain 5+ ability."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 6],
+                        "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 10,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 18,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "ranged": [
+                    {
+                        "name": "Living Whip",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Assault"]
+                        }
+                    },
+                    {
+                        "name": "Phantasmagoria - Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds", "Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Phantasmagoria - Focused Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 9,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Hazardous",
+                                "Psychic"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Ritual Knife",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Snapping Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Devastating Wounds", "Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Witstealer Sword",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Infernal Enrapturess",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [65],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Infernal Enrapturess"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Daemon Lord of Slaanesh (Aura)",
+                            "effect": "While a friendly Slaanesh Legiones Daemonica unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1."
+                        },
+                        {
+                            "name": "Mesmerising Form",
+                            "effect": "Each time an attack targets this model, subtract 1 from the Hit roll."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Shining Aegis",
+                            "effect": "The bearer has the Feel No Pain 5+ ability."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 6],
+                        "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 10,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 18,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "ranged": [
+                    {
+                        "name": "Living Whip",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Assault"]
+                        }
+                    },
+                    {
+                        "name": "Phantasmagoria - Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds", "Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Phantasmagoria - Focused Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 9,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Hazardous",
+                                "Psychic"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Ritual Knife",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Snapping Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Devastating Wounds", "Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Witstealer Sword",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    }
+                ]
             }
         ]
     }
