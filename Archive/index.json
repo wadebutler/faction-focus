@@ -8251,6 +8251,7 @@
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
+                "leader": ["Daemonettes"],
                 "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
                 "keywords": [
                     "Infantry",
@@ -8261,33 +8262,957 @@
                     "Infernal Enrapturess"
                 ],
                 "ability": {
-                    "core": ["Deadly Demise D6", "Deep Strike"],
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": {
+                        "name": "Harmonic Alignment",
+                        "effect": "While this model is leading a unit, in your Command phase, you can return D3 destroyed Bodyguard models to that unit."
+                    },
+                    "data": [
+                        {
+                            "name": "Discordant Disruption (Aura)",
+                            "effect": "While an enemy Psyker unit is within 12\" of this model, Psychic weapons equipped by models in that unit have the [HAZARDOUS] ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 9,
+                    "toughness": 3,
+                    "save": 7,
+                    "invulnerable": 5,
+                    "wounds": 3,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Heartstring Lyre - Cacophonous Melody",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Assault"]
+                        }
+                    },
+                    {
+                        "name": "Heartstring Lyre - Euphonic Blast",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Assault"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Ravaging Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "The Masque of Slaanesh",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [105],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Epic Hero",
+                    "Fly",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "The Masque of Slaanesh"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Fight First", "Lone Operative"],
                     "faction": ["The Shadow of Chaos"],
                     "data": [
                         {
-                            "name": "Daemon Lord of Slaanesh (Aura)",
-                            "effect": "While a friendly Slaanesh Legiones Daemonica unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1."
+                            "name": "The Eternal Dance",
+                            "effect": "At the start of the Fight phase, select one enemy unit within 6\" of this model. Until the end of the phase:"
                         },
                         {
-                            "name": "Mesmerising Form",
-                            "effect": "Each time an attack targets this model, subtract 1 from the Hit roll."
+                            "effect": "Each time a friendly Slaanesh Legiones Daemonica model makes a melee attack that targets that enemy unit, add 1 to the Wound roll."
+                        },
+                        {
+                            "effect": "Each time a model in that enemy unit makes a melee attack, subtract 1 from the Wound roll."
+                        },
+                        {
+                            "name": "Dazzling Acrobatics",
+                            "effect": "This model is eligible to declare a charge in a turn in which it Advanced or Fell Back."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 9,
+                    "toughness": 3,
+                    "save": 7,
+                    "invulnerable": 4,
+                    "wounds": 4,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "melee": [
+                    {
+                        "name": "Serrated Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Syll'esske",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [120],
+                "modelCountIndex": 0,
+                "leader": ["Daemonettes"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Epic Hero",
+                    "Psyker",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Syll'esske"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": {
+                        "name": "Prince of Slaanesh",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, a successful unmodified Wound roll of 5+ scores a Critical Wound."
+                    },
+                    "data": [
+                        {
+                            "name": "Delightful Agonies",
+                            "effect": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 9,
+                    "toughness": 6,
+                    "save": 6,
+                    "invulnerable": 4,
+                    "wounds": 9,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "ranged": [
+                    {
+                        "name": "Cacophonic Choir – Witchfire",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Ignores Cover",
+                                "Psychic",
+                                "Torrent"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Cacophonic Choir – Focused Witchfire",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Ignores Cover",
+                                "Psychic",
+                                "Torrent",
+                                "Hazardous"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Scourging Whip",
+                        "range": 9,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Assault"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Axe of Dominion",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Scourging Whip",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Contorted Epitome",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [85],
+                "modelCountIndex": 0,
+                "leader": ["Daemonettes"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Psyker",
+                    "Chaos",
+                    "Slaanesh",
+                    "Contorted Epitome"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": {
+                        "name": "Swallow Energy (Psychic)",
+                        "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
+                    },
+                    "data": [
+                        {
+                            "name": "Horrible Fascination(Psychic)",
+                            "effect": "At the start of your opponent’s Shooting phase, one Psyker model from your army with this ability can use it. If it does, select one enemy unit within 12\" of and visible to that Psyker model and roll one D6: on a 1, that Psyker model suffers D3 mortal wounds; on a 2-5, until the end of the phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll; on a 6, that enemy unit is not eligible to shoot this phase."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 9,
+                    "toughness": 6,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 8,
+                    "leadership": 7,
+                    "oc": 2
+                },
+                "melee": [
+                    {
+                        "name": "Coiled Tentacles",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "ws": 4,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Ravaging Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 8,
+                            "ws": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Tormentbringer on Exalted Seeker Chariot",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [140],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Mounted",
+                    "Character",
+                    "Psyker",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Tormentbringer on Exalted Seeker Chariot"
+                ],
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Tormentbringer (Aura)",
+                            "effect": "While a friendly Slaanesh Legiones Daemonica unit is within 6\" of this model, melee weapons in that unit have the [SUSTAINED HITS 1] ability."
+                        },
+                        {
+                            "name": "Hysterical Frenzy (Psychic)",
+                            "effect": "Once per Fight phase, just after an enemy unit selects a Slaanesh Legiones Daemonica unit from your army as a target, one friendly Psyker that is within 6\" of that Slaanesh unit and has this ability can use it. If it does, until the end of the phase, each time a model in that Slaanesh unit is destroyed, roll one D6: on a 4+, do not remove it from play. That model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 6,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 12,
+                    "leadership": 7,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Lashes of Torment",
+                        "range": 6,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 3+",
+                                "Assault",
+                                "Pistol"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Exalted Seeker Tongues",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 8,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Extra Attacks", "Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Ravaging Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 15,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Tranceweaver",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [60],
+                "modelCountIndex": 0,
+                "leader": ["Daemonettes"],
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Psyker",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Tranceweaver"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": {
+                        "name": "Tranceweaver",
+                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                    },
+                    "data": [
+                        {
+                            "name": "Symphony of Pain (Psychic)",
+                            "effect": "At the end of your Movement phase, you can select one enemy unit that is Battle-shocked and within 12\" of this model. Until the end of the turn, each time a Slaanesh Legiones Daemonica model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 9,
+                    "toughness": 3,
+                    "save": 7,
+                    "invulnerable": 5,
+                    "wounds": 3,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "melee": [
+                    {
+                        "name": "Ravaging Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemonettes",
+                "org": "Battleline",
+                "modelCount": [10],
+                "points": [120],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Infantry",
+                    "Battleline",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Daemonettes"
+                ],
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Swift-taloned Slaughter",
+                            "effect": "Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is within range of an objective marker, you can re-roll the Hit roll instead."
                         }
                     ],
                     "wargear": [
                         {
-                            "name": "Shining Aegis",
-                            "effect": "The bearer has the Feel No Pain 5+ ability."
+                            "name": "Daemonic Icon",
+                            "effect": "Models in the bearer’s unit have a Leadership characteristic of 6+."
+                        },
+                        {
+                            "name": "Instrument of Chaos",
+                            "effect": "Add 1 to Charge rolls made for the bearer’s unit."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 9,
+                    "toughness": 3,
+                    "save": 7,
+                    "invulnerable": 5,
+                    "wounds": 1,
+                    "leadership": 7,
+                    "oc": 2
+                },
+                "melee": [
+                    {
+                        "name": "Slashing Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Fiends",
+                "org": "Beast",
+                "modelCount": [3, 6],
+                "points": [130, 260],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": ["Beast", "Chaos", "Daemon", "Slaanesh", "Fiends"],
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Soporific Musk (Aura)",
+                            "effect": "While an enemy unit (excluding Vehicle and Titanic units) is within 6\" of this unit, each time a model in that enemy unit makes a melee attack, subtract 1 from the Hit roll, and each time a model in that enemy unit takes a Desperate Escape test, subtract 1 from that test."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 5,
+                    "save": 7,
+                    "invulnerable": 5,
+                    "wounds": 4,
+                    "leadership": 7,
+                    "oc": 2
+                },
+                "melee": [
+                    {
+                        "name": "Barbed Tail and Dissecting Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Seekers",
+                "org": "Mounted",
+                "modelCount": [5, 10],
+                "points": [85, 170],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Mounted",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Seekers"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Scout 9\""],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Unholy Speed",
+                            "effect": "You can re-roll Advance and Charge rolls made for this unit."
                         }
                     ],
+                    "wargear": [
+                        {
+                            "name": "Daemonic Icon",
+                            "effect": "Models in the bearer’s unit have a Leadership characteristic of 6+."
+                        },
+                        {
+                            "name": "Instrument of Chaos",
+                            "effect": "Add 1 to Charge rolls made for the bearer’s unit."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 4,
+                    "save": 7,
+                    "invulnerable": 5,
+                    "wounds": 2,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "melee": [
+                    {
+                        "name": "Lashing Tongue",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Extra Attacks", "Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Slashing Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Hellflayer",
+                "org": "Mounted",
+                "modelCount": [1, 2],
+                "points": [105, 210],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Mounted",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Hellflayer"
+                ],
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Cutting Down the Foe",
+                            "effect": "Each time this unit is selected to fight, you can select one enemy unit within Engagement Range of it and roll one D6, adding 2 to the result if that unit is an Infantry unit: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 6,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 7,
+                    "leadership": 7,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Lashes of Torment",
+                        "range": 6,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 3+",
+                                "Assault",
+                                "Pistol"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Bladed Axle",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Seeker Tongues",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Extra Attacks", "Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Slashing Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Seeker Chariot",
+                "org": "Mounted",
+                "modelCount": [1, 2],
+                "points": [75, 150],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Mounted",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Seeker Chariot"
+                ],
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Scythed Impact",
+                            "effect": "Each time this unit makes a Charge move, until the end of the phase, melee weapons equipped by models in this unit have the [ANTI-INFANTRY 4+] ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 6,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 7,
+                    "leadership": 7,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Lashes of Torment",
+                        "range": 6,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 3+",
+                                "Assault",
+                                "Pistol"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Seeker Tongues",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Extra Attacks", "Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Slashing Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 9,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Exalted Seeker Chariot",
+                "org": "Mounted",
+                "modelCount": [1],
+                "points": [115],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Mounted",
+                    "Chaos",
+                    "Daemon",
+                    "Slaanesh",
+                    "Exalted Seeker Chariot"
+                ],
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Infernal Engines of Torment",
+                            "effect": "In the Fight phase, after this model has finished making its attacks, if one or more enemy units were destroyed as a result of those attacks, every enemy unit within 6\" of this model must take a Battle- shock test."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 6,
+                    "save": 5,
+                    "invulnerable": 4,
+                    "wounds": 12,
+                    "leadership": 7,
+                    "oc": 5
+                },
+                "ranged": [
+                    {
+                        "name": "Lashes of Torment",
+                        "range": 6,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 3+",
+                                "Assault",
+                                "Pistol"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Exalted Seeker Tongues",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 8,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Extra Attacks", "Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "Slashing Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Be'lakor",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [350],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Fly",
+                    "Epic Hero",
+                    "Psyker",
+                    "Chaos",
+                    "Daemon",
+                    "Be'lakor"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Deep Strike", "Stealth"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "The Dark Master (Aura)",
+                            "effect": "The area of the battlefield within 6\" of this model is considered to be within your army’s Shadow of Chaos."
+                        }
+                    ],
+                    "Primarch": {
+                        "title": "Shadow Form",
+                        "effect": "At the start of the battle round, select one Shadow Form ability from below. Until the end of the battle round, this model has that ability.",
+                        "abilities": [
+                            {
+                                "name": "Wreathed in Shadows (Aura, Psychic)",
+                                "effect": "While a friendly Legiones Daemonica unit is within 6\" of this model, that unit can only be targeted by a ranged attack if the attacking model is within 18\"."
+                            },
+                            {
+                                "name": "Pall of Despair (Aura, Psychic)",
+                                "effect": "In the Battle-shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 6\" of this model, that unit must take a Battle-shock test. For the purposes of this ability, if a unit has a Starting Strength of 1, it is considered to be below its Starting Strength while it has lost one or more wounds."
+                            },
+                            {
+                                "name": "Shadow Lord (Aura, Psychic)",
+                                "effect": "While a friendly Legiones Daemonica unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit."
+                            }
+                        ]
+                    },
                     "damaged": {
                         "range": [1, 6],
                         "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
                     }
                 },
                 "data": {
-                    "movement": 14,
+                    "movement": 12,
                     "toughness": 10,
-                    "save": 5,
+                    "save": 4,
                     "invulnerable": 4,
                     "wounds": 18,
                     "leadership": 6,
@@ -8295,78 +9220,316 @@
                 },
                 "ranged": [
                     {
-                        "name": "Living Whip",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": 6,
-                            "bs": 2,
-                            "s": 6,
-                            "ap": 1,
-                            "d": 2,
-                            "keywords": ["Assault"]
-                        }
-                    },
-                    {
-                        "name": "Phantasmagoria - Witchfire",
-                        "range": 18,
-                        "active": true,
-                        "data": {
-                            "a": 6,
-                            "bs": 2,
-                            "s": 6,
-                            "ap": 2,
-                            "d": 1,
-                            "keywords": ["Devastating Wounds", "Psychic"]
-                        }
-                    },
-                    {
-                        "name": "Phantasmagoria - Focused Witchfire",
+                        "name": "Betraying Shades - Witchfire",
                         "range": 18,
                         "active": true,
                         "data": {
                             "a": 9,
                             "bs": 2,
-                            "s": 6,
+                            "s": 5,
                             "ap": 2,
                             "d": 1,
                             "keywords": [
                                 "Devastating Wounds",
-                                "Hazardous",
+                                "Ignores Cover",
                                 "Psychic"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Betraying Shades - Focused Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Ignores Cover",
+                                "Psychic",
+                                "Hazardous"
                             ]
                         }
                     }
                 ],
                 "melee": [
                     {
-                        "name": "Ritual Knife",
+                        "name": "The Blade of Shadows - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 14,
+                            "ap": 4,
+                            "d": "D6+1",
+                            "keywords": ["Lethal Hits"]
+                        }
+                    },
+                    {
+                        "name": "The Blade of Shadows - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Soul Grinder",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [200],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "allegianceKey": null,
+                "allegiance": [
+                    {
+                        "key": "Khorne",
+                        "effect": "This model is additionally equipped with: torrent of Burning Blood"
+                    },
+                    {
+                        "key": "Tzeentch",
+                        "effect": "This model is additionally equipped with: Warp Gaze"
+                    },
+                    {
+                        "key": "Nurgle",
+                        "effect": "This model is additionally equipped with: phlegm bombardment"
+                    },
+                    {
+                        "key": "Slaanesh",
+                        "effect": "This model is additionally equipped with: scream of despair"
+                    }
+                ],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Chaos",
+                    "Daemon",
+                    "Soul Grinder"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Scuttling Walker",
+                            "effect": "Each time this model makes a Normal or Advance move, it can move over friendly Monster and Vehicle models and terrain features that are 4\" or less in height as if they were not there."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 8,
+                    "toughness": 11,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 14,
+                    "leadership": 7,
+                    "oc": 5
+                },
+                "ranged": [
+                    {
+                        "name": "Harvester Cannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Torrent of Burning Blood",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "2D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Phlegm Bombardment",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": "D6+1",
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": [
+                                "Blast",
+                                "Indirect Fire",
+                                "Lethal Hits"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Scream of Despair",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Sustained Hits 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Warp Gaze",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 2,
+                            "d": "D6+2",
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Iron Claw",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 16,
+                            "ap": 3,
+                            "d": "D6+2",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Warpclaw",
                         "range": "m",
                         "active": false,
                         "data": {
-                            "a": 3,
-                            "ws": 2,
-                            "s": 6,
-                            "ap": 2,
+                            "a": 6,
+                            "ws": 3,
+                            "s": 8,
+                            "ap": 1,
                             "d": 2,
                             "keywords": ["Extra Attacks"]
                         }
                     },
                     {
-                        "name": "Snapping Claws",
+                        "name": "Warpsword",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 4,
-                            "ws": 2,
-                            "s": 6,
+                            "a": 3,
+                            "ws": 3,
+                            "s": 8,
                             "ap": 2,
-                            "d": 3,
-                            "keywords": ["Devastating Wounds", "Extra Attacks"]
+                            "d": "D6",
+                            "keywords": ["Extra Attacks"]
                         }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince of Chaos",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [200],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "allegianceKey": null,
+                "allegiance": [
+                    {
+                        "key": "Khorne",
+                        "effect": "If this model has the Khorne keyword, add 2 to the Strength characteristic of this model’s hellforged weapons."
                     },
                     {
-                        "name": "Witstealer Sword",
+                        "key": "Tzeentch",
+                        "effect": "If this model has the Tzeentch keyword, add 3 to the Attacks characteristic of this model’s infernal cannon."
+                    },
+                    {
+                        "key": "Nurgle",
+                        "effect": "If this model has the Nurgle keyword, add 1 to this model’s Toughness characteristic."
+                    },
+                    {
+                        "key": "Slaanesh",
+                        "effect": "If this model has the Slaanesh keyword, add 2\" to this model’s Move characteristic."
+                    }
+                ],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Chaos",
+                    "Daemon",
+                    "Daemon Prince of Chaos"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Prince of Darkness (Aura)",
+                            "effect": "While a friendly Legiones Daemonica unit is within 6\" of this model, models in that unit have the Stealth ability."
+                        },
+                        {
+                            "name": "Unholy Vigour",
+                            "effect": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 3+ invulnerable save."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Infernal Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
                         "range": "m",
                         "active": true,
                         "data": {
@@ -8375,6 +9538,129 @@
                             "s": 8,
                             "ap": 2,
                             "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince of Chaos with Wings",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [195],
+                "modelCountIndex": 0,
+                "factionKey": ["Legiones Daemonica", "Chaos Daemons"],
+                "allegianceKey": null,
+                "allegiance": [
+                    {
+                        "key": "Khorne",
+                        "effect": "If this model has the Khorne keyword, add 2 to the Strength characteristic of this model’s hellforged weapons."
+                    },
+                    {
+                        "key": "Tzeentch",
+                        "effect": "If this model has the Tzeentch keyword, add 3 to the Attacks characteristic of this model’s infernal cannon."
+                    },
+                    {
+                        "key": "Nurgle",
+                        "effect": "If this model has the Nurgle keyword, add 1 to this model’s Toughness characteristic."
+                    },
+                    {
+                        "key": "Slaanesh",
+                        "effect": "If this model has the Slaanesh keyword, add 2\" to this model’s Move characteristic."
+                    }
+                ],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Fly",
+                    "Chaos",
+                    "Daemon",
+                    "Daemon Prince of Chaos with Wings"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Deep Strike"],
+                    "faction": ["The Shadow of Chaos"],
+                    "data": [
+                        {
+                            "name": "Malefic Destruction",
+                            "effect": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of this model’s hellforged weapons."
+                        },
+                        {
+                            "name": "Harbinger of Death",
+                            "effect": "Each time this model is selected to fight, select one of the following abilities. Until the end of the phase, this model’s hellforged weapons have that ability:"
+                        },
+                        {
+                            "effect": "[LETHAL HITS]"
+                        },
+                        {
+                            "effect": "[PRECISION]"
+                        },
+                        {
+                            "effect": "[SUSTAINED HITS 1]"
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Infernal Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
                             "keywords": []
                         }
                     }
