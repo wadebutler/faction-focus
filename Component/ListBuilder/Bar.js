@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         paddingLeft: 10,
+        borderBottomWidth: 1,
     },
     button: {
         height: 50,

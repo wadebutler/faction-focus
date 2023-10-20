@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { useNavigation } from "@react-navigation/native";
 import { unitViewState, listArmyState, unitEditState } from "../../Atoms";
 import FFText from "../Global/FFText";
-import { SortUnits } from "../../Utils/Sort";
+import { SortByName } from "../../Utils/Sort";
 
 export default function UnitCard({ unit, id }) {
     const navigation = useNavigation();
@@ -53,8 +53,8 @@ export default function UnitCard({ unit, id }) {
 
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);
-        const sortUnits = SortUnits(tempRoster.roster);
-        tempRoster.roster = sortUnits;
+        const sortArr = SortByName(tempRoster.roster);
+        tempRoster.roster = sortArr;
         setList(tempRoster);
     };
 
@@ -87,8 +87,8 @@ export default function UnitCard({ unit, id }) {
 
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);
-        const sortUnits = SortUnits(tempObj.roster);
-        tempObj.roster = sortUnits;
+        const sortArr = SortByName(tempObj.roster);
+        tempObj.roster = sortArr;
         setList(tempObj);
     };
 

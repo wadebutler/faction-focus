@@ -58,7 +58,7 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Character" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
                                 return (
                                     <UnitCard
@@ -78,7 +78,7 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Battleline" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
                                 return (
                                     <UnitCard
@@ -98,7 +98,7 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Infantry" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
                                 return (
                                     <UnitCard
@@ -118,7 +118,7 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Mounted" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
                                 return (
                                     <UnitCard
@@ -138,7 +138,7 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Vehicle" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
                                 return (
                                     <UnitCard
@@ -158,8 +158,25 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Beast" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
+
+                {!list.allies ? null : (
+                    <View>
+                        <Bar title={"Allies"} />
+                        {list?.roster.map((item, index) => {
+                            if (!item.factionKey.includes(list.name)) {
                                 return (
                                     <UnitCard
                                         unit={item}
@@ -178,25 +195,8 @@ export default function ListBuilder() {
                         {list?.roster.map((item, index) => {
                             if (
                                 item.org === "Fortification" &&
-                                list.name === item.factionKey[0]
+                                item.factionKey.includes(list.name)
                             ) {
-                                return (
-                                    <UnitCard
-                                        unit={item}
-                                        key={index}
-                                        id={index}
-                                    />
-                                );
-                            }
-                        })}
-                    </View>
-                )}
-
-                {!list.allies ? null : (
-                    <View>
-                        <Bar title={"Allies"} />
-                        {list?.roster.map((item, index) => {
-                            if (item.factionKey[0] !== list.name) {
                                 return (
                                     <UnitCard
                                         unit={item}

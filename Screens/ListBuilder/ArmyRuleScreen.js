@@ -5,6 +5,7 @@ import FFText from "../../Component/Global/FFText";
 import GoBack from "../../Component/Global/GoBack";
 import DG from "../../Component/ArmyRules/DG";
 import CK from "../../Component/ArmyRules/CK";
+import CD from "../../Component/ArmyRules/CD";
 
 export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
@@ -21,6 +22,7 @@ export default function ArmyRule() {
             {list.id !== "CK" ? null : (
                 <CK rule={rule.range} walker={rule.walker} />
             )}
+            {list.id !== "CD" ? null : <CD rule={rule} />}
         </View>
     );
 }

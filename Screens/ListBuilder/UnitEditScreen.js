@@ -27,7 +27,7 @@ export default function UnitEdit() {
             <UnitStatRow unit={unitEdit.unit} />
 
             {unitEdit.unit.org !== "Character" ||
-            unitEdit.unit.factionKey[0] !== list.name ? null : (
+            !unitEdit.unit.factionKey.includes(list.name) ? null : (
                 <WarlordCheckbox />
             )}
 
@@ -48,7 +48,7 @@ export default function UnitEdit() {
 
             {unitEdit.unit.org === "Character" &&
             unitEdit.unit.keywords.includes("Epic Hero") === false &&
-            unitEdit.unit.factionKey[0] === list.name ? (
+            unitEdit.unit.factionKey.includes(list.name) ? (
                 <Enhancements />
             ) : null}
         </ScrollView>

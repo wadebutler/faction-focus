@@ -5,7 +5,7 @@ import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from "react";
 import FFText from "../Global/FFText";
-import { SortUnits } from "../../Utils/Sort";
+import { SortByName } from "../../Utils/Sort";
 
 export default function Enhancements() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -70,12 +70,11 @@ export default function Enhancements() {
         await AsyncStorage.setItem("lists", data);
 
         let unit = { unit: tempUnit, unitId: tempId };
-        const sortUnits = SortUnits(tempObj.roster);
-        tempObj.roster = sortUnits;
+        const sortArr = SortByName(tempObj.roster);
+        tempObj.roster = sortArr;
         setList(tempObj);
         setUnitEdit(unit);
         setUnitView(tempUnit);
-
         if (num !== checked) {
             setChecked(num);
         }

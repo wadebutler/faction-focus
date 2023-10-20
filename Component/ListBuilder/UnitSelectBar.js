@@ -5,7 +5,7 @@ import { listArmyState } from "../../Atoms";
 import { useEffect, useState } from "react";
 import PlusIcon from "../Icons/PlusIcon";
 import FFText from "../Global/FFText";
-import { SortUnits } from "../../Utils/Sort";
+import { SortByName } from "../../Utils/Sort";
 
 export default function UnitSelectBar({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
@@ -39,8 +39,8 @@ export default function UnitSelectBar({ item }) {
         const data = await JSON.stringify(tempArr);
         await AsyncStorage.setItem("lists", data);
 
-        const sortUnits = SortUnits(tempObj.roster);
-        tempObj.roster = sortUnits;
+        const sortArr = SortByName(tempObj.roster);
+        tempObj.roster = sortArr;
 
         setList(tempObj);
     };

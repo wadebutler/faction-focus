@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from "react";
-import { SortUnits } from "../../Utils/Sort";
+import { SortByName } from "../../Utils/Sort";
 
 export default function LeaderCheckbox({ item }) {
     const [list, setList] = useRecoilState(listArmyState);
@@ -13,6 +13,8 @@ export default function LeaderCheckbox({ item }) {
     const [checked, setChecked] = useState(false);
 
     const handleCheck = async () => {
+        setChecked(!checked);
+
         const tempId = unitEdit.unitId;
         let tempAbility = null;
         let tempAbilityArr = [];
@@ -98,12 +100,11 @@ export default function LeaderCheckbox({ item }) {
         await AsyncStorage.setItem("lists", data);
 
         let unit = { unit: tempUnit, unitId: tempId };
-        const sortUnit = SortUnits(tempObj.roster);
+        const sortUnit = SortByName(tempObj.roster);
         tempObj.roster = sortUnit;
         setList(tempObj);
         setUnitView(tempUnit);
         setUnitEdit(unit);
-        setChecked(!checked);
     };
 
     useEffect(() => {

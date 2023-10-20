@@ -5023,7 +5023,6 @@
     },
     {
         "name": "Chaos Daemons",
-        "ignore": true,
         "id": "CD",
         "rule": {
             "name": "The Shadow of Chaos",

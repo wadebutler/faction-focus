@@ -7,7 +7,7 @@ import TrashIcon from "../Icons/TrashIcon";
 import CheckIcon from "../Icons/CheckIcon";
 import CloseIcon from "../Icons/CloseIcon";
 import FFText from "../Global/FFText";
-import { SortUnits } from "../../Utils/Sort";
+import { SortByName } from "../../Utils/Sort";
 
 export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();
@@ -16,7 +16,7 @@ export default function ArmyCard({ item, handleDelete }) {
 
     const handleSelect = (listItem) => {
         setConfirm(false);
-        const sort = SortUnits(listItem.roster);
+        const sort = SortByName(listItem.roster);
         const data = { ...listItem };
         data.roster = sort;
         setList(data);

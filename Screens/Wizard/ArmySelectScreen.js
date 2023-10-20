@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { armyBuilderState } from "../../Atoms";
 import { useRecoilState } from "recoil";
 import FFText from "../../Component/Global/FFText";
+import { SortByName } from "../../Utils/Sort";
 
 export default function ArmySelectScreen() {
     const navigation = useNavigation();
@@ -39,7 +40,7 @@ export default function ArmySelectScreen() {
     return (
         <View style={styles.container}>
             <FlatList
-                data={Archive}
+                data={SortByName(Archive)}
                 renderItem={({ item }) => armyListItem(item)}
                 keyExtractor={(item) => item.id}
             />

@@ -11,7 +11,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import ArmyCard from "../Component/Home/ArmyCard";
 import { useFocusEffect } from "@react-navigation/native";
 import FFText from "../Component/Global/FFText";
-import { SortLists } from "../Utils/Sort";
+import { SortByTitle } from "../Utils/Sort";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -20,7 +20,7 @@ export default function Home() {
     const fetchData = async () => {
         const data = await AsyncStorage.getItem("lists");
         const tempArr = await JSON.parse(data);
-        const sortArr = SortLists(tempArr);
+        const sortArr = SortByTitle(tempArr);
         setArmyList(sortArr);
     };
 
