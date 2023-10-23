@@ -364,7 +364,7 @@
                 ]
             },
             {
-                "name": "Death Guard Chaos Lord",
+                "name": "Chaos Lord",
                 "org": "Character",
                 "modelCount": [1],
                 "points": [65],
@@ -530,7 +530,7 @@
                 ]
             },
             {
-                "name": "Death Guard Chaos Lord in Terminator Armour",
+                "name": "Chaos Lord in Terminator Armour",
                 "org": "Character",
                 "modelCount": [1],
                 "points": [85],
@@ -801,7 +801,7 @@
                 ]
             },
             {
-                "name": "Death Gaurd Sorcerer in Terminator Armour",
+                "name": "Sorcerer in Terminator Armour",
                 "org": "Character",
                 "modelCount": [1],
                 "points": [70],
@@ -2289,7 +2289,7 @@
             },
             {
                 "name": "Chaos Spawn",
-                "org": "Infantry",
+                "org": "Beast",
                 "modelCount": [2],
                 "points": [70],
                 "modelCountIndex": 0,
@@ -2659,7 +2659,7 @@
                 ]
             },
             {
-                "name": "Death Guard Land Raider",
+                "name": "Land Raider",
                 "org": "Vehicle",
                 "modelCount": [1],
                 "points": [240],
@@ -2788,7 +2788,7 @@
                 ]
             },
             {
-                "name": "Chaos Predator Annihilator",
+                "name": "Predator Annihilator",
                 "org": "Vehicle",
                 "modelCount": [1],
                 "points": [130],
@@ -2807,7 +2807,6 @@
                     "Vehicle",
                     "Chaos",
                     "Nurgle",
-                    "Transport",
                     "Smoke",
                     "Predator Annihilator"
                 ],
@@ -2926,7 +2925,7 @@
                 ]
             },
             {
-                "name": "Chaos Predator Destructor",
+                "name": "Predator Destructor",
                 "org": "Vehicle",
                 "modelCount": [1],
                 "points": [130],
@@ -2945,7 +2944,6 @@
                     "Vehicle",
                     "Chaos",
                     "Nurgle",
-                    "Transport",
                     "Smoke",
                     "Predator Destructor"
                 ],
@@ -3081,9 +3079,10 @@
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Vehicle",
+                    "Walker",
                     "Chaos",
                     "Nurgle",
-                    "Transport",
+                    "Daemon",
                     "Smoke",
                     "Defiler"
                 ],
@@ -3252,7 +3251,7 @@
                 ]
             },
             {
-                "name": "Death Gaurd Rhino",
+                "name": "Rhino",
                 "org": "Vehicle",
                 "modelCount": [1],
                 "points": [75],
@@ -3272,6 +3271,7 @@
                     "Chaos",
                     "Nurgle",
                     "Transport",
+                    "Dedicated Transport",
                     "Smoke",
                     "Rhino"
                 ],
@@ -3471,7 +3471,7 @@
                 ]
             },
             {
-                "name": "Death Guard Icon Bearer",
+                "name": "Icon Bearer",
                 "org": "Character",
                 "modelCount": [1],
                 "points": [45],
@@ -3610,6 +3610,7 @@
     {
         "name": "Chaos Knights",
         "id": "CK",
+        "allies": [{ "id": "CD", "keyword": null }],
         "rule": {
             "name": "Harbingers of Dread",
             "effect": "If your Army Faction is Chaos Knights, each model from your army with this ability gains a bonus depending on which Dread abilities are active for your army (see below). Once a Dread ability is active for your army, that ability applies until the end of the battle.",
@@ -4102,7 +4103,7 @@
                         "active": true,
                         "data": {
                             "a": 12,
-                            "bs": 3,
+                            "bs": 2,
                             "s": 6,
                             "ap": 1,
                             "d": 1,
@@ -4115,7 +4116,7 @@
                         "active": true,
                         "data": {
                             "a": 2,
-                            "bs": 3,
+                            "bs": 2,
                             "s": 12,
                             "ap": 4,
                             "d": "D6",
@@ -4128,7 +4129,7 @@
                         "active": true,
                         "data": {
                             "a": 3,
-                            "bs": 3,
+                            "bs": 2,
                             "s": 5,
                             "ap": 0,
                             "d": 1,
@@ -4141,7 +4142,7 @@
                         "active": false,
                         "data": {
                             "a": "D6",
-                            "bs": 3,
+                            "bs": 2,
                             "s": 5,
                             "ap": 0,
                             "d": 1,
@@ -5024,6 +5025,7 @@
     {
         "name": "Chaos Daemons",
         "id": "CD",
+        "allies": [{ "id": "CK", "keyword": null }],
         "rule": {
             "name": "The Shadow of Chaos",
             "effect": "If your Army Faction is Legiones Daemonica, certain areas of the battlefield are considered to be within your army’s Shadow of Chaos, as follows:",
@@ -9660,6 +9662,2598 @@
                             "s": 6,
                             "ap": 0,
                             "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "World Eaters",
+        "id": "WE",
+        "allies": [
+            { "id": "CK", "keyword": null },
+            { "id": "CD", "keyword": "Khorne" }
+        ],
+        "rule": {
+            "name": "Blessings of Khorne",
+            "effect": "If your Army Faction is World Eaters, at the start of the battle round, you can make a Blessings of Khorne roll. To do so, roll eight D6. You can then use those dice to activate up to two Blessings of Khorne from the Blessings of Khorne list (see right). Each Blessing of Khorne specifies the dice results it requires (where a number is specified, a double or triple of that value or higher is required). You can only activate each Blessing of Khorne once per battle round. Any unused dice from the Blessings of Khorne roll are then discarded. Once activated, each Blessing of Khorne applies to all units from your army with this ability until the end of the battle round.",
+            "rolls": [
+                {
+                    "name": "Rage-Fuelled Invigoration",
+                    "cost": "Any Double",
+                    "effect": "Add 2\" to the Move characteristic of models in this unit."
+                },
+                {
+                    "name": "Wrathful Devotion",
+                    "cost": "Any Double",
+                    "effect": "Models in this unit have the Feel No Pain 6+ ability. If models in this unit already have the Feel No Pain ability, add 1 to their Feel No Pain rolls."
+                },
+                {
+                    "name": "Martial Excellence",
+                    "cost": "Double 3+",
+                    "effect": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability."
+                },
+                {
+                    "name": "Total Carnage",
+                    "cost": "Double 4+ or Any Triple",
+                    "effect": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+                },
+                {
+                    "name": "Warp Blades",
+                    "cost": "Double 5+ or Any Triple",
+                    "effect": "Melee weapons equipped by models in this unit have the [LETHAL HITS] ability."
+                },
+                {
+                    "name": "Unbridled Bloodlust",
+                    "cost": "Double 6+ or Any Triple 4+",
+                    "effect": "This unit is eligible to declare a charge in a turn in which it Advanced."
+                }
+            ]
+        },
+        "detachments": [
+            {
+                "name": "Berzerker Warband",
+                "id": 1,
+                "rule": "Relentless Rage",
+                "effect": "Each time a World Eaters unit from your army is selected to fight, if that unit made a Charge move this turn, until the end of the phase, add 1 to the Strength and Attacks characteristics of melee weapons equipped by models in that unit.",
+                "enhancements": [
+                    {
+                        "name": "Favoured of Khorne",
+                        "active": null,
+                        "cost": 30,
+                        "effect": "World Eaters model only. Once per battle round, when you make a Blessings of Khorne roll, before doing anything else, the bearer can use this Enhancement. If it does, discard all of the dice from that roll and make a new Blessings of Khorne roll. This new roll does not count as a re-roll, so any rules that enable you to re-roll or manipulate individual dice (e.g. Icon of Khorne) can still be used."
+                    },
+                    {
+                        "name": "Berzerker Glave",
+                        "active": null,
+                        "cost": 25,
+                        "effect": "World Eaters model only. Add 1 to the Attacks and Damage characteristics of melee weapons equipped by the bearer. Each time the bearer ends a Charge move, roll one D3; until the end of the turn, add the result of that roll to the Attacks and Damage characteristics of those melee weapons instead."
+                    },
+                    {
+                        "name": "Battle-Lust",
+                        "active": null,
+                        "cost": 15,
+                        "effect": "World Eaters model only. You can select the bearer’s unit for the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+                    },
+                    {
+                        "name": "Helm of Brazen Ire",
+                        "active": null,
+                        "cost": 25,
+                        "effect": "World Eaters model only. Each time an attack is allocated to the bearer, halve the Damage characteristic of that attack."
+                    }
+                ],
+                "stratagems": [
+                    {
+                        "name": "Gory Massacre",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Fight phase.",
+                        "target": "One World Eaters unit from your army that made a Charge move this turn and destroyed one or more enemy units this phase.",
+                        "effect": "In your opponent’s next Command phase, each enemy unit within 6\" of your unit must take a Battle-shock test. If the unit taking that test is Below Half-strength, subtract 1 from that test. Enemy units affected by this Stratagem do not need to take any other Battle-shock tests in the same phase."
+                    },
+                    {
+                        "name": "Disgustingly Resilient",
+                        "type": "Battle Tactic",
+                        "cost": 2,
+                        "when": "Fight phase, just after an enemy unit has selected its targets.",
+                        "target": "One Death Guard unit from your army that was selected as the target of one or more of that enemy unit’s attacks.",
+                        "effect": "Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack."
+                    },
+                    {
+                        "name": "For the Blood God!",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Fight phase, just after a World Eaters unit from your army destroys an enemy unit.",
+                        "target": "That World Eaters unit.",
+                        "effect": "Make a Blessings of Khorne roll. You can use the results of this roll to activate one Blessing of Khorne. That Blessing of Khorne does not count towards your maximum number of activated Blessings of Khorne, but all other rules for Blessings of Khorne apply."
+                    },
+                    {
+                        "name": "For the Skull Throne!",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Fight phase.",
+                        "target": "One World Eaters unit from your army that has not been selected to fight this phase.",
+                        "effect": "Until the end of the phase, each time a model in your unit makes a melee attack that targets a Character, Monster or Vehicle unit, add 1 to the Wound roll."
+                    },
+                    {
+                        "name": "Khorne Cares Not...",
+                        "type": "Strategic Ploy",
+                        "cost": 2,
+                        "when": "Fight phase, just after an enemy unit has selected its targets.",
+                        "target": "One World Eaters unit from your army that was selected as the target of one or more of that enemy unit’s attacks.",
+                        "effect": "Until the end of the phase, each time an attack targets your unit, subtract 1 from the Damage characteristic of that attack."
+                    },
+                    {
+                        "name": "Blood Offering",
+                        "type": "Epic Deed",
+                        "cost": 1,
+                        "when": "Any phase.",
+                        "target": "One World Eaters unit from your army that was just destroyed while it was within range of an objective marker you controlled. You can use this Stratagem on that unit even though it was just destroyed.",
+                        "effect": "That objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+                    },
+                    {
+                        "name": "Apoplectic Frenzy",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Your Movement phase.",
+                        "target": "One World Eaters unit from your army that has not been selected to move this phase.",
+                        "effect": "Until the end of the phase, if your unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in your unit."
+                    }
+                ]
+            }
+        ],
+        "roster": [
+            {
+                "name": "Angron",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [415],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "warlord": true,
+                "keywords": [
+                    "Monster",
+                    "Fly",
+                    "Character",
+                    "Epic Hero",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Primarch",
+                    "Angron"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Deep Strike"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Reborn in Blood",
+                            "effect": "Each time you make a Blessings of Khorne roll, if this model is destroyed, you can use a triple 6 from that roll to use this ability. If you do, this model is no longer destroyed and is placed into Reserves with its full wounds remaining."
+                        }
+                    ],
+                    "Primarch": {
+                        "title": "Wrathful Presence",
+                        "effect": "At the start of your Charge phase, select one Wrathful Presence ability (see left). Until the start of your next Charge phase, this model has that ability.",
+                        "abilities": [
+                            {
+                                "name": "Glorious Bloodletting (Aura)",
+                                "effect": "While a friendly World Eaters unit is within 6\" of this model, each time a Charge roll is made for that unit, add 1 to the roll."
+                            },
+                            {
+                                "name": "Infectious Rage (Aura)",
+                                "effect": "While a friendly World Eaters unit that is below its Starting Strength is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. For the purposes of this ability, if a unit has a Starting Strength of 1, it is considered to be below its Starting Strength while it has lost one or more wounds."
+                            },
+                            {
+                                "name": "Righteous Slaughter (Aura)",
+                                "effect": "While a friendly World Eaters unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+                            }
+                        ]
+                    },
+                    "damaged": {
+                        "range": [1, 6],
+                        "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 11,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 16,
+                    "leadership": 5,
+                    "oc": 6
+                },
+                "melee": [
+                    {
+                        "name": "Samni’arius and Spinegrinder – Strike ",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 8,
+                            "ws": 2,
+                            "s": 16,
+                            "ap": 4,
+                            "d": "D6+2",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Samni’arius and Spinegrinder - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 18,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Kharn the Betrayer",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [80],
+                "modelCountIndex": 0,
+                "leader": ["Khorne Berzerkers"],
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Epic Hero",
+                    "Grenades",
+                    "Chaos",
+                    "Khorne",
+                    "Kharn the Betrayer"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [
+                        {
+                            "name": "Legendary Killer",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1."
+                        },
+                        {
+                            "name": "The Betrayer",
+                            "effect": "At the end of your Charge phase, if this model is leading a unit and that unit is not within Engagement Range of one or more enemy units, you must take a Leadership test for this model. If that test is failed, one Bodyguard model of your choice in that unit is destroyed."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Berzerker Frenzy",
+                            "effect": "If this model is destroyed by a melee attack, if it has not fought this phase, do not remove it from play. It can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Kharn's Plasma Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Gorechild",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 8,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Lord Invocatus",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [140],
+                "modelCountIndex": 0,
+                "leader": [
+                    "Khorne Berzerkers",
+                    "Eightbound",
+                    "Exalted Eightbound"
+                ],
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Epic Hero",
+                    "Grenades",
+                    "Chaos",
+                    "Khorne",
+                    "Lord Invocatus"
+                ],
+                "ability": {
+                    "core": ["Leader", "Scout 6"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": {
+                        "name": "Counter-attacks",
+                        "effect": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+                    },
+                    "data": [
+                        {
+                            "name": "Road of Eight Bloody Steps",
+                            "effect": "At the start of the battle, before any moves are made using the Scouts ability, you can select up to two friendly World Eaters Infantry units within 6\" of this model that do not have the Scouts ability. Until the end of the battle, all models in the selected units have the Scouts 6\" ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 8,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "ranged": [
+                    {
+                        "name": "Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Coward's Bane",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Juggernaut's Bladed Horn",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks", "Lance"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [200],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Daemon Prince"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Infernal Fortitude (Aura)",
+                            "effect": "While a friendly World Eaters Infantry unit is within 6\" of this model, models in that unit have a 4+ invulnerable save."
+                        },
+                        {
+                            "name": "Devastating Assault",
+                            "effect": "Each time this model makes a Charge move, until the end of the turn, its hellforged weapons have the [DEVASTATING WOUNDS] ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Infernal Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince with Wings",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [195],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Fly",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Daemon Prince"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Deep Strike"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Bloodied Terror",
+                            "effect": "At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test."
+                        },
+                        {
+                            "name": "Oath to Khorne",
+                            "effect": "At the start of the battle, select one unit from your opponent’s army to be this model’s sworn foe. Each time this model makes an attack that targets that sworn foe, you can re-roll the Hit roll and you can re-roll the Wound roll. If, at the end of the battle, that sworn foe has not been destroyed, this model is destroyed."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 9,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Infernal Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Lord on Juggernaut",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [100],
+                "modelCountIndex": 0,
+                "leader": [
+                    "Khorne Berzerkers",
+                    "Eightbound",
+                    "Exalted Eightbound"
+                ],
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Mounted",
+                    "Character",
+                    "Grenades",
+                    "Chaos",
+                    "Khorne",
+                    "Lord on Juggernaut"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": {
+                        "name": "Aggressive Advance",
+                        "effect": "While this model is leading a unit, you can re-roll any or all of the following rolls made for that unit: Advance rolls; Charge rolls; Blood Surge rolls (see Khorne Berzerkers)."
+                    },
+                    "data": [
+                        {
+                            "name": "Bloody Stampede",
+                            "effect": "Each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 10,
+                    "toughness": 6,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 7,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "ranged": [
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Hazardous", "Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Exalted Chainblade",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Juggernaut's Bladed Horn",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks", "Lance"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Master of Executions",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [80],
+                "modelCountIndex": 0,
+                "leader": ["Khorne Berzerkers"],
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Chaos",
+                    "Khorne",
+                    "Master of Executions"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": {
+                        "name": "Trophy Taker",
+                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                    },
+                    "data": [
+                        {
+                            "name": "Murderous Swing",
+                            "effect": "Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 4,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Axe of Dismemberment",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Devastating Wounds", "Precision"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Khorne Berzerkers",
+                "org": "Battleline",
+                "modelCount": [5, 10],
+                "points": [100, 200],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Battleline",
+                    "Grenades",
+                    "Chaos",
+                    "Khorne",
+                    "Berzerkers"
+                ],
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 2,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "ability": {
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Blood Surge",
+                            "effect": "Each time an enemy unit is selected to shoot, after that unit has finished making its attacks, if any models from this unit were destroyed as a result of those attacks, this unit can make a Blood Surge move. To do so, roll one D6: this unit can be moved a number of inches up to the result, but this unit must finish that move as close as possible to the closest enemy unit (excluding Aircraft). When doing so, those models can be moved within Engagement Range of that enemy unit. A unit cannot make a Blood Surge move while it is Battle-shocked."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Icon of Khorne",
+                            "effect": "Each time you make a Blessings of Khorne roll, if the bearer’s unit is within range of an objective marker you control, you can re-roll one of the dice."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Berzerker Chainblade",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Khornate Eviscerator",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Jakhals",
+                "org": "Battleline",
+                "modelCount": [10, 20],
+                "points": [70, 140],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Battleline",
+                    "Chaos",
+                    "Khorne",
+                    "Jakhals"
+                ],
+                "data": {
+                    "movement": 6,
+                    "toughness": 3,
+                    "save": 6,
+                    "invulnerable": null,
+                    "wounds": 1,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "ability": {
+                    "core": ["Feel No Pain 6+"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Objective Ravaged",
+                            "effect": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Icon of Khorne",
+                            "effect": "Each time you make a Blessings of Khorne roll, if the bearer’s unit is within range of an objective marker you control, you can re-roll one of the dice."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Autopistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Jakhal Chainblade",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Dishonoured Chainblades",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Mauler Chainblade",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "ws": 5,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Skullsmasher",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Terminator Squad",
+                "org": "Infantry",
+                "modelCount": [5, 10],
+                "points": [190, 380],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Chaos",
+                    "Khorne",
+                    "Terminator",
+                    "Terminator Squad"
+                ],
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 3,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Bloody Fury",
+                            "effect": "Each time a model in this unit makes an attack, add 1 to the Hit roll if this unit is below its Starting Strength, and add 1 to the Wound roll as well if this unit is Below Half-strength."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Heavy Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Reaper Autocannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Sustained Hits 1"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Accursed Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Paired Accursed Weapon",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Chainfist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 9,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Anti-Vehicle 3+"]
+                        }
+                    },
+                    {
+                        "name": "Power Fist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Eightbound",
+                "org": "Infantry",
+                "modelCount": [3, 6],
+                "points": [135, 270],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Eightbound"
+                ],
+                "data": {
+                    "movement": 9,
+                    "toughness": 6,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 3,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ability": {
+                    "core": ["Scout 6"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Beacons of Rage (Aura)",
+                            "effect": "While a friendly World Eaters unit is within 6\" of this unit, each time a model in that unit makes a melee attack, re-roll a Wound roll of 1. If that attack targets a unit that is Below Half-strength, you can re-roll the Wound roll instead."
+                        }
+                    ]
+                },
+                "melee": [
+                    {
+                        "name": "Eightbound Eviscerators",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Heavy Chainglaive",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "lacerators",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Exalted Eightbound",
+                "org": "Infantry",
+                "modelCount": [3, 6],
+                "points": [150, 300],
+                "modelCountIndex": 0,
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Infantry",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Exalted Eightbound"
+                ],
+                "data": {
+                    "movement": 9,
+                    "toughness": 6,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 3,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ability": {
+                    "core": ["Deep Strike", "Feel No Pain 6+"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Overwhelming Wrath (Aura)",
+                            "effect": "Each time an enemy unit within 6\" of this unit is selected to Fall Back, that unit must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+                        }
+                    ]
+                },
+                "melee": [
+                    {
+                        "name": "Eightbound Chainfist",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Eightbound Eviscerators",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Heavy Chainglaive",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Paired Eightbound Chainfists",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Land Raider",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [240],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 12,
+                    "save": 2,
+                    "invulnerable": null,
+                    "wounds": 16,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Transport",
+                    "Smoke",
+                    "Chaos",
+                    "Khorne",
+                    "Land Raider"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Assault Ramp",
+                            "effect": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Soulshatter Lascannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Twin Plague Heavy Bolter",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 4,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Predator Annihilator",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [130],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Smoke",
+                    "Chaos",
+                    "Khorne",
+                    "Predator Annihilator"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Annihilator",
+                            "effect": "Each time this model makes a ranged attack that targets a Monster or Vehicle unit, re-roll a Damage roll of 1."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Bolter",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Predator Twin Lascannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Predator Destructor",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [130],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Smoke",
+                    "Chaos",
+                    "Khorne",
+                    "Predator Destructor"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Destructor",
+                            "effect": "Each time this model makes a ranged attack that targets an Infantry unit, improve the Armour Penetration characteristic of that attack by 1."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Bolter",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Predator Autocannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Defiler",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [190],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 14,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Smoke",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Defiler"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Scuttling Walker",
+                            "effect": "Each time this model makes a Normal, Advance or Fall Back move, it can move over friendly Monster and Vehicle models and terrain features that are 4\" or less in height as if they were not there."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Defiler Cannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Reaper Autocannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Sustained Hits 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Heavy Flamer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Ignores Cover",
+                                "Torrent",
+                                "Twin-Linked"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Defiler Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 16,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Defiler Scourge",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Forgefiend",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [170],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Forgefiend"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Furious Onslaught",
+                            "effect": "In your Shooting phase, after this model has finished making its attacks, if one or more of those attacks scored a hit against an enemy Infantry unit, that Infantry unit must take a Battle-shock test."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Ectoplasma Cannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Hades Autocannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Forgefiend Claws",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Forgefiend Jaws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Helbrute",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [140],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 6,
+                    "toughness": 9,
+                    "save": 2,
+                    "invulnerable": null,
+                    "wounds": 8,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Chaos",
+                    "Khorne",
+                    "Helbrute"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise 1"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Frenzy",
+                            "effect": "Each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot as if it were your Shooting phase or fight as if it were the Fight phase."
+                        },
+                        {
+                            "name": "Helbrute Fists",
+                            "effect": "If this model is equipped with two Helbrute fists, those weapons have the [TWIN-LINKED] ability."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Helbrute Plasma Cannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": ["Blast", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Frag",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Krak",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D6",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Multi-Melta",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
+                        }
+                    },
+                    {
+                        "name": "Twin Autocannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Helbrute Fist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Helbrute Hammer",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 4,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Power Scourge",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Heldrake",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [210],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": "20+",
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 0
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Fly",
+                    "Aircraft",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Heldrake"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Hover"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Swooping Predator",
+                            "effect": "Each time this model ends a Normal move, you can select one enemy unit that it moved over during that move and roll two D6: for each 4+, that enemy unit suffers D3 mortal wounds."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Baleflamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Hades Autocannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Heldrake Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Anti-Fly 2+", "Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Maulerfiend",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [155],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Maulerfiend"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "The Scent of Blood",
+                            "effect": "Each time you make a Charge roll for this model, if one or more of the targets of that charge are below their Starting Strength, add 2 to that roll. Each time this model makes a melee attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Magma Cutter",
+                        "range": 6,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Lasher Tendrils",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Maulerfiend Fists",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 2,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Rhino",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [75],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 12,
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Transport",
+                    "Dedicated Transport",
+                    "Smoke",
+                    "Chaos",
+                    "Khorne",
+                    "Rhino"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Firing Deck 2"],
+                    "faction": ["Nurgle's Gift"],
+                    "data": [
+                        {
+                            "name": "Self Repair",
+                            "effect": "At the start of your Command phase, this model regains 1 lost wound."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Combi-Bolter",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Chaos Spawn",
+                "org": "Infantry",
+                "modelCount": [2],
+                "points": [65],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 5,
+                    "save": 4,
+                    "invulnerable": null,
+                    "wounds": 4,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": ["Beast", "Chaos", "Khorne", "Spawn"],
+                "ability": {
+                    "core": ["Feel No Pain 5+"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Regenerating Monstrosities",
+                            "effect": "At the start of each player’s Command phase, one model in this unit regains up to D3 lost wounds."
+                        }
+                    ]
+                },
+                "melee": [
+                    {
+                        "name": "Hideous Mutations",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": "D6+2",
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Lord of Skulls",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [480],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 13,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 24,
+                    "leadership": 6,
+                    "oc": 8
+                },
+                "factionKey": ["World Eaters"],
+                "keywords": [
+                    "Vehicle",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Khorne",
+                    "Daemon",
+                    "Lord of Skulls"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6+2"],
+                    "faction": ["Blessings of Khorne"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Blessed Slaughter",
+                            "effect": "Each time you make a Blessings of Khorne roll, for each enemy unit destroyed by this model in the previous battle round, you can add 1 to or subtract 1 from one of the dice rolled (each dice can only be modified in this way once, and a dice cannot be modified below 1 or above 6)."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 8],
+                        "effect": "While this model has 1-8 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Daemongore Cannon",
+                        "range": 18,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 4,
+                            "d": "D6+2",
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Gorestorm Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Hades Gatling Cannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Ichor Cannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "2D6",
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Skullhurler",
+                        "range": 60,
+                        "active": false,
+                        "data": {
+                            "a": "2D6",
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Great Cleaver of Khorne - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 16,
+                            "ap": 4,
+                            "d": 8,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Great Cleaver of Khorne - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 15,
+                            "ws": 3,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 2,
                             "keywords": []
                         }
                     }
