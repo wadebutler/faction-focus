@@ -3,7 +3,7 @@
         "name": "Jank Hammer",
         "icon": "./Assets/playstore-icon.png",
         "slug": "faction-focus",
-        "version": "1.1.0",
+        "version": "1.0.0",
         "orientation": "portrait",
         "userInterfaceStyle": "light",
         "splash": {
@@ -18,7 +18,8 @@
             "adaptiveIcon": {
                 "backgroundColor": "#ffffff"
             },
-            "package": "com.wadebutler.factionfocus"
+            "package": "com.wadebutler.factionfocus",
+            "versionCode": 2
         },
         "extra": {
             "eas": {
