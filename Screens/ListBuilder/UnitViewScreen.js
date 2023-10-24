@@ -21,7 +21,7 @@ export default function UnitView() {
                 <EnhancementView item={unitView.enhancement} />
             )}
 
-            {unitView.allegianceKey === null ? null : (
+            {!unitView.allegianceKey ? null : (
                 <MarkView item={unitView.allegiance[unitView.allegianceKey]} />
             )}
 

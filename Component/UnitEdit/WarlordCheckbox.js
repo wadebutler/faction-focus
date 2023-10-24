@@ -29,14 +29,12 @@ export default function WarlordCheckbox() {
         };
         let tempUnit = {
             ability: { ...unitEdit.unit.ability },
-            allegiance:
-                unitEdit.unit.allegiance === null
-                    ? null
-                    : [...unitEdit.unit.allegiance],
-            allegianceKey:
-                unitEdit.unit.allegianceKey === null
-                    ? null
-                    : unitEdit.unit.allegianceKey,
+            allegiance: !unitEdit.unit.allegiance
+                ? null
+                : [...unitEdit.unit.allegiance],
+            allegianceKey: !unitEdit.unit.allegianceKey
+                ? null
+                : unitEdit.unit.allegianceKey,
             data: { ...unitEdit.unit.data },
             warlord: unitEdit.unit.warlord,
             factionKey: [...unitEdit.unit.factionKey],

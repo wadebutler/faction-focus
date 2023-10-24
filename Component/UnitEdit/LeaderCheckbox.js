@@ -31,14 +31,12 @@ export default function LeaderCheckbox({ item }) {
         };
         let tempUnit = {
             ability: { ...unitEdit.unit.ability },
-            allegiance:
-                unitEdit.unit.allegiance === null
-                    ? null
-                    : [...unitEdit.unit.allegiance],
-            allegianceKey:
-                unitEdit.unit.allegianceKey === null
-                    ? null
-                    : unitEdit.unit.allegianceKey,
+            allegiance: !unitEdit.unit.allegiance
+                ? null
+                : [...unitEdit.unit.allegiance],
+            allegianceKey: !unitEdit.unit.allegianceKey
+                ? null
+                : unitEdit.unit.allegianceKey,
             data: { ...unitEdit.unit.data },
             factionKey: [...unitEdit.unit.factionKey],
             keywords: [...unitEdit.unit.keywords],
