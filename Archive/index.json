@@ -12260,5 +12260,14 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Thousand Sons",
+        "ignore": true,
+        "id": "TS",
+        "allies": [
+            { "id": "CK", "keyword": null },
+            { "id": "CD", "keyword": "Tzeentch" }
+        ]
     }
 ]
