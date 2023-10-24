@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, TouchableOpacity } from "react-native";
+import { ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
 import { useRecoilState } from "recoil";
 import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WargearSelect from "../../Component/UnitEdit/WargearSelect";
@@ -9,6 +9,8 @@ import { unitEditState, listArmyState } from "../../Atoms";
 import WarlordCheckbox from "../../Component/UnitEdit/WarlordCheckbox";
 import UnitSize from "../../Component/UnitEdit/UnitSize";
 import ViewIcon from "../../Component/Icons/ViewIcon";
+import FFText from "../../Component/Global/FFText";
+import Marks from "../../Component/UnitEdit/Marks";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -45,6 +47,8 @@ export default function UnitEdit() {
             {!unitEdit.unit.melee ? null : (
                 <WargearSelect unit={unitEdit.unit} type={"melee"} />
             )}
+
+            {!unitEdit.unit.allegiance ? null : <Marks />}
 
             {unitEdit.unit.org === "Character" &&
             unitEdit.unit.keywords.includes("Epic Hero") === false &&

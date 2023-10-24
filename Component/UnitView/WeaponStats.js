@@ -13,7 +13,15 @@ export default function WeaponStats({ weapon, type }) {
             {weapon.map((item, index) => {
                 if (item.active) {
                     return (
-                        <View style={styles.wpnContainer} key={index}>
+                        <View
+                            style={[
+                                styles.wpnContainer,
+                                weapon.length === 1
+                                    ? null
+                                    : { marginBottom: 10 },
+                            ]}
+                            key={index}
+                        >
                             <FFText style={styles.nameText}>{item.name}</FFText>
 
                             <View style={styles.statRow}>
@@ -77,7 +85,7 @@ export default function WeaponStats({ weapon, type }) {
                                 </View>
                             </View>
 
-                            {!item.data.keywords ? null : (
+                            {!item.data.keywords.length ? null : (
                                 <View style={styles.keywordContainer}>
                                     <FFText
                                         style={{
@@ -125,14 +133,12 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     wpnContainer: {
-        paddingBottom: 10,
         borderBottomWidth: 1,
     },
     statRow: {
         flexDirection: "row",
         justifyContent: "space-between",
         backgroundColor: "#cfcfcf",
-        marginBottom: 5,
     },
     statContainer: {
         alignItems: "center",
@@ -140,10 +146,10 @@ const styles = StyleSheet.create({
     },
     keywordContainer: {
         flexDirection: "row",
-        paddingTop: 5,
         alignItems: "center",
         flexWrap: "wrap",
         paddingHorizontal: 10,
+        paddingVertical: 5,
     },
     keyText: {
         fontSize: 12,

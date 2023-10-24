@@ -29,6 +29,14 @@ export default function UnitSizeCheckbox({ item, keyId }) {
         };
         let tempUnit = {
             ability: { ...unitEdit.unit.ability },
+            allegiance:
+                unitEdit.unit.allegiance === null
+                    ? null
+                    : [...unitEdit.unit.allegiance],
+            allegianceKey:
+                unitEdit.unit.allegianceKey === null
+                    ? null
+                    : unitEdit.unit.allegianceKey,
             data: { ...unitEdit.unit.data },
             factionKey: [...unitEdit.unit.factionKey],
             keywords: [...unitEdit.unit.keywords],
@@ -39,6 +47,9 @@ export default function UnitSizeCheckbox({ item, keyId }) {
             modelCountIndex: unitEdit.unit.modelCountIndex,
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
+            enhancement: !unitEdit.unit.enhancement
+                ? null
+                : { ...unitEdit.unit.enhancement },
         };
 
         if (!checked) {

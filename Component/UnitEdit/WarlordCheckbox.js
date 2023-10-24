@@ -29,6 +29,14 @@ export default function WarlordCheckbox() {
         };
         let tempUnit = {
             ability: { ...unitEdit.unit.ability },
+            allegiance:
+                unitEdit.unit.allegiance === null
+                    ? null
+                    : [...unitEdit.unit.allegiance],
+            allegianceKey:
+                unitEdit.unit.allegianceKey === null
+                    ? null
+                    : unitEdit.unit.allegianceKey,
             data: { ...unitEdit.unit.data },
             warlord: unitEdit.unit.warlord,
             factionKey: [...unitEdit.unit.factionKey],
@@ -40,6 +48,9 @@ export default function WarlordCheckbox() {
             modelCountIndex: unitEdit.unit.modelCountIndex,
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
+            enhancement: !unitEdit.unit.enhancement
+                ? null
+                : { ...unitEdit.unit.enhancement },
         };
 
         if (!checked) {

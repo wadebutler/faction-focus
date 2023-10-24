@@ -8,7 +8,9 @@ export default function UnitStatRow({ unit }) {
     return (
         <View style={styles.container}>
             <GoBack />
-            <FFText style={styles.unitNameText}>{unit?.name}</FFText>
+            <FFText line={1} style={styles.unitNameText}>
+                {unit?.name}
+            </FFText>
 
             <View style={styles.statRow}>
                 <View style={styles.container}>
@@ -61,6 +63,7 @@ const styles = StyleSheet.create({
     unitNameText: {
         fontSize: 20,
         paddingVertical: 10,
+        maxWidth: "85%",
     },
     statRow: {
         flexDirection: "row",

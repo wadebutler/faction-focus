@@ -36,11 +36,7 @@ export default function ListBuilder() {
             <GoBack />
 
             <View style={styles.titleContainer}>
-                <FFText
-                    numberOfLines={1}
-                    ellipsizeMode="tail"
-                    style={styles.title}
-                >
+                <FFText line={1} style={styles.title}>
                     {list?.title}
                 </FFText>
 

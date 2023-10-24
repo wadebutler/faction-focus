@@ -5,6 +5,7 @@ import data from "../../Archive/index.json";
 import { useEffect, useState } from "react";
 import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";
 import GoBack from "../../Component/Global/GoBack";
+import { SortByName } from "../../Utils/Sort";
 
 export default function UnitSelect() {
     const [orgId, setOrgId] = useRecoilState(orgIdState);
@@ -14,7 +15,8 @@ export default function UnitSelect() {
     useEffect(() => {
         data.map((item) => {
             if (item.id === list.id) {
-                setUnits(item.roster);
+                let tempArr = SortByName(item.roster);
+                setUnits(tempArr);
             }
         });
     }, []);

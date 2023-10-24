@@ -7,11 +7,10 @@ import { useEffect, useState } from "react";
 import FFText from "../Global/FFText";
 import { SortByName } from "../../Utils/Sort";
 
-export default function Enhancements() {
+export default function Marks() {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
-    const [enhancement, setEnhancment] = useState(list.detachment.enhancements);
     const [checked, setChecked] = useState(null);
 
     const handleCheck = async (num, item) => {
@@ -48,16 +47,15 @@ export default function Enhancements() {
             leader: unitEdit.unit.leader,
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
-            enhancement: {
-                name: item.name,
-                active: num,
-                cost: item.cost,
-                effect: item.effect,
-            },
+            enhancement: !unitEdit.unit.enhancement
+                ? null
+                : { ...unitEdit.unit.enhancement },
         };
 
         if (num === checked) {
-            delete tempUnit.enhancement;
+            tempUnit.allegianceKey = null;
+        } else {
+            tempUnit.allegianceKey = num;
         }
 
         tempObj.roster.splice(tempId, 1, tempUnit);
@@ -80,6 +78,7 @@ export default function Enhancements() {
         let unit = { unit: tempUnit, unitId: tempId };
         const sortArr = SortByName(tempObj.roster);
         tempObj.roster = sortArr;
+
         setList(tempObj);
         setUnitEdit(unit);
         setUnitView(tempUnit);
@@ -89,19 +88,21 @@ export default function Enhancements() {
     };
 
     useEffect(() => {
-        unitEdit?.unit?.enhancement?.active
-            ? setChecked(unitEdit.unit.enhancement.active)
-            : setChecked(null);
+        unitEdit.unit.allegianceKey === null
+            ? setChecked(null)
+            : setChecked(unitEdit.unit.allegianceKey);
     }, [unitEdit]);
 
     return (
         <View style={{ marginBottom: 20 }}>
-            <FFText style={styles.title}>Enhancements</FFText>
+            <FFText style={styles.title}>Daemonic Allegiance</FFText>
 
-            <TouchableOpacity onPress={() => handleCheck(0, enhancement[0])}>
+            <TouchableOpacity
+                onPress={() => handleCheck(0, unitEdit.unit.allegiance[0])}
+            >
                 <CheckBox
-                    title={`${enhancement[0].name} - ${enhancement[0].cost} points`}
-                    onPress={() => handleCheck(0, enhancement[0])}
+                    title={`${unitEdit.unit.allegiance[0].key}`}
+                    onPress={() => handleCheck(0, unitEdit.unit.allegiance[0])}
                     checked={checked === 0}
                     checkedColor="#0F0"
                     containerStyle={{ margin: 0, marginBottom: -10 }}
@@ -109,13 +110,17 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <FFText style={styles.check}>{enhancement[0].effect}</FFText>
+                <FFText style={styles.check}>
+                    {unitEdit.unit.allegiance[0].effect}
+                </FFText>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => handleCheck(1, enhancement[1])}>
+            <TouchableOpacity
+                onPress={() => handleCheck(1, unitEdit.unit.allegiance[1])}
+            >
                 <CheckBox
-                    title={`${enhancement[1].name} - ${enhancement[1].cost} points`}
-                    onPress={() => handleCheck(1, enhancement[1])}
+                    title={`${unitEdit.unit.allegiance[1].key}`}
+                    onPress={() => handleCheck(1, unitEdit.unit.allegiance[1])}
                     checked={checked === 1}
                     checkedColor="#0F0"
                     containerStyle={{ margin: 0, marginBottom: -10 }}
@@ -123,13 +128,17 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <FFText style={styles.check}>{enhancement[1].effect}</FFText>
+                <FFText style={styles.check}>
+                    {unitEdit.unit.allegiance[1].effect}
+                </FFText>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => handleCheck(2, enhancement[2])}>
+            <TouchableOpacity
+                onPress={() => handleCheck(2, unitEdit.unit.allegiance[2])}
+            >
                 <CheckBox
-                    onPress={() => handleCheck(2, enhancement[2])}
-                    title={`${enhancement[2].name} - ${enhancement[2].cost} points`}
+                    title={`${unitEdit.unit.allegiance[2].key}`}
+                    onPress={() => handleCheck(2, unitEdit.unit.allegiance[2])}
                     checked={checked === 2}
                     checkedColor="#0F0"
                     containerStyle={{ margin: 0, marginBottom: -10 }}
@@ -137,13 +146,17 @@ export default function Enhancements() {
                     uncheckedColor="gray"
                 />
 
-                <FFText style={styles.check}>{enhancement[2].effect}</FFText>
+                <FFText style={styles.check}>
+                    {unitEdit.unit.allegiance[2].effect}
+                </FFText>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => handleCheck(3, enhancement[3])}>
+            <TouchableOpacity
+                onPress={() => handleCheck(3, unitEdit.unit.allegiance[3])}
+            >
                 <CheckBox
-                    onPress={() => handleCheck(3, enhancement[3])}
-                    title={`${enhancement[3].name} - ${enhancement[3].cost} points`}
+                    title={`${unitEdit.unit.allegiance[3].key}`}
+                    onPress={() => handleCheck(3, unitEdit.unit.allegiance[3])}
                     checked={checked === 3}
                     checkedColor="#0F0"
                     containerStyle={{ margin: 0, marginBottom: -10 }}
@@ -152,7 +165,7 @@ export default function Enhancements() {
                 />
 
                 <FFText style={[styles.check, { paddingBottom: 10 }]}>
-                    {enhancement[3].effect}
+                    {unitEdit.unit.allegiance[3].effect}
                 </FFText>
             </TouchableOpacity>
         </View>

@@ -6,6 +6,7 @@ import WeaponStats from "../../Component/UnitView/WeaponStats";
 import AbilityView from "../../Component/UnitView/AbilityView";
 import KeywordView from "../../Component/UnitView/KeywordView";
 import EnhancementView from "../../Component/UnitView/EnhancementView";
+import MarkView from "../../Component/UnitView/MarkView";
 
 export default function UnitView() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
@@ -18,6 +19,10 @@ export default function UnitView() {
 
             {!unitView.enhancement ? null : (
                 <EnhancementView item={unitView.enhancement} />
+            )}
+
+            {unitView.allegianceKey === null ? null : (
+                <MarkView item={unitView.allegiance[unitView.allegianceKey]} />
             )}
 
             {!unitView.ranged ? null : (
