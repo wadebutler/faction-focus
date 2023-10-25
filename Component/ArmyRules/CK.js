@@ -3,7 +3,7 @@ import FFText from "../../Component/Global/FFText";
 
 export default CK = ({ rule, walker }) => {
     return (
-        <View>
+        <View style={{ paddingHorizontal: 10 }}>
             <View style={styles.walker}>
                 <FFText style={{ fontWeight: "bold" }}>{walker.name}</FFText>
                 <FFText>{walker.effect}</FFText>

@@ -72,7 +72,7 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingVertical: 50,
+        paddingVertical: 20,
         paddingHorizontal: 0,
     },
     button: {

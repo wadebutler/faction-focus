@@ -7018,7 +7018,7 @@
             },
             {
                 "name": "Screamers",
-                "org": "Character",
+                "org": "Beast",
                 "modelCount": [3, 6],
                 "points": [80, 160],
                 "modelCountIndex": 0,
@@ -12263,7 +12263,6 @@
     },
     {
         "name": "Thousand Sons",
-        "ignore": true,
         "id": "TS",
         "allies": [
             { "id": "CK", "keyword": null },
@@ -14659,186 +14658,6 @@
                 ]
             },
             {
-                "name": "Rubric Marines",
-                "org": "Battleline",
-                "modelCount": [5, 10],
-                "points": [105, 210],
-                "modelCountIndex": 0,
-                "factionKey": ["Thousand Sons"],
-                "keywords": [
-                    "Infantry",
-                    "Battleline",
-                    "Chaos",
-                    "Tzeentch",
-                    "Rubric Marines",
-                    "Psyker"
-                ],
-                "data": {
-                    "movement": 5,
-                    "toughness": 4,
-                    "save": 3,
-                    "invulnerable": 5,
-                    "wounds": 2,
-                    "leadership": 6,
-                    "oc": 2
-                },
-                "ability": {
-                    "faction": ["Cabel of Sorcerers 1"],
-                    "leader": [],
-                    "data": [
-                        {
-                            "name": "Bringers of Change",
-                            "effect": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If the target of that attack is within range of an objective marker you do not control, you can re-roll the Wound roll instead."
-                        }
-                    ],
-                    "wargear": [
-                        {
-                            "name": "Icon of Flame",
-                            "effect": "Each time a model in the bearer’s unit makes a ranged attack, if a Critical Wound is scored, improve the Armour Penetration characteristic of that attack by 1."
-                        }
-                    ]
-                },
-                "ranged": [
-                    {
-                        "name": "Inferno Bolt Pistol",
-                        "range": 12,
-                        "active": true,
-                        "data": {
-                            "a": 1,
-                            "bs": 3,
-                            "s": 4,
-                            "ap": 1,
-                            "d": 1,
-                            "keywords": ["Pistol"]
-                        }
-                    },
-                    {
-                        "name": "Inferno Boltgun",
-                        "range": 24,
-                        "active": true,
-                        "data": {
-                            "a": 2,
-                            "bs": 3,
-                            "s": 4,
-                            "ap": 1,
-                            "d": 1,
-                            "keywords": []
-                        }
-                    },
-                    {
-                        "name": "Plasma Pistol - Standard",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 3,
-                            "s": 7,
-                            "ap": 2,
-                            "d": 1,
-                            "keywords": ["Pistol"]
-                        }
-                    },
-                    {
-                        "name": "Plasma Pistol - Supercharge",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": 1,
-                            "bs": 3,
-                            "s": 8,
-                            "ap": 3,
-                            "d": 2,
-                            "keywords": ["Pistol", "Hazardous"]
-                        }
-                    },
-                    {
-                        "name": "Soulreaper Cannon",
-                        "range": 24,
-                        "active": false,
-                        "data": {
-                            "a": 6,
-                            "bs": 3,
-                            "s": 6,
-                            "ap": 1,
-                            "d": 1,
-                            "keywords": ["Devastating Wounds"]
-                        }
-                    },
-                    {
-                        "name": "Warpsmite",
-                        "range": 18,
-                        "active": false,
-                        "data": {
-                            "a": 2,
-                            "bs": 3,
-                            "s": 4,
-                            "ap": 3,
-                            "d": 1,
-                            "keywords": [
-                                "Anit-Infantry 4+",
-                                "Devastating Wounds",
-                                "Pistol",
-                                "Psychic"
-                            ]
-                        }
-                    },
-                    {
-                        "name": "Warpflame Pistol",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 3,
-                            "ap": 1,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Pistol", "Torrent"]
-                        }
-                    },
-                    {
-                        "name": "Warpflamer",
-                        "range": 12,
-                        "active": false,
-                        "data": {
-                            "a": "D6",
-                            "bs": "N/A",
-                            "s": 4,
-                            "ap": 1,
-                            "d": 1,
-                            "keywords": ["Ignores Cover", "Torrent"]
-                        }
-                    }
-                ],
-                "melee": [
-                    {
-                        "name": "Close Combat Weapon",
-                        "range": "m",
-                        "active": true,
-                        "data": {
-                            "a": 5,
-                            "ws": 3,
-                            "s": 6,
-                            "ap": 0,
-                            "d": 1,
-                            "keywords": []
-                        }
-                    },
-                    {
-                        "name": "Force Weapon",
-                        "range": "m",
-                        "active": true,
-                        "data": {
-                            "a": 4,
-                            "ws": 3,
-                            "s": 5,
-                            "ap": 2,
-                            "d": 2,
-                            "keywords": ["Psychic"]
-                        }
-                    }
-                ]
-            },
-            {
                 "name": "Scarab Occult Terminators",
                 "org": "Infantry",
                 "modelCount": [5, 10],
@@ -15602,7 +15421,7 @@
             },
             {
                 "name": "Tzaangor Shaman",
-                "org": "Mounted",
+                "org": "Character",
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,

@@ -49,7 +49,10 @@ export default function DetachmentSelect() {
                             {item.name}
                         </FFText>
                         <FFText
-                            style={{ paddingVertical: 10, fontWeight: "bold" }}
+                            style={{
+                                paddingVertical: 10,
+                                fontWeight: "bold",
+                            }}
                         >
                             Rule: {item.rule}
                         </FFText>

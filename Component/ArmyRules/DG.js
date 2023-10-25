@@ -4,7 +4,7 @@ import FFText from "../../Component/Global/FFText";
 export default DG = ({ rule }) => {
     return rule.map((item, index) => {
         return (
-            <View style={{ marginBottom: 20 }} key={index}>
+            <View style={styles.container} key={index}>
                 <FFText>
                     {Object.keys(item)[0]} = {Object.values(item)[0]}
                 </FFText>
@@ -17,6 +17,10 @@ export default DG = ({ rule }) => {
 };
 
 const styles = StyleSheet.create({
+    container: {
+        marginBottom: 20,
+        paddingHorizontal: 10,
+    },
     walker: {
         borderWidth: 1,
         padding: 10,
