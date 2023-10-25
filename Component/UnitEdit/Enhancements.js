@@ -24,7 +24,7 @@ export default function Enhancements() {
             points: { ...list.points },
             roster: [...list.roster],
             title: list.title,
-            rule: list.rule,
+            rule: item.rule.length ? [...item.rule] : item.rule,
             uid: list.uid,
         };
         let tempUnit = {

@@ -15,7 +15,7 @@ export default function ArmySelectScreen() {
             let tempObj = {
                 name: item.name,
                 allies: item.allies,
-                rule: item.rule,
+                rule: item.rule.length ? [...item.rule] : item.rule,
                 id: item.id,
             };
 

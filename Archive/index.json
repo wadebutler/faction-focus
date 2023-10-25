@@ -12306,7 +12306,6 @@
                 "rule": "Kindred Sorcery",
                 "effect": "In your Command phase, you can select one of the abilities listed below to take effect until the start of your next Command phase.",
                 "select": {
-                    "rule": "During the Declare Battle Formations step, select one of the Sicknesses below. Until the end of the battle, all units from your army with the Nurgle’s Gift ability gain the selected Sickness.",
                     "options": [
                         {
                             "title": "Malevolent Charge",
@@ -15583,5 +15582,156 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Chaos Space Marines",
+        "ignore": true,
+        "id": "CSM",
+        "allies": [
+            { "id": "CK", "keyword": null },
+            { "id": "CD", "keyword": null }
+        ],
+        "rule": [
+            {
+                "name": "Dark Pact",
+                "effect": "If your Army Faction is Heretic Astartes, each time a unit with this ability is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase",
+                "select": ["[LETHAL HITS]", "[SUSTAINED HITS 1]"],
+                "fail": "Each time a unit makes a Dark Pact, after it has resolved its attacks, it must take a Leadership test; if that test is failed, that unit suffers D3 mortal wounds."
+            },
+            {
+                "name": "The Lost and Damned",
+                "effect": "If your Army Faction is Heretic Astartes, you can include any of the following units in your army, and when you do so their Faction keywords are replaced with Heretic Astartes",
+                "units": [
+                    "Khorne Berzerkers",
+                    "Rubric Marines",
+                    "Plague Marines"
+                ],
+                "limitRule": "The combined points value of such units you can include in your army depends on the battle size, as follows",
+                "limit": [
+                    "Incursion: Up to 250 pts",
+                    "Strike Force: Up to 500 pts",
+                    "Onslaught: Up to 750 pts"
+                ]
+            }
+        ],
+        "detachments": [
+            {
+                "name": "Slaves to Darkness",
+                "id": 1,
+                "rule": "Mark of Chaos",
+                "effect": "When mustering your army, each time you select a Heretic Astartes unit to include in your army, if that unit is not an Epic Hero and does not already have one or more of the keywords listed below, you must select one of the keywords listed below for that unit to gain (note which units gain which keywords in this way on your Army Roster). Each time a unit with one of these keywords makes a Dark Pact, it gains the associated ability below until the end of the phase.",
+                "restrictions": [
+                    "You cannot select the Khorne keyword for a Psyker unit to gain.",
+                    "A Character unit with the Leader ability can only be attached to a Bodyguard unit if both of those units share one of the same keywords from the list above."
+                ],
+                "select": {
+                    "options": [
+                        {
+                            "title": "Khorne",
+                            "effect": "Blood Fury: In the Fight phase, if this unit’s weapons gained the [LETHAL HITS] ability this phase as the result of a Dark Pact, each time a model in this unit makes an attack, an unmodified Hit roll of 5+ scores a Critical Hit."
+                        },
+                        {
+                            "title": "Tzeentch",
+                            "effect": "Warpfire: In the Shooting phase, if this unit’s weapons gained the [LETHAL HITS] ability this phase as the result of a Dark Pact, each time a model in this unit makes an attack, an unmodified Hit roll of 5+ scores a Critical Hit."
+                        },
+                        {
+                            "title": "Nurgle",
+                            "effect": "Spreading Sickness: In the Shooting phase, if this unit’s weapons gained the [SUSTAINED HITS 1] ability this phase as the result of a Dark Pact, each time a model in this unit makes an attack, an unmodified Hit roll of 5+ scores a Critical Hit."
+                        },
+                        {
+                            "title": "Slaanesh",
+                            "effect": "Excessive Cruelty: In the Fight phase, if this unit’s weapons gained the [SUSTAINED HITS 1] ability this phase as the result of a Dark Pact, each time a model in this unit makes an attack, an unmodified Hit roll of 5+ scores a Critical Hit."
+                        },
+                        {
+                            "title": "Chaos Undivided",
+                            "effect": "Glory to Chaos: Each time a model in this unit makes an attack, re-roll a Hit roll of 1."
+                        }
+                    ]
+                },
+                "enhancements": [
+                    {
+                        "name": "Talisman of Burning Blood",
+                        "active": null,
+                        "cost": 20,
+                        "effect": "Heretic Astartes Khorne model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. Each time the bearer’s unit makes a Dark Pact, until the end of the phase, add D3 to the Attacks and Strength characteristics of the bearer’s melee weapons instead."
+                    },
+                    {
+                        "name": "Eye of Tzeentch",
+                        "active": null,
+                        "cost": 30,
+                        "effect": "Heretic Astartes Tzeentch model only. Each time the bearer’s unit makes a Dark Pact, take a Leadership test for the bearer: if that test is passed, you gain 1CP."
+                    },
+                    {
+                        "name": "Intoxicating Elixir",
+                        "active": null,
+                        "cost": 15,
+                        "effect": "Heretic Astartes Slaanesh model only. The bearer has the Feel No Pain 5+ ability. Each time the bearer shoots or fights, if the bearer’s unit made a Dark Pact this phase, after the bearer has resolved those attacks, select one enemy unit that was hit by one or more of those attacks; that enemy unit must take a Battle-shock test."
+                    },
+                    {
+                        "name": "Liber Hereticus",
+                        "active": null,
+                        "cost": 40,
+                        "effect": "Heretic Astartes Chaos Undivided model only. Each time the bearer’s unit makes a Dark Pact, that unit’s weapons gain the [LETHAL HITS] and [SUSTAINED HITS 1] ability until the end of the phase, instead of just gaining one of those abilities."
+                    },
+                    {
+                        "name": "Orbs of Unlife",
+                        "active": null,
+                        "cost": 25,
+                        "effect": "Heretic Astartes Nurgle model only. At the end of the Fight phase, roll one D6 for every enemy unit within 6\" of the bearer, adding 1 to the result if the bearer’s unit made a Dark Pact that phase: on a 4+, that enemy unit suffers D3 mortal wounds."
+                    }
+                ],
+                "stratagems": [
+                    {
+                        "name": "Infernal Rites",
+                        "type": "Battle Tactic",
+                        "cost": 2,
+                        "when": "Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.",
+                        "target": "One Heretic Astartes unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                        "effect": "Until the end of the phase, each time an attack targets your unit, worsen the Armour Penetration characteristic of that attack by 1."
+                    },
+                    {
+                        "name": "Eternal Hate",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Fight phase, just after an enemy unit has selected its targets.",
+                        "target": "One Heretic Astartes unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                        "effect": "Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6, adding 1 to the result if it is a Khorne unit: on a 4+, do not remove it from play. That destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+                    },
+                    {
+                        "name": "Profane Zeal",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Your Shooting phase or the Fight phase.",
+                        "target": "One Heretic Astartes unit from your army that has not been selected to shoot or fight this phase.",
+                        "effect": "Until the end of the phase, each time a model in your unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1. If your unit is a Chaos Undivided unit, you can instead re-roll the Hit roll and you can re-roll the Wound roll for that attack."
+                    },
+                    {
+                        "name": "Skinshift",
+                        "type": "Epic Deed",
+                        "cost": 1,
+                        "when": "Your Command phase.",
+                        "target": "One Heretic Astartes unit from your army.",
+                        "effect": "One model in your unit regains up to 3 lost wounds. In addition, if your unit is a Tzeentch unit below its Starting Strength, one destroyed model (excluding Character models) is returned to your unit with its full wounds remaining."
+                    },
+                    {
+                        "name": "Dark Obscuration",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Your opponent’s Shooting phase, just after an enemy unit has selected its targets.",
+                        "target": "One Heretic Astartes unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                        "effect": "Until the end of the phase, your unit has the Stealth ability. In addition, if your unit is a Nurgle unit, until the end of the phase, your unit can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+                    },
+                    {
+                        "name": "Unnatural swiftness",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Your Movement phase.",
+                        "target": "One Heretic Astartes unit from your army.",
+                        "effect": "Until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Fell Back. In addition, if your unit is a Slaanesh unit, until the end of the turn, your unit is eligible to shoot and declare a charge in a turn in which it Advanced."
+                    }
+                ]
+            }
+        ],
+        "roster": []
     }
 ]

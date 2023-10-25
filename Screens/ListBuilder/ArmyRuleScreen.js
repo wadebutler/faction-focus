@@ -8,6 +8,7 @@ import CK from "../../Component/ArmyRules/CK";
 import CD from "../../Component/ArmyRules/CD";
 import TS from "../../Component/ArmyRules/TS";
 import WE from "../../Component/ArmyRules/WE";
+import CSM from "../../Component/ArmyRules/CSM";
 
 export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
@@ -17,8 +18,12 @@ export default function ArmyRule() {
         <ScrollView>
             <GoBack />
 
-            <FFText style={styles.title}>{rule?.name}</FFText>
-            <FFText style={styles.marginBig}>{rule?.effect}</FFText>
+            {list.id === "CSM" ? null : (
+                <View>
+                    <FFText style={styles.title}>{rule?.name}</FFText>
+                    <FFText style={styles.marginBig}>{rule?.effect}</FFText>
+                </View>
+            )}
 
             {list.id !== "DG" ? null : <DG rule={rule.range} />}
             {list.id !== "CK" ? null : (
@@ -27,6 +32,7 @@ export default function ArmyRule() {
             {list.id !== "CD" ? null : <CD rule={rule} />}
             {list.id !== "TS" ? null : <TS rule={rule.spells} />}
             {list.id !== "WE" ? null : <WE rule={rule.rolls} />}
+            {list.id !== "CSM" ? null : <CSM rule={rule} />}
         </ScrollView>
     );
 }

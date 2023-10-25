@@ -41,7 +41,7 @@ export default function DetachmentSelect() {
                         style={[
                             styles.button,
                             item.id === select?.id
-                                ? null
+                                ? { marginBottom: 70 }
                                 : { borderColor: "orange" },
                         ]}
                     >
