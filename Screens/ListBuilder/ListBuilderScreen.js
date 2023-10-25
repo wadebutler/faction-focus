@@ -168,6 +168,26 @@ export default function ListBuilder() {
                     </View>
                 )}
 
+                {!orgList.includes("Monster") ? null : (
+                    <View>
+                        <Bar title={"Monster"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Monster" &&
+                                item.factionKey.includes(list.name)
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
+
                 {!list.allies ? null : (
                     <View>
                         <Bar title={"Allies"} />

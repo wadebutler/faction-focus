@@ -1112,7 +1112,7 @@
                         }
                     },
                     {
-                        "name": "Metlagun",
+                        "name": "Meltagun",
                         "range": 12,
                         "active": false,
                         "data": {
@@ -12081,7 +12081,7 @@
             },
             {
                 "name": "Chaos Spawn",
-                "org": "Infantry",
+                "org": "Beast",
                 "modelCount": [2],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -12268,6 +12268,3501 @@
         "allies": [
             { "id": "CK", "keyword": null },
             { "id": "CD", "keyword": "Tzeentch" }
+        ],
+        "rule": {
+            "name": "Cabal of Sorcerers",
+            "effect": "If your Army Faction is Thousand Sons, at the end of your Command phase, each model from your army with this ability that is on the battlefield (excluding Battle-shocked models) generates you a number of Cabal points equal to the number shown in its ability (e.g. a model with the Cabal of Sorcerers 2 ability would generate you 2 Cabal points). The combined total of these is your Cabal points pool. During the battle round, you can use Rituals from the list below, deducting the Cabal points cost of each one from your Cabal points pool. If you do not have enough Cabal points for a Ritual, you cannot use it. Each Ritual can only be used once per phase. At the start of your next Command phase, your Cabal points pool resets to zero. Each time you use a Ritual, select one Thousand Sons Psyker model from your army, then apply that Ritual’s effect using that Psyker.",
+            "spells": [
+                {
+                    "name": "Weaver of Fates (Psychic)",
+                    "cost": "2 Cabal Points",
+                    "effect": "Use this Ritual at the start of any phase. Once during that phase, when a saving throw is failed for a friendly Thousand Sons model whose unit is within 18\" of this Psyker, you can re-roll that saving throw."
+                },
+                {
+                    "name": "Temporal Surge (Psychic)",
+                    "cost": "5 Cabal Points",
+                    "effect": "Use this Ritual at the start of your Shooting phase. Select one friendly Thousand Sons unit within 18\" of this Psyker; unless that unit is within Engagement Range of one or more enemy units, it can make a Normal move. If it does, that unit is not eligible to declare a charge this turn."
+                },
+                {
+                    "name": "Echoes from the Warp (Psychic)",
+                    "cost": "6 Cabal Points",
+                    "effect": "Use this Ritual at the start of any phase. Once this phase, you can select this Psyker’s unit as the target of a Stratagem for 0CP, even if you have already used that Stratagem this phase."
+                },
+                {
+                    "name": "Doombolt (Psychic)",
+                    "cost": "7 Cabal Points",
+                    "effect": "Use this Ritual at the start of your Shooting phase. Select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, that enemy unit suffers D3 mortal wounds; on a 2-5, it suffers D3+3 mortal wounds; on a 6, it suffers D3+6 mortal wounds."
+                },
+                {
+                    "name": "Twist of Fate (Psychic)",
+                    "cost": "9 Cabal Points",
+                    "effect": "Use this Ritual at the start of any phase. Select one enemy unit within 18\" of and visible to this Psyker; until the end of the phase, armour saving throws cannot be made for models in that unit."
+                }
+            ]
+        },
+        "detachments": [
+            {
+                "name": "Cult of Magic",
+                "id": 1,
+                "rule": "Kindred Sorcery",
+                "effect": "In your Command phase, you can select one of the abilities listed below to take effect until the start of your next Command phase.",
+                "select": {
+                    "rule": "During the Declare Battle Formations step, select one of the Sicknesses below. Until the end of the battle, all units from your army with the Nurgle’s Gift ability gain the selected Sickness.",
+                    "options": [
+                        {
+                            "title": "Malevolent Charge",
+                            "effect": "Psychic weapons equipped by Thousand Sons models from your army have the [LETHAL HITS] ability."
+                        },
+                        {
+                            "title": "Psychic Maelstrom",
+                            "effect": "Psychic weapons equipped by Thousand Sons models from your army have the [SUSTAINED HITS 1] ability."
+                        },
+                        {
+                            "title": "Wrath of the Immaterium",
+                            "effect": "Psychic weapons equipped by Thousand Sons models from your army have the [DEVASTATING WOUNDS] ability."
+                        }
+                    ]
+                },
+                "enhancements": [
+                    {
+                        "name": "Lord of Forbidden Lore",
+                        "active": null,
+                        "cost": 25,
+                        "effect": "Thousand Sons Psyker model only. The bearer can be selected to use a Ritual even if another Psyker from your army has already been selected to use that Ritual this phase."
+                    },
+                    {
+                        "name": "Athenaean Scrolls",
+                        "active": null,
+                        "cost": 20,
+                        "effect": "Thousand Sons Psyker model only. In your Command phase, if the bearer is on the battlefield and is not Battle-shocked, it generates you 1 additional Cabal point this phase."
+                    },
+                    {
+                        "name": "Umbralefic Crystal",
+                        "active": null,
+                        "cost": 20,
+                        "effect": "Thousand Sons model only. Once per battle, in your Command phase, you can remove the bearer’s unit from the battlefield. If you do, in the Reinforcements step of your next Movement phase, set that unit back up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models."
+                    },
+                    {
+                        "name": "Arcane Vortex",
+                        "active": null,
+                        "cost": 15,
+                        "effect": "Thousand Sons model only. Add 1 to the Strength and Damage characteristics of Psychic weapons equipped by the bearer."
+                    }
+                ],
+                "stratagems": [
+                    {
+                        "name": "Psychic Dominion",
+                        "type": "Epic Deed",
+                        "cost": 1,
+                        "when": "Any phase, just after an enemy unit has selected its targets.",
+                        "target": "One Thousand Sons unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                        "effect": "Until the end of the phase, all attacks made against your unit with Psychic weapons have the [HAZARDOUS] ability and all models in your unit have the Feel No Pain 4+ ability against Psychic Attacks."
+                    },
+                    {
+                        "name": "Destined by Fate",
+                        "type": "Epic Deed",
+                        "cost": 1,
+                        "when": "Any phase, when a saving throw is failed for a Thousand Sons Psyker model from your army.",
+                        "target": "That Psyker model.",
+                        "effect": "Change the Damage characteristic of that attack to 0."
+                    },
+                    {
+                        "name": "Devastating Sorcery",
+                        "type": "Battle Tactic",
+                        "cost": 1,
+                        "when": "Your Shooting phase.",
+                        "target": "One Thousand Sons Psyker unit from your army that has not been selected to shoot this phase.",
+                        "effect": "Until the end of the phase, each time a model in your unit makes a Psychic Attack, you can re-roll the Hit roll and you can re-roll the Wound roll."
+                    },
+                    {
+                        "name": "Ensorcelled Infusion",
+                        "type": "Strategic Ploy",
+                        "cost": 1,
+                        "when": "Your Shooting phase.",
+                        "target": "One Thousand Sons Psyker unit from your army that has not been selected to shoot this phase.",
+                        "effect": "Until the end of the phase, all inferno bolt pistols, inferno boltguns, inferno combi-bolters and inferno combi-weapons equipped by models in your unit have the [PSYCHIC] ability and a Strength characteristic of 5."
+                    },
+                    {
+                        "name": "Sorcerous Might",
+                        "type": "",
+                        "cost": 1,
+                        "when": "Your Shooting phase.",
+                        "target": "One Thousand Sons Psyker unit from your army that has not been selected to shoot this phase.",
+                        "effect": "Until the end of the phase, add 9\" to the range of Psychic weapons equipped by your unit."
+                    },
+                    {
+                        "name": "Warp Sight",
+                        "type": "Strategic Ploy",
+                        "cost": 2,
+                        "when": "Your Shooting phase.",
+                        "target": "One Thousand Sons Psyker unit from your army and one enemy unit that is visible to that unit.",
+                        "effect": "Until the end of the phase, each time a friendly Thousand Sons Psyker model makes an attack with a Psychic weapon that targets that enemy unit, that attack has the [INDIRECT FIRE] and [IGNORES COVER] abilities."
+                    }
+                ]
+            }
+        ],
+        "roster": [
+            {
+                "name": "Ahriman",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [130],
+                "modelCountIndex": 0,
+                "leader": ["Rubric Marines"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Epic Hero",
+                    "Psyker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Ahriman"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 3"],
+                    "leader": [
+                        {
+                            "name": "Rubric Lord",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Arch-Sorcerer of Tzeentch (Psychic)",
+                            "effect": "Once per battle, you can select this model to use a Ritual for 0 Cabal points (see Cabal of Sorcerers). If you do, all the other rules for using Rituals still apply."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Psychic Stalk",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 1,
+                            "d": "D6",
+                            "keywords": ["Precision", "Psychic"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Black Staff of Ahriman",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Ahriman on Disc of Tzeentch",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [140],
+                "modelCountIndex": 0,
+                "leader": ["Rubric Marines"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Epic Hero",
+                    "Psyker",
+                    "Fly",
+                    "Chaos",
+                    "Tzeentch",
+                    "Ahriman on Disc of Tzeentch"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 3"],
+                    "leader": [
+                        {
+                            "name": "Rubric Lord",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Arch-Sorcerer of Tzeentch (Psychic)",
+                            "effect": "Once per battle, you can select this model to use a Ritual for 0 Cabal points (see Cabal of Sorcerers). If you do, all the other rules for using Rituals still apply."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 10,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 6,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Psychic Stalk",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 1,
+                            "d": "D6",
+                            "keywords": ["Precision", "Psychic"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Black Staff of Ahriman",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Land Raider",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [240],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 12,
+                    "save": 2,
+                    "invulnerable": null,
+                    "wounds": 16,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Transport",
+                    "Smoke",
+                    "Chaos",
+                    "Tzeentch",
+                    "Land Raider"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6"],
+                    "data": [
+                        {
+                            "name": "Assault Ramp",
+                            "effect": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Soulshatter Lascannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Twin Inferno Heavy Bolter",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 4,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Predator Annihilator",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [130],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "oc": 4
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Smoke",
+                    "Chaos",
+                    "Tzeentch",
+                    "Predator Annihilator"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Blessings of Khorne"],
+                    "data": [
+                        {
+                            "name": "Annihilator",
+                            "effect": "Each time this model makes a ranged attack that targets a Monster or Vehicle unit, re-roll a Damage roll of 1."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Inferno Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Predator Twin Lascannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Predator Destructor",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [130],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Smoke",
+                    "Chaos",
+                    "Tzeentch",
+                    "Predator Destructor"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "data": [
+                        {
+                            "name": "Destructor",
+                            "effect": "Each time this model makes a ranged attack that targets an Infantry unit, improve the Armour Penetration characteristic of that attack by 1."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Inferno Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Predator Autocannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Rhino",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [75],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 12,
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable": null,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Transport",
+                    "Dedicated Transport",
+                    "Smoke",
+                    "Chaos",
+                    "Tzeentch",
+                    "Rhino"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Firing Deck 2"],
+                    "data": [
+                        {
+                            "name": "Self Repair",
+                            "effect": "At the start of your Command phase, this model regains 1 lost wound."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Chaos Spawn",
+                "org": "Beast",
+                "modelCount": [2],
+                "points": [65],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 5,
+                    "save": 4,
+                    "invulnerable": null,
+                    "wounds": 4,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": ["Beast", "Chaos", "Tzeentch", "Spawn"],
+                "ability": {
+                    "core": ["Feel No Pain 5+"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Regenerating Monstrosities",
+                            "effect": "At the start of each player’s Command phase, one model in this unit regains up to D3 lost wounds."
+                        }
+                    ]
+                },
+                "melee": [
+                    {
+                        "name": "Hideous Mutations",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": "D6+2",
+                            "ws": 4,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Vindicator",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [190],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 11,
+                    "save": 2,
+                    "invulnerable": null,
+                    "wounds": 11,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Smoke",
+                    "Chaos",
+                    "Tzeentch",
+                    "Vindicator"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "data": [
+                        {
+                            "name": "Siege Shield",
+                            "effect": "When making ranged attacks with its demolisher cannon, this model can target enemy units within Engagement Range of it (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Demolisher Cannon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6",
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Tracks",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Defiler",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [190],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 14,
+                    "leadership": 6,
+                    "oc": 5
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Daemon",
+                    "Smoke",
+                    "Chaos",
+                    "Tzeentch",
+                    "Defiler"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "data": [
+                        {
+                            "name": "Scuttling Walker",
+                            "effect": "Each time this model makes a Normal, Advance or Fall Back move, it can move over friendly Monster and Vehicle models and terrain features that are 4\" or less in height as if they were not there."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 5],
+                        "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Defiler Cannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Havoc Launcher",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Reaper Autocannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Devastating Wounds",
+                                "Sustained Hits 1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Heavy Flamer",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Ignores Cover",
+                                "Torrent",
+                                "Twin-Linked"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Inferno Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Defiler Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 16,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Defiler Scourge",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Exalted Sorcerer",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [100],
+                "modelCountIndex": 0,
+                "leader": ["Rubric Marines"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Grenades",
+                    "Psyker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Exalted Sorcerer"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 2"],
+                    "leader": [
+                        {
+                            "name": "Arcane Shield (Psychic)",
+                            "effect": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Rebind Rubricae (Psychic)",
+                            "effect": "In your Command phase, if this model is leading a unit, you can roll one D6: on a 1, that unit suffers D3 mortal wounds; on a 2-5, you can return 1 destroyed Bodyguard model to that unit; on a 6, you can return up to 2 destroyed Bodyguard models to that unit."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Astral Blast",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 2,
+                            "s": 6,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": [
+                                "Blast",
+                                "Devastating Wounds",
+                                "Psychic"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Warpflame Pistol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 3,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Pistol", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Prosperine Khopesh",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Exalted Sorcerer on Disc of Tzeentch",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [115],
+                "modelCountIndex": 0,
+                "leader": ["Rubric Marines"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Fly",
+                    "Psyker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Exalted Sorcerer"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 2"],
+                    "leader": [
+                        {
+                            "name": "Arcane Shield (Psychic)",
+                            "effect": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Binding Tendrils (Psychic)",
+                            "effect": "At the end of your Movement phase, you can select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, this Psyker’s unit suffers D3 mortal wounds; on a 2+, until the start of your next Movement phase, halve the Move characteristic of models in that unit and halve Advance and Charge rolls made for that unit."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 6,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Arcane Fire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Ignores Cover", "Psychic", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Warpflame Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 3,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Pistol", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 1,
+                            "d": "D3",
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Prosperine Khopesh",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Forgefiend",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [135],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 8,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Daemon",
+                    "Chaos",
+                    "Tzeentch",
+                    "Forgefiend"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "data": [
+                        {
+                            "name": "Blazing Salvoes",
+                            "effect": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Ectoplasma Cannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Hades Autocannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Forgefiend Claws",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Forgefiend Jaws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Helbrute",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [145],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 6,
+                    "toughness": 9,
+                    "save": 2,
+                    "invulnerable": null,
+                    "wounds": 8,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Helbrute"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise 1"],
+                    "data": [
+                        {
+                            "name": "Arcane Knowledge Amidst Babbling Insanity (Aura)",
+                            "effect": "Each time a friendly Thousand Sons Psyker model within 9\" of this model is selected to use a Ritual, you gain 1 Cabal point."
+                        },
+                        {
+                            "name": "Helbrute Fists",
+                            "effect": "If this model is equipped with two Helbrute fists, those weapons have the [TWIN-LINKED] ability."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Heavy Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Helbrute Plasma Cannon",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": ["Blast", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Frag",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Missle Launcher - Krak",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D6",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Multi-Melta",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
+                        }
+                    },
+                    {
+                        "name": "Twin Autocannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Inferno Heavy Bolter",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    },
+                    {
+                        "name": "Twin Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Helbrute Fist",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Helbrute Hammer",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 5,
+                            "ws": 4,
+                            "s": 14,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Power Scourge",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Heldrake",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [195],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": "20+",
+                    "toughness": 9,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 0
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Aircraft",
+                    "Fly",
+                    "Daemon",
+                    "Chaos",
+                    "Tzeentch",
+                    "Heldrake"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3", "Hover"],
+                    "data": [
+                        {
+                            "name": "Flame-wreathed",
+                            "effect": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move. Until the end of the turn, models in that unit cannot have the Benefit of Cover."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Baleflamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Hades Autocannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Heldrake Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Anti-Fly 2+", "Devastating Wounds"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Infernal Master",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [90],
+                "modelCountIndex": 0,
+                "leader": ["Rubric Marines"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Grenades",
+                    "Psyker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Infernal Master"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 2"],
+                    "leader": [
+                        {
+                            "name": "Malefic Maelstrom (Psychic)",
+                            "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Glimpse of Eternity (Psychic)",
+                            "effect": "Once per turn, you can change the result of one Hit roll, one Wound roll, one Damage roll or one saving throw made for this model to an unmodified 6."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 4,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Screamer Invocation - Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": "2D3",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Psychic", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Screamer Invocation - Focused Witchfire",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Hazardous", "Psychic", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": "D3",
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Magnus the Red",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [440],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "warlord": true,
+                "keywords": [
+                    "Monster",
+                    "Psyker",
+                    "Fly",
+                    "Character",
+                    "Epic Hero",
+                    "Daemon",
+                    "Chaos",
+                    "Tzeentch",
+                    "Primarch",
+                    "Magnus the Red"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Deep Strike"],
+                    "faction": ["Cabel of Sorcerers 4"],
+                    "data": [
+                        {
+                            "name": "Lord of the Planet of the Sorcerers (Aura)",
+                            "effect": "While a friendly Thousand Sons Psyker unit is within 6\" of this model, each time a model in that unit makes a Psychic Attack, add 1 to the Hit roll and add 1 to the Wound roll."
+                        }
+                    ],
+                    "Primarch": {
+                        "title": "Crimson King",
+                        "effect": "At the start of the battle round, select one of the below abilities, until the start of the next battle round, this model has that ability.",
+                        "abilities": [
+                            {
+                                "name": "At theImpossible Form (Psychic)",
+                                "effect": "Each time an attack is made against this Psyker (excluding Psychic Attacks), subtract 1 from that attack’s Damage characteristic. start of the battle round, select one of the abilities in the Crimson King section (see left). Until the start of the next battle round, this model has that ability."
+                            },
+                            {
+                                "name": "Treason of Tzeentch (Psychic)",
+                                "effect": "At the start of your opponent’s Shooting phase, you can select one enemy unit within 24\" of and visible to this Psyker. Until the end of the phase, ranged weapons equipped by models in that unit have the [HAZARDOUS] ability."
+                            },
+                            {
+                                "name": "Time Flux (Aura, Psychic)",
+                                "effect": "While a friendly Thousand Sons unit is within 6\" of this Psyker, add 2\" to the Move characteristic of models in that unit."
+                            }
+                        ]
+                    },
+                    "damaged": {
+                        "range": [1, 6],
+                        "effect": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 11,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 16,
+                    "leadership": 5,
+                    "oc": 6
+                },
+                "ranged": [
+                    {
+                        "name": "Gaze of Magnus",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "3D3",
+                            "bs": 2,
+                            "s": 9,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Devastating Wounds", "Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Tzeentch's Firestorm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Blast", "Psychic"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Blade of Magnus - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 7,
+                            "ws": 2,
+                            "s": 16,
+                            "ap": 3,
+                            "d": 3,
+                            "keywords": ["Psychic", "Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Blade of Magnus - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Maulerfiend",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [155],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Daemon",
+                    "Chaos",
+                    "Tzeentch",
+                    "Maulerfiend"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "data": [
+                        {
+                            "name": "Prophetic Hunters",
+                            "effect": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Magma Cutter",
+                        "range": 6,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 4,
+                            "d": "D6",
+                            "keywords": ["Melta 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Lasher Tendrils",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Extra Attacks"]
+                        }
+                    },
+                    {
+                        "name": "Maulerfiend Fists",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 2,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Mutalith Vortex Beast",
+                "org": "Monster",
+                "modelCount": [1],
+                "points": [165],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 10,
+                    "toughness": 10,
+                    "save": 4,
+                    "invulnerable": 5,
+                    "wounds": 13,
+                    "leadership": 6,
+                    "oc": 4
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Monster",
+                    "Daemon",
+                    "Chaos",
+                    "Tzeentch",
+                    "Mutalith Vortex Beast"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6", "Feel No Pain 5+"],
+                    "data": [
+                        {
+                            "name": "Mutating Vortex (Aura)",
+                            "effect": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model: on a 2-3, that unit suffers 1 mortal wound; on a 4-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D6 mortal wounds. Each enemy unit within range of this ability must then take a Battle-shock test."
+                        },
+                        {
+                            "name": "Immaterial Flare (Aura)",
+                            "effect": "While a friendly Thousand Sons Psyker unit is within 6\" of this model, each time that unit uses a Ritual that specifies a range, you can double that range while resolving that Ritual."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "ranged": [
+                    {
+                        "name": "Warp Vortex - Blast",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Warp Vortex - Beam",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 18,
+                            "ap": 4,
+                            "d": "D6+6",
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Warp Vortex - Torrent",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": "N/A",
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Betentacled Maw",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 15,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Mutalith Claws",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 2,
+                            "d": 4,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Rubric Marines",
+                "org": "Battleline",
+                "modelCount": [5, 10],
+                "points": [105, 210],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Battleline",
+                    "Chaos",
+                    "Tzeentch",
+                    "Rubric Marines",
+                    "Psyker"
+                ],
+                "data": {
+                    "movement": 5,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 2,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "ability": {
+                    "faction": ["Cabel of Sorcerers 1"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Bringers of Change",
+                            "effect": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If the target of that attack is within range of an objective marker you do not control, you can re-roll the Wound roll instead."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Icon of Flame",
+                            "effect": "Each time a model in the bearer’s unit makes a ranged attack, if a Critical Wound is scored, improve the Armour Penetration characteristic of that attack by 1."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Boltgun",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Soulreaper Cannon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Warpsmite",
+                        "range": 18,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Pistol",
+                                "Psychic"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Warpflame Pistol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 3,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Pistol", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Warpflamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Rubric Marines",
+                "org": "Battleline",
+                "modelCount": [5, 10],
+                "points": [105, 210],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Battleline",
+                    "Chaos",
+                    "Tzeentch",
+                    "Rubric Marines",
+                    "Psyker"
+                ],
+                "data": {
+                    "movement": 5,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 2,
+                    "leadership": 6,
+                    "oc": 2
+                },
+                "ability": {
+                    "faction": ["Cabel of Sorcerers 1"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Bringers of Change",
+                            "effect": "Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If the target of that attack is within range of an objective marker you do not control, you can re-roll the Wound roll instead."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Icon of Flame",
+                            "effect": "Each time a model in the bearer’s unit makes a ranged attack, if a Critical Wound is scored, improve the Armour Penetration characteristic of that attack by 1."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Boltgun",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Soulreaper Cannon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Warpsmite",
+                        "range": 18,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Pistol",
+                                "Psychic"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Warpflame Pistol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 3,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Pistol", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Warpflamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Scarab Occult Terminators",
+                "org": "Infantry",
+                "modelCount": [5, 10],
+                "points": [215, 430],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Terminator",
+                    "Chaos",
+                    "Tzeentch",
+                    "Scarab Occult Terminators",
+                    "Psyker"
+                ],
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 3,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ability": {
+                    "core": ["Deep Strike"],
+                    "faction": ["Implacable Guardians"],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Bringers of Change",
+                            "effect": "While this unit contains one or more Psyker models, each time an attack is made against this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic, subtract 1 from the Wound roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Heavy Warpflamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Hellfyre Missle Rack",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Soulreaper Cannon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Warpsmite",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 3,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Pistol",
+                                "Psychic"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Prosperine Khopesh",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Sorcerer",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [95],
+                "modelCountIndex": 0,
+                "leader": ["Rubric Marines"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Psyker",
+                    "Grenades",
+                    "Chaos",
+                    "Tzeentch",
+                    "Sorcerer"
+                ],
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 1"],
+                    "leader": [
+                        {
+                            "name": "Empyric Guidance (Psychic)",
+                            "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+                        },
+                        {
+                            "name": "Illusions of Tzeentch (Psychic)",
+                            "effect": "While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
+                        }
+                    ],
+                    "data": []
+                },
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Fires of the Abyss",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Pistol",
+                                "Psychic",
+                                "Sustained Hits 3"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Inferno Bolt Pistol",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Standard",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Plasma Pistol - Supercharge",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 2,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Pistol", "Hazardous"]
+                        }
+                    },
+                    {
+                        "name": "Warpflame Pistol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 3,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Pistol", "Torrent"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Sorcerer in Terminator Armour",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [115],
+                "modelCountIndex": 0,
+                "leader": ["Scarab Occult Terminators"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Character",
+                    "Psyker",
+                    "Terminator",
+                    "Chaos",
+                    "Tzeentch",
+                    "Sorcerer"
+                ],
+                "ability": {
+                    "core": ["Deep Strike", "Leader"],
+                    "faction": ["Cabel of Sorcerers 2"],
+                    "leader": {
+                        "name": "Empyric Guidance (Psychic)",
+                        "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+                    },
+                    "data": [
+                        {
+                            "name": "Marked by Fate (Psychic)",
+                            "effect": "In your Shooting phase, you can select one enemy unit within 18\" of and visible to this model. Until the end of the turn, each time a friendly Thousand Sons model makes an attack that targets that unit, re-roll a Hit roll of 1."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 5,
+                    "toughness": 5,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 5,
+                    "leadership": 6,
+                    "oc": 1
+                },
+                "ranged": [
+                    {
+                        "name": "Coruscating Flames",
+                        "range": 18,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": [
+                                "Anti-Monster 4+",
+                                "Anti-Vehicle 4+",
+                                "Devastating Wounds",
+                                "Psychic"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Bolter",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Inferno Combi-Weapon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anit-Infantry 4+",
+                                "Devastating Wounds",
+                                "Rapid Fire 1"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Force Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Prosperine Khopesh",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cultist",
+                "org": "Infantry",
+                "modelCount": [10, 20],
+                "points": [60, 120],
+                "modelCountIndex": 0,
+                "data": {
+                    "movement": 6,
+                    "toughness": 3,
+                    "save": 6,
+                    "invulnerable": 6,
+                    "wounds": 1,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "factionKey": ["Thousand Sons"],
+                "keywords": ["Infantry", "Chaos", "Tzeentch", "Cultists"],
+                "ability": {
+                    "core": ["Scout 6\""],
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Pawns of Fate",
+                            "effect": "Each time this unit destroys an enemy unit, roll one D6: on a 2+, you gain 1CP. When this unit is destroyed, roll one D6: on a 2+, you gain 1CP."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Cultist Firearm",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Flamer",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Frag",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": "D3",
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Grenade Launcher - Krak",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 9,
+                            "ap": 2,
+                            "d": "D3",
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Heavy Stubber",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Rapid Fire 3"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Brutal Assault Weapon",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [180],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Daemon",
+                    "Psyker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Daemon Prince"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Cabel of Sorcerers 2"],
+                    "data": [
+                        {
+                            "name": "The Weave of Fate (Psychic)",
+                            "effect": "Once per battle, at the start of any phase, you can select one friendly Rubric Marines or Scarab Occult Terminators unit within 6\" of this model. Until the end of the phase, weapons equipped by models in that unit have the [PRECISION] ability."
+                        },
+                        {
+                            "name": "Glamour of Tzeentch (Aura, Psychic)",
+                            "effect": "While a friendly Thousand Sons unit is within 6\" of this model, models in that unit have the Stealth ability."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 7,
+                    "toughness": 10,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Infernal Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Daemon Prince with Wings",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [195],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Monster",
+                    "Character",
+                    "Daemon",
+                    "Psyker",
+                    "Fly",
+                    "Chaos",
+                    "Tzeentch",
+                    "Daemon Prince"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Cabel of Sorcerers 2"],
+                    "data": [
+                        {
+                            "name": "Sorcerous Fire (Psychic)",
+                            "effect": "Each time this model ends a Normal move, you can select one enemy unit it moved over this phase and roll nine D6: for each 6, that unit suffers 1 mortal wound."
+                        },
+                        {
+                            "name": "Aetherstride (Psychic)",
+                            "effect": "At the end of your opponent’s turn, if this model is not within Engagement Range of any enemy units, you can remove it from the battlefield and then, in the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models. If the battle ends and this model is not on the battlefield, it is destroyed."
+                        }
+                    ]
+                },
+                "data": {
+                    "movement": 11,
+                    "toughness": 9,
+                    "save": 2,
+                    "invulnerable": 4,
+                    "wounds": 10,
+                    "leadership": 6,
+                    "oc": 3
+                },
+                "ranged": [
+                    {
+                        "name": "Infernal Cannon",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 2,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hellforged Weapons – Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 2,
+                            "s": 8,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Psychic"]
+                        }
+                    },
+                    {
+                        "name": "Hellforged Weapons – Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 14,
+                            "ws": 2,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Tzaangor Enlightened",
+                "org": "Mounted",
+                "modelCount": [3, 6],
+                "points": [45, 90],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Mounted",
+                    "Fly",
+                    "Chaos",
+                    "Tzeentch",
+                    "Tzaangor Enlightened"
+                ],
+                "data": {
+                    "movement": 10,
+                    "toughness": 4,
+                    "save": 5,
+                    "invulnerable": 6,
+                    "wounds": 2,
+                    "leadership": 7,
+                    "oc": 2
+                },
+                "ability": {
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Malign Trickery",
+                            "effect": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, if this unit is not within Engagement Range of any enemy units, it can make a Normal move of up to D6\" as if it were your Movement phase."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Autopitol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    },
+                    {
+                        "name": "Fatecaster Greatbow",
+                        "range": 30,
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "bs": 4,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Lethal Hits", "Precision"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Chainsword",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Close Combat Weapon",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Diving Spear",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 5,
+                            "ap": 2,
+                            "d": 1,
+                            "keywords": ["Lance", "Precision"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Tzaangor Shaman",
+                "org": "Mounted",
+                "modelCount": [1],
+                "points": [60],
+                "modelCountIndex": 0,
+                "leader": ["Tzaangor", "Tzaangor Enlightened"],
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Mounted",
+                    "Character",
+                    "Fly",
+                    "Psyker",
+                    "Chaos",
+                    "Tzeentch",
+                    "Tzaangor Shaman"
+                ],
+                "data": {
+                    "movement": 10,
+                    "toughness": 4,
+                    "save": 5,
+                    "invulnerable": 6,
+                    "wounds": 4,
+                    "leadership": 7,
+                    "oc": 1
+                },
+                "ability": {
+                    "core": ["Leader"],
+                    "faction": ["Cabel of Sorcerers 1"],
+                    "leader": [
+                        {
+                            "name": "Dark Blessing (Psychic)",
+                            "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+                        }
+                    ],
+                    "data": [
+                        {
+                            "name": "Bestial Prophet",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Mutating Orbs",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Blast",
+                                "Devastating Wounds",
+                                "Psychic"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Shaman's Stave",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "ws": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": "D3",
+                            "keywords": ["Psychic"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Tzaangor",
+                "org": "Infantry",
+                "modelCount": [3, 6],
+                "points": [45, 90],
+                "modelCountIndex": 0,
+                "factionKey": ["Thousand Sons"],
+                "keywords": [
+                    "Infantry",
+                    "Battleline",
+                    "Chaos",
+                    "Tzeentch",
+                    "Tzaangor"
+                ],
+                "data": {
+                    "movement": 6,
+                    "toughness": 4,
+                    "save": 6,
+                    "invulnerable": 6,
+                    "wounds": 1,
+                    "leadership": 7,
+                    "oc": 2
+                },
+                "ability": {
+                    "leader": [],
+                    "data": [
+                        {
+                            "name": "Relic Hunters",
+                            "effect": "At the end of your Command phase, roll one D6 for each objective marker you control that has one or more units from your army with this ability within range of it: for each 4+, you gain 1 Cabal point."
+                        }
+                    ],
+                    "wargear": [
+                        {
+                            "name": "Herd Banner",
+                            "effect": "You can re-roll Battle-shock tests taken for the bearer’s unit."
+                        },
+                        {
+                            "name": "Brayhorn",
+                            "effect": "You can re-roll Advance and Charge rolls made for the bearer’s unit."
+                        }
+                    ]
+                },
+                "ranged": [
+                    {
+                        "name": "Autopitol",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 4,
+                            "s": 3,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Pistol"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Chainsword",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "ws": 4,
+                            "s": 4,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Tzaangor Blades",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "ws": 4,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            }
         ]
     }
 ]
