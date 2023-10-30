@@ -11,6 +11,7 @@ import UnitSize from "../../Component/UnitEdit/UnitSize";
 import ViewIcon from "../../Component/Icons/ViewIcon";
 import FFText from "../../Component/Global/FFText";
 import Marks from "../../Component/UnitEdit/Marks";
+import CSMMark from "../../Component/UnitEdit/CSMMark";
 
 export default function UnitEdit() {
     const [unitEdit, setEditView] = useRecoilState(unitEditState);
@@ -40,6 +41,9 @@ export default function UnitEdit() {
                 <LeaderRule />
             ) : null}
 
+            {!unitEdit.unit.allegiance ? null : <Marks />}
+            <CSMMark />
+
             {!unitEdit.unit.ranged ? null : (
                 <WargearSelect unit={unitEdit.unit} type={"ranged"} />
             )}
@@ -47,8 +51,6 @@ export default function UnitEdit() {
             {!unitEdit.unit.melee ? null : (
                 <WargearSelect unit={unitEdit.unit} type={"melee"} />
             )}
-
-            {!unitEdit.unit.allegiance ? null : <Marks />}
 
             {unitEdit.unit.org === "Character" &&
             unitEdit.unit.keywords.includes("Epic Hero") === false &&

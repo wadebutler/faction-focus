@@ -92,7 +92,7 @@ export default function Enhancements() {
             : setChecked(null);
     }, [unitEdit]);
 
-    const enhancementBox = (enhanceIndex, item) => {
+    const enhancementBox = (item, enhanceIndex) => {
         return (
             <TouchableOpacity
                 style={{ marginTop: -6 }}
@@ -133,7 +133,7 @@ export default function Enhancements() {
                 scrollEnabled={false}
                 data={enhancement}
                 renderItem={({ item, index }) =>
-                    enhancementBox(index + 1, item)
+                    enhancementBox(item, index + 1)
                 }
                 keyExtractor={(item) => item.name}
             />

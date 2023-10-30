@@ -9295,19 +9295,19 @@
                 "allegianceKey": null,
                 "allegiance": [
                     {
-                        "key": "Khorne",
+                        "title": "Khorne",
                         "effect": "This model is additionally equipped with: torrent of Burning Blood"
                     },
                     {
-                        "key": "Tzeentch",
+                        "title": "Tzeentch",
                         "effect": "This model is additionally equipped with: Warp Gaze"
                     },
                     {
-                        "key": "Nurgle",
+                        "title": "Nurgle",
                         "effect": "This model is additionally equipped with: phlegm bombardment"
                     },
                     {
-                        "key": "Slaanesh",
+                        "title": "Slaanesh",
                         "effect": "This model is additionally equipped with: scream of despair"
                     }
                 ],
@@ -9467,19 +9467,19 @@
                 "allegianceKey": null,
                 "allegiance": [
                     {
-                        "key": "Khorne",
+                        "title": "Khorne",
                         "effect": "If this model has the Khorne keyword, add 2 to the Strength characteristic of this model’s hellforged weapons."
                     },
                     {
-                        "key": "Tzeentch",
+                        "title": "Tzeentch",
                         "effect": "If this model has the Tzeentch keyword, add 3 to the Attacks characteristic of this model’s infernal cannon."
                     },
                     {
-                        "key": "Nurgle",
+                        "title": "Nurgle",
                         "effect": "If this model has the Nurgle keyword, add 1 to this model’s Toughness characteristic."
                     },
                     {
-                        "key": "Slaanesh",
+                        "title": "Slaanesh",
                         "effect": "If this model has the Slaanesh keyword, add 2\" to this model’s Move characteristic."
                     }
                 ],
@@ -9567,19 +9567,19 @@
                 "allegianceKey": null,
                 "allegiance": [
                     {
-                        "key": "Khorne",
+                        "title": "Khorne",
                         "effect": "If this model has the Khorne keyword, add 2 to the Strength characteristic of this model’s hellforged weapons."
                     },
                     {
-                        "key": "Tzeentch",
+                        "title": "Tzeentch",
                         "effect": "If this model has the Tzeentch keyword, add 3 to the Attacks characteristic of this model’s infernal cannon."
                     },
                     {
-                        "key": "Nurgle",
+                        "title": "Nurgle",
                         "effect": "If this model has the Nurgle keyword, add 1 to this model’s Toughness characteristic."
                     },
                     {
-                        "key": "Slaanesh",
+                        "title": "Slaanesh",
                         "effect": "If this model has the Slaanesh keyword, add 2\" to this model’s Move characteristic."
                     }
                 ],
@@ -16021,24 +16021,6 @@
                 "modelCountIndex": 0,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
-                "allegiance": [
-                    {
-                        "key": "Khorne",
-                        "effect": "If this model has the Khorne keyword, add 2 to the Strength characteristic of this model’s hellforged weapons."
-                    },
-                    {
-                        "key": "Tzeentch",
-                        "effect": "If this model has the Tzeentch keyword, add 3 to the Attacks characteristic of this model’s infernal cannon."
-                    },
-                    {
-                        "key": "Nurgle",
-                        "effect": "If this model has the Nurgle keyword, add 1 to this model’s Toughness characteristic."
-                    },
-                    {
-                        "key": "Slaanesh",
-                        "effect": "If this model has the Slaanesh keyword, add 2\" to this model’s Move characteristic."
-                    }
-                ],
                 "keywords": [
                     "Monster",
                     "Character",
@@ -16121,24 +16103,6 @@
                 "modelCountIndex": 0,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
-                "allegiance": [
-                    {
-                        "key": "Khorne",
-                        "effect": "If this model has the Khorne keyword, add 2 to the Strength characteristic of this model’s hellforged weapons."
-                    },
-                    {
-                        "key": "Tzeentch",
-                        "effect": "If this model has the Tzeentch keyword, add 3 to the Attacks characteristic of this model’s infernal cannon."
-                    },
-                    {
-                        "key": "Nurgle",
-                        "effect": "If this model has the Nurgle keyword, add 1 to this model’s Toughness characteristic."
-                    },
-                    {
-                        "key": "Slaanesh",
-                        "effect": "If this model has the Slaanesh keyword, add 2\" to this model’s Move characteristic."
-                    }
-                ],
                 "keywords": [
                     "Monster",
                     "Fly",

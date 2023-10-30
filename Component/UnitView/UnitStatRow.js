@@ -15,7 +15,7 @@ export default function UnitStatRow({ unit }) {
             <View style={styles.statRow}>
                 <View style={styles.container}>
                     <FFText style={styles.text}>M</FFText>
-                    <FFText style={styles.textStat}>{data?.movement}"</FFText>
+                    <FFText style={styles.textStat}>{data?.movement}</FFText>
                 </View>
 
                 <View style={styles.container}>
@@ -25,14 +25,14 @@ export default function UnitStatRow({ unit }) {
 
                 <View style={styles.container}>
                     <FFText style={styles.text}>SV</FFText>
-                    <FFText style={styles.textStat}>{data?.save}+</FFText>
+                    <FFText style={styles.textStat}>{data?.save}</FFText>
                 </View>
 
                 {!data?.invulnerable ? null : (
                     <View style={styles.container}>
                         <FFText style={styles.text}>INV</FFText>
                         <FFText style={styles.textStat}>
-                            {data?.invulnerable}+
+                            {data?.invulnerable}
                         </FFText>
                     </View>
                 )}
@@ -44,7 +44,7 @@ export default function UnitStatRow({ unit }) {
 
                 <View style={styles.container}>
                     <FFText style={styles.text}>LD</FFText>
-                    <FFText style={styles.textStat}>{data?.leadership}+</FFText>
+                    <FFText style={styles.textStat}>{data?.leadership}</FFText>
                 </View>
 
                 <View style={styles.container}>

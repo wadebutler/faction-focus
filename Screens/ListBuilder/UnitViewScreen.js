@@ -1,15 +1,17 @@
 import { ScrollView, StyleSheet } from "react-native";
 import { useRecoilState } from "recoil";
-import { unitViewState } from "../../Atoms";
+import { unitViewState, listArmyState } from "../../Atoms";
 import UnitStatRow from "../../Component/UnitView/UnitStatRow";
 import WeaponStats from "../../Component/UnitView/WeaponStats";
 import AbilityView from "../../Component/UnitView/AbilityView";
 import KeywordView from "../../Component/UnitView/KeywordView";
 import EnhancementView from "../../Component/UnitView/EnhancementView";
 import MarkView from "../../Component/UnitView/MarkView";
+import ChaosMarkView from "../../Component/UnitView/ChasoMarkView";
 
 export default function UnitView() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
+    const [list, setList] = useRecoilState(listArmyState);
 
     return (
         <ScrollView>
@@ -21,11 +23,16 @@ export default function UnitView() {
                 <EnhancementView item={unitView.enhancement} />
             )}
 
-            {!unitView.allegianceKey ? null : (
+            {!unitView?.allegiance ? null : (
                 <MarkView item={unitView.allegiance[unitView.allegianceKey]} />
             )}
 
-            {!unitView.ranged ? null : (
+            {unitView?.allegianceKey &&
+            unitView.factionKey.includes(list.name) ? (
+                <ChaosMarkView item={unitView.allegianceKey} />
+            ) : null}
+
+            {!unitView?.ranged ? null : (
                 <WeaponStats weapon={unitView.ranged} type={"r"} />
             )}
 

@@ -5,7 +5,7 @@ export default function MarkView({ item }) {
     return (
         <View style={{ marginHorizontal: 10 }}>
             <FFText style={styles.abilityName}>
-                Daemonic Allegiance - {item.key}
+                Daemonic Allegiance - {item.title}
             </FFText>
 
             <FFText style={styles.effectText}>{item.effect}</FFText>

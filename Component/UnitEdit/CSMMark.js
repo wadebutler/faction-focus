@@ -7,13 +7,13 @@ import { useEffect, useState } from "react";
 import FFText from "../Global/FFText";
 import { SortByName } from "../../Utils/Sort";
 
-export default function Marks() {
+export default function CSMMark() {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState(null);
 
-    const handleCheck = async (num) => {
+    const handleCheck = async (key, num) => {
         const tempId = unitEdit.unitId;
         let tempObj = {
             name: list.name,
@@ -42,7 +42,7 @@ export default function Marks() {
             name: unitEdit.unit.name,
             org: unitEdit.unit.org,
             modelCountIndex: unitEdit.unit.modelCountIndex,
-            leader: unitEdit.unit.leader,
+            leader: unitEdit.unit.leader ? unitEdit.unit.leader : null,
             points: [...unitEdit.unit.points],
             ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
             enhancement: !unitEdit.unit.enhancement
@@ -50,10 +50,10 @@ export default function Marks() {
                 : { ...unitEdit.unit.enhancement },
         };
 
-        if (num === checked) {
+        if (unitEdit.unit.allegianceKey === key) {
             tempUnit.allegianceKey = null;
         } else {
-            tempUnit.allegianceKey = num;
+            tempUnit.allegianceKey = key;
         }
 
         tempObj.roster.splice(tempId, 1, tempUnit);
@@ -81,7 +81,7 @@ export default function Marks() {
         setUnitEdit(unit);
         setUnitView(tempUnit);
         if (num !== checked) {
-            setChecked(num);
+            setChecked(key);
         }
     };
 
@@ -89,15 +89,25 @@ export default function Marks() {
         unitEdit.unit.allegianceKey === null
             ? setChecked(null)
             : setChecked(unitEdit.unit.allegianceKey);
-    }, [unitEdit]);
+    }, [checked]);
 
-    const demonMarks = (item, demonIndex) => {
+    if (
+        list.id !== "CSM" ||
+        unitEdit.unit.keywords.includes("Epic Hero") ||
+        !unitEdit.unit.factionKey.includes(list.name)
+    ) {
+        return null;
+    }
+
+    const chaosMarks = (item, chaosIndex) => {
         return (
-            <TouchableOpacity onPress={() => handleCheck(demonIndex, item)}>
+            <TouchableOpacity
+                onPress={() => handleCheck(item.title, chaosIndex)}
+            >
                 <CheckBox
                     title={`${item.title}`}
-                    onPress={() => handleCheck(demonIndex, item)}
-                    checked={checked === demonIndex}
+                    onPress={() => handleCheck(item.title, chaosIndex)}
+                    checked={checked === item.title}
                     checkedColor="#0F0"
                     containerStyle={{ margin: 0, marginBottom: -10 }}
                     size={30}
@@ -107,7 +117,7 @@ export default function Marks() {
                 <FFText
                     style={[
                         styles.check,
-                        unitEdit.unit.allegiance.length !== demonIndex + 1
+                        list.detachment.select.options.length !== chaosIndex + 1
                             ? null
                             : styles.lastItem,
                     ]}
@@ -120,12 +130,12 @@ export default function Marks() {
 
     return (
         <View style={{ marginTop: 10 }}>
-            <FFText style={styles.title}>Daemonic Allegiance</FFText>
+            <FFText style={styles.title}>Mark of Chaos</FFText>
 
             <FlatList
                 scrollEnabled={false}
-                data={unitEdit.unit.allegiance}
-                renderItem={({ item, index }) => demonMarks(item, index)}
+                data={list.detachment.select.options}
+                renderItem={({ item, index }) => chaosMarks(item, index)}
                 keyExtractor={(item) => item.title}
             />
         </View>
