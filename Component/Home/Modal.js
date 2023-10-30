@@ -22,18 +22,21 @@ export default function Modal({ expand, handleExpand }) {
 
             <View style={styles.container}>
                 <FFText style={{ marginTop: 20 }}>
-                    this data was updated as of October 25, 2023
+                    this data was updated as of November 1st, 2023
                 </FFText>
 
                 <View style={{ marginVertical: 20 }}>
                     <FFText>Factions added</FFText>
                     <FFText>-Thousand sons</FFText>
+                    <FFText>-Chaos Space Marines</FFText>
                 </View>
 
                 <FFText>
-                    if data is missing try deleting the unit or list and
-                    re-adding it otherwise you can use one of the below contact
-                    methods
+                    if data is missing or not updated try deleting the unit or
+                    list and re-adding, the app will update all your lists
+                    eventually this is only a temporary solution. any other
+                    questions can be directed to the below reddit post or you
+                    can contact Jank Hammer at the Below email.
                 </FFText>
 
                 <A
