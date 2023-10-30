@@ -4275,6 +4275,1069 @@
                 ]
             },
             {
+                "name": "Knight Asterius",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [840],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Acastus",
+                    "Knight Asterius"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise 2D6"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Sunderer of Fortresses",
+                            "effect": "Each time this model makes an attack that targets a Vehicle, improve the Strength and Damage characteristics of that attack by 1 (if that attack targets a Fortification, improve the Strength and Damage characteristics of that attack by 2 instead)."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 10],
+                        "effect": "While this model has 1-10 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 8,
+                    "toughness": 13,
+                    "save": 2,
+                    "invulnerable": 5,
+                    "wounds": 30,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Asterius Volkite Culverin",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    },
+                    {
+                        "name": "Karacnos Mortar Battery",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 1,
+                            "keywords": [
+                                "Anti-Infantry 2+",
+                                "Blast",
+                                "Ignores Cover",
+                                "Indirect Fire"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Twin Conversion Beam Cannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 16,
+                            "ap": 2,
+                            "d": 6,
+                            "keywords": [
+                                "Conversion",
+                                "Twin-Linked",
+                                "Sustained Hits D3"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Titanic Feet",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 4,
+                            "s": 10,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Porphyrion",
+                "org": "Vehicle",
+                "modelCount": [1],
+                "points": [740],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Acastus",
+                    "Knight Porphyrion"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise 2D6"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Bastion of Firepower",
+                            "effect": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 10],
+                        "effect": "While this model has 1-10 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 8,
+                    "toughness": 13,
+                    "save": 2,
+                    "invulnerable": 5,
+                    "wounds": 30,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Acastus Autocannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 1,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Acastus Ironstorm Missle Pod",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": "D6+3",
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Blast", "Heavy", "Indirect Fire"]
+                        }
+                    },
+                    {
+                        "name": "Helio defence Missiles",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 2,
+                            "d": "D6",
+                            "keywords": ["Anti-Fly 2+", "Heavy"]
+                        }
+                    },
+                    {
+                        "name": "Lascannon",
+                        "range": 48,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+1",
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Twin Magna Lascannon",
+                        "range": 72,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 18,
+                            "ap": 4,
+                            "d": "D6+6",
+                            "keywords": ["Blast", "Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Titanic Feet",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 4,
+                            "s": 10,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Lancer",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [465],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Character",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Cerastus",
+                    "Knight Lancer"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6+2"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Shock Charge",
+                            "effect": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+                        },
+                        {
+                            "name": "Dark Fervour (Aura)",
+                            "effect": "While a friendly War Dog model is within 6\" of this model, ranged weapons equipped by that War Dog model have the [ASSAULT] ability."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 8],
+                        "effect": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 14,
+                    "toughness": 12,
+                    "save": 3,
+                    "invulnerable": 4,
+                    "wounds": 25,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Cerastus Shock Lance",
+                        "range": 12,
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": ["Assault", "Sustained Hits 2"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Cerastus Shock Lance - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 5,
+                            "ws": 2,
+                            "s": 20,
+                            "ap": 3,
+                            "d": 8,
+                            "keywords": ["Lance"]
+                        }
+                    },
+                    {
+                        "name": "Cerastus Shock Lance - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 10,
+                            "ws": 2,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Castigator",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [480],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Character",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Cerastus",
+                    "Knight Castigator"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6+2"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Storm of Bolts",
+                            "effect": "In your Shooting phase, after this model has shot, select one unit (excluding Monsters and Vehicles) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+                        },
+                        {
+                            "name": "Offerings for the Dark Gods (Aura)",
+                            "effect": "While a friendly War Dog model is within 6\" of this model, ranged weapons equipped by that War Dog model have the [SUSTAINED HITS 1] ability."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 8],
+                        "effect": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 12,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 25,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Castigator Bolt Cannon",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 18,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 2,
+                            "d": 2,
+                            "keywords": ["Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Tempest Warblade - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 4,
+                            "d": 6,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Tempest Warblade - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Acheron",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [465],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Character",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Cerastus",
+                    "Knight Acheron"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6+2"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Searing Flames",
+                            "effect": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+                        },
+                        {
+                            "name": "Unrestrained Terror (Aura)",
+                            "effect": "While a friendly War Dog model is within 6\" of this model, it is affected by this ability. At the start of the Fight phase, each enemy unit within Engagement Range of one or more War Dog units affected by this ability must take a Battle-shock test."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 8],
+                        "effect": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 12,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 25,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Acheron Flame Cannon",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": "N/A",
+                            "s": 8,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Ignores Cover", "Torrent"]
+                        }
+                    },
+                    {
+                        "name": "Twin Heavy Bolter",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 5,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1", "Twin-Linked"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Reaper Chainfist - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 4,
+                            "d": 6,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Reaper Chainfist - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Astrapos",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [465],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Character",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Cerastus",
+                    "Knight Astrapos"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6+2"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Macro-extinction Protocols",
+                            "effect": "Each time this model makes an attack that targets a Monster or Vehicle unit, add 1 to the Hit roll. If that target is Titanic or Towering, add 1 to the Wound roll as well."
+                        },
+                        {
+                            "name": "Consumed with Hunger (Aura)",
+                            "effect": "While a friendly War Dog model is within 6\" of this model, each time that War Dog model makes an attack that targets a Titanic or Towering unit, you can re-roll the Hit roll."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 8],
+                        "effect": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 12,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 25,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Atrapos Lascutter - Low Intensity",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": "2D6",
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Atrapos Lascutter - High Intensity",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": 4,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Graviton Singularity Cannon - Contained",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 16,
+                            "ap": 4,
+                            "d": "D6+1",
+                            "keywords": ["Blast"]
+                        }
+                    },
+                    {
+                        "name": "Graviton Singularity Cannon - Singularity",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D3",
+                            "bs": 3,
+                            "s": 16,
+                            "ap": 4,
+                            "d": "D6+1",
+                            "keywords": [
+                                "Blast",
+                                "Devastating Wounds",
+                                "Hazardous"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Atrapos Lascutter - Low Intensity",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "ws": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    },
+                    {
+                        "name": "Atrapos Lascutter - High Intensity",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 6,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 3,
+                            "d": 4,
+                            "keywords": ["Sustained Hits 1"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Magera",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [465],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Character",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Abhorrent",
+                    "Knight Magera"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Huntmaster (Aura)",
+                            "effect": "While a friendly War Dog model is within 6\" of this model, each time that War Dog model makes a ranged attack, you can ignore any or all modifiers to that attack’s Ballistic Skill characteristic and/or to the Hit roll."
+                        },
+                        {
+                            "name": "Repair Auto-simulacra",
+                            "effect": "At the end of your Command phase, this model regains up to D3 lost wounds."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 7],
+                        "effect": "While this model has 1-7 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 10,
+                    "toughness": 12,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 22,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Lightning Cannon",
+                        "range": 48,
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "bs": 3,
+                            "s": 9,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": ["Sustained Hits 2"]
+                        }
+                    },
+                    {
+                        "name": "Phased Plasma-Fusil",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": ["Rapid Fire 2"]
+                        }
+                    },
+                    {
+                        "name": "Twin Rad Cleanser",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 2,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anti-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent",
+                                "Twin-Linked"
+                            ]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hekaton Siege Claw - Strike",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 20,
+                            "ap": 3,
+                            "d": 8,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hekaton Siege Claw - Sweep",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 3,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Reaper Chainsword - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 4,
+                            "d": 6,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Reaper Chainsword - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Knight Styrix",
+                "org": "Character",
+                "modelCount": [1],
+                "points": [505],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Character",
+                    "Titanic",
+                    "Towering",
+                    "Chaos",
+                    "Abhorrent",
+                    "Knight Styrix"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D6"],
+                    "faction": ["Harbingers of Dread", "Super-Heavy Walker"],
+                    "data": [
+                        {
+                            "name": "Huntmaster (Aura)",
+                            "effect": "While a friendly War Dog model is within 6\" of this model, each time that War Dog model makes a ranged attack, you can ignore any or all modifiers to that attack’s Ballistic Skill characteristic and/or to the Hit roll."
+                        },
+                        {
+                            "name": "Grav-pinned",
+                            "effect": "In your Shooting phase, after this model has shot, if an enemy Infantry unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Advance and Charge rolls made for that unit."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 7],
+                        "effect": "While this model has 1-7 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 10,
+                    "toughness": 12,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 22,
+                    "leadership": 6,
+                    "oc": 10
+                },
+                "ranged": [
+                    {
+                        "name": "Graviton Crusher",
+                        "range": 18,
+                        "active": true,
+                        "data": {
+                            "a": 3,
+                            "bs": 3,
+                            "s": 6,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Anti-Vehicle 2+", "Blast"]
+                        }
+                    },
+                    {
+                        "name": "Twin Rad Cleanser",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 2,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anti-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent",
+                                "Twin-Linked"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Volkite Chierovile",
+                        "range": 30,
+                        "active": true,
+                        "data": {
+                            "a": 9,
+                            "bs": 3,
+                            "s": 12,
+                            "ap": 0,
+                            "d": 3,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Hekaton Siege Claw - Strike",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 20,
+                            "ap": 3,
+                            "d": 8,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Hekaton Siege Claw - Sweep",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 8,
+                            "ws": 3,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Reaper Chainsword - Strike",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 14,
+                            "ap": 4,
+                            "d": 6,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Reaper Chainsword - Sweep",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 12,
+                            "ws": 3,
+                            "s": 9,
+                            "ap": 3,
+                            "d": 2,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "War Dog Moirax",
+                "org": "Battleline",
+                "modelCount": [1],
+                "points": [170],
+                "modelCountIndex": 0,
+                "factionKey": ["Chaos Knights"],
+                "keywords": [
+                    "Vehicle",
+                    "Walker",
+                    "Battleline",
+                    "Chaos",
+                    "War Dog",
+                    "Moirax"
+                ],
+                "ability": {
+                    "core": ["Deadly Demise D3"],
+                    "faction": ["Harbingers of Dread"],
+                    "data": [
+                        {
+                            "name": "Protection Protocols",
+                            "effect": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+                        }
+                    ],
+                    "damaged": {
+                        "range": [1, 4],
+                        "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                    }
+                },
+                "data": {
+                    "movement": 12,
+                    "toughness": 10,
+                    "save": 3,
+                    "invulnerable": 5,
+                    "wounds": 12,
+                    "leadership": 7,
+                    "oc": 8
+                },
+                "ranged": [
+                    {
+                        "name": "Conversion Beam Cannon",
+                        "range": 24,
+                        "active": false,
+                        "data": {
+                            "a": 1,
+                            "bs": 3,
+                            "s": 10,
+                            "ap": 2,
+                            "d": 3,
+                            "keywords": ["Conversion", "Sustained Hits D3"]
+                        }
+                    },
+                    {
+                        "name": "Graviton Pulsar",
+                        "range": 24,
+                        "active": true,
+                        "data": {
+                            "a": "D6",
+                            "bs": 3,
+                            "s": 7,
+                            "ap": 1,
+                            "d": 2,
+                            "keywords": ["Anti-Vehicle 2+", "Blast"]
+                        }
+                    },
+                    {
+                        "name": "Lightning Lock",
+                        "range": 36,
+                        "active": false,
+                        "data": {
+                            "a": 6,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Sustained Hits 2"]
+                        }
+                    },
+                    {
+                        "name": "Rad Cleanser",
+                        "range": 12,
+                        "active": false,
+                        "data": {
+                            "a": "D6",
+                            "bs": "N/A",
+                            "s": 2,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": [
+                                "Anti-Infantry 2+",
+                                "Ignores Cover",
+                                "Torrent"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "Volkite Veuglaire",
+                        "range": 36,
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "bs": 3,
+                            "s": 8,
+                            "ap": 0,
+                            "d": 2,
+                            "keywords": ["Devastating Wounds"]
+                        }
+                    }
+                ],
+                "melee": [
+                    {
+                        "name": "Armoured Feet",
+                        "range": "m",
+                        "active": true,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 6,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": []
+                        }
+                    },
+                    {
+                        "name": "Siege Claw",
+                        "range": "m",
+                        "active": false,
+                        "data": {
+                            "a": 4,
+                            "ws": 3,
+                            "s": 12,
+                            "ap": 3,
+                            "d": "D6+2",
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "Knight Despoiler",
                 "org": "Character",
                 "modelCount": [1],

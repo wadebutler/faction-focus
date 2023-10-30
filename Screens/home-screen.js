@@ -1,10 +1,4 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    FlatList,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useCallback, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -13,7 +7,7 @@ import { useFocusEffect } from "@react-navigation/native";
 import FFText from "../Component/Global/FFText";
 import { SortByTitle } from "../Utils/Sort";
 import { A } from "@expo/html-elements";
-import Modal from "../Component/Home/Modal";
+import UpdateModal from "../Component/Home/UpdateModal";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -61,7 +55,7 @@ export default function Home() {
                 <FFText>Latest Update Notes</FFText>
             </TouchableOpacity>
 
-            <Modal expand={expand} handleExpand={handleExpand} />
+            <UpdateModal expand={expand} handleExpand={handleExpand} />
 
             <View
                 style={[

@@ -3,7 +3,7 @@ import FFText from "../Global/FFText";
 import { A } from "@expo/html-elements";
 import CloseIcon from "../Icons/CloseIcon";
 
-export default function Modal({ expand, handleExpand }) {
+export default function UpdateModal({ expand, handleExpand }) {
     return (
         <View
             style={[
@@ -29,6 +29,11 @@ export default function Modal({ expand, handleExpand }) {
                     <FFText>Factions added</FFText>
                     <FFText>-Thousand sons</FFText>
                     <FFText>-Chaos Space Marines</FFText>
+                </View>
+
+                <View style={{ marginBottom: 20 }}>
+                    <FFText>Units added</FFText>
+                    <FFText>-Forge World Chaos Knights</FFText>
                 </View>
 
                 <FFText>
