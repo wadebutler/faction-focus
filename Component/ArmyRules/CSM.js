@@ -2,7 +2,6 @@ import { StyleSheet, View } from "react-native";
 import FFText from "../../Component/Global/FFText";
 
 export default CSM = ({ rule }) => {
-    console.log(rule);
     return rule.map((item, index) => {
         return (
             <View key={index} style={{ padding: 10 }}>

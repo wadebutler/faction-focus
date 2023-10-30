@@ -21,7 +21,7 @@ export default function UnitCard({ unit, id }) {
             points: list.points,
             roster: [...list.roster],
             title: list.title,
-            rule: item.rule.length ? [...item.rule] : item.rule,
+            rule: list.rule.length ? [...list.rule] : list.rule,
             uid: list.uid,
         };
         let tempRoster = JSON.parse(JSON.stringify(tempObj));
@@ -67,7 +67,7 @@ export default function UnitCard({ unit, id }) {
             points: list.points,
             roster: [...list.roster],
             title: list.title,
-            rule: item.rule.length ? [...item.rule] : item.rule,
+            rule: list.rule.length ? [...list.rule] : list.rule,
             uid: list.uid,
         };
 

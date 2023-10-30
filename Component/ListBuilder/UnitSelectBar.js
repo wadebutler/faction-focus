@@ -20,7 +20,7 @@ export default function UnitSelectBar({ item }) {
             points: list.points,
             roster: [...list.roster],
             title: list.title,
-            rule: item.rule.length ? [...item.rule] : item.rule,
+            rule: list.rule.length ? [...list.rule] : list.rule,
             uid: list.uid,
         };
         tempObj.roster.push(unit);

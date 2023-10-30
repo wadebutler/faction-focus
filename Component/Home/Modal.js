@@ -1,20 +1,9 @@
-import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    FlatList,
-} from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { useCallback, useState } from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import FFText from "../Global/FFText";
 import { A } from "@expo/html-elements";
 import CloseIcon from "../Icons/CloseIcon";
 
 export default function Modal({ expand, handleExpand }) {
-    const navigation = useNavigation();
-
     return (
         <View
             style={[

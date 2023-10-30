@@ -1,4 +1,4 @@
-import { StyleSheet, View, TouchableOpacity } from "react-native";
+import { StyleSheet, View, TouchableOpacity, FlatList } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
@@ -24,7 +24,7 @@ export default function Enhancements() {
             points: { ...list.points },
             roster: [...list.roster],
             title: list.title,
-            rule: item.rule.length ? [...item.rule] : item.rule,
+            rule: list.rule.length ? [...list.rule] : list.rule,
             uid: list.uid,
         };
         let tempUnit = {
@@ -92,67 +92,51 @@ export default function Enhancements() {
             : setChecked(null);
     }, [unitEdit]);
 
+    const enhancementBox = (enhanceIndex, item) => {
+        return (
+            <TouchableOpacity
+                style={{ marginTop: -6 }}
+                onPress={() => handleCheck(enhanceIndex, item)}
+            >
+                <CheckBox
+                    title={`${item.name} - ${item.cost} points`}
+                    onPress={() => handleCheck(enhanceIndex, item)}
+                    checked={checked === enhanceIndex}
+                    checkedColor="#0F0"
+                    containerStyle={{ marginBottom: 0 }}
+                    size={30}
+                    uncheckedColor="gray"
+                />
+
+                <FFText
+                    style={[
+                        styles.check,
+                        enhanceIndex === enhancement.length
+                            ? {
+                                  borderBottomLeftRadius: 5,
+                                  borderBottomRightRadius: 5,
+                              }
+                            : null,
+                    ]}
+                >
+                    {item.effect}
+                </FFText>
+            </TouchableOpacity>
+        );
+    };
+
     return (
         <View style={{ marginBottom: 20 }}>
             <FFText style={styles.title}>Enhancements</FFText>
 
-            <TouchableOpacity onPress={() => handleCheck(0, enhancement[0])}>
-                <CheckBox
-                    title={`${enhancement[0].name} - ${enhancement[0].cost} points`}
-                    onPress={() => handleCheck(0, enhancement[0])}
-                    checked={checked === 0}
-                    checkedColor="#0F0"
-                    containerStyle={{ margin: 0, marginBottom: -10 }}
-                    size={30}
-                    uncheckedColor="gray"
-                />
-
-                <FFText style={styles.check}>{enhancement[0].effect}</FFText>
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={() => handleCheck(1, enhancement[1])}>
-                <CheckBox
-                    title={`${enhancement[1].name} - ${enhancement[1].cost} points`}
-                    onPress={() => handleCheck(1, enhancement[1])}
-                    checked={checked === 1}
-                    checkedColor="#0F0"
-                    containerStyle={{ margin: 0, marginBottom: -10 }}
-                    size={30}
-                    uncheckedColor="gray"
-                />
-
-                <FFText style={styles.check}>{enhancement[1].effect}</FFText>
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={() => handleCheck(2, enhancement[2])}>
-                <CheckBox
-                    onPress={() => handleCheck(2, enhancement[2])}
-                    title={`${enhancement[2].name} - ${enhancement[2].cost} points`}
-                    checked={checked === 2}
-                    checkedColor="#0F0"
-                    containerStyle={{ margin: 0, marginBottom: -10 }}
-                    size={30}
-                    uncheckedColor="gray"
-                />
-
-                <FFText style={styles.check}>{enhancement[2].effect}</FFText>
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={() => handleCheck(3, enhancement[3])}>
-                <CheckBox
-                    onPress={() => handleCheck(3, enhancement[3])}
-                    title={`${enhancement[3].name} - ${enhancement[3].cost} points`}
-                    checked={checked === 3}
-                    checkedColor="#0F0"
-                    containerStyle={{ margin: 0, marginBottom: -10 }}
-                    size={30}
-                    uncheckedColor="gray"
-                />
-
-                <FFText style={[styles.check, { paddingBottom: 10 }]}>
-                    {enhancement[3].effect}
-                </FFText>
-            </TouchableOpacity>
+            <FlatList
+                scrollEnabled={false}
+                data={enhancement}
+                renderItem={({ item, index }) =>
+                    enhancementBox(index + 1, item)
+                }
+                keyExtractor={(item) => item.name}
+            />
         </View>
     );
 }
@@ -171,7 +155,7 @@ const styles = StyleSheet.create({
     check: {
         marginHorizontal: 10,
         backgroundColor: "#fff",
-        marginTop: -1,
         paddingHorizontal: 10,
+        paddingBottom: 10,
     },
 });

@@ -23,7 +23,7 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
             points: { ...list.points },
             roster: [...list.roster],
             title: list.title,
-            rule: item.rule.length ? [...item.rule] : item.rule,
+            rule: list.rule.length ? [...list.rule] : list.rule,
             uid: list.uid,
         };
         let tempUnit = {
