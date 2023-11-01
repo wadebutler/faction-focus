@@ -9,7 +9,6 @@ import { unitEditState, listArmyState } from "../../Atoms";
 import WarlordCheckbox from "../../Component/UnitEdit/WarlordCheckbox";
 import UnitSize from "../../Component/UnitEdit/UnitSize";
 import ViewIcon from "../../Component/Icons/ViewIcon";
-import FFText from "../../Component/Global/FFText";
 import Marks from "../../Component/UnitEdit/Marks";
 import CSMMark from "../../Component/UnitEdit/CSMMark";
 

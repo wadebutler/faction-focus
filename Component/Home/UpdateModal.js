@@ -25,6 +25,12 @@ export default function UpdateModal({ expand, handleExpand }) {
                     this data was updated as of November 1st, 2023
                 </FFText>
 
+                <FFText>IMPORTANT USER NOTICE</FFText>
+                <FFText>
+                    I did an update to the data so you will need to delete any
+                    old lists and remake them using the new updates
+                </FFText>
+
                 <View style={{ marginVertical: 20 }}>
                     <FFText>Factions added</FFText>
                     <FFText>-Thousand sons</FFText>

@@ -51,7 +51,8 @@ export default function LeaderCheckbox({ item }) {
                 ? null
                 : { ...unitEdit.unit.enhancement },
         };
-        if (item.ability.leader.length) {
+
+        if (item.ability.leader.length > 0) {
             item.ability.leader.map((ldrAblty) => {
                 tempAbilityArr.push({
                     unit: item.name,

@@ -383,10 +383,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Chaos Lord",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1."
-                    },
+                    "leader": [
+                        {
+                            "name": "Chaos Lord",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Desiccation Conduit (Aura)",
@@ -994,7 +996,7 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": null,
+                    "leader": [],
                     "data": [
                         {
                             "name": "Gift of Contagion (Psychic)",
@@ -1464,10 +1466,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Sickening Vitality",
-                        "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Sickening Vitality",
+                            "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "The Bell Tolls (Aura)",
@@ -1550,10 +1554,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Putrefying Stink",
-                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Putrefying Stink",
+                            "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                        }
+                    ],
                     "data": [
                         {
                             "effect": "You can attach this model to a Plague Marines unit, even if one other Leader unit has already been attached to it (you cannot attach more than one of the same leader to the same unit). If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
@@ -1709,10 +1715,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Malicious Calculations",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Malicious Calculations",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "The Seven-fold Chant",
@@ -1799,10 +1807,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Tainted Narthecium",
-                        "effect": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Tainted Narthecium",
+                            "effect": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Diseased Healing",
@@ -3498,10 +3508,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Unclean Icon",
-                        "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Unclean Icon",
+                            "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Seed the Disease",
@@ -11310,10 +11322,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Blessings of Khorne"],
-                    "leader": {
-                        "name": "Aggressive Advance",
-                        "effect": "While this model is leading a unit, you can re-roll any or all of the following rolls made for that unit: Advance rolls; Charge rolls; Blood Surge rolls (see Khorne Berzerkers)."
-                    },
+                    "leader": [
+                        {
+                            "name": "Aggressive Advance",
+                            "effect": "While this model is leading a unit, you can re-roll any or all of the following rolls made for that unit: Advance rolls; Charge rolls; Blood Surge rolls (see Khorne Berzerkers)."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Bloody Stampede",
@@ -11405,10 +11419,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Blessings of Khorne"],
-                    "leader": {
-                        "name": "Trophy Taker",
-                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Trophy Taker",
+                            "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Murderous Swing",
@@ -17008,10 +17024,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "The Tyrant of Badab",
-                        "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "The Tyrant of Badab",
+                            "effect": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Red Corsairs",
@@ -17452,10 +17470,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Daemonkin (Psychic)",
-                        "effect": "While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit, and models in that unit have the Feel No Pain 6+ ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Daemonkin (Psychic)",
+                            "effect": "While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit, and models in that unit have the Feel No Pain 6+ ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Sacrificial Dagger",
@@ -17560,6 +17580,7 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Lord of Chaos",
@@ -17823,10 +17844,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Prescience (Psychic)",
-                        "effect": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Prescience (Psychic)",
+                            "effect": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Gift of Chaos (Psychic)",
@@ -18250,6 +18273,7 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Warpsmith",
@@ -18377,10 +18401,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Dark Champion",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Dark Champion",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Aspire to Glory",
@@ -18470,10 +18496,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Dark Zealotry",
-                        "effect": "While this unit is leading a unit and contains a Dark Apostle model, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Dark Zealotry",
+                            "effect": "While this unit is leading a unit and contains a Dark Apostle model, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Demagogue",
@@ -18559,10 +18587,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Faithful Flock",
-                        "effect": "While this unit is leading a unit and contains a Cult Demagogue model, models in that unit have a 5+ invulnerable save."
-                    },
+                    "leader": [
+                        {
+                            "name": "Faithful Flock",
+                            "effect": "While this unit is leading a unit and contains a Cult Demagogue model, models in that unit have a 5+ invulnerable save."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Dark Ritual",
@@ -19269,10 +19299,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Warp-sighted Butcher",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that unit is Below Half-strength, you can re-roll the Wound roll as well."
-                    },
+                    "leader": [
+                        {
+                            "name": "Warp-sighted Butcher",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack that targets a unit that is below its Starting Strength, you can re-roll the Hit roll. If that unit is Below Half-strength, you can re-roll the Wound roll as well."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Trophy Taker",
@@ -22977,10 +23009,12 @@
                 "ability": {
                     "core": ["Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Brutal Example",
-                        "effect": "While this unit is leading a unit and contains a Traitor Enforcer model, that unit can be targeted with the Insane Bravery Stratagem for 0CP, even if another unit from your army has already been targeted with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed."
-                    },
+                    "leader": [
+                        {
+                            "name": "Brutal Example",
+                            "effect": "While this unit is leading a unit and contains a Traitor Enforcer model, that unit can be targeted with the Insane Bravery Stratagem for 0CP, even if another unit from your army has already been targeted with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Mutated Bodyguard",
