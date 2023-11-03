@@ -17,16 +17,19 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            <View style={styles.dataContainer}>
-                <FFText>Faction Ability: </FFText>
-                {ability?.faction.map((item, index) => (
-                    <FFText key={index} style={styles.dashText}>
-                        {item}
-                    </FFText>
-                ))}
-            </View>
+            {!ability.faction ? null : (
+                <View style={styles.dataContainer}>
+                    <FFText>Faction Ability: </FFText>
+                    {ability?.faction.map((item, index) => (
+                        <FFText key={index} style={styles.dashText}>
+                            {item}
+                        </FFText>
+                    ))}
+                </View>
+            )}
 
-            {ability.leader.length === 0 ? null : org === "Character" ? (
+            {!ability.leader ? null : ability.leader.length ===
+              0 ? null : org === "Character" ? (
                 <View style={styles.container}>
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader.map((item, index) => {

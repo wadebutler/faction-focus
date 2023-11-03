@@ -314,10 +314,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "The Destroyer Hive",
-                        "effect": "While this model is leading a unit, each time a melee attack targets that unit, subtract 1 from the hit roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "The Destroyer Hive",
+                            "effect": "While this model is leading a unit, each time a melee attack targets that unit, subtract 1 from the hit roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "The Eater Plague (Pschic)",
@@ -551,10 +553,12 @@
                 "ability": {
                     "core": ["Leader", "Deep Strike"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Chaos Lord",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1."
-                    },
+                    "leader": [
+                        {
+                            "name": "Chaos Lord",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Hit roll of 1."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Desiccation Conduit (Aura)",
@@ -677,10 +681,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Master of Destruction",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, you can re-roll the Wound roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Master of Destruction",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, you can re-roll the Wound roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Blight Bombardment",
@@ -753,10 +759,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Vector of Disease",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the hit roll"
-                    },
+                    "leader": [
+                        {
+                            "name": "Vector of Disease",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the hit roll"
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Abundance of Sickness",
@@ -822,10 +830,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Putrescent Vitality (Psychic)",
-                        "effect": "At the start of the Fight phase, you can select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, this Psyker’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, each time an attack is allocated to a model in this Psyker’s unit, subtract 1 from the Damage characteristic of that attack."
-                    },
+                    "leader": [
+                        {
+                            "name": "Putrescent Vitality (Psychic)",
+                            "effect": "At the start of the Fight phase, you can select one enemy unit within 18\" of and visible to this Psyker and roll one D6: on a 1, this Psyker’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, each time an attack is allocated to a model in this Psyker’s unit, subtract 1 from the Damage characteristic of that attack."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Pestilent Familiar (Psychic):",
@@ -1629,10 +1639,12 @@
                 "ability": {
                     "core": ["Deadly Demise 1", "Leader"],
                     "faction": ["Nurgle's Gift"],
-                    "leader": {
-                        "name": "Foul Infusion",
-                        "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability. In addition, each time a model in that unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6."
-                    },
+                    "leader": [
+                        {
+                            "name": "Foul Infusion",
+                            "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability. In addition, each time a model in that unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Explosive Maladies",
@@ -6451,10 +6463,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Lord of Decapitations",
-                        "effect": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Lord of Decapitations",
+                            "effect": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Skulls for Khorne",
@@ -6506,10 +6520,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Bloodmaster",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Bloodmaster",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "A Gory Path",
@@ -6561,10 +6577,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Skullmaster’s Fury",
-                        "effect": "While this model is leading a unit, each time that unit ends a Charge move, until the end of the turn, Juggernaut’s bladed horns equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Skullmaster’s Fury",
+                            "effect": "While this model is leading a unit, each time that unit ends a Charge move, until the end of the turn, Juggernaut’s bladed horns equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Devastating Charge",
@@ -6697,10 +6715,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Pack Leader",
-                        "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Pack Leader",
+                            "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Prey of the Blood God",
@@ -7388,10 +7408,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Fateskimmer",
-                        "effect": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Fateskimmer",
+                            "effect": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Rider of the Immaterial Winds",
@@ -7490,10 +7512,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Fluxmaster",
-                        "effect": "While this model is leading a unit, each time an attack is made against that unit, subtract 1 form the Hit roll."
-                    },
+                    "leader": [
+                        {
+                            "name": "Fluxmaster",
+                            "effect": "While this model is leading a unit, each time an attack is made against that unit, subtract 1 form the Hit roll."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Altered Reality (Psychic)",
@@ -7635,10 +7659,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Changecaster",
-                        "effect": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Changecaster",
+                            "effect": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Storm of Mutating Sorcery (Psychic)",
@@ -8476,10 +8502,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Feel No Pain 5+", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Poxbringer",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, a successful unmodified Hit roll of 5+ scores a Critical Hit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Poxbringer",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes an attack, a successful unmodified Hit roll of 5+ scores a Critical Hit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Feculent Despair (Aura, Psychic)",
@@ -8603,10 +8631,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Blessed by the Plague God",
-                        "effect": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
-                    },
+                    "leader": [
+                        {
+                            "name": "Blessed by the Plague God",
+                            "effect": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Tally of Pestilence",
@@ -8658,10 +8688,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Jolly Gutpipes",
-                        "effect": "While this model is leading a unit, add 1 to the Move characteristic of models in that unit and you can re-roll Advance rolls made for that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Jolly Gutpipes",
+                            "effect": "While this model is leading a unit, add 1 to the Move characteristic of models in that unit and you can re-roll Advance rolls made for that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Disease of Mirth (Aura)",
@@ -8714,10 +8746,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Beast Handler",
-                        "effect": "While this model is leading a unit, you can re-roll Charge rolls made for that unit. In addition, once per battle, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
-                    },
+                    "leader": [
+                        {
+                            "name": "Beast Handler",
+                            "effect": "While this model is leading a unit, you can re-roll Charge rolls made for that unit. In addition, once per battle, you can target that unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Seed the Garden of Nurgle",
@@ -9340,10 +9374,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Harmonic Alignment",
-                        "effect": "While this model is leading a unit, in your Command phase, you can return D3 destroyed Bodyguard models to that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Harmonic Alignment",
+                            "effect": "While this model is leading a unit, in your Command phase, you can return D3 destroyed Bodyguard models to that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Discordant Disruption (Aura)",
@@ -9487,10 +9523,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Prince of Slaanesh",
-                        "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, a successful unmodified Wound roll of 5+ scores a Critical Wound."
-                    },
+                    "leader": [
+                        {
+                            "name": "Prince of Slaanesh",
+                            "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, a successful unmodified Wound roll of 5+ scores a Critical Wound."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Delightful Agonies",
@@ -9607,10 +9645,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Swallow Energy (Psychic)",
-                        "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
-                    },
+                    "leader": [
+                        {
+                            "name": "Swallow Energy (Psychic)",
+                            "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Horrible Fascination(Psychic)",
@@ -9763,10 +9803,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["The Shadow of Chaos"],
-                    "leader": {
-                        "name": "Tranceweaver",
-                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Tranceweaver",
+                            "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Symphony of Pain (Psychic)",
@@ -11070,10 +11112,12 @@
                 "ability": {
                     "core": ["Leader", "Scout 6"],
                     "faction": ["Blessings of Khorne"],
-                    "leader": {
-                        "name": "Counter-attacks",
-                        "effect": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
-                    },
+                    "leader": [
+                        {
+                            "name": "Counter-attacks",
+                            "effect": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Road of Eight Bloody Steps",
@@ -16019,10 +16063,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Cabel of Sorcerers 2"],
-                    "leader": {
-                        "name": "Empyric Guidance (Psychic)",
-                        "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Empyric Guidance (Psychic)",
+                            "effect": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Marked by Fate (Psychic)",
@@ -16936,10 +16982,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Head Taker",
-                        "effect": "While this model is leading a unit, each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model’s unit and roll one D6 for each model in this model’s unit: for each 4+, that enemy unit suffers 1 mortal wound."
-                    },
+                    "leader": [
+                        {
+                            "name": "Head Taker",
+                            "effect": "While this model is leading a unit, each time this model’s unit ends a Charge move, select one enemy unit within Engagement Range of this model’s unit and roll one D6 for each model in this model’s unit: for each 4+, that enemy unit suffers 1 mortal wound."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Herald of the Apocalypse (Aura)",
@@ -17279,10 +17327,12 @@
                 "ability": {
                     "core": ["Feel No Pain 5+", "Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Enhanced Warriors",
-                        "effect": "If this unit is attached to a unit at the start of the battle, until the end of the battle, add 1 to the Strength characteristic of melee weapons equipped by Bodyguard models in that unit and add 1 to the Toughness characteristic of Bodyguard models in that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Enhanced Warriors",
+                            "effect": "If this unit is attached to a unit at the start of the battle, until the end of the battle, add 1 to the Strength characteristic of melee weapons equipped by Bodyguard models in that unit and add 1 to the Toughness characteristic of Bodyguard models in that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Surgeon Acolyte",
@@ -17947,10 +17997,12 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Warptime (Psychic)",
-                        "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
-                    },
+                    "leader": [
+                        {
+                            "name": "Warptime (Psychic)",
+                            "effect": "While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Death Hex (Psychic)",
@@ -18071,10 +18123,12 @@
                 "ability": {
                     "core": ["Fight First", "Leader"],
                     "faction": ["Dark Pacts"],
-                    "leader": {
-                        "name": "Duellist’s Pride",
-                        "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
-                    },
+                    "leader": [
+                        {
+                            "name": "Duellist’s Pride",
+                            "effect": "While this model is leading a unit, models in that unit have the Fights First ability."
+                        }
+                    ],
                     "data": [
                         {
                             "name": "Armour of Shrieking Souls",
