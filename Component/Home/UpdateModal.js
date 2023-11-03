@@ -22,7 +22,7 @@ export default function UpdateModal({ expand, handleExpand }) {
 
             <View style={styles.container}>
                 <FFText style={{ marginTop: 20 }}>
-                    this data was updated as of November 1st, 2023
+                    this data was updated as of November 3rd, 2023
                 </FFText>
 
                 <FFText>IMPORTANT USER NOTICE</FFText>
@@ -35,6 +35,7 @@ export default function UpdateModal({ expand, handleExpand }) {
                     <FFText>Factions added</FFText>
                     <FFText>-Thousand sons</FFText>
                     <FFText>-Chaos Space Marines</FFText>
+                    <FFText>-Leagues of Votann</FFText>
                 </View>
 
                 <View style={{ marginBottom: 20 }}>
