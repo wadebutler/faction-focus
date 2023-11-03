@@ -23076,8 +23076,16 @@
             "effect": "If your Army Faction is Leagues of Votann, each time an enemy unit destroys a Leagues of Votann unit from your army, that enemy unit gains 1 Judgement token. An enemy unit can never have more than 2 Judgement tokens (any further Judgement tokens a unit would gain beyond this are ignored).",
             "tokens": {
                 "rule": "Each time a model from your army with this ability makes an attack that targets a unit that has one or more Judgement tokens, until that model’s attacks have been resolved, apply the relevant bonus from the table below to that attack.",
-                "1": "Eminent Threat: Add 1 to the Hit roll.",
-                "2": "Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1 to the Wound roll."
+                "one": {
+                    "cost": 1,
+                    "name": "Eminent Threat",
+                    "effect": "Add 1 to the Hit roll."
+                },
+                "two": {
+                    "cost": 2,
+                    "name": "Now We’ve Got a Grudge to Settle",
+                    "effect": "Add 1 to the Hit roll and add 1 to the Wound roll."
+                }
             }
         },
         "detachments": [
@@ -23086,17 +23094,25 @@
                 "id": 1,
                 "rule": "Ruthless Efficiency",
                 "effect": "At the start of the battle, select a number of units from your opponent’s army depending on the battle size, as shown below, those units start with 2 judgement tokens",
-                "reward": [
-                    "If, at the start of any of your Command phases, any of those units have been destroyed, you gain a number of CP depending on how early in the battle you destroyed it, as shown on the right (you can only gain CP in this way once per battle, and CP gained in this way are an exemption to the Core Rules that limit the maximum number of CP you can gain per battle round to 1).",
-                    "Unit destroyed by the start of your first or second Command phase grant 3CP",
-                    "Unit destroyed by the start of your third or fourth Command phase grant 2CP",
-                    "Unit destroyed by the start of your fifth Command phase grant 1CP"
-                ],
-                "sizes": [
+                "size": [
                     "Incursion: 2 units",
                     "Strike Force: 4 units",
                     "Onslaught: 6 units"
                 ],
+                "select": {
+                    "rule": "If, at the start of any of your Command phases, any of those units have been destroyed, you gain a number of CP depending on how early in the battle you destroyed it, as shown below (you can only gain CP in this way once per battle, and CP gained in this way are an exemption to the Core Rules that limit the maximum number of CP you can gain per battle round to 1).",
+                    "options": [
+                        {
+                            "effect": "Unit destroyed by the start of your first or second Command phase grant 3CP"
+                        },
+                        {
+                            "effect": "Unit destroyed by the start of your third or fourth Command phase grant 2CP"
+                        },
+                        {
+                            "effect": "Unit destroyed by the start of your fifth Command phase grant 1CP"
+                        }
+                    ]
+                },
                 "enhancements": [
                     {
                         "name": "Appraising Glare",

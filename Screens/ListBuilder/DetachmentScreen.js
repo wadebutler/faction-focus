@@ -6,6 +6,7 @@ import GoBack from "../../Component/Global/GoBack";
 
 export default function Detachment() {
     const [rule, setRule] = useRecoilState(ruleState);
+
     return (
         <ScrollView>
             <GoBack />
@@ -13,6 +14,18 @@ export default function Detachment() {
             <FFText style={styles.title}>{rule?.name}</FFText>
 
             <FFText style={styles.container}>{rule.effect}</FFText>
+
+            {!rule?.size ? null : (
+                <View style={styles.sizeContainer}>
+                    {rule.size.map((item, index) => {
+                        return (
+                            <FFText style={styles.sizeItem} key={index}>
+                                {item}
+                            </FFText>
+                        );
+                    })}
+                </View>
+            )}
 
             {!rule?.select ? null : (
                 <View>
@@ -28,8 +41,12 @@ export default function Detachment() {
                         {rule?.select.options.map((item, index) => {
                             return (
                                 <View style={styles.marginSmall} key={index}>
-                                    <FFText>{item.title}</FFText>
-                                    <FFText>{item.effect}</FFText>
+                                    {!item.title ? null : (
+                                        <FFText>{item.title}</FFText>
+                                    )}
+                                    {!item.effect ? null : (
+                                        <FFText>{item.effect}</FFText>
+                                    )}
                                 </View>
                             );
                         })}
@@ -163,5 +180,13 @@ const styles = StyleSheet.create({
         textAlign: "center",
         borderTopRightRadius: 4,
         borderTopLeftRadius: 4,
+    },
+    sizeContainer: {
+        marginHorizontal: 10,
+        marginBottom: 10,
+    },
+    sizeItem: {
+        fontWeight: "bold",
+        paddingBottom: 5,
     },
 });

@@ -51,7 +51,7 @@ export default function AbilityView({ ability, org }) {
                             item.effect !== undefined
                         ) {
                             return (
-                                <View key={index}>
+                                <View style={{ marginBottom: 10 }} key={index}>
                                     <FFText style={styles.abilityName}>
                                         {item.name}
                                     </FFText>
