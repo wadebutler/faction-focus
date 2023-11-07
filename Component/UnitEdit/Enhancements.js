@@ -2,10 +2,10 @@ import { StyleSheet, View, TouchableOpacity, FlatList } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from "react";
 import FFText from "../Global/FFText";
 import { SortByName } from "../../Utils/Sort";
+import { handleUnitUpload } from "../../Utils/Upload";
 
 export default function Enhancements() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -15,75 +15,38 @@ export default function Enhancements() {
     const [checked, setChecked] = useState(null);
 
     const handleCheck = async (num, item) => {
-        const tempId = unitEdit.unitId;
-        let tempObj = {
-            name: list.name,
-            allies: list.allies ? [...list.allies] : null,
-            detachment: { ...list.detachment },
-            id: list.id,
-            points: { ...list.points },
-            roster: [...list.roster],
-            title: list.title,
-            rule: list.rule.length ? [...list.rule] : list.rule,
-            uid: list.uid,
-        };
+        let tempRoster = [...list.roster];
         let tempUnit = {
-            ability: { ...unitEdit.unit.ability },
-            allegiance: !unitEdit.unit.allegiance
-                ? null
-                : [...unitEdit.unit.allegiance],
-            allegianceKey: !unitEdit.unit.allegianceKey
-                ? null
-                : unitEdit.unit.allegianceKey,
-            data: { ...unitEdit.unit.data },
-            factionKey: [...unitEdit.unit.factionKey],
-            keywords: [...unitEdit.unit.keywords],
-            melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
-            modelCount: [...unitEdit.unit["modelCount"]],
-            name: unitEdit.unit.name,
-            org: unitEdit.unit.org,
-            modelCountIndex: unitEdit.unit.modelCountIndex,
-            leader: unitEdit.unit.leader,
-            points: [...unitEdit.unit.points],
-            ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
-            enhancement: {
-                name: item.name,
-                active: num,
-                cost: item.cost,
-                effect: item.effect,
+            unit: {
+                ...unitEdit.unit,
+                enhancement: {
+                    name: item.name,
+                    active: num,
+                    cost: item.cost,
+                    effect: item.effect,
+                },
             },
+            unitId: unitEdit.unitId,
         };
 
         if (num === checked) {
-            delete tempUnit.enhancement;
+            delete tempUnit.unit.enhancement;
         }
 
-        tempObj.roster.splice(tempId, 1, tempUnit);
+        tempRoster.splice(tempUnit.unitId, 1, tempUnit.unit);
 
-        const tempData = await AsyncStorage.getItem("lists");
-        const listData = tempData ? await JSON.parse(tempData) : null;
-        const tempArr = [];
+        const sortRoster = SortByName(tempRoster);
+        const tempList = { ...list, roster: sortRoster };
 
-        listData.map((listItem) => {
-            if (listItem.uid !== list.uid) {
-                tempArr.push(listItem);
-            }
-        });
+        setUnitView(tempUnit.unit);
+        setUnitEdit(tempUnit);
+        setList(tempList);
 
-        tempArr.push(tempObj);
-
-        const data = await JSON.stringify(tempArr);
-        await AsyncStorage.setItem("lists", data);
-
-        let unit = { unit: tempUnit, unitId: tempId };
-        const sortArr = SortByName(tempObj.roster);
-        tempObj.roster = sortArr;
-        setList(tempObj);
-        setUnitEdit(unit);
-        setUnitView(tempUnit);
         if (num !== checked) {
             setChecked(num);
         }
+
+        handleUnitUpload(tempList);
     };
 
     useEffect(() => {

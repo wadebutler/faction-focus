@@ -122,7 +122,7 @@ export default function UnitCard({ unit, id }) {
                 : unit?.ability?.leader.map((item, index) => {
                       return (
                           <FFText key={index} style={styles.leaderText}>
-                              Leader: {item.unit}
+                              Leader: {item.name}
                           </FFText>
                       );
                   })}

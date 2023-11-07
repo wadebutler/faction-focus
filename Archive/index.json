@@ -120,6 +120,7 @@
             {
                 "name": "Daemon Prince of Nurgle",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [160],
                 "modelCountIndex": 0,
@@ -203,6 +204,7 @@
             {
                 "name": "Daemon Prince of Nurgle with Wings",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [195],
                 "modelCountIndex": 0,
@@ -291,6 +293,7 @@
             {
                 "name": "Typhus",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [100],
                 "modelCountIndex": 0,
@@ -299,7 +302,6 @@
                     "Deathshroud Terminator",
                     "Poxwalker"
                 ],
-                "warlord": false,
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
@@ -368,11 +370,11 @@
             {
                 "name": "Chaos Lord",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
                 "leader": ["Plague Marines"],
-                "warlord": false,
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
@@ -536,11 +538,11 @@
             {
                 "name": "Chaos Lord in Terminator Armour",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [85],
                 "modelCountIndex": 0,
                 "leader": ["Blightlord Terminator", "Deathshroud Terminator"],
-                "warlord": false,
                 "factionKey": ["Death Guard"],
                 "keywords": [
                     "Infantry",
@@ -665,6 +667,7 @@
             {
                 "name": "Lord of Virulence",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [100],
                 "modelCountIndex": 0,
@@ -742,6 +745,7 @@
             {
                 "name": "Lord of Contagion",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [80],
                 "modelCountIndex": 0,
@@ -813,6 +817,7 @@
             {
                 "name": "Sorcerer in Terminator Armour",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [70],
                 "modelCountIndex": 0,
@@ -981,6 +986,7 @@
             {
                 "name": "Malignant Plaguecaster",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -1452,6 +1458,7 @@
             {
                 "name": "Noxious Blightbringer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [50],
                 "modelCountIndex": 0,
@@ -1539,6 +1546,7 @@
             {
                 "name": "Foul Blightspawn",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [50],
                 "modelCountIndex": 0,
@@ -1614,6 +1622,7 @@
             {
                 "name": "Biologus Putrifier",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [50],
                 "modelCountIndex": 0,
@@ -1702,6 +1711,7 @@
             {
                 "name": "Tallyman",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [45],
                 "modelCountIndex": 0,
@@ -1794,6 +1804,7 @@
             {
                 "name": "Plague Surgeon",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -3371,11 +3382,11 @@
             {
                 "name": "Mortarion",
                 "org": "Character",
+                "warlord": true,
                 "modelCount": [1],
                 "points": [325],
                 "modelCountIndex": 0,
                 "factionKey": ["Death Guard"],
-                "warlord": true,
                 "keywords": [
                     "Monster",
                     "Psyker",
@@ -3495,6 +3506,7 @@
             {
                 "name": "Icon Bearer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [45],
                 "modelCountIndex": 0,
@@ -3841,6 +3853,7 @@
             {
                 "name": "War Dog Stalker",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [150],
                 "modelCountIndex": 0,
@@ -4528,6 +4541,7 @@
             {
                 "name": "Knight Lancer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [465],
                 "modelCountIndex": 0,
@@ -4616,6 +4630,7 @@
             {
                 "name": "Knight Castigator",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [480],
                 "modelCountIndex": 0,
@@ -4704,6 +4719,7 @@
             {
                 "name": "Knight Acheron",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [465],
                 "modelCountIndex": 0,
@@ -4805,6 +4821,7 @@
             {
                 "name": "Knight Astrapos",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [465],
                 "modelCountIndex": 0,
@@ -4936,6 +4953,7 @@
             {
                 "name": "Knight Magera",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [465],
                 "modelCountIndex": 0,
@@ -5081,6 +5099,7 @@
             {
                 "name": "Knight Styrix",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [505],
                 "modelCountIndex": 0,
@@ -5364,6 +5383,7 @@
             {
                 "name": "Knight Despoiler",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [470],
                 "modelCountIndex": 0,
@@ -5595,6 +5615,7 @@
             {
                 "name": "Knight Desecrator",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [450],
                 "modelCountIndex": 0,
@@ -5722,6 +5743,7 @@
             {
                 "name": "Knight Rampager",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [380],
                 "modelCountIndex": 0,
@@ -5836,6 +5858,7 @@
             {
                 "name": "Knight Abominant",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [455],
                 "modelCountIndex": 0,
@@ -5938,6 +5961,7 @@
             {
                 "name": "Knight Tyrant",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [555],
                 "modelCountIndex": 0,
@@ -6220,6 +6244,7 @@
             {
                 "name": "Skarbrand",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [345],
                 "modelCountIndex": 0,
@@ -6307,6 +6332,7 @@
             {
                 "name": "Bloodthirster",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [320],
                 "modelCountIndex": 0,
@@ -6446,6 +6472,7 @@
             {
                 "name": "Skulltaker",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [95],
                 "modelCountIndex": 0,
@@ -6504,6 +6531,7 @@
             {
                 "name": "Bloodmaster",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [75],
                 "modelCountIndex": 0,
@@ -6561,6 +6589,7 @@
             {
                 "name": "Skullmaster",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [105],
                 "modelCountIndex": 0,
@@ -6631,6 +6660,7 @@
             {
                 "name": "Rendmaster on Blood Throne",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [150],
                 "modelCountIndex": 0,
@@ -6698,6 +6728,7 @@
             {
                 "name": "Karanak",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [75],
                 "modelCountIndex": 0,
@@ -7093,6 +7124,7 @@
             {
                 "name": "Kairos Fateweaver",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [285],
                 "modelCountIndex": 0,
@@ -7187,6 +7219,7 @@
             {
                 "name": "Lord of Change",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [260],
                 "modelCountIndex": 0,
@@ -7301,6 +7334,7 @@
             {
                 "name": "The Changeling",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [90],
                 "modelCountIndex": 0,
@@ -7390,6 +7424,7 @@
             {
                 "name": "Fateskimmer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [105],
                 "modelCountIndex": 0,
@@ -7494,6 +7529,7 @@
             {
                 "name": "Fluxmaster",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,
@@ -7585,6 +7621,7 @@
             {
                 "name": "The Blue Scribes",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,
@@ -7642,6 +7679,7 @@
             {
                 "name": "Changecaster",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -8034,6 +8072,7 @@
             {
                 "name": "Exalted Flamer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [70],
                 "modelCountIndex": 0,
@@ -8260,6 +8299,7 @@
             {
                 "name": "Rotigus",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [260],
                 "modelCountIndex": 0,
@@ -8352,6 +8392,7 @@
             {
                 "name": "Great Unclean One",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [250],
                 "modelCountIndex": 0,
@@ -8485,6 +8526,7 @@
             {
                 "name": "Poxbringer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -8543,6 +8585,7 @@
             {
                 "name": "Spoilpox Scrivener",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -8614,6 +8657,7 @@
             {
                 "name": "Epidemius",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [85],
                 "modelCountIndex": 0,
@@ -8672,6 +8716,7 @@
             {
                 "name": "Sloppity Bilepiper",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [55],
                 "modelCountIndex": 0,
@@ -8729,6 +8774,7 @@
             {
                 "name": "Horticulous Slimux",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [120],
                 "modelCountIndex": 0,
@@ -9099,6 +9145,7 @@
             {
                 "name": "Shalaxi Helbane",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [450],
                 "modelCountIndex": 0,
@@ -9222,6 +9269,7 @@
             {
                 "name": "Keeper of Secrets",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [330],
                 "modelCountIndex": 0,
@@ -9358,6 +9406,7 @@
             {
                 "name": "Infernal Enrapturess",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -9443,6 +9492,7 @@
             {
                 "name": "The Masque of Slaanesh",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [105],
                 "modelCountIndex": 0,
@@ -9505,6 +9555,7 @@
             {
                 "name": "Syll'esske",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [120],
                 "modelCountIndex": 0,
@@ -9629,6 +9680,7 @@
             {
                 "name": "Contorted Epitome",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [85],
                 "modelCountIndex": 0,
@@ -9699,6 +9751,7 @@
             {
                 "name": "Tormentbringer on Exalted Seeker Chariot",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [140],
                 "modelCountIndex": 0,
@@ -9786,6 +9839,7 @@
             {
                 "name": "Tranceweaver",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,
@@ -10281,6 +10335,7 @@
             {
                 "name": "Be'lakor",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [350],
                 "modelCountIndex": 0,
@@ -10577,6 +10632,7 @@
             {
                 "name": "Daemon Prince of Chaos",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [200],
                 "modelCountIndex": 0,
@@ -10677,6 +10733,7 @@
             {
                 "name": "Daemon Prince of Chaos with Wings",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [195],
                 "modelCountIndex": 0,
@@ -10925,11 +10982,11 @@
             {
                 "name": "Angron",
                 "org": "Character",
+                "warlord": true,
                 "modelCount": [1],
                 "points": [415],
                 "modelCountIndex": 0,
                 "factionKey": ["World Eaters"],
-                "warlord": true,
                 "keywords": [
                     "Monster",
                     "Fly",
@@ -11014,6 +11071,7 @@
             {
                 "name": "Kharn the Betrayer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [80],
                 "modelCountIndex": 0,
@@ -11091,6 +11149,7 @@
             {
                 "name": "Lord Invocatus",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [140],
                 "modelCountIndex": 0,
@@ -11181,6 +11240,7 @@
             {
                 "name": "Daemon Prince",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [200],
                 "modelCountIndex": 0,
@@ -11263,6 +11323,7 @@
             {
                 "name": "Daemon Prince with Wings",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [195],
                 "modelCountIndex": 0,
@@ -11346,6 +11407,7 @@
             {
                 "name": "Lord on Juggernaut",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [100],
                 "modelCountIndex": 0,
@@ -11448,6 +11510,7 @@
             {
                 "name": "Master of Executions",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [80],
                 "modelCountIndex": 0,
@@ -13526,6 +13589,7 @@
             {
                 "name": "Ahriman",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [130],
                 "modelCountIndex": 0,
@@ -13612,6 +13676,7 @@
             {
                 "name": "Ahriman on Disc of Tzeentch",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [140],
                 "modelCountIndex": 0,
@@ -14528,6 +14593,7 @@
             {
                 "name": "Exalted Sorcerer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [100],
                 "modelCountIndex": 0,
@@ -14670,6 +14736,7 @@
             {
                 "name": "Exalted Sorcerer on Disc of Tzeentch",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [115],
                 "modelCountIndex": 0,
@@ -15194,6 +15261,7 @@
             {
                 "name": "Infernal Master",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [90],
                 "modelCountIndex": 0,
@@ -15293,11 +15361,11 @@
             {
                 "name": "Magnus the Red",
                 "org": "Character",
+                "warlord": true,
                 "modelCount": [1],
                 "points": [440],
                 "modelCountIndex": 0,
                 "factionKey": ["Thousand Sons"],
-                "warlord": true,
                 "keywords": [
                     "Monster",
                     "Psyker",
@@ -15918,6 +15986,7 @@
             {
                 "name": "Sorcerer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [95],
                 "modelCountIndex": 0,
@@ -16046,6 +16115,7 @@
             {
                 "name": "Sorcerer in Terminator Armour",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [115],
                 "modelCountIndex": 0,
@@ -16277,6 +16347,7 @@
             {
                 "name": "Daemon Prince",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [180],
                 "modelCountIndex": 0,
@@ -16360,6 +16431,7 @@
             {
                 "name": "Daemon Prince with Wings",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [195],
                 "modelCountIndex": 0,
@@ -16546,6 +16618,7 @@
             {
                 "name": "Tzaangor Shaman",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,
@@ -16860,12 +16933,12 @@
             {
                 "name": "Abaddon the Despoiler",
                 "org": "Character",
+                "warlord": true,
                 "modelCount": [1],
                 "points": [310],
                 "modelCountIndex": 0,
                 "leader": ["Chaos Terminator Squad", "Legionaries"],
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
-                "warlord": true,
                 "keywords": [
                     "Infantry",
                     "Character",
@@ -16963,11 +17036,11 @@
             {
                 "name": "Haarken Worldclaimer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [90],
                 "modelCountIndex": 0,
                 "leader": ["Raptors"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "keywords": [
                     "Infantry",
@@ -17055,11 +17128,11 @@
             {
                 "name": "Huron Blackheart",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [80],
                 "modelCountIndex": 0,
                 "leader": ["Chosen", "Legionaries"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "keywords": [
                     "Infantry",
@@ -17145,6 +17218,7 @@
             {
                 "name": "Daemon Prince",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [180],
                 "modelCountIndex": 0,
@@ -17227,6 +17301,7 @@
             {
                 "name": "Daemon Prince with Wings",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [195],
                 "modelCountIndex": 0,
@@ -17310,11 +17385,11 @@
             {
                 "name": "Fabius Bile",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [85],
                 "modelCountIndex": 0,
                 "leader": ["Chosen", "Legionaries"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "keywords": [
                     "Infantry",
@@ -17413,10 +17488,10 @@
             {
                 "name": "Cypher",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [105],
                 "modelCountIndex": 0,
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "keywords": [
                     "Infantry",
@@ -17503,11 +17578,11 @@
             {
                 "name": "Master of Possession",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [80],
                 "modelCountIndex": 0,
                 "leader": ["Chosen", "Legionaries", "Possessed"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
                 "keywords": [
@@ -17613,11 +17688,11 @@
             {
                 "name": "Chaos Lord",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [75],
                 "modelCountIndex": 0,
                 "leader": ["Chosen", "Legionaries"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
                 "keywords": [
@@ -17750,11 +17825,11 @@
             {
                 "name": "Chaos Lord in Terminator Armour",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [95],
                 "modelCountIndex": 0,
                 "leader": ["Chaos Terminator Squad"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
                 "keywords": [
@@ -17877,6 +17952,7 @@
             {
                 "name": "Sorcerer",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,
@@ -17980,6 +18056,7 @@
             {
                 "name": "Sorcerer in Terminator Armour",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [90],
                 "modelCountIndex": 0,
@@ -18106,11 +18183,11 @@
             {
                 "name": "Lucius the Eternal",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [95],
                 "modelCountIndex": 0,
                 "leader": ["Legionaries", "Noise Marines"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "keywords": [
                     "Infantry",
@@ -18183,6 +18260,7 @@
             {
                 "name": "Lord Discordant on Helstalker",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [190],
                 "modelCountIndex": 0,
@@ -18316,11 +18394,11 @@
             {
                 "name": "Warpsmith",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [70],
                 "modelCountIndex": 0,
                 "leader": ["Chosen", "Havocs", "Legionaries"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
                 "keywords": ["Infantry", "Character", "Chaos", "Warpsmith"],
@@ -18438,11 +18516,11 @@
             {
                 "name": "Exalted Champion",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [70],
                 "modelCountIndex": 0,
                 "leader": ["Chosen", "Legionaries"],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
                 "keywords": [
@@ -18528,6 +18606,7 @@
             {
                 "name": "Dark Apostle",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [3],
                 "points": [75],
                 "modelCountIndex": 0,
@@ -18537,7 +18616,6 @@
                     "Cultists",
                     "Legionaries"
                 ],
-                "warlord": false,
                 "factionKey": ["Heretic Astartes", "Chaos Space Marines"],
                 "allegianceKey": null,
                 "keywords": [
@@ -18623,6 +18701,7 @@
             {
                 "name": "Dark Commune",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [5],
                 "points": [55],
                 "modelCountIndex": 0,
@@ -19337,6 +19416,7 @@
             {
                 "name": "Master of Executions",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [80],
                 "modelCountIndex": 0,
@@ -22585,6 +22665,7 @@
             {
                 "name": "Vashtorr the Arkifane",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [190],
                 "modelCountIndex": 0,
@@ -23249,6 +23330,7 @@
             {
                 "name": "Uthar the Destined",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [90],
                 "modelCountIndex": 0,
@@ -23328,6 +23410,7 @@
             {
                 "name": "Kahl",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [70],
                 "modelCountIndex": 0,
@@ -23429,6 +23512,7 @@
             {
                 "name": "Einhyr Champion",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [1],
                 "points": [60],
                 "modelCountIndex": 0,
@@ -23522,6 +23606,7 @@
             {
                 "name": "Grimnyr",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [3],
                 "points": [65],
                 "modelCountIndex": 0,
@@ -23626,6 +23711,7 @@
             {
                 "name": "Brokhyr Iron-Master",
                 "org": "Character",
+                "warlord": false,
                 "modelCount": [5],
                 "points": [65],
                 "modelCountIndex": 0,

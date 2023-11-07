@@ -1,7 +1,11 @@
 import { StyleSheet, View } from "react-native";
 import FFText from "../Global/FFText";
+import { useRecoilState } from "recoil";
+import { listArmyState } from "../../Atoms";
 
 export default function AbilityView({ ability, org }) {
+    const [list, setList] = useRecoilState(listArmyState);
+
     return (
         <View>
             {!ability?.core ? null : (
@@ -28,8 +32,7 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            {!ability.leader ? null : ability.leader.length ===
-              0 ? null : org === "Character" ? (
+            {org === "Character" ? (
                 <View style={styles.container}>
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader.map((item, index) => {
@@ -48,22 +51,38 @@ export default function AbilityView({ ability, org }) {
             ) : (
                 <View style={styles.container}>
                     <FFText>Leader Abilities:</FFText>
-                    {ability?.leader?.map((item, index) => {
-                        if (
-                            item.name !== undefined ||
-                            item.effect !== undefined
-                        ) {
-                            return (
-                                <View style={{ marginBottom: 10 }} key={index}>
-                                    <FFText style={styles.abilityName}>
-                                        {item.name}
-                                    </FFText>
-                                    <FFText style={styles.effectText}>
-                                        {item.effect}
-                                    </FFText>
-                                </View>
-                            );
-                        }
+                    {ability?.leader?.map((item) => {
+                        return list.roster.map((ldr) => {
+                            if (item.name === ldr.name) {
+                                if (ldr.ability.leader.length > 0) {
+                                    return ldr.ability.leader.map(
+                                        (ablty, index) => {
+                                            return (
+                                                <View
+                                                    style={{ marginBottom: 10 }}
+                                                    key={index}
+                                                >
+                                                    <FFText
+                                                        style={
+                                                            styles.abilityName
+                                                        }
+                                                    >
+                                                        {ablty.name}
+                                                    </FFText>
+                                                    <FFText
+                                                        style={
+                                                            styles.effectText
+                                                        }
+                                                    >
+                                                        {ablty.effect}
+                                                    </FFText>
+                                                </View>
+                                            );
+                                        }
+                                    );
+                                }
+                            }
+                        });
                     })}
                 </View>
             )}

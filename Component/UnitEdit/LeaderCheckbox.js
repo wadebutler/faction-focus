@@ -2,130 +2,59 @@ import { StyleSheet } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from "react";
 import { SortByName } from "../../Utils/Sort";
+import { handleUnitUpload } from "../../Utils/Upload";
 
-export default function LeaderCheckbox({ item }) {
+export default function LeaderCheckbox({ item, id }) {
     const [list, setList] = useRecoilState(listArmyState);
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState(false);
 
     const handleCheck = async () => {
+        let removeUnit = [...unitEdit.unit.ability.leader];
+        let tempRoster = [...list.roster];
+        let tempUnit = {
+            unit: {
+                ...unitEdit.unit,
+                ability: {
+                    ...unitEdit.unit.ability,
+                    leader: unitEdit.unit.ability.leader.some(
+                        (e) => e.id === id
+                    )
+                        ? removeUnit.splice(id, 1, item)
+                        : [
+                              ...unitEdit.unit.ability.leader,
+                              { name: item.name, id: id },
+                          ],
+                },
+            },
+            unitId: unitEdit.unitId,
+        };
+
+        tempRoster.splice(tempUnit.unitId, 1, tempUnit.unit);
+
+        const sortRoster = SortByName(tempRoster);
+        const tempList = { ...list, roster: sortRoster };
+
+        setUnitView(tempUnit.unit);
+        setUnitEdit(tempUnit);
+        setList(tempList);
         setChecked(!checked);
 
-        const tempId = unitEdit.unitId;
-        let tempAbility = null;
-        let tempAbilityArr = [];
-        let tempObj = {
-            name: list.name,
-            allies: list.allies ? [...list.allies] : null,
-            detachment: { ...list.detachment },
-            id: list.id,
-            points: { ...list.points },
-            roster: [...list.roster],
-            title: list.title,
-            rule: list.rule.length ? [...list.rule] : list.rule,
-            uid: list.uid,
-        };
-        let tempUnit = {
-            ability: { ...unitEdit.unit.ability },
-            allegiance: !unitEdit.unit.allegiance
-                ? null
-                : [...unitEdit.unit.allegiance],
-            allegianceKey: !unitEdit.unit.allegianceKey
-                ? null
-                : unitEdit.unit.allegianceKey,
-            data: { ...unitEdit.unit.data },
-            factionKey: [...unitEdit.unit.factionKey],
-            keywords: [...unitEdit.unit.keywords],
-            melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
-            modelCount: [...unitEdit.unit["modelCount"]],
-            name: unitEdit.unit.name,
-            org: unitEdit.unit.org,
-            modelCountIndex: unitEdit.unit.modelCountIndex,
-            points: [...unitEdit.unit.points],
-            ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
-            enhancement: !unitEdit.unit.enhancement
-                ? null
-                : { ...unitEdit.unit.enhancement },
-        };
-
-        if (item.ability.leader.length > 0) {
-            item.ability.leader.map((ldrAblty) => {
-                tempAbilityArr.push({
-                    unit: item.name,
-                    name: ldrAblty.name,
-                    effect: ldrAblty.effect,
-                });
-            });
-        } else {
-            tempAbility = {
-                unit: item.name,
-                name: item.ability.leader ? item.ability.leader.name : null,
-                effect: item.ability.leader ? item.ability.leader.effect : null,
-            };
-        }
-
-        if (!checked) {
-            if (tempAbilityArr.length > 0) {
-                tempUnit.ability.leader = [
-                    ...tempUnit.ability.leader,
-                    ...tempAbilityArr,
-                ];
-            } else {
-                tempUnit.ability.leader = [
-                    ...tempUnit.ability.leader,
-                    tempAbility,
-                ];
-            }
-        } else {
-            let ldrArr = [];
-
-            tempUnit.ability.leader.map((char) => {
-                if (char.unit !== item.name) {
-                    ldrArr.push(char);
-                }
-            });
-
-            tempUnit.ability.leader = [...ldrArr];
-        }
-
-        tempObj.roster.splice(tempId, 1, tempUnit);
-
-        const tempData = await AsyncStorage.getItem("lists");
-        const listData = tempData ? await JSON.parse(tempData) : null;
-        const tempArr = [];
-
-        listData.map((listItem) => {
-            if (listItem.uid !== list.uid) {
-                tempArr.push(listItem);
-            }
-        });
-
-        tempArr.push(tempObj);
-
-        const data = await JSON.stringify(tempArr);
-        await AsyncStorage.setItem("lists", data);
-
-        let unit = { unit: tempUnit, unitId: tempId };
-        const sortUnit = SortByName(tempObj.roster);
-        tempObj.roster = sortUnit;
-        setList(tempObj);
-        setUnitView(tempUnit);
-        setUnitEdit(unit);
+        handleUnitUpload(tempList);
     };
 
     useEffect(() => {
         list.roster.map((unit, index) => {
-            if (index === unitEdit.unitId) {
-                if (unit?.ability?.leader?.some((e) => e?.unit === item.name)) {
+            unit.ability.leader.map((ldr) => {
+                if (ldr.id === id) {
                     setChecked(true);
                 }
-            }
+            });
         });
-    }, []);
+    }, [list]);
 
     return (
         <CheckBox

@@ -30,7 +30,9 @@ export default function LeaderRule() {
                     item?.org === "Character" &&
                     item?.leader?.includes(unitEdit.unit.name)
                 ) {
-                    return <LeaderCheckbox key={index} item={item} />;
+                    return (
+                        <LeaderCheckbox key={index} item={item} id={index} />
+                    );
                 }
             })}
         </View>
