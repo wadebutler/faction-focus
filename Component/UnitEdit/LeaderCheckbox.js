@@ -12,7 +12,7 @@ export default function LeaderCheckbox({ item, id }) {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState(false);
 
-    const handleCheck = async () => {
+    const handleCheck = () => {
         let removeUnit = [...unitEdit.unit.ability.leader];
         let tempRoster = [...list.roster];
         let tempUnit = {

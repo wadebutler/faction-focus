@@ -13,7 +13,7 @@ export default function Marks() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState(null);
 
-    const handleCheck = async (num) => {
+    const handleCheck = (num) => {
         let tempRoster = [...list.roster];
         let tempUnit = {
             unit: {

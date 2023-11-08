@@ -12,7 +12,7 @@ export default function WarlordCheckbox() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState(null);
 
-    const handleCheck = async () => {
+    const handleCheck = () => {
         let tempRoster = [...list.roster];
         let tempUnit = {
             unit: {

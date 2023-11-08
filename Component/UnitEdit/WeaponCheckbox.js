@@ -3,8 +3,8 @@ import { StyleSheet } from "react-native";
 import { CheckBox } from "@rneui/themed";
 import { useRecoilState } from "recoil";
 import { listArmyState, unitViewState, unitEditState } from "../../Atoms";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { SortByName } from "../../Utils/Sort";
+import { handleUnitUpload } from "../../Utils/Upload";
 
 export default function WeaponCheckbox({ keyId, item, disabled, type }) {
     const [checked, setChecked] = useState(item.active);
@@ -12,41 +12,14 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
     const [unitEdit, setUnitEdit] = useRecoilState(unitEditState);
     const [unitView, setUnitView] = useRecoilState(unitViewState);
 
-    const handleCheck = async () => {
-        setChecked(!checked);
-        const tempId = unitEdit.unitId;
-        let tempObj = {
-            name: list.name,
-            allies: list.allies ? [...list.allies] : null,
-            detachment: { ...list.detachment },
-            id: list.id,
-            points: { ...list.points },
-            roster: [...list.roster],
-            title: list.title,
-            rule: list.rule.length ? [...list.rule] : list.rule,
-            uid: list.uid,
-        };
+    const handleCheck = () => {
+        let tempRoster = [...list.roster];
         let tempUnit = {
-            ability: { ...unitEdit.unit.ability },
-            allegiance: !unitEdit.unit.allegiance
-                ? null
-                : [...unitEdit.unit.allegiance],
-            allegianceKey: !unitEdit.unit.allegianceKey
-                ? null
-                : unitEdit.unit.allegianceKey,
-            data: { ...unitEdit.unit.data },
-            factionKey: [...unitEdit.unit.factionKey],
-            keywords: [...unitEdit.unit.keywords],
-            melee: unitEdit.unit.melee ? [...unitEdit.unit.melee] : null,
-            modelCount: [...unitEdit.unit["modelCount"]],
-            name: unitEdit.unit.name,
-            org: unitEdit.unit.org,
-            modelCountIndex: unitEdit.unit.modelCountIndex,
-            points: [...unitEdit.unit.points],
-            ranged: unitEdit.unit.ranged ? [...unitEdit.unit.ranged] : null,
-            enhancement: !unitEdit.unit.enhancement
-                ? null
-                : { ...unitEdit.unit.enhancement },
+            unit: {
+                ...unitEdit.unit,
+                [type]: [...unitEdit.unit[type]],
+            },
+            unitId: unitEdit.unitId,
         };
         let tempWpn = {
             active: !item.active,
@@ -55,30 +28,17 @@ export default function WeaponCheckbox({ keyId, item, disabled, type }) {
             range: item.range,
         };
 
-        tempUnit[type].splice(keyId, 1, tempWpn);
-        tempObj.roster.splice(tempId, 1, tempUnit);
+        tempUnit.unit[type].splice(keyId, 1, tempWpn);
+        tempRoster.splice(tempUnit.unitId, 1, tempUnit.unit);
 
-        const tempData = await AsyncStorage.getItem("lists");
-        const listData = tempData ? await JSON.parse(tempData) : null;
-        const tempArr = [];
+        const sortRoster = SortByName(tempRoster);
+        const tempList = { ...list, roster: sortRoster };
 
-        listData.map((listItem) => {
-            if (listItem.uid !== list.uid) {
-                tempArr.push(listItem);
-            }
-        });
-
-        tempArr.push(tempObj);
-
-        const data = await JSON.stringify(tempArr);
-        await AsyncStorage.setItem("lists", data);
-
-        let unit = { unit: tempUnit, unitId: tempId };
-        const sortUnit = SortByName(tempObj.roster);
-        tempObj.roster = sortUnit;
-        setList(tempObj);
-        setUnitEdit(unit);
-        setUnitView(tempUnit);
+        setUnitView(tempUnit.unit);
+        setUnitEdit(tempUnit);
+        setList(tempList);
+        setChecked(!checked);
+        handleUnitUpload(tempList);
     };
 
     return (

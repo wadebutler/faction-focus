@@ -12,7 +12,7 @@ export default function UnitSizeCheckbox({ item, keyId }) {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState();
 
-    const handleCheck = async () => {
+    const handleCheck = () => {
         let tempRoster = [...list.roster];
         let tempUnit = {
             unit: {

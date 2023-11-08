@@ -13,7 +13,7 @@ export default function CSMMark() {
     const [unitView, setUnitView] = useRecoilState(unitViewState);
     const [checked, setChecked] = useState(null);
 
-    const handleCheck = async (key, num) => {
+    const handleCheck = (key, num) => {
         let tempRoster = [...list.roster];
         let tempUnit = {
             unit: {

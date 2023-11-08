@@ -14,7 +14,7 @@ export default function Enhancements() {
     const [enhancement, setEnhancment] = useState(list.detachment.enhancements);
     const [checked, setChecked] = useState(null);
 
-    const handleCheck = async (num, item) => {
+    const handleCheck = (num, item) => {
         let tempRoster = [...list.roster];
         let tempUnit = {
             unit: {
