@@ -6,7 +6,6 @@ import ArmyCard from "../Component/Home/ArmyCard";
 import { useFocusEffect } from "@react-navigation/native";
 import FFText from "../Component/Global/FFText";
 import { SortByTitle } from "../Utils/Sort";
-import { A } from "@expo/html-elements";
 import UpdateModal from "../Component/Home/UpdateModal";
 
 export default function Home() {
@@ -57,30 +56,6 @@ export default function Home() {
 
             <UpdateModal expand={expand} handleExpand={handleExpand} />
 
-            <View
-                style={[
-                    styles.modalContainer,
-                    !expand ? { height: 0 } : { height: "100%" },
-                ]}
-            >
-                <View style={{ marginTop: 40, paddingHorizontal: 10 }}>
-                    <FFText>
-                        this data was updated as of October 25, 2023
-                    </FFText>
-
-                    <FFText>Factions added</FFText>
-                    <FFText>-Thousand sons</FFText>
-
-                    <FFText>
-                        if data is missing try deleting the unit or list and
-                        re-adding it otherwise you can use one of the below
-                        contact methods
-                    </FFText>
-
-                    <A href="https://google.com">Go to Google</A>
-                </View>
-            </View>
-
             <View style={{ marginTop: 50 }}>
                 <FlatList
                     data={armyList}
@@ -128,5 +103,4 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         backgroundColor: "orange",
     },
-    modalContainer: {},
 });
