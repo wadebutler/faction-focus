@@ -47,5 +47,3 @@ export default function UnitView() {
         </ScrollView>
     );
 }
-
-const styles = StyleSheet.create({});

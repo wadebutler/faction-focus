@@ -1,0 +1,294 @@
+{
+    "name": "Drukhari",
+    "id": "DE",
+    "rule": {
+        "name": "Power from Pain",
+        "effect": "At the start of any phase, you can expend one or more Pain tokens from your Pain token pool. Each time you do, select one unit from your army with the Power from Pain ability. Until the end of the phase, that unit is Empowered, and gains the abilities listed below, depending on the phase.",
+        "move": "If empowered in the Movement or Fight phase you can re-roll Advance or Charge rolls made for that unit.",
+        "shoot": "If empowered in the Shooting or Fight phase each time a model in that unit makes an attack, you can re-roll the Hit roll.",
+        "gain": [
+            "Each time an enemy unit is destroyed, you gain 1 Pain token.",
+            "Each time an enemy unit fails a Battle-shock test, you gain 1 Pain token."
+        ],
+        "size": [
+            {
+                "name": "Combat Patrol",
+                "token": 1
+            },
+            {
+                "name": "Incursion",
+                "token": 2
+            },
+            {
+                "name": "Strike Force",
+                "token": 3
+            },
+            {
+                "name": "Onslaught",
+                "token": 4
+            }
+        ]
+    },
+    "detachments": [
+        {
+            "name": "Realspace Raiders",
+            "id": 1,
+            "rule": "Realspace Raiders",
+            "effect": "At the start of the battle, you gain an additional 1 Pain token for each of the following your army contains",
+            "size": [
+                "One or more Archon models",
+                "One or more Succubus models",
+                "One or more Haemonculus models"
+            ],
+            "enhancements": [
+                {
+                    "name": "Crucible of Malediction",
+                    "active": null,
+                    "cost": 10,
+                    "effect": "Haemonculus model only. Once per battle, at the start of any Shooting phase, the bearer can use this Enhancement. When it does, every enemy unit within 12\" must take a Battle-shock test, subtracting 1 from that test if the bearer’s unit is currently Empowered. Each time a Psyker unit fails this test, it suffers D3 mortal wounds."
+                },
+                {
+                    "name": "Blood Dancer",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "Succubus model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. While the bearer is Empowered, Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead."
+                },
+                {
+                    "name": "Labyrinthine Cunning",
+                    "active": null,
+                    "cost": 30,
+                    "effect": "Archon model only. Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 3 to the result if the Stratagem being used is Alliance of Agony: on a 4+, you gain 1CP."
+                },
+                {
+                    "name": "The Art of Pain",
+                    "active": null,
+                    "cost": 25,
+                    "effect": "Drukhari model only. In your Command phase, if the bearer is on the battlefield, you gain 1 Pain token."
+                }
+            ],
+            "stratagems": [
+                {
+                    "name": "Prey on the Weak",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your Shooting phase.",
+                    "target": "One Kabal unit from your army and one enemy unit that is Below Half-strength.",
+                    "effect": "Until the end of the phase, each time a model in your unit makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+                },
+                {
+                    "name": "Acrobatic Display",
+                    "type": "Epic Deed",
+                    "cost": 1,
+                    "when": "Your Charge phase.",
+                    "target": "One Wych Cult unit from your army.",
+                    "effect": "Until the end of the phase, your unit is eligible to declare a charge even if it Fell Back or Advanced this turn."
+                },
+                {
+                    "name": "Strike and Fade",
+                    "type": "Epic Deed",
+                    "cost": 2,
+                    "when": "End of your Shooting phase.",
+                    "target": "One Drukhari unit from your army (excluding Aircraft).",
+                    "effect": "Your unit can immediately make a Normal move.",
+                    "restrictions": "Until the end of the turn, your unit is not eligible to declare a charge and that unit cannot embark within a Transport at the end of this move."
+                },
+                {
+                    "name": "Alliance of Agony",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Start of any phase.",
+                    "target": "One Archon, one Succubus and one Haemonculus from your army.",
+                    "effect": "Discard one Pain token from your Pain token pool. Until the end of the phase, all three of those models’ units are Empowered.",
+                    "restrictions": "You can only use this Stratagem if you are able to select all three of the target models stated above."
+                },
+                {
+                    "name": "Insensible to Pain",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.",
+                    "target": "One Haemonculus Covens unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                    "effect": "Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll."
+                },
+                {
+                    "name": "Quicksilver Reactions",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.",
+                    "target": "One Drukhari unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                    "effect": "Until the end of the phase, each time an attack that targets your unit, subtract 1 from the Hit roll.",
+                    "restrictions": "You cannot target a Haemonculus Covens unit from your army for this Stratagem."
+                }
+            ]
+        }
+    ],
+    "roster": [
+        {
+            "name": "Archon",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [75],
+            "modelCountIndex": 0,
+            "leader": ["Court of the Archon", "Kabalite Warriors"],
+            "factionKey": ["Drukhari"],
+            "keywords": ["Infantry", "Kabal", "Character", "Aeldari", "Archon"],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["Power from Pain"],
+                "leader": [
+                    {
+                        "name": "Overlord",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Wound roll of 1. While that unit is Empowered, each time a model in that unit makes an attack, you can re-roll the Wound roll instead."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Devious Mastermind",
+                        "effect": "Once per battle, after your opponent uses a Stratagem, if this model is your Warlord and is on the battlefield, it can use this ability. If it does, until the end of the battle, increase the cost of that Stratagem to your opponent by 1CP."
+                    },
+                    {
+                        "effect": "You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable saving throw."
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "movement": 8,
+                    "toughness": 3,
+                    "save": 4,
+                    "invulnerable": 2,
+                    "wounds": 4,
+                    "leadership": 6,
+                    "oc": 1
+                }
+            ],
+            "ranged": [
+                {
+                    "name": "Blast Pistol",
+                    "range": 6,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 2,
+                        "s": 8,
+                        "ap": 3,
+                        "d": "D3",
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Splinter Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 2,
+                        "s": 2,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Anti-Infantry 3+", "Assault", "Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Huskblade",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 5,
+                        "ws": 2,
+                        "s": 3,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Anti-Infantry 3+"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Archon",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [75],
+            "modelCountIndex": 0,
+            "leader": ["Court of the Archon", "Kabalite Warriors"],
+            "factionKey": ["Drukhari"],
+            "keywords": ["Infantry", "Kabal", "Character", "Aeldari", "Archon"],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["Power from Pain"],
+                "leader": [
+                    {
+                        "name": "Overlord",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack, re-roll a Wound roll of 1. While that unit is Empowered, each time a model in that unit makes an attack, you can re-roll the Wound roll instead."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Devious Mastermind",
+                        "effect": "Once per battle, after your opponent uses a Stratagem, if this model is your Warlord and is on the battlefield, it can use this ability. If it does, until the end of the battle, increase the cost of that Stratagem to your opponent by 1CP."
+                    },
+                    {
+                        "effect": "You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable saving throw."
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "movement": 8,
+                    "toughness": 3,
+                    "save": 4,
+                    "invulnerable": 2,
+                    "wounds": 4,
+                    "leadership": 6,
+                    "oc": 1
+                }
+            ],
+            "ranged": [
+                {
+                    "name": "Blast Pistol",
+                    "range": 6,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 2,
+                        "s": 8,
+                        "ap": 3,
+                        "d": "D3",
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Splinter Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 2,
+                        "s": 2,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Anti-Infantry 3+", "Assault", "Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Huskblade",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 5,
+                        "ws": 2,
+                        "s": 3,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Anti-Infantry 3+"]
+                    }
+                }
+            ]
+        }
+    ]
+}
