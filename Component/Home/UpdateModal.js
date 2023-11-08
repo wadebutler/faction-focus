@@ -21,14 +21,15 @@ export default function UpdateModal({ expand, handleExpand }) {
             )}
 
             <View style={styles.container}>
-                <FFText style={{ marginTop: 20 }}>
-                    this data was updated as of November 3rd, 2023
+                <FFText style={{ marginVertical: 20 }}>
+                    IMPORTANT USER NOTICE
                 </FFText>
-
-                <FFText>IMPORTANT USER NOTICE</FFText>
                 <FFText>
-                    I did an update to the data so you will need to delete any
-                    old lists and remake them using the new updates
+                    due to persistant issues when adding new units and data I
+                    did an update to the apps functionality and this will
+                    require you to delete and re-add your lists. I'm hoping this
+                    update will mean no more deleting lists going forward, at
+                    least until a major dataslate change.
                 </FFText>
 
                 <View style={{ marginVertical: 20 }}>
@@ -43,7 +44,7 @@ export default function UpdateModal({ expand, handleExpand }) {
                     <FFText>-Forge World Chaos Knights</FFText>
                 </View>
 
-                <FFText>
+                <FFText style={{ marginBottom: 10 }}>
                     if data is missing or not updated try deleting the unit or
                     list and re-adding, the app will update all your lists
                     eventually this is only a temporary solution. any other
