@@ -10,67 +10,52 @@ export default function UnitStatRow({ unit }) {
                 {unit?.name}
             </FFText>
 
-            <FlatList
-                scrollEnabled={false}
-                data={unit.data}
-                renderItem={({ item }) => {
-                    return (
-                        <View style={styles.statRow}>
-                            <View style={styles.container}>
-                                <FFText style={styles.text}>M</FFText>
-                                <FFText style={styles.textStat}>
-                                    {item.movement}
-                                </FFText>
-                            </View>
+            <View style={styles.statRow}>
+                <View style={styles.container}>
+                    <FFText style={styles.text}>M</FFText>
+                    <FFText style={styles.textStat}>
+                        {unit.data.movement}
+                    </FFText>
+                </View>
 
-                            <View style={styles.container}>
-                                <FFText style={styles.text}>T</FFText>
-                                <FFText style={styles.textStat}>
-                                    {item.toughness}
-                                </FFText>
-                            </View>
+                <View style={styles.container}>
+                    <FFText style={styles.text}>T</FFText>
+                    <FFText style={styles.textStat}>
+                        {unit.data.toughness}
+                    </FFText>
+                </View>
 
-                            <View style={styles.container}>
-                                <FFText style={styles.text}>SV</FFText>
-                                <FFText style={styles.textStat}>
-                                    {item.save}
-                                </FFText>
-                            </View>
+                <View style={styles.container}>
+                    <FFText style={styles.text}>SV</FFText>
+                    <FFText style={styles.textStat}>{unit.data.save}</FFText>
+                </View>
 
-                            {!item.invulnerable ? null : (
-                                <View style={styles.container}>
-                                    <FFText style={styles.text}>INV</FFText>
-                                    <FFText style={styles.textStat}>
-                                        {item.invulnerable}
-                                    </FFText>
-                                </View>
-                            )}
+                {!unit.data.invulnerable ? null : (
+                    <View style={styles.container}>
+                        <FFText style={styles.text}>INV</FFText>
+                        <FFText style={styles.textStat}>
+                            {unit.data.invulnerable}
+                        </FFText>
+                    </View>
+                )}
 
-                            <View style={styles.container}>
-                                <FFText style={styles.text}>W</FFText>
-                                <FFText style={styles.textStat}>
-                                    {item.wounds}
-                                </FFText>
-                            </View>
+                <View style={styles.container}>
+                    <FFText style={styles.text}>W</FFText>
+                    <FFText style={styles.textStat}>{unit.data.wounds}</FFText>
+                </View>
 
-                            <View style={styles.container}>
-                                <FFText style={styles.text}>LD</FFText>
-                                <FFText style={styles.textStat}>
-                                    {item.leadership}
-                                </FFText>
-                            </View>
+                <View style={styles.container}>
+                    <FFText style={styles.text}>LD</FFText>
+                    <FFText style={styles.textStat}>
+                        {unit.data.leadership}
+                    </FFText>
+                </View>
 
-                            <View style={styles.container}>
-                                <FFText style={styles.text}>OC</FFText>
-                                <FFText style={styles.textStat}>
-                                    {item.oc}
-                                </FFText>
-                            </View>
-                        </View>
-                    );
-                }}
-                keyExtractor={(item, index) => index}
-            />
+                <View style={styles.container}>
+                    <FFText style={styles.text}>OC</FFText>
+                    <FFText style={styles.textStat}>{unit.data.oc}</FFText>
+                </View>
+            </View>
         </View>
     );
 }
@@ -100,7 +85,8 @@ const styles = StyleSheet.create({
         color: "#fff",
         textAlign: "center",
         width: 45,
-        paddingVertical: 5,
+        padding: 5,
         marginTop: 5,
+        flexWrap: "wrap",
     },
 });

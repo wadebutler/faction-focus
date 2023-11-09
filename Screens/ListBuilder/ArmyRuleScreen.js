@@ -10,6 +10,7 @@ import TS from "../../Component/ArmyRules/TS";
 import WE from "../../Component/ArmyRules/WE";
 import CSM from "../../Component/ArmyRules/CSM";
 import LV from "../../Component/ArmyRules/LV";
+import DE from "../../Component/ArmyRules/DE";
 
 export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
@@ -35,6 +36,7 @@ export default function ArmyRule() {
             {list.id !== "WE" ? null : <WE rule={rule.rolls} />}
             {list.id !== "CSM" ? null : <CSM rule={rule} />}
             {list.id !== "LV" ? null : <LV rule={rule} />}
+            {list.id !== "DE" ? null : <DE rule={rule} />}
         </ScrollView>
     );
 }
