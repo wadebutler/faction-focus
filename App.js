@@ -23,6 +23,7 @@ export default function App() {
         <RecoilRoot>
             <NavigationContainer>
                 <StatusBar backgroundColor={"#000"} />
+                {/* <StatusBar backgroundColor={"#fff"} barStyle={"dark-content"} /> */}
                 <Stack.Navigator>
                     <Stack.Screen
                         name="Home"

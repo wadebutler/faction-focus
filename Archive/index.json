@@ -137,6 +137,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Grandfather’s Blessing (Aura, Psychic)",
@@ -222,6 +223,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Warp Horror (Psychic)",
@@ -2127,6 +2129,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Infused with the Blessings of Nurgle",
@@ -2391,6 +2394,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Tank Hunters",
@@ -2495,6 +2499,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Hovering Death",
@@ -2589,6 +2594,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Spore-laced Shock Waves",
@@ -2718,6 +2724,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Assault Ramp",
@@ -2846,6 +2853,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Annihilator",
@@ -2983,6 +2991,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Destructor",
@@ -3122,6 +3131,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Scuttling Walker",
@@ -3311,6 +3321,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Firing Deck 2"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Self Repair",
@@ -3403,6 +3414,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Feel No Pain 5+"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Lord of the Death Guard (Aura)",
@@ -3604,6 +3616,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Infiltrators"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Putrescent Fog (Aura)",
@@ -6261,6 +6274,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Rage Embodied (Aura)",
@@ -6349,6 +6363,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Daemon Lord of Khorne (Aura)",
@@ -6676,6 +6691,7 @@
                 "ability": {
                     "core": ["Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Blood Throne",
@@ -7099,6 +7115,7 @@
                 "ability": {
                     "core": ["Infiltrators"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Shadow of Khorne (Aura)",
@@ -7143,6 +7160,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "One Head Looks Forward (Aura)",
@@ -7237,6 +7255,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Daemon Lord of Tzeentch (Aura)",
@@ -7352,6 +7371,7 @@
                 "ability": {
                     "core": ["Deep Strike", "Lone Operative", "Stealth"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Formless Horror",
@@ -7640,6 +7660,7 @@
                 "ability": {
                     "core": ["Deep Strike", "Lone Operative"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "P’tarix’s Sorcerous Syphon (Aura)",
@@ -8174,6 +8195,7 @@
                 "ability": {
                     "core": ["Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Slashing Dive",
@@ -8223,6 +8245,7 @@
                 "ability": {
                     "core": ["Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Eldritch Flames (Psychic)",
@@ -8317,6 +8340,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Virulent Blessing (Psychic)",
@@ -8409,6 +8433,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Daemon Lord of Nurgle (Aura)",
@@ -9120,6 +9145,7 @@
                 "ability": {
                     "core": ["Infiltrators"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Shroud of Flies (Aura)",
@@ -9167,6 +9193,7 @@
                         "Feel No Pain 5+"
                     ],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Cloak of Constriction",
@@ -9286,6 +9313,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Daemon Lord of Slaanesh (Aura)",
@@ -9510,6 +9538,7 @@
                 "ability": {
                     "core": ["Deep Strike", "Fight First", "Lone Operative"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "The Eternal Dance",
@@ -9768,6 +9797,7 @@
                 "ability": {
                     "core": ["Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Tormentbringer (Aura)",
@@ -10353,6 +10383,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike", "Stealth"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "The Dark Master (Aura)",
@@ -10493,6 +10524,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Scuttling Walker",
@@ -10666,6 +10698,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Prince of Darkness (Aura)",
@@ -10768,6 +10801,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["The Shadow of Chaos"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Malefic Destruction",
@@ -11001,6 +11035,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Reborn in Blood",
@@ -11256,6 +11291,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Infernal Fortitude (Aura)",
@@ -11340,6 +11376,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Bloodied Terror",
@@ -12141,6 +12178,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Assault Ramp",
@@ -12265,6 +12303,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Annihilator",
@@ -12402,6 +12441,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Destructor",
@@ -12541,6 +12581,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Scuttling Walker",
@@ -12725,6 +12766,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Furious Onslaught",
@@ -12819,6 +12861,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Frenzy",
@@ -13032,6 +13075,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Hover"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Swooping Predator",
@@ -13114,6 +13158,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "The Scent of Blood",
@@ -13197,6 +13242,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Firing Deck 2"],
                     "faction": ["Nurgle's Gift"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Self Repair",
@@ -13787,6 +13833,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D6"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Assault Ramp",
@@ -13911,6 +13958,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Blessings of Khorne"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Annihilator",
@@ -14047,6 +14095,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Destructor",
@@ -14185,6 +14234,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3", "Firing Deck 2"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Self Repair",
@@ -14321,6 +14371,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Siege Shield",
@@ -14433,6 +14484,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Scuttling Walker",
@@ -14898,6 +14950,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Blazing Salvoes",
@@ -14991,6 +15044,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise 1"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Arcane Knowledge Amidst Babbling Insanity (Aura)",
@@ -15203,6 +15257,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3", "Hover"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Flame-wreathed",
@@ -15381,6 +15436,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6", "Deep Strike"],
                     "faction": ["Cabel of Sorcerers 4"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Lord of the Planet of the Sorcerers (Aura)",
@@ -15502,6 +15558,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D3"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Prophetic Hunters",
@@ -15582,6 +15639,7 @@
                 ],
                 "ability": {
                     "core": ["Deadly Demise D6", "Feel No Pain 5+"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Mutating Vortex (Aura)",
@@ -16364,6 +16422,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Cabel of Sorcerers 2"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "The Weave of Fate (Psychic)",
@@ -16449,6 +16508,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Cabel of Sorcerers 2"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Sorcerous Fire (Psychic)",
@@ -16955,6 +17015,7 @@
                 "ability": {
                     "core": ["Deep Strike", "Leader"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Dark Destiny",
@@ -17234,6 +17295,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Dark Blessing (Aura)",
@@ -17318,6 +17380,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Daemonic Destruction",
@@ -17503,6 +17566,7 @@
                 "ability": {
                     "core": ["Lone Operative"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Agent of Discord",
@@ -17842,6 +17906,7 @@
                 "ability": {
                     "core": ["Leader", "Deep Strike"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Lord of Chaos",
@@ -18284,6 +18349,7 @@
                 ],
                 "ability": {
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Corrupt Machine Spirits",
@@ -20420,6 +20486,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Soul Eater",
@@ -21198,6 +21265,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Assault Ramp",
@@ -21322,6 +21390,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Annihilator",
@@ -21459,6 +21528,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Destructor",
@@ -21590,6 +21660,7 @@
                 "keywords": ["Vehicle", "Smoke", "Chaos", "Vindicator"],
                 "ability": {
                     "core": ["Deadly Demise D3"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Siege Shield",
@@ -21703,6 +21774,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Scuttling Walker",
@@ -21887,6 +21959,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Daemonic Ordnance",
@@ -21976,6 +22049,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Dark Ascension (Aura)",
@@ -22189,6 +22263,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Hover"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Airborne Predator",
@@ -22271,6 +22346,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Siege Crawler",
@@ -22354,6 +22430,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Firing Deck 2"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Self Repair",
@@ -22625,6 +22702,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Malevolent Locus (Aura)",
@@ -22682,6 +22760,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["Dark Pacts"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Unholy Mechanisms (Aura)",
@@ -24653,6 +24732,7 @@
                 "ability": {
                     "core": ["Deadly Demise D6"],
                     "faction": ["Eye of the Ancestors"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Fire Support",
@@ -25016,6 +25096,7 @@
                 "ability": {
                     "core": ["Scouts 9"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Beastmaster",
@@ -25266,6 +25347,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1", "Feel No Pain 5+"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Pain Parasite (Aura)",
@@ -25412,6 +25494,7 @@
                 "ability": {
                     "core": ["Feel No Pain 5+"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Mindless Killing Machines",
@@ -25551,6 +25634,7 @@
                 ],
                 "ability": {
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Hit and Run",
@@ -25648,6 +25732,7 @@
                 "keywords": ["Infantry", "Aeldari", "Incubi"],
                 "ability": {
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Tormentors",
@@ -25722,6 +25807,7 @@
                 ],
                 "ability": {
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Sadistic Raiders",
@@ -25944,6 +26030,7 @@
                 "ability": {
                     "core": ["Infiltrators", "Stealth"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Fade Away",
@@ -26013,6 +26100,7 @@
                         "Firing Deck 11"
                     ],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Aethersails",
@@ -26084,6 +26172,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Deep Strike"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Eradicate the Foe",
@@ -26165,6 +26254,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Stealth"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Ground Attack Craft",
@@ -26311,6 +26401,7 @@
                 ],
                 "ability": {
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Eviscerating Fly-by",
@@ -26442,6 +26533,7 @@
                 "ability": {
                     "core": ["Deep Strike"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Winged Strike",
@@ -26724,6 +26816,7 @@
                 "ability": {
                     "core": ["Deadly Demise 1", "Feel No Pain 5+"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Pain Engine",
@@ -26970,6 +27063,7 @@
                         "Stealth"
                     ],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Athletic Aerialists",
@@ -27056,6 +27150,7 @@
                 "ability": {
                     "core": ["Deadly Demise D3", "Stealth"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Void Mine",
@@ -27163,6 +27258,7 @@
                 "ability": {
                     "core": ["Feel No Pain 5+"],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "The Torturer’s Craft",
@@ -27268,6 +27364,7 @@
                 ],
                 "ability": {
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "No Escape",
@@ -27359,6 +27456,7 @@
                         "Firing Deck 16"
                     ],
                     "faction": ["Power from Pain"],
+                    "leader": [],
                     "data": [
                         {
                             "name": "Scything Charge",
