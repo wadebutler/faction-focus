@@ -1,0 +1,436 @@
+{
+    "name": "T'au Empire",
+    "id": "TE",
+    "rule": {
+        "name": "For the Greater Good",
+        "effect": "If your Army Faction is T’au Empire, then in your Shooting phase units from your army can work in pairs to help each other target specific enemy units. When they do this, one unit is the Observer unit and the other is their Guided unit. The enemy they are targeting is called their Spotted unit. Each time you select this unit to shoot, if it is not an Observer unit, it can use this ability. If it does, select one other friendly unit with this ability that is also eligible to shoot (excluding Fortification, Battleshocked and Observer units). Until the end of the phase, this unit is considered a Guided unit, and that friendly unit is considered an Observer unit. Then select one enemy unit that is visible to both your units to be their Spotted unit.",
+        "size": [
+            "Until the end of the phase:",
+            "Each time a model in a Guided unit makes an attack that targets their Spotted unit, improve the Ballistic Skill characteristic of the attack by 1 and, if their Observer unit has the Markerlight keyword, the attack has the [IGNORES COVER] ability.",
+            "Each time a model in a Guided unit makes an attack that does not target their Spotted unit, worsen the Ballistic Skill characteristic of the attack by 1."
+        ]
+    },
+    "detachments": [
+        {
+            "name": "Kauyon",
+            "id": 1,
+            "rule": "Kauyon",
+            "restrictions": [
+                "If your army includes any Ethereal units, it cannot include a Commander Farsight model.",
+                "If your army includes a Commander Farsight model, it cannot include any Ethereal units."
+            ],
+            "effect": "From the third battle round onwards, all ranged weapons equipped by T’au Empire models from your army have the [SUSTAINED HITS 1] ability. While a unit is a Guided unit (see For the Greater Good), weapons in that unit have the [SUSTAINED HITS 2] ability instead.",
+            "enhancements": [
+                {
+                    "name": "Exemplar of the Kauyon",
+                    "active": null,
+                    "cost": 15,
+                    "effect": "T’au Empire model only (excluding Kroot Shaper models). While the bearer is leading a unit, that unit’s Kauyon Detachment rule takes effect from the second battle round onwards instead of the third."
+                },
+                {
+                    "name": "Puretide Engram Neuroship",
+                    "active": null,
+                    "cost": 25,
+                    "effect": "T’au Empire model only (excluding Kroot Shaper models). Once per turn, you can use a Stratagem on the bearer’s unit, even if you have already used that Stratagem on a different unit this phase."
+                },
+                {
+                    "name": "Precision of the Patient Hunter",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "T’au Empire model only. Each time the bearer makes a ranged attack, add 1 to the Hit roll. From the third battle round onwards, add 1 to the Wound roll as well."
+                },
+                {
+                    "name": "Through Unity, Devastation",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "T’au Empire model only (excluding Kroot Shaper models). While this model is leading a unit, each time that unit is an Observer unit, until the end of the phase, ranged weapons equipped by models in their Guided unit have the [LETHAL HITS] ability while targeting their Spotted unit."
+                }
+            ],
+            "stratagems": [
+                {
+                    "name": "Stimm Injectors",
+                    "type": "Wargear",
+                    "cost": 1,
+                    "when": "Fight phase or your opponent’s Shooting phase, just after an enemy unit has selected its targets.",
+                    "target": "One T’au Empire Battlesuit unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                    "effect": "Until the end of the phase, models in your unit have the Feel No Pain 6+ ability."
+                },
+                {
+                    "name": "Coordinate to Engage",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your Shooting phase.",
+                    "target": "One T’au Empire unit from your army that has just been selected as an Observer unit (see For the Greater Good).",
+                    "effect": "Until the end of the phase, each time a model in your unit makes an attack that targets their Spotted unit, improve the Ballistic Skill characteristic of that attack by 1 and, if your unit has the Markerlight keyword, that attack has the [IGNORES COVER] ability."
+                },
+                {
+                    "name": "Strike and Fade",
+                    "type": "Strategic Ploy",
+                    "cost": 2,
+                    "when": "Your Shooting phase.",
+                    "target": "One T’au Empire Battlesuit unit from your army that can Fly whose attacks have been resolved this phase.",
+                    "effect": "If your unit is not within Engagement Range of any enemy units, it can make a Normal move. If it does, your unit cannot declare a charge this turn."
+                },
+                {
+                    "name": "Point-Blank Ambush",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your Shooting phase.",
+                    "target": "One T’au Empire unit from your army that has not been selected to shoot this phase.",
+                    "effect": "Until the end of the phase, each time a model in your unit makes a ranged attack that targets an enemy unit within 9\", improve the Armour Penetration characteristic of that attack by 1.",
+                    "restrictions": "You cannot use this Stratagem during the first or second battle rounds."
+                },
+                {
+                    "name": "Photon Grenades",
+                    "type": "Wargear",
+                    "cost": 1,
+                    "when": "Your opponent’s Charge phase, just after an enemy unit has declared a charge.",
+                    "target": "One T’au Empire Grenades unit from your army that was selected as one of the targets of that charge.",
+                    "effect": "That enemy unit must immediately take a Battle-shock test, and until the end of the phase, subtract 2 from Charge rolls made for that enemy unit."
+                },
+                {
+                    "name": "Combat Emarkation",
+                    "type": "Strategic Ploy",
+                    "cost": 1,
+                    "when": "Your opponent’s Charge phase, just after an enemy unit has declared a charge.",
+                    "target": "One T’au Empire Infantry unit from your army that was selected as one of the targets of that charge, and one friendly Transport.",
+                    "effect": "Your unit can embark within that Transport. If it does, your opponent can select new targets for that charge.",
+                    "restrictions": "Every model in your T’au Empire Infantry unit must be within 3\" of that Transport and there must be sufficient transport capacity to embark the entire unit."
+                }
+            ]
+        }
+    ],
+    "drones": [
+        {
+            "name": "Guardian Drone",
+            "effect": "Each time a model makes a ranged attack that targets the bearer’s unit, subtract 1 from the Wound roll."
+        },
+        {
+            "name": "Gun Drone",
+            "effect": "The bearer is equipped with the following ranged weapon",
+            "weapon": {
+                "name": "Twin Pulse Carbine",
+                "range": 20,
+                "a": 2,
+                "bs": 5,
+                "s": 5,
+                "ap": 0,
+                "d": 1,
+                "keywords": ["Assault", "Twin-Linked"]
+            }
+        },
+        {
+            "name": "Marker Drone",
+            "effect": "The bearer’s unit has the Markerlight keyword and can act as an Observer unit for another unit even if it Advanced this turn."
+        },
+        {
+            "name": "Missile Drone",
+            "effect": "The bearer is equipped with the following ranged weapon",
+            "weapon": {
+                "name": "Missile Pod",
+                "range": 30,
+                "a": 2,
+                "bs": 5,
+                "s": 7,
+                "ap": 2,
+                "d": 2,
+                "keywords": []
+            }
+        },
+        {
+            "name": "Shield Drone",
+            "effect": "Add 1 to the bearer’s Wounds characteristic."
+        }
+    ],
+    "roster": [
+        {
+            "name": "Commander Shadowsun",
+            "org": "Character",
+            "warlord": true,
+            "modelCount": [1],
+            "points": [100],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Infantry",
+                "Fly",
+                "Character",
+                "Epic Hero",
+                "Battlesuit",
+                "Commander Shadowsun"
+            ],
+            "ability": {
+                "core": ["Infiltrators", "Lone Operative", "Stealth"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Agile Combatant",
+                        "effect": "This model is eligible to shoot in a turn in which it Fell Back."
+                    },
+                    {
+                        "name": "Hero of the Empire (Aura)",
+                        "effect": "While a friendly T’au Empire unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Advanced Guardian Drone",
+                        "effect": "Each time a ranged attack targets the bearer, subtract 1 from the Wound roll."
+                    },
+                    {
+                        "name": "Command-link Drone (Aura)",
+                        "effect": "While a friendly T’au Empire unit is within 6\" of the bearer, each time you select that unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 4,
+                "save": 3,
+                "invulnerable": 5,
+                "wounds": 6,
+                "leadership": 6,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Flechette Launcher",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 5,
+                        "bs": 2,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "High-Energy Fusion Blaster",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 2,
+                        "s": 10,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2"]
+                    }
+                },
+                {
+                    "name": "Light Missle Pod",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 2,
+                        "s": 7,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Pulse Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 3,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Battlesuit Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Commander Farsight",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [90],
+            "modelCountIndex": 0,
+            "leader": ["Crisis Battlesuits"],
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Vehicle",
+                "Walker",
+                "Fly",
+                "Character",
+                "Epic Hero",
+                "Battlesuit",
+                "Commander Farsight"
+            ],
+            "ability": {
+                "core": ["Deepstrike", "Leader"],
+                "faction": ["For the Greater Good"],
+                "leader": [
+                    {
+                        "name": "Way of the Short Blade",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack that targets an enemy unit within 9\", add 1 to the Wound roll."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Aggressive Offensive",
+                        "effect": "Once per battle, when this model is selected to fight, it can use this ability. If it does, until the end of the phase, each time it makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 5,
+                "save": 3,
+                "invulnerable": 4,
+                "wounds": 6,
+                "leadership": 6,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "High-Intensity Plasma Rifle",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 2,
+                        "s": 8,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": []
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Dawn Blade - Strike",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 2,
+                        "s": 10,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Dawn Blade - Sweep",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 8,
+                        "ws": 2,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Commander in Crisis Battlesuit",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [90],
+            "modelCountIndex": 0,
+            "leader": ["Crisis Battlesuits"],
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Vehicle",
+                "Walker",
+                "Fly",
+                "Character",
+                "Battlesuit",
+                "Commander in Crisis Battlesuit"
+            ],
+            "ability": {
+                "core": ["Deepstrike", "Leader"],
+                "faction": ["For the Greater Good"],
+                "leader": [
+                    {
+                        "name": "Crisis Commander",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
+                    }
+                ],
+                "data": [],
+                "wargear": [
+                    {
+                        "name": "Battlesuit Support System",
+                        "effect": "The bearer’s unit is eligible to shoot in a turn in which it Fell Back, but when doing so only models equipped with this wargear can make ranged attacks."
+                    },
+                    {
+                        "name": "Shield Generator",
+                        "effect": "The bearer has a 4+ invulnerable save."
+                    },
+                    {
+                        "name": "Weapon Support System",
+                        "effect": "Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 5,
+                "save": 3,
+                "invulnerable": 4,
+                "wounds": 5,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "bs": 2,
+                        "s": 8,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": []
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Battlesuit Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        }
+    ]
+}
