@@ -437,7 +437,7 @@
                         "bs": 3,
                         "s": 7,
                         "ap": 1,
-                        "d": 2,
+                        "d": 1,
                         "keywords": []
                     }
                 },
@@ -449,7 +449,7 @@
                         "a": 3,
                         "bs": 3,
                         "s": 8,
-                        "ap": 1,
+                        "ap": 2,
                         "d": 2,
                         "keywords": ["Hazardous"]
                     }
@@ -610,7 +610,7 @@
                         "bs": 3,
                         "s": 7,
                         "ap": 1,
-                        "d": 2,
+                        "d": 1,
                         "keywords": []
                     }
                 },
@@ -622,7 +622,7 @@
                         "a": 3,
                         "bs": 3,
                         "s": 8,
-                        "ap": 1,
+                        "ap": 2,
                         "d": 2,
                         "keywords": ["Hazardous"]
                     }
@@ -783,7 +783,7 @@
                         "bs": 3,
                         "s": 7,
                         "ap": 1,
-                        "d": 2,
+                        "d": 1,
                         "keywords": []
                     }
                 },
@@ -795,7 +795,7 @@
                         "a": 3,
                         "bs": 3,
                         "s": 8,
-                        "ap": 1,
+                        "ap": 2,
                         "d": 2,
                         "keywords": ["Hazardous"]
                     }
@@ -1448,6 +1448,967 @@
                         "a": 3,
                         "ws": 5,
                         "s": 6,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Strike Team",
+            "org": "Battleline",
+            "modelCount": [10],
+            "points": [80],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Infantry",
+                "Battleline",
+                "Grenades",
+                "Markerlight",
+                "Fire Warrior",
+                "Strike Team"
+            ],
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ability": {
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Cover Fire",
+                        "effect": "While this unit is within range of an objective marker you control, each time you select it as the target of the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem."
+                    },
+                    {
+                        "name": "DS8 Support Turret",
+                        "effect": "In your Movement phase, if this unit Remains Stationary, until the start of your next Movement phase, its Fire Warrior Shas’ui model is equipped with the support turret missile system weapon."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Pulse Carbine",
+                    "range": 20,
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Pulse Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Pulse Rifle",
+                    "range": 30,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 1"]
+                    }
+                },
+                {
+                    "name": "Support Turret Missile System",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Indirect Fire", "Twin-Linked"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 5,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Breacher Team",
+            "org": "Battleline",
+            "modelCount": [10],
+            "points": [90],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Infantry",
+                "Battleline",
+                "Grenades",
+                "Markerlight",
+                "Fire Warrior",
+                "Strike Team"
+            ],
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ability": {
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Breach and Clear",
+                        "effect": "Each time a model in this unit makes a ranged attack that targets an enemy unit within range of an objective marker, you can re-roll the Wound roll."
+                    },
+                    {
+                        "name": "DS8 Support Turret",
+                        "effect": "In your Movement phase, if this unit Remains Stationary, until the start of your next Movement phase, its Fire Warrior Shas’ui model is equipped with the support turret missile system weapon."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Pulse Blaster",
+                    "range": 10,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 3,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Pulse Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Support Turret Missile System",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Indirect Fire", "Twin-Linked"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 5,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Kroot Carnivores",
+            "org": "Infantry",
+            "modelCount": [10, 20],
+            "points": [55, 110],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Infantry", "Grenades", "Kroot", "Carnivores"],
+            "data": {
+                "movement": 7,
+                "toughness": 3,
+                "save": 6,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ability": {
+                "core": ["Scouts 7", "Stealth"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Grisly Feast",
+                        "effect": "If this unit destroys an enemy unit in the Fight phase, until the end of the battle, models in this unit have the Feel No Pain 5+ ability"
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Kroot Rifle",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 1"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Kroot Rifle",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 3,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Krootox Riders",
+            "org": "Mounted",
+            "modelCount": [1, 2, 3],
+            "points": [35, 70, 105],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Mounted", "Kroot", "Krootox Riders"],
+            "data": {
+                "movement": 7,
+                "toughness": 5,
+                "save": 6,
+                "invulnerable": null,
+                "wounds": 4,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ability": {
+                "core": ["Scouts 7"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Kroot Packmates",
+                        "effect": "While one or more friendly Kroot Carnivore units are within 6\" of this unit, each time a model in this unit makes an attack, add 1 to the Hit roll."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Krootox Gun",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Krootox Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 3,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Crisis Battlesuits",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [3, 6],
+            "points": [180, 360],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Vehicle", "Walker", "Fly", "Battlesuit", "Crisis"],
+            "ability": {
+                "core": ["Deepstrike"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Turbo-jets",
+                        "effect": "Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Battlesuit Support System",
+                        "effect": "The bearer’s unit is eligible to shoot in a turn in which it Fell Back, but when doing so only models equipped with this wargear can make ranged attacks."
+                    },
+                    {
+                        "name": "Shield Generator",
+                        "effect": "The bearer has a 4+ invulnerable save."
+                    },
+                    {
+                        "name": "Weapon Support System",
+                        "effect": "Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 5,
+                "save": 3,
+                "invulnerable": 4,
+                "wounds": 4,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Airbursting Fragmentation Projector",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Blast", "Indirect Fire"]
+                    }
+                },
+                {
+                    "name": "Burst Cannon",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Cyclonic Ion Blaster - Standard",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Cyclonic Ion Blaster - Overcharge",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Hazardous"]
+                    }
+                },
+                {
+                    "name": "Fusion Blaster",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2"]
+                    }
+                },
+                {
+                    "name": "Missile Pod",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Plasma Rifle",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "T'au Flamer",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": "N/A",
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Ignores Cover", "Torrent"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Battlesuit Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Stealth Battlesuits",
+            "org": "Infantry",
+            "warlord": false,
+            "modelCount": [3, 6],
+            "points": [60, 120],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Infantry", "Fly", "Battlesuit", "Stealth"],
+            "ability": {
+                "core": ["Infiltrators", "Stealth"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Forward Observers",
+                        "effect": "Each time this unit is an Observer unit, until the end of the phase, each time a ranged attack is made by a model in their Guided unit that targets their Spotted unit, re-roll a Wound roll of 1."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Battlesuit Support System",
+                        "effect": "The bearer’s unit is eligible to shoot in a turn in which it Fell Back, but when doing so only models equipped with this wargear can make ranged attacks."
+                    },
+                    {
+                        "name": "Homing Beacon",
+                        "effect": "Once per battle, you can use the Rapid Ingress Stratagem for 0CP. The target must be set up within 3\" of the bearer’s unit and not within 9\" of any enemy units."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 8,
+                "toughness": 4,
+                "save": 3,
+                "invulnerable": null,
+                "wounds": 2,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Burst Cannon",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Fusion Blaster",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Battlesuit Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "ws": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Ghostkeel Battlesuits",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [160],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Vehicle",
+                "Walker",
+                "Fly",
+                "Smoke",
+                "Battlesuit",
+                "Ghostkeel"
+            ],
+            "ability": {
+                "core": [
+                    "Deadly Demise D3",
+                    "Infiltrators",
+                    "Lone Operative",
+                    "Stealth"
+                ],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Stealth Drones",
+                        "effect": "Twice per battle, after an attack has been allocated to this model, you can change the Damage characteristic of that attack to 0."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Battlesuit Support System",
+                        "effect": "The bearer is eligible to shoot in a turn in which it Fell Back but it loses the Smoke keyword."
+                    }
+                ],
+                "damaged": {
+                    "range": [1, 4],
+                    "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                }
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 8,
+                "save": 2,
+                "invulnerable": null,
+                "wounds": 12,
+                "leadership": 7,
+                "oc": 3
+            },
+            "ranged": [
+                {
+                    "name": "Cyclonic Ion Raker - Standard",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 6,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Cyclonic Ion Raker - Overcharge",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 6,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": ["Hazardous"]
+                    }
+                },
+                {
+                    "name": "Fusion Collider",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 12,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2"]
+                    }
+                },
+                {
+                    "name": "Twin Burst Cannon",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Twin-Linked"]
+                    }
+                },
+                {
+                    "name": "Twin Fusion Blaster",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2", "Twin-Linked"]
+                    }
+                },
+                {
+                    "name": "Twin T'au Flamer",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": "D6",
+                        "bs": "N/A",
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Ignores Cover", "Torrent", "Twin-Linked"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Ghostkeel Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Firesight Team",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [70],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Markerlight",
+                "Firesight Team"
+            ],
+            "ability": {
+                "core": ["Infiltrators", "Lone Operative", "Stealth"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Precise Targeting",
+                        "effect": "While this model is a Guided unit, each time it makes an attack that targets its Spotted unit, you can re-roll the Hit roll."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 4,
+                "leadership": 7,
+                "oc": 3
+            },
+            "ranged": [
+                {
+                    "name": "Longshot Pulse Rifle",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Heavy", "Precision"]
+                    }
+                },
+                {
+                    "name": "Pulse Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 3,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 5,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Pathfinder Team",
+            "org": "Infantry",
+            "modelCount": [10],
+            "points": [90],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": [
+                "Infantry",
+                "Grenades",
+                "Markerlight",
+                "Pathfinder Team"
+            ],
+            "data": {
+                "movement": 7,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ability": {
+                "core": ["Scouts 7"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Target Uploaded",
+                        "effect": "Once per turn, when using the Greater Good ability, you can select this unit to be an Observer unit for a second time. When doing so, you can change which enemy unit is this unit’s Spotted unit."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Grav-inhibitor Drone",
+                        "effect": "Subtract 2 from Charge rolls made for any enemy unit that declares a charge against the bearer’s unit (this is not cumulative with any other reductions to that Charge roll)."
+                    },
+                    {
+                        "name": "Pulse Accelerator Drone",
+                        "effect": "Add 6\" to the Range characteristic of pulse carbines equipped by models in the bearer’s unit."
+                    },
+                    {
+                        "name": "Recon Drone",
+                        "effect": "The bearer is equipped with 1 drone burst cannon and the bearer’s unit has the Infiltrators ability."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Drone Burst Cannon",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 4,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Ion Rifle - Standard",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": ["Heavy"]
+                    }
+                },
+                {
+                    "name": "Ion Rifle - Overcharge",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Hazardous", "Heavy"]
+                    }
+                },
+                {
+                    "name": "Pulse Carbine",
+                    "range": 20,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Pulse Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Rail Rifle",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 10,
+                        "ap": 4,
+                        "d": 3,
+                        "keywords": ["Devastating Wounds", "Heavy"]
+                    }
+                },
+                {
+                    "name": "Semi-Automatic Grenade Launcher - EMP",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Anti-Vehicle 4+", "Devastating Wounds"]
+                    }
+                },
+                {
+                    "name": "Semi-Automatic Grenade Launcher - Fusion",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 3,
+                        "keywords": []
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 5,
+                        "s": 3,
                         "ap": 0,
                         "d": 1,
                         "keywords": []
