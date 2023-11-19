@@ -47,14 +47,13 @@ export default function LeaderCheckbox({ item, id }) {
     };
 
     useEffect(() => {
-        list.roster.map((unit) => {
-            if (unit.ability.leader) {
-                unit.ability.leader.map((ldr) => {
+        list.roster.map((unit, index) => {
+            if (index === unitEdit.unitId)
+                unit?.ability?.leader.map((ldr) => {
                     if (ldr.id === id) {
                         setChecked(true);
                     }
                 });
-            }
         });
     }, [list]);
 
