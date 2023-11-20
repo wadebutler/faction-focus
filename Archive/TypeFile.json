@@ -282,7 +282,7 @@
                 "Commander Farsight"
             ],
             "ability": {
-                "core": ["Deepstrike", "Leader"],
+                "core": ["Deep Strike", "Leader"],
                 "faction": ["For the Greater Good"],
                 "leader": [
                     {
@@ -368,7 +368,7 @@
                 "Commander in Crisis Battlesuit"
             ],
             "ability": {
-                "core": ["Deepstrike", "Leader"],
+                "core": ["Deep Strike", "Leader"],
                 "faction": ["For the Greater Good"],
                 "leader": [
                     {
@@ -541,7 +541,7 @@
                 "Commander in Enforcer Battlesuit"
             ],
             "ability": {
-                "core": ["Deepstrike", "Leader"],
+                "core": ["Deep Strike", "Leader"],
                 "faction": ["For the Greater Good"],
                 "leader": [
                     {
@@ -714,7 +714,7 @@
                 "Commander in Enforcer Battlesuit"
             ],
             "ability": {
-                "core": ["Deepstrike", "Leader"],
+                "core": ["Deep Strike", "Leader"],
                 "faction": ["For the Greater Good"],
                 "leader": [
                     {
@@ -1784,7 +1784,7 @@
             "factionKey": ["T'au Empire"],
             "keywords": ["Vehicle", "Walker", "Fly", "Battlesuit", "Crisis"],
             "ability": {
-                "core": ["Deepstrike"],
+                "core": ["Deep Strike"],
                 "faction": ["For the Greater Good"],
                 "leader": [],
                 "data": [
@@ -2409,6 +2409,563 @@
                         "a": 1,
                         "ws": 5,
                         "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Piranha",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1, 2, 3],
+            "points": [55, 110, 165],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Vehicle", "Fly", "Piranha"],
+            "ability": {
+                "core": ["Deadly Demise 1", "Scouts 9"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Drone Harassment Tactics",
+                        "effect": "At the end of your Movement phase, select one enemy unit within 12\" of this unit; that enemy unit must take a Battle-shock test."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 14,
+                "toughness": 7,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 7,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Piranha Burst Cannon",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Piranha Fusion Blaster",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 4"]
+                    }
+                },
+                {
+                    "name": "Seeker Missile",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 14,
+                        "ap": 3,
+                        "d": "D6+1",
+                        "keywords": ["One Shot"]
+                    }
+                },
+                {
+                    "name": "Twin Pulse Carbine",
+                    "range": 20,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Twin-Linked", "Assault"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Armoured Hull",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Vespid Stingwings",
+            "org": "Infantry",
+            "modelCount": [5],
+            "points": [75],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Infantry", "Fly", "Vespid Stingwings"],
+            "data": {
+                "movement": 12,
+                "toughness": 4,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ability": {
+                "core": ["Deep Strike"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Airborne Agility",
+                        "effect": "At the end of your Movement phase, if this unit is not within Engagement Range of any enemy units, you can remove it from the battlefield and place it into Strategic Reserves."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Neutron Blaster",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Assault"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Stingwing Claws",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Kroot Hounds",
+            "org": "Beasts",
+            "modelCount": [4, 8, 12],
+            "points": [30, 60, 90],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Beasts", "Kroot", "Hounds"],
+            "data": {
+                "movement": 12,
+                "toughness": 3,
+                "save": 6,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 8,
+                "oc": 0
+            },
+            "ability": {
+                "core": ["Scouts 9", "Stealth"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Hunting Pack",
+                        "effect": "While one or more friendly Kroot Carnivore units within 6\" of this unit are within Engagement Range of one or more enemy units, each time a model in this unit makes a melee attack, add 1 to the Wound roll."
+                    }
+                ]
+            },
+            "melee": [
+                {
+                    "name": "Ripping Fangs",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Broadside Battlesuits",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1, 2, 3],
+            "points": [90, 180, 270],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Vehicle", "Walker", "Battlesuit", "Broadside"],
+            "ability": {
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Advanced Armour",
+                        "effect": "Models in this unit have the Feel No Pain 4+ ability against mortal wounds."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Battlesuit Support System",
+                        "effect": "The bearer’s unit is eligible to shoot in a turn in which it Fell Back, but when doing so only models equipped with this wargear can make ranged attacks."
+                    },
+                    {
+                        "name": "Weapon Support System",
+                        "effect": "Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 5,
+                "toughness": 6,
+                "save": 2,
+                "invulnerable": null,
+                "wounds": 8,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Heavy Rail Rifle",
+                    "range": 60,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 12,
+                        "ap": 4,
+                        "d": "D6+1",
+                        "keywords": ["Heavy", "Devastating Wounds"]
+                    }
+                },
+                {
+                    "name": "Heavy-Yield Missile Pod",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 6,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Twin-Linked"]
+                    }
+                },
+                {
+                    "name": "Seeker Missile",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 14,
+                        "ap": 3,
+                        "d": "D6+1",
+                        "keywords": ["One Shot"]
+                    }
+                },
+                {
+                    "name": "Twin Plasma Rifle",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": ["Twin-Linked"]
+                    }
+                },
+                {
+                    "name": "Twin Smart Missle System",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Indirect Fire", "Twin-Linked"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Crushing Bulk",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Riptide Battlesuit",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1, 2, 3],
+            "points": [90, 180, 270],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Vehicle", "Walker", "Fly", "Battlesuit", "Riptide"],
+            "ability": {
+                "core": ["Deadly Demise D6"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Battlesuit Support System",
+                        "effect": "The bearer is eligible to shoot in a turn in which it Fell Back."
+                    },
+                    {
+                        "name": "Nova Charge",
+                        "effect": "Once per battle, in your Shooting phase, select one ranged weapon equipped by this model. Until the end of the phase, that weapon has the [DEVASTATING WOUNDS] ability."
+                    },
+                    {
+                        "name": "Weapon Support System",
+                        "effect": "Each time the bearer makes a ranged attack, you can ignore any or all modifiers to the Hit roll."
+                    }
+                ],
+                "damaged": {
+                    "range": [1, 4],
+                    "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                }
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 9,
+                "save": 2,
+                "invulnerable": 4,
+                "wounds": 14,
+                "leadership": 7,
+                "oc": 4
+            },
+            "ranged": [
+                {
+                    "name": "Heavy Burst Cannon",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 12,
+                        "bs": 4,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Ion Accelerator - Standard",
+                    "range": 72,
+                    "active": false,
+                    "data": {
+                        "a": 6,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Ion Accelerator - Overcharge",
+                    "range": 72,
+                    "active": false,
+                    "data": {
+                        "a": 6,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 3,
+                        "d": 4,
+                        "keywords": ["Hazardous"]
+                    }
+                },
+                {
+                    "name": "Twin Fusion Blaster",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2", "Twin-Linked"]
+                    }
+                },
+                {
+                    "name": "Twin Plasma Rifle",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": ["Twin-Linked"]
+                    }
+                },
+                {
+                    "name": "Twin Smart Missle System",
+                    "range": 30,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Indirect Fire", "Twin-Linked"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Riptide Fists",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "ws": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Hammerhead Gunship",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1, 2, 3],
+            "points": [55, 110, 165],
+            "modelCountIndex": 0,
+            "factionKey": ["T'au Empire"],
+            "keywords": ["Vehicle", "Fly", "Hammerhead Gunship"],
+            "ability": {
+                "core": ["Deadly Demise 1", "Scouts 9"],
+                "faction": ["For the Greater Good"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Drone Harassment Tactics",
+                        "effect": "At the end of your Movement phase, select one enemy unit within 12\" of this unit; that enemy unit must take a Battle-shock test."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 14,
+                "toughness": 7,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 7,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Piranha Burst Cannon",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Piranha Fusion Blaster",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 4"]
+                    }
+                },
+                {
+                    "name": "Seeker Missile",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 14,
+                        "ap": 3,
+                        "d": "D6+1",
+                        "keywords": ["One Shot"]
+                    }
+                },
+                {
+                    "name": "Twin Pulse Carbine",
+                    "range": 20,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Twin-Linked", "Assault"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Armoured Hull",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 5,
+                        "s": 6,
                         "ap": 0,
                         "d": 1,
                         "keywords": []
