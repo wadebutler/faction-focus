@@ -32,25 +32,18 @@ export default function UpdateModal({ expand, handleExpand }) {
                     least until a major dataslate change.
                 </FFText>
 
-                <View style={{ marginVertical: 20 }}>
-                    <FFText>Factions added</FFText>
-                    <FFText>-Thousand sons</FFText>
-                    <FFText>-Chaos Space Marines</FFText>
-                    <FFText>-Leagues of Votann</FFText>
-                </View>
-
-                <View style={{ marginBottom: 20 }}>
-                    <FFText>Units added</FFText>
-                    <FFText>-Forge World Chaos Knights</FFText>
-                </View>
-
-                <FFText style={{ marginBottom: 10 }}>
+                <FFText style={{ marginVertical: 20 }}>
                     if data is missing or not updated try deleting the unit or
                     list and re-adding, the app will update all your lists
                     eventually this is only a temporary solution. any other
                     questions can be directed to the below reddit post or you
                     can contact Jank Hammer at the Below email.
                 </FFText>
+
+                <View style={{ marginBottom: 10 }}>
+                    <FFText>Factions added</FFText>
+                    <FFText>-Tau Empire</FFText>
+                </View>
 
                 <A
                     style={styles.linkText}

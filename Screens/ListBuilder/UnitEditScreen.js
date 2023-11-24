@@ -36,7 +36,8 @@ export default function UnitEdit() {
             {unitEdit.unit.modelCount.length === 1 ? null : <UnitSize />}
 
             {unitEdit.unit.org === "Infantry" ||
-            unitEdit.unit.org === "Battleline" ? (
+            unitEdit.unit.org === "Battleline" ||
+            (list.id === "TE" && unitEdit.unit.org === "Vehicle") ? (
                 <LeaderRule />
             ) : null}
 

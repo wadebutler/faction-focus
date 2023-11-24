@@ -40,10 +40,12 @@ export default function UnitView() {
                 <WeaponStats weapon={unitView.melee} type={"m"} />
             )}
 
-            <KeywordView
-                keywords={unitView.keywords}
-                factionKey={unitView.factionKey}
-            />
+            {!unitView.keywords ? null : (
+                <KeywordView
+                    keywords={unitView.keywords}
+                    factionKey={unitView.factionKey}
+                />
+            )}
         </ScrollView>
     );
 }

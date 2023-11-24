@@ -21,7 +21,7 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            {!ability.faction ? null : (
+            {!ability?.faction ? null : (
                 <View style={styles.dataContainer}>
                     <FFText>Faction Ability: </FFText>
                     {ability?.faction.map((item, index) => (
@@ -33,22 +33,24 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {org === "Character" ? (
-                <View style={styles.container}>
-                    <FFText>Leader Abilities:</FFText>
-                    {ability?.leader.map((item, index) => {
-                        return (
-                            <View key={index}>
-                                <FFText style={styles.abilityName}>
-                                    {item.name}
-                                </FFText>
-                                <FFText style={styles.effectText}>
-                                    {item.effect}
-                                </FFText>
-                            </View>
-                        );
-                    })}
-                </View>
-            ) : (
+                !ability?.leader || ability?.leader.length === 0 ? null : (
+                    <View style={styles.container}>
+                        <FFText>Leader Abilities:</FFText>
+                        {ability?.leader.map((item, index) => {
+                            return (
+                                <View key={index}>
+                                    <FFText style={styles.abilityName}>
+                                        {item.name}
+                                    </FFText>
+                                    <FFText style={styles.effectText}>
+                                        {item.effect}
+                                    </FFText>
+                                </View>
+                            );
+                        })}
+                    </View>
+                )
+            ) : !ability?.leader ? null : (
                 <View style={styles.container}>
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader?.map((item) => {
@@ -88,18 +90,11 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {!ability?.data ? null : (
-                <View style={styles.container}>
+                <View style={{ paddingHorizontal: 10, paddingBottom: 10 }}>
                     <FFText>Datasheet Abilities:</FFText>
                     {ability?.data.map((item, index) => {
                         return (
-                            <View
-                                style={
-                                    ability?.data.length >= 2
-                                        ? { marginTop: 10 }
-                                        : null
-                                }
-                                key={index}
-                            >
+                            <View key={index}>
                                 {!item.name ? null : (
                                     <FFText style={styles.abilityName}>
                                         {item.name}
@@ -120,7 +115,7 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            {!ability.wargear ? null : (
+            {!ability?.wargear ? null : (
                 <View style={styles.container}>
                     <FFText>Wargear Abilities:</FFText>
                     {ability.wargear.map((item, index) => {
@@ -148,8 +143,8 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            {!ability.damaged ? null : (
-                <View style={{ paddingHorizontal: 10, marginBottom: 15 }}>
+            {!ability?.damaged ? null : (
+                <View style={{ paddingHorizontal: 10 }}>
                     <FFText style={styles.abilityName}>
                         Damaged {ability.damaged.range[0]}-
                         {ability.damaged.range[1]} Wounds Remaining
@@ -160,7 +155,7 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            {!ability.Primarch ? null : (
+            {!ability?.Primarch ? null : (
                 <View style={styles.container}>
                     <FFText style={styles.abilityName}>
                         {ability.Primarch.title}
@@ -173,10 +168,18 @@ export default function AbilityView({ ability, org }) {
                     {ability.Primarch.abilities.map((item, index) => {
                         return (
                             <View key={index}>
-                                <FFText style={styles.abilityName}>
+                                <FFText style={styles.PrimarchAbilityName}>
                                     {item.name}
                                 </FFText>
-                                <FFText style={styles.effectText}>
+
+                                <FFText
+                                    style={
+                                        ability.Primarch.abilities.length ===
+                                        index + 1
+                                            ? styles.effectText
+                                            : styles.PrimarchEffectText
+                                    }
+                                >
                                     {item.effect}
                                 </FFText>
                             </View>
@@ -221,6 +224,16 @@ const styles = StyleSheet.create({
         backgroundColor: "orange",
         borderBottomLeftRadius: 4,
         borderBottomRightRadius: 4,
+    },
+    PrimarchAbilityName: {
+        color: "#fff",
+        backgroundColor: "#000",
+        textAlign: "center",
+        padding: 4,
+    },
+    PrimarchEffectText: {
+        padding: 10,
+        backgroundColor: "orange",
     },
     effectNoTitle: {
         padding: 10,

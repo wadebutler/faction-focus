@@ -1,4 +1,4 @@
-import { StyleSheet, View, FlatList, Dimensions } from "react-native";
+import { StyleSheet, View, Dimensions } from "react-native";
 import FFText from "../Global/FFText";
 import GoBack from "../Global/GoBack";
 
@@ -10,52 +10,58 @@ export default function UnitStatRow({ unit }) {
                 {unit?.name}
             </FFText>
 
-            <View style={styles.statRow}>
-                <View style={styles.container}>
-                    <FFText style={styles.text}>M</FFText>
-                    <FFText style={styles.textStat}>
-                        {unit.data.movement}
-                    </FFText>
-                </View>
-
-                <View style={styles.container}>
-                    <FFText style={styles.text}>T</FFText>
-                    <FFText style={styles.textStat}>
-                        {unit.data.toughness}
-                    </FFText>
-                </View>
-
-                <View style={styles.container}>
-                    <FFText style={styles.text}>SV</FFText>
-                    <FFText style={styles.textStat}>{unit.data.save}</FFText>
-                </View>
-
-                {!unit.data.invulnerable ? null : (
+            {!unit.data ? null : (
+                <View style={styles.statRow}>
                     <View style={styles.container}>
-                        <FFText style={styles.text}>INV</FFText>
+                        <FFText style={styles.text}>M</FFText>
                         <FFText style={styles.textStat}>
-                            {unit.data.invulnerable}
+                            {unit.data.movement}
                         </FFText>
                     </View>
-                )}
 
-                <View style={styles.container}>
-                    <FFText style={styles.text}>W</FFText>
-                    <FFText style={styles.textStat}>{unit.data.wounds}</FFText>
-                </View>
+                    <View style={styles.container}>
+                        <FFText style={styles.text}>T</FFText>
+                        <FFText style={styles.textStat}>
+                            {unit.data.toughness}
+                        </FFText>
+                    </View>
 
-                <View style={styles.container}>
-                    <FFText style={styles.text}>LD</FFText>
-                    <FFText style={styles.textStat}>
-                        {unit.data.leadership}
-                    </FFText>
-                </View>
+                    <View style={styles.container}>
+                        <FFText style={styles.text}>SV</FFText>
+                        <FFText style={styles.textStat}>
+                            {unit.data.save}
+                        </FFText>
+                    </View>
 
-                <View style={styles.container}>
-                    <FFText style={styles.text}>OC</FFText>
-                    <FFText style={styles.textStat}>{unit.data.oc}</FFText>
+                    {!unit.data.invulnerable ? null : (
+                        <View style={styles.container}>
+                            <FFText style={styles.text}>INV</FFText>
+                            <FFText style={styles.textStat}>
+                                {unit.data.invulnerable}
+                            </FFText>
+                        </View>
+                    )}
+
+                    <View style={styles.container}>
+                        <FFText style={styles.text}>W</FFText>
+                        <FFText style={styles.textStat}>
+                            {unit.data.wounds}
+                        </FFText>
+                    </View>
+
+                    <View style={styles.container}>
+                        <FFText style={styles.text}>LD</FFText>
+                        <FFText style={styles.textStat}>
+                            {unit.data.leadership}
+                        </FFText>
+                    </View>
+
+                    <View style={styles.container}>
+                        <FFText style={styles.text}>OC</FFText>
+                        <FFText style={styles.textStat}>{unit.data.oc}</FFText>
+                    </View>
                 </View>
-            </View>
+            )}
         </View>
     );
 }

@@ -3,7 +3,7 @@ import FFText from "../Global/FFText";
 
 export default function WeaponStats({ weapon, type }) {
     return (
-        <View style={styles.container}>
+        <View>
             {type === "r" ? (
                 <FFText style={styles.typeText}>Ranged</FFText>
             ) : null}
@@ -116,21 +116,21 @@ export default function WeaponStats({ weapon, type }) {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        marginBottom: 20,
-    },
     nameText: {
         padding: 10,
         backgroundColor: "#000",
         color: "#fff",
         fontWeight: "bold",
+        fontSize: 16,
     },
     typeText: {
         backgroundColor: "orange",
         padding: 10,
+        fontSize: 16,
     },
     text: {
         fontWeight: "bold",
+        fontSize: 16,
     },
     wpnContainer: {
         borderBottomWidth: 1,
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     },
     statContainer: {
         alignItems: "center",
-        margin: 10,
+        margin: 15,
     },
     keywordContainer: {
         flexDirection: "row",

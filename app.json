@@ -19,7 +19,7 @@
                 "backgroundColor": "#ffffff"
             },
             "package": "com.wadebutler.factionfocus",
-            "versionCode": 9
+            "versionCode": 10
         },
         "extra": {
             "eas": {

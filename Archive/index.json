@@ -27392,48 +27392,6 @@
                 ]
             }
         ],
-        "drones": [
-            {
-                "name": "Guardian Drone",
-                "effect": "Each time a model makes a ranged attack that targets the bearer’s unit, subtract 1 from the Wound roll."
-            },
-            {
-                "name": "Gun Drone",
-                "effect": "The bearer is equipped with the following ranged weapon",
-                "weapon": {
-                    "name": "Twin Pulse Carbine",
-                    "range": 20,
-                    "a": 2,
-                    "bs": 5,
-                    "s": 5,
-                    "ap": 0,
-                    "d": 1,
-                    "keywords": ["Assault", "Twin-Linked"]
-                }
-            },
-            {
-                "name": "Marker Drone",
-                "effect": "The bearer’s unit has the Markerlight keyword and can act as an Observer unit for another unit even if it Advanced this turn."
-            },
-            {
-                "name": "Missile Drone",
-                "effect": "The bearer is equipped with the following ranged weapon",
-                "weapon": {
-                    "name": "Missile Pod",
-                    "range": 30,
-                    "a": 2,
-                    "bs": 5,
-                    "s": 7,
-                    "ap": 2,
-                    "d": 2,
-                    "keywords": []
-                }
-            },
-            {
-                "name": "Shield Drone",
-                "effect": "Add 1 to the bearer’s Wounds characteristic."
-            }
-        ],
         "roster": [
             {
                 "name": "Commander Shadowsun",
@@ -30970,7 +30928,7 @@
             },
             {
                 "name": "Tactical Drones",
-                "org": "Drone",
+                "org": "Drones",
                 "modelCount": [4, 8, 12],
                 "points": [70, 140, 210],
                 "modelCountIndex": 0,
@@ -31014,6 +30972,97 @@
                             "s": 3,
                             "ap": 0,
                             "d": 1,
+                            "keywords": []
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Guardian Drone",
+                "org": "Drones",
+                "modelCount": [1],
+                "points": [0],
+                "modelCountIndex": 0,
+                "factionKey": ["T'au Empire"],
+                "ability": {
+                    "data": [
+                        {
+                            "effect": "Each time a model makes a ranged attack that targets the bearer’s unit, subtract 1 from the Wound roll."
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Marker Drone",
+                "org": "Drones",
+                "modelCount": [1],
+                "points": [0],
+                "modelCountIndex": 0,
+                "factionKey": ["T'au Empire"],
+                "ability": {
+                    "data": [
+                        {
+                            "effect": "The bearer’s unit has the Markerlight keyword and can act as an Observer unit for another unit even if it Advanced this turn."
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Shield Drone",
+                "org": "Drones",
+                "modelCount": [1],
+                "points": [0],
+                "modelCountIndex": 0,
+                "factionKey": ["T'au Empire"],
+                "ability": {
+                    "data": [
+                        {
+                            "effect": "Add 1 to the bearer’s Wounds characteristic."
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Gun Drone",
+                "org": "Drones",
+                "modelCount": [1],
+                "points": [0],
+                "modelCountIndex": 0,
+                "factionKey": ["T'au Empire"],
+                "ranged": [
+                    {
+                        "name": "Twin Pulse Carbine",
+                        "range": 20,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 5,
+                            "s": 5,
+                            "ap": 0,
+                            "d": 1,
+                            "keywords": ["Assault", "Twin-Linked"]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Missle Drone",
+                "org": "Drones",
+                "modelCount": [1],
+                "points": [0],
+                "modelCountIndex": 0,
+                "factionKey": ["T'au Empire"],
+                "ranged": [
+                    {
+                        "name": "Missle Pod",
+                        "range": 30,
+                        "active": true,
+                        "data": {
+                            "a": 2,
+                            "bs": 5,
+                            "s": 7,
+                            "ap": 2,
+                            "d": 2,
                             "keywords": []
                         }
                     }

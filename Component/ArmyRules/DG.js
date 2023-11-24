@@ -21,10 +21,4 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         paddingHorizontal: 10,
     },
-    walker: {
-        borderWidth: 1,
-        padding: 10,
-        borderRadius: 4,
-        marginBottom: 20,
-    },
 });

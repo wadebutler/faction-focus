@@ -15,6 +15,18 @@ export default function Detachment() {
 
             <FFText style={styles.container}>{rule.effect}</FFText>
 
+            {!rule?.restrictions ? null : (
+                <View style={styles.sizeContainer}>
+                    {rule.restrictions.map((item, index) => {
+                        return (
+                            <FFText style={styles.sizeItem} key={index}>
+                                {item}
+                            </FFText>
+                        );
+                    })}
+                </View>
+            )}
+
             {!rule?.size ? null : (
                 <View style={styles.sizeContainer}>
                     {rule.size.map((item, index) => {

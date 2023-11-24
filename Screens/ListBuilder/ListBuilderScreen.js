@@ -188,6 +188,26 @@ export default function ListBuilder() {
                     </View>
                 )}
 
+                {list.id !== "TE" ? null : (
+                    <View>
+                        <Bar title={"Drones"} />
+                        {list?.roster.map((item, index) => {
+                            if (
+                                item.org === "Drones" &&
+                                item.factionKey.includes(list.name)
+                            ) {
+                                return (
+                                    <UnitCard
+                                        unit={item}
+                                        key={index}
+                                        id={index}
+                                    />
+                                );
+                            }
+                        })}
+                    </View>
+                )}
+
                 {!list.allies ? null : (
                     <View>
                         <Bar title={"Allies"} />
@@ -205,7 +225,7 @@ export default function ListBuilder() {
                     </View>
                 )}
 
-                {!orgList.includes("Fortification") ? null : (
+                {/* {!orgList.includes("Fortification") ? null : (
                     <View>
                         <Bar title={"Fortification"} />
                         {list?.roster.map((item, index) => {
@@ -223,7 +243,7 @@ export default function ListBuilder() {
                             }
                         })}
                     </View>
-                )}
+                )} */}
             </ScrollView>
         </View>
     );
