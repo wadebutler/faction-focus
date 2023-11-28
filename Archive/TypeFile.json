@@ -1,5 +1,6 @@
 {
     "name": "ORKS",
+    "ignore": true,
     "id": "O",
     "rule": {
         "name": "WAAAGH!",
