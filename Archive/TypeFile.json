@@ -1,0 +1,695 @@
+{
+    "name": "ORKS",
+    "id": "O",
+    "rule": {
+        "name": "WAAAGH!",
+        "effect": "If your Army Faction is Orks, once per battle, at the start of the battle round, you can call a Waaagh! If you do, until the start of the next battle round:",
+        "select": [
+            "Orks units from your army are eligible to declare a charge in a turn in which they Advanced.",
+            "Add 1 to the Strength and Attacks characteristics of melee weapons equipped by Orks models from your army.",
+            "Orks models from your army have a 5+ invulnerable save."
+        ]
+    },
+    "detachments": [
+        {
+            "name": "WAAAGH! Tribe",
+            "id": 1,
+            "rule": "Get Stuck In",
+            "effect": "Melee weapons equipped by Orks models from your army have the [SUSTAINED HITS 1] ability.",
+            "enhancements": [
+                {
+                    "name": "Follow Me Ladz",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "Orks model only. While the bearer is leading a unit, add 2\" to the Move characteristic of models in that unit."
+                },
+                {
+                    "name": "Headwoppa's Killchoppa",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "Orks model only. Melee weapons equipped by the bearer that do not have the [EXTRA ATTACKS] ability have the [DEVASTATING WOUNDS] ability."
+                },
+                {
+                    "name": "Kunnin' but Brutal",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "Orks model only. While the bearer is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+                },
+                {
+                    "name": "Supa-Cybork Body",
+                    "active": null,
+                    "cost": 20,
+                    "effect": "Orks model only. The bearer has the Feel No Pain 4+ ability."
+                }
+            ],
+            "stratagems": [
+                {
+                    "name": "Careen!",
+                    "type": "Epic Deed",
+                    "cost": 1,
+                    "when": "Any phase, just after an Orks Vehicle unit from your army with the Deadly Demise ability is destroyed.",
+                    "target": "That destroyed Orks Vehicle unit, if you roll a 6 for its Deadly Demise ability. You can use this Stratagem on that unit even though it was just destroyed.",
+                    "effect": "Your unit can make a Normal or Fall Back move before its Deadly Demise ability is resolved, and before any embarked units perform an Emergency Disembarkation. When making this move, your unit can move over enemy units (excluding Monsters and Vehicles) as if they were not there."
+                },
+                {
+                    "name": "Orks is Never Beanten",
+                    "type": "Epic Deed",
+                    "cost": 2,
+                    "when": "Fight phase, just after an enemy unit has selected its targets.",
+                    "target": "One Orks unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                    "effect": "Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making attacks, and is then removed from play."
+                },
+                {
+                    "name": "Unbridled Carnage",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Fight phase.",
+                    "target": "One Orks unit from your army that has not been selected to fight this phase.",
+                    "effect": "Until the end of the phase, each time an Orks model in your unit makes a melee attack, an unmodified hit roll of 5+ scores a Critical Hit."
+                },
+                {
+                    "name": "'Ard as Nails",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.",
+                    "target": "One Orks unit from your army that was selected as the target of one or more of the attacking unit’s attacks.",
+                    "effect": "Until the end of the phase, each time an attack targets your unit, subtract 1 from the Wound roll.",
+                    "restrictions": "You cannot select a Vehicle or Gretchin unit for this Stratagem."
+                },
+                {
+                    "name": "Mob Rule",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Your Command phase.",
+                    "target": "One Mob unit from your army that contains 10 or more models and is not Below Half-strength.",
+                    "effect": "Until the start of your next Command phase, while a friendly Orks Infantry unit is within 6\" of that Mob unit, that Orks Infantry unit can still be selected as the target of your Stratagems even if it is Battle-shocked."
+                },
+                {
+                    "name": "'Ere We Go",
+                    "type": "Battle Tactic",
+                    "cost": 1,
+                    "when": "Start of your Movement phase.",
+                    "target": "One Orks Infantry unit from your army.",
+                    "effect": "Until the end of the turn, add 2 to Advance and Charge rolls made for your unit."
+                }
+            ]
+        }
+    ],
+    "roster": [
+        {
+            "name": "Battlewagon",
+            "org": "Vehicle",
+            "modelCount": [1],
+            "points": [185],
+            "modelCountIndex": 0,
+            "data": {
+                "movement": 10,
+                "toughness": 10,
+                "save": 3,
+                "invulnerable": null,
+                "wounds": 16,
+                "leadership": 7,
+                "oc": 5
+            },
+            "factionKey": ["Orks"],
+            "keywords": ["Vehicle", "Transport", "Battlewagon"],
+            "ability": {
+                "core": ["Deadly Demise D6", "Firing Deck 22"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Ramshackle but Rugged",
+                        "effect": "Each time an attack is allocated to this model, worsen the Armour Penetration characteristic of that attack by 1."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "’Ard Case",
+                        "effect": "Add 2 to the bearer’s Toughness characteristic, but it no longer has the Firing Deck ability."
+                    }
+                ],
+                "damaged": {
+                    "range": [1, 5],
+                    "effect": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                }
+            },
+            "ranged": [
+                {
+                    "name": "Big Shoota",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 2"]
+                    }
+                },
+                {
+                    "name": "Kannon - Frag",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Blast"]
+                    }
+                },
+                {
+                    "name": "Kannon - Shell",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 9,
+                        "ap": 2,
+                        "d": "D6",
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Killkannon",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": "D6+3",
+                        "bs": 5,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Blast"]
+                    }
+                },
+                {
+                    "name": "Lobba",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Blast", "Indirect Fire"]
+                    }
+                },
+                {
+                    "name": "Zzap Gun",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": "2D6",
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": ["Devastating Wounds"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Deff Rolla",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 6,
+                        "ws": 3,
+                        "s": 9,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Grabbin' Klaw",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "ws": 3,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Extra Attacks"]
+                    }
+                },
+                {
+                    "name": "Tracks and Wheels",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "ws": 4,
+                        "s": 8,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Wreckin' Ball",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "ws": 4,
+                        "s": 10,
+                        "ap": 0,
+                        "d": "D6",
+                        "keywords": ["Extra Attacks"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Beast Snagga Boyz",
+            "org": "Infantry",
+            "modelCount": [10, 20],
+            "points": [105, 210],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Infantry",
+                "Mob",
+                "Battleline",
+                "Beast Snagga",
+                "Beast Snagga Boyz"
+            ],
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 5,
+                "invulnerable": null,
+                "wounds": "1/2",
+                "leadership": 7,
+                "oc": 2
+            },
+            "ability": {
+                "core": "Feel No Pain 6+",
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Monster Hunters",
+                        "effect": "Each time a model in this unit makes an attack that targets a Monster or Vehicle unit, you can re-roll the Hit roll."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Slugga",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Thump Gun",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": "D3",
+                        "bs": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": ["Blast"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Choppa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "ws": 3,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Power Snappa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Beastboss",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [100],
+            "modelCountIndex": 0,
+            "leader": ["Beast Snagga Boyz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Beast Snagga",
+                "Warboss",
+                "Beastboss"
+            ],
+            "ability": {
+                "core": ["Feel No Pain 6+", "Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "Beastboss",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Beastly Rage",
+                        "effect": "Each time this model makes a Charge move, until the end of the turn, melee weapons it is equipped with have the [DEVASTATING WOUNDS] ability."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 4,
+                "invulnerable": 5,
+                "wounds": 5,
+                "leadership": 6,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Shoota",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 1"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Beast Snagga Klaw",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 10,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Anti-Monster 4+", "Anti-Vehicle 4+"]
+                    }
+                },
+                {
+                    "name": "Beastchoppa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "ws": 2,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Anti-Monster 4+", "Anti-Vehicle 4+"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Beastboss on Squigosaur",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [165],
+            "modelCountIndex": 0,
+            "leader": ["Beast Snagga Boyz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Monster",
+                "Character",
+                "Beast Snagga",
+                "Beastboss on Squigosaur"
+            ],
+            "ability": {
+                "core": ["Deadly Demise 1", "Feel No Pain 4+"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "’Ere We Go (Aura)",
+                        "effect": "While a friendly Beast Snagga unit is within 6\" of this model, you can re-roll Charge rolls made for that unit."
+                    },
+                    {
+                        "name": "Single-minded Predator",
+                        "effect": "You can target this model with the Heroic Intervention Stratagem for 1CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 10,
+                "save": 3,
+                "invulnerable": 3,
+                "wounds": 9,
+                "leadership": 6,
+                "oc": 3
+            },
+            "ranged": [
+                {
+                    "name": "Slugga",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Thump Gun",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": "D3",
+                        "bs": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": ["Blast"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Beastchoppa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "ws": 2,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Anti-Monster 4+", "Anti-Vehicle 4+"]
+                    }
+                },
+                {
+                    "name": "Squigosaur's Jaws",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 7,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": ["Devastating Wounds", "Extra Attacks"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Big Mek in Mega Armour",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [85],
+            "modelCountIndex": 0,
+            "leader": ["Meganobz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Mega Armour",
+                "Big Mek in Mega Armour"
+            ],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "More Dakka",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Fix Dat Armour Up",
+                        "effect": "While this model is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Kustom Force Field",
+                        "effect": "While the bearer is leading a unit, models in that unit have a 4+ invulnerable save against ranged attacks."
+                    },
+                    {
+                        "name": "Grot Oiler",
+                        "effect": "Once per battle, at the end of your Movement phase, one model in the bearer’s unit regains D3 lost wounds."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 5,
+                "toughness": 6,
+                "save": 2,
+                "invulnerable": null,
+                "wounds": 5,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Kombi-Weapon",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": [
+                            "Anti-Infantry 4+",
+                            "Devastating Wounds",
+                            "Rapid Fire 1"
+                        ]
+                    }
+                },
+                {
+                    "name": "Kustom Mega-Blasta",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 9,
+                        "ap": 2,
+                        "d": "D6",
+                        "keywords": ["Hazardous"]
+                    }
+                },
+                {
+                    "name": "Kustom Shoota",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 4,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 2"]
+                    }
+                },
+                {
+                    "name": "Tellyport Blasta",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 8,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Blast"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Killsaw",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 12,
+                        "ap": 3,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Power Klaw",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        }
+    ]
+}
