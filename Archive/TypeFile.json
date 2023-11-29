@@ -691,6 +691,330 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Big Mek with Kustom Force Field",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [55],
+            "modelCountIndex": 0,
+            "leader": ["Boyz", "Burna Boyz", "Tankbustas", "Lootas", "Nobz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Grenades",
+                "Big Mek with Kustom Force Field"
+            ],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "More Dakka",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
+                    },
+                    {
+                        "name": "Kustom Force Field",
+                        "effect": "While this model is leading a unit, models in that unit have a 5+ invulnerable save against ranged attacks. Once per battle, at the start of any phase, this model can overcharge its kustom force field. If it does, until the end of the phase, this invulnerable save is improved to 4+."
+                    }
+                ],
+                "data": [],
+                "wargear": [
+                    {
+                        "name": "Grot Helper",
+                        "effect": "Once per battle, the bearer can overcharge its kustom force field one additional time."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 4,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Slugga",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Choppa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Big Mek with Shokk Attack Gun",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [75],
+            "modelCountIndex": 0,
+            "leader": ["Boyz", "Lootas", "Mek Gunz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Grenades",
+                "Big Mek with Shokk Attack Gun"
+            ],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "More Dakka",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Deranged Snotling Assault",
+                        "effect": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks; that unit must take a Battle-shock test."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Grot Assistant",
+                        "effect": "Once per battle, after rolling to determine how many attacks the bearer’s shokk attack gun makes, you can re-roll that dice."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 5,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Shokk Attack Gun",
+                    "range": 60,
+                    "active": true,
+                    "data": {
+                        "a": "D6+1",
+                        "bs": 5,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Blast", "Heavy"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Blitza-Bommer",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [115],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": ["Vehicle", "Aircraft", "Fly", "Blitza-Bommer"],
+            "ability": {
+                "core": ["Deadly Demise D3"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Boom Bomb",
+                        "effect": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6: on a 4+, that unit suffers D6 mortal wounds."
+                    }
+                ],
+                "damaged": {
+                    "range": [1, 4],
+                    "effect": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+                }
+            },
+            "data": {
+                "movement": "20+",
+                "toughness": 9,
+                "save": 3,
+                "invulnerable": 6,
+                "wounds": 12,
+                "leadership": 7,
+                "oc": 0
+            },
+            "ranged": [
+                {
+                    "name": "Big Shoota",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 2"]
+                    }
+                },
+                {
+                    "name": "Twin Supa-Shoota",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": [
+                            "Rapid Fire 2",
+                            "Sustained Hits 1",
+                            "Twin-Linked"
+                        ]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Armoured Hull",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Boomdakka Snazzwagon",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [90],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": ["Vehicle", "Grenades", "Boomdakka Snazzwagon"],
+            "ability": {
+                "core": ["Deadly Demise 1"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Dust Trails (Aura)",
+                        "effect": "While an enemy unit is within 6\" of this model, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 12,
+                "toughness": 7,
+                "save": 4,
+                "invulnerable": 6,
+                "wounds": 9,
+                "leadership": 7,
+                "oc": 3
+            },
+            "ranged": [
+                {
+                    "name": "Big Shoota",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 2"]
+                    }
+                },
+                {
+                    "name": "Grot Blasta",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Mek Speshul",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 12,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": [
+                            "Assault",
+                            "Rapid Fire 4",
+                            "Sustained Hits 1"
+                        ]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Spike Wheels",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
         }
     ]
 }
