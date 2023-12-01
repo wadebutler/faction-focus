@@ -43,6 +43,7 @@ export default function UpdateModal({ expand, handleExpand }) {
                 <View style={{ marginBottom: 10 }}>
                     <FFText>Factions added</FFText>
                     <FFText>-Tau Empire</FFText>
+                    {/* <FFText>-Orks</FFText> */}
                 </View>
 
                 <A

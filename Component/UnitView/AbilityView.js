@@ -90,7 +90,7 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {!ability?.data ? null : (
-                <View style={{ paddingHorizontal: 10, paddingBottom: 10 }}>
+                <View style={styles.container}>
                     <FFText>Datasheet Abilities:</FFText>
                     {ability?.data.map((item, index) => {
                         return (
@@ -144,7 +144,7 @@ export default function AbilityView({ ability, org }) {
             )}
 
             {!ability?.damaged ? null : (
-                <View style={{ paddingHorizontal: 10 }}>
+                <View style={styles.container}>
                     <FFText style={styles.abilityName}>
                         Damaged {ability.damaged.range[0]}-
                         {ability.damaged.range[1]} Wounds Remaining
@@ -194,7 +194,7 @@ export default function AbilityView({ ability, org }) {
 const styles = StyleSheet.create({
     container: {
         paddingHorizontal: 10,
-        marginVertical: 10,
+        marginBottom: 10,
     },
     dataContainer: {
         padding: 10,
