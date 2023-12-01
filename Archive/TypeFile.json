@@ -3314,6 +3314,208 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Mek",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [45],
+            "modelCountIndex": 0,
+            "leader": ["Boyz", "Lootas", "Mek Gunz", "Nobz", "Tankbustas"],
+            "factionKey": ["Orks"],
+            "keywords": ["Infantry", "Character", "Mek"],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Mekboy",
+                        "effect": "While this model is within 3\" of one or more friendly Orks Vehicle units, this model has the Lone Operative ability."
+                    },
+                    {
+                        "name": "Mekaniak",
+                        "effect": "At the end of your Movement phase, you can select one friendly Orks Vehicle model within 3\" of this model. That Vehicle model regains up to D3 lost wounds, and, until the start of your next Movement phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 5,
+                "invulnerable": null,
+                "wounds": 4,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Kustom Mega-Slugga",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": "D3",
+                        "bs": 5,
+                        "s": 8,
+                        "ap": 2,
+                        "d": "D6",
+                        "keywords": ["Blast", "Hazardous"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Killsaw",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "ws": 4,
+                        "s": 12,
+                        "ap": 3,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Wrench",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Mek Gunz",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1, 2, 3],
+            "points": [55, 110, 165],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": ["Vehicle", "Mek Gunz"],
+            "ability": {
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Splat!",
+                        "effect": "Each time a model in this unit makes a ranged attack that targets a unit containing 10 or more models, re-roll a Hit roll of 1."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 3,
+                "toughness": 5,
+                "save": 5,
+                "invulnerable": 6,
+                "wounds": 6,
+                "leadership": 8,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Bubblechukka - Big Bubble",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": "2D6",
+                        "bs": 4,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": ["Bubblechukka", "Blast"]
+                    }
+                },
+                {
+                    "name": "Bubblechukka - Bubble",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": ["Bubblechukka", "Blast"]
+                    }
+                },
+                {
+                    "name": "Bubblechukka - Bubble",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": "D3",
+                        "bs": 4,
+                        "s": 12,
+                        "ap": 3,
+                        "d": "D6+3",
+                        "keywords": ["Bubblechukka", "Blast"]
+                    }
+                },
+                {
+                    "name": "Kustom Mega-Kannon",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": 4,
+                        "s": 12,
+                        "ap": 2,
+                        "d": "D6",
+                        "keywords": ["Blast", "Hazardous"]
+                    }
+                },
+                {
+                    "name": "Smasha Gun",
+                    "range": 48,
+                    "active": true,
+                    "data": {
+                        "a": "D3",
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": ["Blast"]
+                    }
+                },
+                {
+                    "name": "Traktor Kannon",
+                    "range": 48,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 10,
+                        "ap": 2,
+                        "d": "D6+1",
+                        "keywords": ["Anti-Fly 2+", "Devastating Wounds"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Grot Crew",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "ws": 5,
+                        "s": 2,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
         }
     ]
 }
