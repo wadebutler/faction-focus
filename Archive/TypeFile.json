@@ -466,7 +466,6 @@
             "modelCount": [1],
             "points": [165],
             "modelCountIndex": 0,
-            "leader": ["Beast Snagga Boyz"],
             "factionKey": ["Orks"],
             "keywords": [
                 "Monster",
@@ -493,7 +492,7 @@
                 "movement": 10,
                 "toughness": 10,
                 "save": 3,
-                "invulnerable": 3,
+                "invulnerable": 5,
                 "wounds": 9,
                 "leadership": 6,
                 "oc": 3
@@ -3512,6 +3511,472 @@
                         "s": 2,
                         "ap": 0,
                         "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Morkanaut",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [330],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Vehicle",
+                "Titanic",
+                "Towering",
+                "Transport",
+                "Walker",
+                "Morkanaut"
+            ],
+            "ability": {
+                "core": ["Deadly Demise D6"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Clankin’ Forward",
+                        "effect": "Each time this model makes a Normal, Advance or Fall Back move, it can move over enemy models (excluding Monster and Vehicle models) and terrain features that are 4\" or less in height as if they were not there."
+                    },
+                    {
+                        "name": "Big an’ Shooty",
+                        "effect": "Each time this model makes a ranged attack during the battle round in which you called a Waaagh!, add 1 to the Hit roll."
+                    }
+                ],
+                "damaged": {
+                    "range": [1, 7],
+                    "effect": "While this model has 1-7 wounds remaining, subtract 4 from this model’s Objective Control characteristic, and each time this model makes an attack, subtract 1 from the Hit roll."
+                }
+            },
+            "data": {
+                "movement": 8,
+                "toughness": 12,
+                "save": 3,
+                "invulnerable": 5,
+                "wounds": 20,
+                "leadership": 7,
+                "oc": 8
+            },
+            "ranged": [
+                {
+                    "name": "Kustom Mega-Blasta",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 9,
+                        "ap": 2,
+                        "d": "D6",
+                        "keywords": ["Hazardous"]
+                    }
+                },
+                {
+                    "name": "Kustom Mega-Zappa",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": "D6+3",
+                        "bs": 5,
+                        "s": 10,
+                        "ap": 2,
+                        "d": "D6",
+                        "keywords": ["Blast", "Hazardous"]
+                    }
+                },
+                {
+                    "name": "Rokkit Launcha",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": "D3",
+                        "bs": 5,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": ["Blast"]
+                    }
+                },
+                {
+                    "name": "Twin Big Shoota",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 2", "Twin-Linked"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Klaw of Mork - Strike",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 18,
+                        "ap": 3,
+                        "d": 6,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Klaw of Mork - Sweep",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 12,
+                        "ws": 3,
+                        "s": 8,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Mozrag Skaragbad",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [195],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Monster",
+                "Character",
+                "Beast Snagga",
+                "Epic Hero",
+                "Mozrag Skaragbad"
+            ],
+            "ability": {
+                "core": ["Deadly Demise 1", "Feel No Pain 4+"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Da Bigger Dey iz…",
+                        "effect": "Each time this model makes an attack that targets a Monster or Vehicle unit, add 1 to the Damage characteristic of that attack. Each time this model makes an attack that targets a Titanic unit, add 2 to the Damage characteristic of that attack instead."
+                    },
+                    {
+                        "name": "Hungry Chompa",
+                        "effect": "Each time this model declares a charge, until the end of the turn, each time this model makes an attack, an unmodified successful Wound roll of 5+ scores a Critical Wound."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 10,
+                "save": 3,
+                "invulnerable": 4,
+                "wounds": 9,
+                "leadership": 6,
+                "oc": 3
+            },
+            "ranged": [
+                {
+                    "name": "Thump Gun",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": "D3",
+                        "bs": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": ["Blast"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Big Chompa's Jaws",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 7,
+                        "ap": 2,
+                        "d": 4,
+                        "keywords": ["Devastating Wounds", "Extra Attacks"]
+                    }
+                },
+                {
+                    "name": "Gutrippa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "ws": 2,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 3,
+                        "keywords": ["Anti-Monster 4+", "Anti-Vehicle 4+"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nob on Smasha Squig",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [60],
+            "modelCountIndex": 0,
+            "leader": ["Squighog Boyz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Mounted",
+                "Character",
+                "Beast Snagga",
+                "Nob on Smasha Squig"
+            ],
+            "ability": {
+                "core": ["Feel No Pain 5+", "Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "Hogboss",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Hunt Them Down",
+                        "effect": "During the battle round in which you call a Waaagh!, this model’s big choppa has the [ANTI-MONSTER 3+] and [ANTI-VEHICLE 3+] abilities."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 10,
+                "toughness": 7,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 5,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Slugga",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Big Choppa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 5,
+                        "ws": 3,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Anti-Monster 4+", "Anti-Vehicle 4+"]
+                    }
+                },
+                {
+                    "name": "Smasha Squig Jaws",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "ws": 4,
+                        "s": 6,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Extra Attacks"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nob with Waaagh! Banner",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [70],
+            "modelCountIndex": 0,
+            "leader": ["Boyz", "Nobz"],
+            "factionKey": ["Orks"],
+            "keywords": ["Infantry", "Character", "Nob with Waaagh! Banner"],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Plant the Waaagh! Banner",
+                        "effect": "Once per battle, at the start of the battle round, this model can use this ability. If it does, until the start of the next battle round, this model’s unit gains the benefits of the Waaagh! ability as if you had called a Waaagh! this battle round."
+                    },
+                    {
+                        "name": "Da Boss Iz Watchin’",
+                        "effect": "While this model is gaining the benefits of the Waaagh! ability, it has a 4+ invulnerable save and an Objective Control characteristic of 5."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 3,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Kustom Shoota",
+                    "range": 18,
+                    "active": false,
+                    "data": {
+                        "a": 4,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 2"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Waaagh! Banner",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nobz",
+            "org": "Infantry",
+            "modelCount": [5, 10],
+            "points": [105, 210],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": ["Infantry", "Grenades", "Nobz"],
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 2,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ability": {
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Da Boss’ Ladz",
+                        "effect": "While a Warboss model is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Ammo Runt",
+                        "effect": "Once per battle for each ammo runt this unit has, when this unit is selected to shoot, it can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [LETHAL HITS] ability."
+                    }
+                ]
+            },
+            "ranged": [
+                {
+                    "name": "Kombi-Weapon",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": [
+                            "Anti-Infantry 4+",
+                            "Devastating Wounds",
+                            "Rapid Fire 1"
+                        ]
+                    }
+                },
+                {
+                    "name": "Slugga",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Big Choppa",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 5,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Power Klaw",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 2,
                         "keywords": []
                     }
                 }
