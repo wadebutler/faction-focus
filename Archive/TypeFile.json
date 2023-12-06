@@ -3981,6 +3981,219 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Painboss",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [60],
+            "modelCountIndex": 0,
+            "leader": ["Beast Snagga Boyz"],
+            "factionKey": ["Orks"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Beast Snagga Boyz",
+                "Painboss"
+            ],
+            "ability": {
+                "core": ["Feel No Pain 5+", "Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "Dok’s Toolz",
+                        "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Sawbonez",
+                        "effect": "At the end of your Movement phase, select one friendly Beast Snagga Character model within 3\" of this model. That model is healed and regains up to 3 lost wounds. Each model can only be healed once per turn."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Grot Orderly",
+                        "effect": "Once per battle, in your Command phase, if the bearer is leading a unit that is below its Starting Strength, you can return up to D3 destroyed Bodyguard models to that unit."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 4,
+                "leadership": 7,
+                "oc": 1
+            },
+            "melee": [
+                {
+                    "name": "Beast Snagga Klaw",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Anti-Monster 4+", "Anti-Vehicle 4+"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Painboy",
+            "org": "Character",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [70],
+            "modelCountIndex": 0,
+            "leader": ["Boyz", "Nobz", "Lootas", "Burna Boyz", "Tankbustas"],
+            "factionKey": ["Orks"],
+            "keywords": ["Infantry", "Character", "Painboy"],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["WAAAGH!"],
+                "leader": [
+                    {
+                        "name": "Dok’s Toolz",
+                        "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Hold Still and Say ‘Aargh!’",
+                        "effect": "Each time an attack made by this model with its ’urty syringe scores a Critical Wound against a unit (excluding Vehicle units), that unit suffers D6 mortal wounds."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Grot Orderly",
+                        "effect": "Once per battle, in your Command phase, if the bearer is leading a unit that is below its Starting Strength, you can return up to D3 destroyed Bodyguard models to that unit."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 5,
+                "save": 5,
+                "invulnerable": null,
+                "wounds": 3,
+                "leadership": 7,
+                "oc": 1
+            },
+            "melee": [
+                {
+                    "name": "Power Klaw",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 9,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "'Urty Syringe",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 3,
+                        "s": 2,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": [
+                            "Anti-Infantry 4+",
+                            "Extra Attacks",
+                            "Precision"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Rukkatrukk Squigbuggy",
+            "org": "Vehicle",
+            "warlord": false,
+            "modelCount": [1],
+            "points": [110],
+            "modelCountIndex": 0,
+            "factionKey": ["Orks"],
+            "keywords": ["Vehicle", "Rukkatrukk Squigbuggy"],
+            "ability": {
+                "core": ["Deadly Demise 1"],
+                "faction": ["WAAAGH!"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Buzzer Squigs",
+                        "effect": "Each time this model makes an attack with its squig launchas that targets an Infantry unit, add 1 to the Hit roll."
+                    },
+                    {
+                        "name": "Squig Mine",
+                        "effect": "Once per battle, at the start of any phase, select one enemy unit within 3\" of this model and roll one D6: on a 4+, that enemy unit suffers D6 mortal wounds."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 12,
+                "toughness": 7,
+                "save": 4,
+                "invulnerable": 6,
+                "wounds": 9,
+                "leadership": 7,
+                "oc": 3
+            },
+            "ranged": [
+                {
+                    "name": "Sawn-Off Shotgun",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 5,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Squig Launchas",
+                    "range": 36,
+                    "active": true,
+                    "data": {
+                        "a": "D6+6",
+                        "bs": 5,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": ["Blast", "Ignores Cover", "Indirect Fire"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Saw Blades",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
         }
     ]
 }
