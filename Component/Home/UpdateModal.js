@@ -22,17 +22,6 @@ export default function UpdateModal({ expand, handleExpand }) {
 
             <View style={styles.container}>
                 <FFText style={{ marginVertical: 20 }}>
-                    IMPORTANT USER NOTICE
-                </FFText>
-                <FFText>
-                    due to persistant issues when adding new units and data I
-                    did an update to the apps functionality and this will
-                    require you to delete and re-add your lists. I'm hoping this
-                    update will mean no more deleting lists going forward, at
-                    least until a major dataslate change.
-                </FFText>
-
-                <FFText style={{ marginVertical: 20 }}>
                     if data is missing or not updated try deleting the unit or
                     list and re-adding, the app will update all your lists
                     eventually this is only a temporary solution. any other
@@ -42,8 +31,7 @@ export default function UpdateModal({ expand, handleExpand }) {
 
                 <View style={{ marginBottom: 10 }}>
                     <FFText>Factions added</FFText>
-                    <FFText>-Tau Empire</FFText>
-                    {/* <FFText>-Orks</FFText> */}
+                    <FFText>-Orks</FFText>
                 </View>
 
                 <A

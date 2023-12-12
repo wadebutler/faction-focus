@@ -12,10 +12,13 @@ import CSM from "../../Component/ArmyRules/CSM";
 import LV from "../../Component/ArmyRules/LV";
 import DE from "../../Component/ArmyRules/DE";
 import TE from "../../Component/ArmyRules/TE";
+import Ork from "../../Component/ArmyRules/Ork";
 
 export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
     const [list, setList] = useRecoilState(listArmyState);
+
+    console.log(rule);
 
     return (
         <ScrollView>
@@ -39,6 +42,7 @@ export default function ArmyRule() {
             {list.id !== "LV" ? null : <LV rule={rule} />}
             {list.id !== "DE" ? null : <DE rule={rule} />}
             {list.id !== "TE" ? null : <TE rule={rule} />}
+            {list.id !== "O" ? null : <Ork rule={rule} />}
         </ScrollView>
     );
 }

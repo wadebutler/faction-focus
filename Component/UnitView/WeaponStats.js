@@ -4,24 +4,21 @@ import FFText from "../Global/FFText";
 export default function WeaponStats({ weapon, type }) {
     return (
         <View>
-            {type === "r" ? (
+            {type !== "r" ? null : weapon.every(
+                  (item) => item.active === false
+              ) ? null : (
                 <FFText style={styles.typeText}>Ranged</FFText>
-            ) : null}
-            {type === "m" ? (
+            )}
+
+            {type !== "m" ? null : weapon.every(
+                  (item) => item.active === false
+              ) ? null : (
                 <FFText style={styles.typeText}>Melee</FFText>
-            ) : null}
+            )}
             {weapon.map((item, index) => {
                 if (item.active) {
                     return (
-                        <View
-                            style={[
-                                styles.wpnContainer,
-                                weapon.length === 1
-                                    ? null
-                                    : { marginBottom: 10 },
-                            ]}
-                            key={index}
-                        >
+                        <View style={styles.wpnContainer} key={index}>
                             <FFText style={styles.nameText}>{item.name}</FFText>
 
                             <View style={styles.statRow}>

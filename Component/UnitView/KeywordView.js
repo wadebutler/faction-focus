@@ -3,7 +3,7 @@ import FFText from "../Global/FFText";
 
 export default function KeywordView({ keywords, factionKey }) {
     return (
-        <View>
+        <View style={{ marginTop: 10 }}>
             <View style={[styles.keywordContainer, { marginBottom: 5 }]}>
                 <FFText style={{ fontSize: 12 }}>Faction Keywords: </FFText>
                 <FFText style={styles.keyText}>{factionKey[0]}</FFText>

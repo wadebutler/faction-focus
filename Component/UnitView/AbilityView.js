@@ -38,20 +38,44 @@ export default function AbilityView({ ability, org }) {
                         <FFText>Leader Abilities:</FFText>
                         {ability?.leader.map((item, index) => {
                             return (
-                                <View key={index}>
+                                <View
+                                    style={
+                                        typeof item.effect === "string"
+                                            ? null
+                                            : { marginTop: 10 }
+                                    }
+                                    key={index}
+                                >
                                     <FFText style={styles.abilityName}>
                                         {item.name}
                                     </FFText>
-                                    <FFText style={styles.effectText}>
-                                        {item.effect}
-                                    </FFText>
+                                    {typeof item.effect === "string" ? (
+                                        <FFText style={styles.effectText}>
+                                            {item.effect}
+                                        </FFText>
+                                    ) : (
+                                        item.effect.map((effectItem, index) => {
+                                            return (
+                                                <FFText
+                                                    style={
+                                                        item.effect.length ===
+                                                        index + 1
+                                                            ? styles.effectText
+                                                            : styles.effectListText
+                                                    }
+                                                >
+                                                    {effectItem}
+                                                </FFText>
+                                            );
+                                        })
+                                    )}
                                 </View>
                             );
                         })}
                     </View>
                 )
             ) : !ability?.leader || ability?.leader.length === 0 ? null : (
-                <View style={styles.container}>
+                <View style={{ paddingHorizontal: 10 }}>
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader?.map((item) => {
                         return list.roster.map((ldr) => {
@@ -89,7 +113,7 @@ export default function AbilityView({ ability, org }) {
                 </View>
             )}
 
-            {!ability?.data ? null : (
+            {!ability?.data || ability?.data.length === 0 ? null : (
                 <View style={styles.container}>
                     <FFText>Datasheet Abilities:</FFText>
                     {ability?.data.map((item, index) => {
@@ -224,6 +248,10 @@ const styles = StyleSheet.create({
         backgroundColor: "orange",
         borderBottomLeftRadius: 4,
         borderBottomRightRadius: 4,
+    },
+    effectListText: {
+        padding: 10,
+        backgroundColor: "orange",
     },
     PrimarchAbilityName: {
         color: "#fff",
