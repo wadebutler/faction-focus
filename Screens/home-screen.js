@@ -51,7 +51,7 @@ export default function Home() {
                 onPress={handleExpand}
                 style={styles.updateButton}
             >
-                <FFText>Dec 1st Update Notes</FFText>
+                <FFText>Dec 12th Update Notes</FFText>
             </TouchableOpacity>
 
             <UpdateModal expand={expand} handleExpand={handleExpand} />
