@@ -5,6 +5,9 @@ import { useNavigation } from "@react-navigation/native";
 import { unitViewState, listArmyState, unitEditState } from "../../Atoms";
 import FFText from "../Global/FFText";
 import { SortByName } from "../../Utils/Sort";
+import EditIcon from "../Icons/EditIcon";
+import DuplicateIcon from "../Icons/DuplicateIcon";
+import TrashIcon from "../Icons/TrashIcon";
 
 export default function UnitCard({ unit, id }) {
     const navigation = useNavigation();
@@ -140,21 +143,21 @@ export default function UnitCard({ unit, id }) {
                     onPress={() => handleEdit(unit, id)}
                     style={styles.button}
                 >
-                    <FFText>Edit</FFText>
+                    <EditIcon />
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     onPress={() => handleDuplicate()}
                     style={styles.button}
                 >
-                    <FFText>Dup</FFText>
+                    <DuplicateIcon />
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     onPress={() => handleDelete()}
                     style={styles.button}
                 >
-                    <FFText>Del</FFText>
+                    <TrashIcon color={"black"} />
                 </TouchableOpacity>
             </View>
         </TouchableOpacity>

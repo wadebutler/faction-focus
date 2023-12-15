@@ -53,9 +53,8 @@ export default function ListBuilder() {
                         <Bar title={"Character"} />
                         {list?.roster.map((item, index) => {
                             if (
-                                item.org === "Character"
-                                // &&
-                                // item.factionKey.includes(list.name)
+                                item.org === "Character" &&
+                                item.factionKey.includes(list.name)
                             ) {
                                 return (
                                     <UnitCard
