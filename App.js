@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { RecoilRoot } from "recoil";
 import Home from "./Screens/home-screen";
 import ArmySelect from "./Screens/Wizard/ArmySelectScreen";
@@ -15,94 +16,132 @@ import Detachment from "./Screens/ListBuilder/DetachmentScreen";
 import AllySelect from "./Screens/ListBuilder/AllySelectScreen";
 import ArmyRule from "./Screens/ListBuilder/ArmyRuleScreen";
 import Stratagems from "./Screens/ListBuilder/Stratagems";
+import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
+import ScoreIcon from "./Component/Icons/ScoreIcon";
+import ListIcon from "./Component/Icons/ListIcon";
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
-  return (
-    <RecoilRoot>
-      <NavigationContainer>
-        <StatusBar backgroundColor={"#000"} />
-        {/* <StatusBar backgroundColor={"#fff"} barStyle={"dark-content"} /> */}
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{ headerShown: false }}
-          />
+    const ListStack = () => {
+        return (
+            <Stack.Navigator>
+                <Stack.Screen name="Home" options={{ headerShown: false }}>
+                    {(props) => <Home {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="PointSelect"
-            component={PointSelect}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen
+                    name="PointSelect"
+                    options={{ headerShown: false }}
+                >
+                    {(props) => <PointSelect {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="ArmySelect"
-            component={ArmySelect}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen
+                    name="ArmySelect"
+                    options={{ headerShown: false }}
+                >
+                    {(props) => <ArmySelect {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="DetachmentSelect"
-            component={DetachmentSelect}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen
+                    name="DetachmentSelect"
+                    options={{ headerShown: false }}
+                >
+                    {(props) => <DetachmentSelect {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="Confirm"
-            component={Confirm}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen name="Confirm" options={{ headerShown: false }}>
+                    {(props) => <Confirm {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="ListBuilder"
-            component={ListBuilder}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen
+                    name="ListBuilder"
+                    options={{ headerShown: false }}
+                >
+                    {(props) => <ListBuilder {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="UnitSelect"
-            component={UnitSelect}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen
+                    name="UnitSelect"
+                    options={{ headerShown: false }}
+                >
+                    {(props) => <UnitSelect {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="ViewUnit"
-            component={ViewUnit}
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen
-            name="EditUnit"
-            component={EditUnit}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen name="ViewUnit" options={{ headerShown: false }}>
+                    {(props) => <ViewUnit {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="Detachment"
-            component={Detachment}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen name="EditUnit" options={{ headerShown: false }}>
+                    {(props) => <EditUnit {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="Rule"
-            component={ArmyRule}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen
+                    name="Detachment"
+                    options={{ headerShown: false }}
+                >
+                    {(props) => <Detachment {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="Ally"
-            component={AllySelect}
-            options={{ headerShown: false }}
-          />
+                <Stack.Screen name="Rule" options={{ headerShown: false }}>
+                    {(props) => <ArmyRule {...props} />}
+                </Stack.Screen>
 
-          <Stack.Screen
-            name="Strats"
-            component={Stratagems}
-            options={{ headerShown: false }}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </RecoilRoot>
-  );
+                <Stack.Screen name="Ally" options={{ headerShown: false }}>
+                    {(props) => <AllySelect {...props} />}
+                </Stack.Screen>
+
+                <Stack.Screen name="Strats" options={{ headerShown: false }}>
+                    {(props) => <Stratagems {...props} />}
+                </Stack.Screen>
+            </Stack.Navigator>
+        );
+    };
+
+    const ScoreStack = () => {
+        return (
+            <Stack.Navigator>
+                <Stack.Screen
+                    name="Score"
+                    component={() => {
+                        return (
+                            <View>
+                                <Text>Score</Text>
+                            </View>
+                        );
+                    }}
+                    options={{ headerShown: false }}
+                />
+            </Stack.Navigator>
+        );
+    };
+
+    return (
+        <RecoilRoot>
+            <StatusBar backgroundColor={"#000"} />
+            <NavigationContainer>
+                <Tab.Navigator>
+                    <Tab.Screen
+                        name="list"
+                        component={ListStack}
+                        options={{
+                            tabBarIcon: () => <ListIcon />,
+                            headerShown: false,
+                        }}
+                    />
+
+                    <Tab.Screen
+                        name="score"
+                        component={ScoreStack}
+                        options={{
+                            tabBarIcon: () => <ScoreIcon />,
+                            headerShown: false,
+                        }}
+                    />
+                </Tab.Navigator>
+            </NavigationContainer>
+        </RecoilRoot>
+    );
 }
