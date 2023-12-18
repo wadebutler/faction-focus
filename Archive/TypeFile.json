@@ -317,6 +317,84 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Rogue Trader Entourage",
+            "org": "Character",
+            "modelCount": [4],
+            "points": [105],
+            "modelCountIndex": 0,
+            "leader": ["Imperial Navy Breachers", "Voidsmen-at-Arms"],
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Grenades",
+                "Imperium",
+                "Navis Imperialis",
+                "Rogue Trader Entourage",
+                "Character"
+            ],
+            "ability": {
+                "core": ["Infiltrator", "Leader"],
+                "faction": ["Assigned Agents"],
+                "leader": [
+                    {
+                        "name": "Backroom Deals",
+                        "effect": "While this unit is leading a unit, models in that unit have the Infiltrators ability."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Warrant of Trade",
+                        "effect": "If your army includes one or more units with this ability, after players have deployed, select D3 Imperium Battleline units from your army and redeploy them. You can use this ability to place those selected units into Strategic Reserves, regardless of how many units are already in Strategic Reserves. If both players have abilities that redeploy units, roll off: the winner chooses who redeploys units first."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Healing Serum",
+                        "effect": "Models in the bearer’s unit have the Feel No Pain 5+ ability."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 7,
+                "toughness": 4,
+                "save": 6,
+                "invulnerable": 4,
+                "wounds": 4,
+                "leadership": 6,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Neural Shredder",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": "D6",
+                        "bs": "N/A",
+                        "s": 5,
+                        "ap": 2,
+                        "d": 1,
+                        "keywords": ["Anti-Infantry 2+", "Precision", "Torrent"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Phase Sword and Poison Blades",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 5,
+                        "ws": 2,
+                        "s": 5,
+                        "ap": 4,
+                        "d": 2,
+                        "keywords": ["Lethal Hits", "Precision"]
+                    }
+                }
+            ]
         }
     ]
 }
