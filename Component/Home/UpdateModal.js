@@ -24,25 +24,16 @@ export default function UpdateModal({ expand, handleExpand }) {
                 <FFText style={{ marginVertical: 20 }}>
                     if data is missing or not updated try deleting the unit or
                     list and re-adding, the app will update all your lists
-                    eventually this is only a temporary solution. any other
-                    questions can be directed to the below reddit post or you
-                    can contact Jank Hammer at the Below email.
+                    eventually this is only a temporary solution.
                 </FFText>
 
-                <View style={{ marginBottom: 10 }}>
+                {/* <View style={{ marginBottom: 10 }}>
                     <FFText>Factions added</FFText>
                     <FFText>-Orks</FFText>
-                </View>
+                </View> */}
 
-                <A
-                    style={styles.linkText}
-                    href="https://www.reddit.com/r/deathguard40k/comments/17fj32p/help_from_my_stinky_brothers/"
-                >
-                    Post on Reddit
-                </A>
-
-                <A style={styles.linkText} href="mailto:jankxhammer@gmail.com">
-                    Email Jank Hammer
+                <A style={styles.linkText} href="https://discord.gg/nQESuGNB">
+                    Join the Discord
                 </A>
             </View>
         </View>

@@ -4,6 +4,7 @@ import { listArmyState, allyRosterState } from "../../Atoms";
 import { useEffect, useState } from "react";
 import data from "../../Archive/index.json";
 import UnitSelectBar from "../../Component/ListBuilder/UnitSelectBar";
+import { SortByName } from "../../Utils/Sort";
 
 export default function AllySelect() {
     const [list, setList] = useRecoilState(listArmyState);
@@ -29,7 +30,8 @@ export default function AllySelect() {
             });
         });
 
-        setUnits(tempArr);
+        let sortData = SortByName(tempArr);
+        setUnits(sortData);
     }, []);
 
     return (
