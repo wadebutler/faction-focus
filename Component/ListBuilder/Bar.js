@@ -31,7 +31,7 @@ export default function Bar({ title }) {
 
 const styles = StyleSheet.create({
     bar: {
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",

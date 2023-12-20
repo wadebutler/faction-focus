@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     },
     statRow: {
         flexDirection: "row",
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         width: Dimensions.get("window").width,
         justifyContent: "space-between",
         padding: 10,

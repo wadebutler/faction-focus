@@ -357,41 +357,1175 @@
                 ]
             },
             "data": {
-                "movement": 7,
-                "toughness": 4,
-                "save": 6,
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
                 "invulnerable": 4,
+                "wounds": "4/2",
+                "leadership": "6/7",
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Dartmask",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 2,
+                        "ap": 1,
+                        "d": "D3",
+                        "keywords": ["Anti-Infantry 2+", "Pistol", "Precision"]
+                    }
+                },
+                {
+                    "name": "Household Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 3,
+                        "s": 5,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Pistol", "Devastating Wounds"]
+                    }
+                },
+                {
+                    "name": "Laspistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Valtaic Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "bs": 3,
+                        "s": 4,
+                        "ap": 2,
+                        "d": 1,
+                        "keywords": ["Pistol", "Sustained Hits 2"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Death Cult Power Blade",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 5,
+                        "ws": 2,
+                        "s": 4,
+                        "ap": 2,
+                        "d": 1,
+                        "keywords": ["Precision"]
+                    }
+                },
+                {
+                    "name": "Monomolecular Cane-Rapier",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "ws": 3,
+                        "s": 4,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Voidsman-at-Arms",
+            "org": "Infantry",
+            "modelCount": [5, 10],
+            "points": [50, 100],
+            "modelCountIndex": 0,
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Battleline",
+                "Grenades",
+                "Imperium",
+                "Navis Imperialis",
+                "Retinue",
+                "Voidsman-at-Arms"
+            ],
+            "ability": {
+                "faction": ["Assigned Agents"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Masters of Close Confines",
+                        "effect": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, that attack has the [LETHAL HITS] ability."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 8,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Artificer Shotgun",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Lasgun",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 1"]
+                    }
+                },
+                {
+                    "name": "Laspistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Voidsman Rotor Cannon",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "bs": 5,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Heavy", "Sustained Hits 1"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Vicious Bite",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Imperial Navy Breachers",
+            "org": "Infantry",
+            "modelCount": [10],
+            "points": [105],
+            "modelCountIndex": 0,
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Grenades",
+                "Imperium",
+                "Navis Imperialis",
+                "Retinue",
+                "Imperial Navy Breachers"
+            ],
+            "ability": {
+                "faction": ["Assigned Agents"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Breaching Team",
+                        "effect": "Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Endurant Shield",
+                        "effect": "The bearer has a 4+ invulnerable save."
+                    },
+                    {
+                        "name": "Grenade Belts",
+                        "effect": "The bearer has the Smoke keyword, and each time you select the bearer’s unit as the target of the Grenade Stratagem, roll one additional D6 when resolving that Stratagem."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 8,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Autopistol",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Bolt Pistol",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Demolition Charge",
+                    "range": 6,
+                    "active": false,
+                    "data": {
+                        "a": "D6+3",
+                        "bs": 4,
+                        "s": 12,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": [
+                            "Assault",
+                            "Blast",
+                            "Hazardous",
+                            "One Shot"
+                        ]
+                    }
+                },
+                {
+                    "name": "Meltagun",
+                    "range": 12,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 4,
+                        "d": "D6",
+                        "keywords": ["Melta 2"]
+                    }
+                },
+                {
+                    "name": "Navis Heavy Shotgun",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Navis Las-Volley",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 4,
+                        "bs": 4,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Navis Shotgun",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Plasma Gun - Standard",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 7,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 1"]
+                    }
+                },
+                {
+                    "name": "Plasma Gun - Supercharge",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Hazardous", "Rapid Fire 1"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Chainfist",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "ws": 5,
+                        "s": 6,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": ["Anit-Infantry 3+"]
+                    }
+                },
+                {
+                    "name": "Chainsword",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "ws": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Power Weapon",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 2,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Subductor Squad",
+            "org": "Infantry",
+            "modelCount": [10, 11],
+            "points": [105, 105],
+            "modelCountIndex": 0,
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Grenades",
+                "Imperium",
+                "Retinue",
+                "Subductor Squad"
+            ],
+            "ability": {
+                "faction": ["Assigned Agents"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Dedication to Duty",
+                        "effect": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play"
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Nuncio Aquila (Aura)",
+                        "effect": "While an enemy unit is within 3\" of the bearer, each time that unit takes a Battle-shock test, subtract 1 from that test."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": 4,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Arbites Shotpistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Mechanical Bite",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Shock Maul",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Exaction Squad",
+            "org": "Infantry",
+            "modelCount": [10, 11],
+            "points": [110, 110],
+            "modelCountIndex": 0,
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Grenades",
+                "Imperium",
+                "Retinue",
+                "Exaction Squad"
+            ],
+            "ability": {
+                "faction": ["Assigned Agents"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Imperial Law",
+                        "effect": "At the start of the first battle round, select one enemy unit to be this unit’s quarry. Each time a model in this unit makes an attack that targets its quarry, add 1 to the Hit roll."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Arbites Medi-kit",
+                        "effect": "Models in the bearer’s unit have the Feel No Pain 5+ ability."
+                    },
+                    {
+                        "name": "Nuncio Aquila (Aura)",
+                        "effect": "While an enemy unit is within 3\" of the bearer, each time that unit takes a Battle-shock test, subtract 1 from that test."
+                    },
+                    {
+                        "name": "Soulguilt Scanner",
+                        "effect": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Arbites Combat Shotgun",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Arbites Grenade Launcher - Frag",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": "D3",
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Blast"]
+                    }
+                },
+                {
+                    "name": "Arbites Grenade Launcher - Krak",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 2,
+                        "d": "D3",
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Arbites Shotpistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Executioner Shotgun",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": ["Ignores Cover", "Precision"]
+                    }
+                },
+                {
+                    "name": "Heavy Stubber",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 3"]
+                    }
+                },
+                {
+                    "name": "Webber",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": "N/A",
+                        "s": 2,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault", "Devastating Wounds", "Torrent"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "ws": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Exruciator Maul",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 2,
+                        "ws": 3,
+                        "s": 4,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Mechanical Bite",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Vigilant Squad",
+            "org": "Infantry",
+            "modelCount": [10, 11],
+            "points": [105, 105],
+            "modelCountIndex": 0,
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Battleline",
+                "Grenades",
+                "Imperium",
+                "Retinue",
+                "Vigilant Squad"
+            ],
+            "ability": {
+                "faction": ["Assigned Agents"],
+                "leader": [],
+                "data": [
+                    {
+                        "name": "Merciless Judgement",
+                        "effect": "Each time a model in this unit makes a ranged attack that targets a unit that is Below Half-strength, add 1 to the Wound roll."
+                    }
+                ],
+                "wargear": [
+                    {
+                        "name": "Nuncio Aquila (Aura)",
+                        "effect": "While an enemy unit is within 3\" of the bearer, each time that unit takes a Battle-shock test, subtract 1 from that test."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 4,
+                "invulnerable": null,
+                "wounds": 1,
+                "leadership": 7,
+                "oc": 2
+            },
+            "ranged": [
+                {
+                    "name": "Arbites Combat Shotgun",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault"]
+                    }
+                },
+                {
+                    "name": "Arbites Grenade Launcher - Frag",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": "D3",
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Blast"]
+                    }
+                },
+                {
+                    "name": "Arbites Grenade Launcher - Krak",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 9,
+                        "ap": 2,
+                        "d": "D3",
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Arbites Shotpistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Executioner Shotgun",
+                    "range": 24,
+                    "active": false,
+                    "data": {
+                        "a": 1,
+                        "bs": 4,
+                        "s": 5,
+                        "ap": 1,
+                        "d": 1,
+                        "keywords": ["Ignores Cover", "Precision"]
+                    }
+                },
+                {
+                    "name": "Heavy Stubber",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "bs": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Rapid Fire 3"]
+                    }
+                },
+                {
+                    "name": "Webber",
+                    "range": 36,
+                    "active": false,
+                    "data": {
+                        "a": "D6",
+                        "bs": "N/A",
+                        "s": 2,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Assault", "Devastating Wounds", "Torrent"]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Close Combat Weapon",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 2,
+                        "ws": 4,
+                        "s": 3,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                },
+                {
+                    "name": "Mechanical Bite",
+                    "range": "m",
+                    "active": true,
+                    "data": {
+                        "a": 3,
+                        "ws": 4,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Lord Inquisitor Kyria Draxus",
+            "org": "Character",
+            "modelCount": [1],
+            "points": [75],
+            "modelCountIndex": 0,
+            "leader": [
+                "Imperium Battleline Infantry",
+                "Inquisitorial Henchmen"
+            ],
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Epic Hero",
+                "Psyker",
+                "Grenades",
+                "Imperium",
+                "Inquisitor",
+                "Lord Inquisitor Kyria Draxus"
+            ],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["Assigned Agents"],
+                "leader": [
+                    {
+                        "name": "Authority of the Inquisition",
+                        "effect": "While this model is leading a unit, it can embark within any Transport that its Bodyguard unit can embark within."
+                    },
+                    {
+                        "name": "Xenos Hunter",
+                        "effect": "While this model is leading a unit, each time a model in that unit makes an attack that targets an enemy unit (excluding Imperium and Chaos units), add 1 to the Hit roll."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Psychic Veil (Psychic)",
+                        "effect": "In your Command phase, this Psyker can use this ability. If it does, roll one D6: on a 1, this Psyker’s unit suffers D3 mortal wounds; on a 2+, until the start of your next Command phase, this Psyker’s unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 3,
+                "invulnerable": 5,
                 "wounds": 4,
                 "leadership": 6,
                 "oc": 1
             },
             "ranged": [
                 {
-                    "name": "Neural Shredder",
-                    "range": 12,
+                    "name": "Dirgesinger",
+                    "range": 18,
                     "active": true,
                     "data": {
-                        "a": "D6",
-                        "bs": "N/A",
-                        "s": 5,
-                        "ap": 2,
-                        "d": 1,
-                        "keywords": ["Anti-Infantry 2+", "Precision", "Torrent"]
+                        "a": 4,
+                        "bs": 3,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": [
+                            "Anti-Infantry 4+",
+                            "Devastating Wounds",
+                            "Assault"
+                        ]
+                    }
+                },
+                {
+                    "name": "Psychic Tempest",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 6,
+                        "bs": 3,
+                        "s": 6,
+                        "ap": 0,
+                        "d": 2,
+                        "keywords": [
+                            "Indirect Fire",
+                            "Psychic",
+                            "Sustained Hits 2"
+                        ]
                     }
                 }
             ],
             "melee": [
                 {
-                    "name": "Phase Sword and Poison Blades",
+                    "name": "Power Fist",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 6,
+                        "ap": 2,
+                        "d": 2,
+                        "keywords": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Inquisitor Coteaz",
+            "org": "Character",
+            "modelCount": [1],
+            "points": [75],
+            "modelCountIndex": 0,
+            "leader": [
+                "Imperium Battleline Infantry",
+                "Inquisitorial Henchmen"
+            ],
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Epic Hero",
+                "Psyker",
+                "Imperium",
+                "Inquisitor Coteaz"
+            ],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["Assigned Agents"],
+                "leader": [
+                    {
+                        "name": "Authority of the Inquisition",
+                        "effect": "While this model is leading a unit, it can embark within any Transport that its Bodyguard unit can embark within."
+                    },
+                    {
+                        "name": "Malefic Wardings (Psychic)",
+                        "effect": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks and attacks made by Daemon models."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "Spy Network",
+                        "effect": "Each time your opponent gains a CP as the result of an ability, roll one D6: on a 2+, you also gain 1CP."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 2,
+                "invulnerable": 5,
+                "wounds": 4,
+                "leadership": 6,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Bolt Pistol",
+                    "range": 12,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 3,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": ["Pistol"]
+                    }
+                },
+                {
+                    "name": "Psychic Blast",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": "D6",
+                        "bs": 3,
+                        "s": 3,
+                        "ap": 1,
+                        "d": 2,
+                        "keywords": [
+                            "Anti-Infantry 4+",
+                            "Devastating Wounds",
+                            "Psychic"
+                        ]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Nemesis Daemon Hammer",
+                    "range": "m",
+                    "active": false,
+                    "data": {
+                        "a": 3,
+                        "ws": 3,
+                        "s": 9,
+                        "ap": 3,
+                        "d": 3,
+                        "keywords": ["Psychic"]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Inquisitor Greyfax",
+            "org": "Character",
+            "modelCount": [1],
+            "points": [65],
+            "modelCountIndex": 0,
+            "leader": [
+                "Imperium Battleline Infantry",
+                "Inquisitorial Henchmen"
+            ],
+            "factionKey": ["Agents of the Imperium"],
+            "keywords": [
+                "Infantry",
+                "Character",
+                "Epic Hero",
+                "Psyker",
+                "Grenades",
+                "Imperium",
+                "Inquisitor Greyfax"
+            ],
+            "ability": {
+                "core": ["Leader"],
+                "faction": ["Assigned Agents"],
+                "leader": [
+                    {
+                        "name": "Authority of the Inquisition",
+                        "effect": "While this model is leading a unit, it can embark within any Transport that its Bodyguard unit can embark within."
+                    },
+                    {
+                        "name": "Psyoculum",
+                        "effect": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ANTI-PSYKER 4+] ability."
+                    }
+                ],
+                "data": [
+                    {
+                        "name": "No Escape",
+                        "effect": "Each time an enemy unit (excluding Monster and Vehicle units) that is within Engagement Range of one or more units with this ability is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests."
+                    }
+                ]
+            },
+            "data": {
+                "movement": 6,
+                "toughness": 3,
+                "save": 3,
+                "invulnerable": 5,
+                "wounds": 4,
+                "leadership": 4,
+                "oc": 1
+            },
+            "ranged": [
+                {
+                    "name": "Castigation",
+                    "range": 18,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 3,
+                        "s": 8,
+                        "ap": 2,
+                        "d": 3,
+                        "keywords": [
+                            "Anit-Character 4+",
+                            "Devastating Wounds",
+                            "Precision",
+                            "Psychic"
+                        ]
+                    }
+                },
+                {
+                    "name": "Condemnor Stake",
+                    "range": 24,
+                    "active": true,
+                    "data": {
+                        "a": 1,
+                        "bs": 3,
+                        "s": 4,
+                        "ap": 0,
+                        "d": 1,
+                        "keywords": [
+                            "Anti-Psyker 2+",
+                            "Devastating Wounds",
+                            "Precision",
+                            "Rapid Fire 1"
+                        ]
+                    }
+                }
+            ],
+            "melee": [
+                {
+                    "name": "Master-Crafted Power Sword",
                     "range": "m",
                     "active": true,
                     "data": {
-                        "a": 5,
-                        "ws": 2,
-                        "s": 5,
-                        "ap": 4,
+                        "a": 4,
+                        "ws": 3,
+                        "s": 4,
+                        "ap": 2,
                         "d": 2,
-                        "keywords": ["Lethal Hits", "Precision"]
+                        "keywords": []
                     }
                 }
             ]

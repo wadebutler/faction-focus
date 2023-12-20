@@ -42,7 +42,7 @@ export default function DetachmentSelect() {
                             styles.button,
                             item.id === select?.id
                                 ? { marginBottom: 70 }
-                                : { borderColor: "orange" },
+                                : { borderColor: "#69a1bf" },
                         ]}
                     >
                         <FFText style={{ paddingTop: 10, fontWeight: "bold" }}>
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     button: {
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         borderRadius: 4,
         borderWidth: 1,
         padding: 10,
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     confirmButton: {
         position: "absolute",
         bottom: 10,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         width: "95%",
         padding: 10,
         alignItems: "center",

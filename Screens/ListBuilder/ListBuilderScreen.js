@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
     },
     bar: {
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 10,

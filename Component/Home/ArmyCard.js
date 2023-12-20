@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         marginHorizontal: 20,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
     },
     trash: {
         backgroundColor: "#000",

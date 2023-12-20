@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
     effectText: {
         padding: 10,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         borderBottomLeftRadius: 4,
         borderBottomRightRadius: 4,
         marginBottom: 20,

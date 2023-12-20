@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         paddingTop: "10%",
     },
     summaryContainer: {
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         width: "80%",
         padding: 10,
         borderBottomRightRadius: 4,
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     },
     input: {
         borderWidth: 1,
-        borderBottomColor: "orange",
+        borderBottomColor: "#69a1bf",
         borderTopRightRadius: 4,
         borderTopLeftRadius: 4,
         padding: 10,
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     button: {
         position: "absolute",
         bottom: 20,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         width: "90%",
         padding: 10,
         alignItems: "center",

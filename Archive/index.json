@@ -10801,14 +10801,6 @@
                         "effect": "In your opponent’s next Command phase, each enemy unit within 6\" of your unit must take a Battle-shock test. If the unit taking that test is Below Half-strength, subtract 1 from that test. Enemy units affected by this Stratagem do not need to take any other Battle-shock tests in the same phase."
                     },
                     {
-                        "name": "Disgustingly Resilient",
-                        "type": "Battle Tactic",
-                        "cost": 2,
-                        "when": "Fight phase, just after an enemy unit has selected its targets.",
-                        "target": "One Death Guard unit from your army that was selected as the target of one or more of that enemy unit’s attacks.",
-                        "effect": "Until the end of the phase, each time an attack is allocated to a model in your unit, subtract 1 from the Damage characteristic of that attack."
-                    },
-                    {
                         "name": "For the Blood God!",
                         "type": "Battle Tactic",
                         "cost": 1,
@@ -16594,7 +16586,7 @@
             },
             {
                 "name": "Tzaangor",
-                "org": "Infantry",
+                "org": "Battleline",
                 "modelCount": [3, 6],
                 "points": [45, 90],
                 "modelCountIndex": 0,

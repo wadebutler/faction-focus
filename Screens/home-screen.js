@@ -51,7 +51,7 @@ export default function Home() {
                 onPress={handleExpand}
                 style={styles.updateButton}
             >
-                <FFText>Dec 18th Update Notes</FFText>
+                <FFText>Dec 20th Update Notes</FFText>
             </TouchableOpacity>
 
             <UpdateModal expand={expand} handleExpand={handleExpand} />
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     button: {
         position: "absolute",
         bottom: 0,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         width: "100%",
         height: 60,
         alignItems: "center",
@@ -101,6 +101,6 @@ const styles = StyleSheet.create({
         height: 30,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
     },
 });

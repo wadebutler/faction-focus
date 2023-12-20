@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     typeText: {
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         padding: 10,
         fontSize: 16,
     },

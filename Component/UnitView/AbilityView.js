@@ -185,7 +185,7 @@ export default function AbilityView({ ability, org }) {
                         {ability.Primarch.title}
                     </FFText>
 
-                    <FFText style={{ backgroundColor: "orange", padding: 10 }}>
+                    <FFText style={{ backgroundColor: "#69a1bf", padding: 10 }}>
                         {ability.Primarch.effect}
                     </FFText>
 
@@ -245,13 +245,13 @@ const styles = StyleSheet.create({
     },
     effectText: {
         padding: 10,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         borderBottomLeftRadius: 4,
         borderBottomRightRadius: 4,
     },
     effectListText: {
         padding: 10,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
     },
     PrimarchAbilityName: {
         color: "#fff",
@@ -261,11 +261,11 @@ const styles = StyleSheet.create({
     },
     PrimarchEffectText: {
         padding: 10,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
     },
     effectNoTitle: {
         padding: 10,
-        backgroundColor: "orange",
+        backgroundColor: "#69a1bf",
         borderRadius: 4,
         marginTop: 10,
     },
