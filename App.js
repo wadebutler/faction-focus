@@ -85,7 +85,6 @@ export default function App() {
                         component={AllySelect}
                         options={{ headerShown: false }}
                     />
-                    // this is a test
                     <Stack.Screen
                         name="Strats"
                         component={Stratagems}
