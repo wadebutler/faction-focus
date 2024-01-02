@@ -19,90 +19,80 @@ import Stratagems from "./Screens/ListBuilder/Stratagems";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return (
-    <RecoilRoot>
-      <NavigationContainer>
-        <StatusBar backgroundColor={"#000"} />
-        {/* <StatusBar backgroundColor={"#fff"} barStyle={"dark-content"} /> */}
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="PointSelect"
-            component={PointSelect}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="ArmySelect"
-            component={ArmySelect}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="DetachmentSelect"
-            component={DetachmentSelect}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="Confirm"
-            component={Confirm}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="ListBuilder"
-            component={ListBuilder}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="UnitSelect"
-            component={UnitSelect}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="ViewUnit"
-            component={ViewUnit}
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen
-            name="EditUnit"
-            component={EditUnit}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="Detachment"
-            component={Detachment}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="Rule"
-            component={ArmyRule}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="Ally"
-            component={AllySelect}
-            options={{ headerShown: false }}
-          />
-
-          <Stack.Screen
-            name="Strats"
-            component={Stratagems}
-            options={{ headerShown: false }}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </RecoilRoot>
-  );
+    return (
+        <RecoilRoot>
+            <NavigationContainer>
+                <StatusBar backgroundColor={"#000"} />
+                {/* <StatusBar backgroundColor={"#fff"} barStyle={"dark-content"} /> */}
+                <Stack.Navigator>
+                    <Stack.Screen
+                        name="Home"
+                        component={Home}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="PointSelect"
+                        component={PointSelect}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="ArmySelect"
+                        component={ArmySelect}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="DetachmentSelect"
+                        component={DetachmentSelect}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="Confirm"
+                        component={Confirm}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="ListBuilder"
+                        component={ListBuilder}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="UnitSelect"
+                        component={UnitSelect}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="ViewUnit"
+                        component={ViewUnit}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="EditUnit"
+                        component={EditUnit}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="Detachment"
+                        component={Detachment}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="Rule"
+                        component={ArmyRule}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen
+                        name="Ally"
+                        component={AllySelect}
+                        options={{ headerShown: false }}
+                    />
+                    // this is a test
+                    <Stack.Screen
+                        name="Strats"
+                        component={Stratagems}
+                        options={{ headerShown: false }}
+                    />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </RecoilRoot>
+    );
 }
