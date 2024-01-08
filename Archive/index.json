@@ -31494,7 +31494,7 @@
             },
             {
                 "name": "Beast Snagga Boyz",
-                "org": "Infantry",
+                "org": "Battleline",
                 "modelCount": [10, 20],
                 "points": [105, 210],
                 "modelCountIndex": 0,
