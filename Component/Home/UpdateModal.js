@@ -22,15 +22,16 @@ export default function UpdateModal({ expand, handleExpand }) {
 
             <View style={styles.container}>
                 <FFText style={{ marginVertical: 20 }}>
-                    if data is missing or not updated try deleting the unit or
-                    list and re-adding, the app will update all your lists
-                    eventually this is only a temporary solution.
+                    to see the latest information you will need to delete your
+                    old lists
                 </FFText>
 
-                {/* <View style={{ marginBottom: 10 }}>
-                    <FFText>Factions added</FFText>
-                    <FFText>-Orks</FFText>
-                </View> */}
+                <FFText style={{ marginVertical: 20 }}>
+                    due to my personal busy schedule I will only be updating the
+                    Chaos Factions, I don't have plans to maintain data for
+                    other factions currently, if you want your factions added
+                    back or updated reach out to me on discord.
+                </FFText>
 
                 <A style={styles.linkText} href="https://discord.gg/nQESuGNB">
                     Join the Discord
