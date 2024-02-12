@@ -78,37 +78,24 @@ export default function AbilityView({ ability, org }) {
                 <View style={{ paddingHorizontal: 10 }}>
                     <FFText>Leader Abilities:</FFText>
                     {ability?.leader?.map((item) => {
-                        return list.roster.map((ldr) => {
-                            if (item.name === ldr.name) {
-                                if (ldr.ability.leader.length > 0) {
-                                    return ldr.ability.leader.map(
-                                        (ablty, index) => {
-                                            return (
-                                                <View
-                                                    style={{ marginBottom: 10 }}
-                                                    key={index}
-                                                >
-                                                    <FFText
-                                                        style={
-                                                            styles.abilityName
-                                                        }
-                                                    >
-                                                        {ablty.name}
-                                                    </FFText>
-                                                    <FFText
-                                                        style={
-                                                            styles.effectText
-                                                        }
-                                                    >
-                                                        {ablty.effect}
-                                                    </FFText>
-                                                </View>
-                                            );
-                                        }
-                                    );
-                                }
+                        return list.roster[item.id].ability.leader.map(
+                            (ablty, index) => {
+                                return (
+                                    <View
+                                        style={{ marginBottom: 10 }}
+                                        key={index}
+                                    >
+                                        <FFText style={styles.abilityName}>
+                                            {ablty.name}
+                                        </FFText>
+
+                                        <FFText style={styles.effectText}>
+                                            {ablty.effect}
+                                        </FFText>
+                                    </View>
+                                );
                             }
-                        });
+                        );
                     })}
                 </View>
             )}

@@ -23,7 +23,7 @@ export default function LeaderCheckbox({ item, id }) {
                     leader: unitEdit.unit.ability.leader.some(
                         (e) => e.id === id
                     )
-                        ? removeUnit.splice(id, 1, item)
+                        ? handleRemove(removeUnit)
                         : [
                               ...unitEdit.unit.ability.leader,
                               { name: item.name, id: id },
@@ -46,10 +46,14 @@ export default function LeaderCheckbox({ item, id }) {
         handleUnitUpload(tempList);
     };
 
+    const handleRemove = (arr) => {
+        return arr.filter((x) => x.id !== id);
+    };
+
     useEffect(() => {
         list.roster.map((unit, index) => {
             if (index === unitEdit.unitId)
-                unit?.ability?.leader.map((ldr) => {
+                unit?.ability?.leader?.map((ldr) => {
                     if (ldr.id === id) {
                         setChecked(true);
                     }

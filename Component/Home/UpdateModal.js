@@ -22,15 +22,11 @@ export default function UpdateModal({ expand, handleExpand }) {
 
             <View style={styles.container}>
                 <FFText style={{ marginVertical: 20 }}>
-                    to see the latest information you will need to delete your
-                    old lists
+                    -did some bug fixes to leader checkbox
                 </FFText>
 
                 <FFText style={{ marginVertical: 20 }}>
-                    due to my personal busy schedule I will only be updating the
-                    Chaos Factions, I don't have plans to maintain data for
-                    other factions currently, if you want your factions added
-                    back or updated reach out to me on discord.
+                    -put core strats in alphabetical order
                 </FFText>
 
                 <A style={styles.linkText} href="https://discord.gg/nQESuGNB">

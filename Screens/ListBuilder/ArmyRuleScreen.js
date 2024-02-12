@@ -18,8 +18,6 @@ export default function ArmyRule() {
     const [rule, setRule] = useRecoilState(ruleState);
     const [list, setList] = useRecoilState(listArmyState);
 
-    console.log(rule);
-
     return (
         <ScrollView>
             <GoBack />
