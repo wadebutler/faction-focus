@@ -13,7 +13,9 @@ export default function UpdateModal({ expand, handleExpand }) {
             <View style={styles.container}>
                 <FFText>-did some bug fixes to leader checkbox</FFText>
                 <FFText>-put core strats in alphabetical order</FFText>
-                <FFText>-copy army list to clipboard button now live!</FFText>
+                <FFText>
+                    -copy army list to clipboard button V2 now live!
+                </FFText>
 
                 <A style={styles.linkText} href="https://discord.gg/nQESuGNB">
                     Join the Discord

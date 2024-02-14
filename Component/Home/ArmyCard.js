@@ -2,14 +2,14 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
-import { listArmyState, copyRosterState } from "../../Atoms";
+import { listArmyState } from "../../Atoms";
 import TrashIcon from "../Icons/TrashIcon";
 import CheckIcon from "../Icons/CheckIcon";
 import CloseIcon from "../Icons/CloseIcon";
 import FFText from "../Global/FFText";
 import { SortByName } from "../../Utils/Sort";
 import Clip from "../Icons/ClipboardIcon";
-import * as Clipboard from "expo-clipboard";
+import { handleCopy } from "../../Utils/handleCopy";
 
 export default function ArmyCard({ item, handleDelete }) {
     const navigation = useNavigation();
@@ -23,54 +23,6 @@ export default function ArmyCard({ item, handleDelete }) {
         data.roster = sort;
         setList(data);
         navigation.navigate("ListBuilder");
-    };
-
-    const handleCopy = async () => {
-        let title = `${item.title} - ${item.name} ${item.points.name}[${item.points.value}]`;
-        let tempRoster = [];
-
-        item.roster.map((unit) => {
-            let tempUnit = `${unit.name} - ${
-                unit.points[unit.modelCountIndex]
-            }`;
-            let tempMeleeArr = [];
-            let tempGunArr = [];
-
-            unit?.melee?.map((wpn) => {
-                if (wpn.active) {
-                    tempMeleeArr.push(wpn.name);
-                }
-            });
-
-            unit?.ranged?.map((wpn) => {
-                if (wpn.active) {
-                    tempGunArr.push(wpn.name);
-                }
-            });
-
-            if (tempMeleeArr.length === 0) {
-                tempRoster.push(`
-                ${tempUnit}
-                ${tempGunArr.toString()}
-                ${""}`);
-            } else if (tempGunArr.length === 0) {
-                tempRoster.push(`
-                ${tempUnit}
-                ${tempMeleeArr.toString()}
-                ${""}`);
-            } else {
-                tempRoster.push(`
-                ${tempUnit}
-                ${tempMeleeArr.toString()}
-                ${tempGunArr.toString()}
-                ${""}`);
-            }
-        });
-
-        await Clipboard.setStringAsync(`
-        ${title}
-        ${tempRoster.join("")}
-        `);
     };
 
     return (
@@ -88,7 +40,7 @@ export default function ArmyCard({ item, handleDelete }) {
             <View style={styles.rowContainer}>
                 {confirm ? null : (
                     <TouchableOpacity
-                        onPress={() => handleCopy()}
+                        onPress={() => handleCopy(item)}
                         style={[styles.trash, { marginRight: 10 }]}
                     >
                         <Clip />
