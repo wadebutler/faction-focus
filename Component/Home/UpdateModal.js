@@ -1,7 +1,6 @@
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import FFText from "../Global/FFText";
 import { A } from "@expo/html-elements";
-import CloseIcon from "../Icons/CloseIcon";
 
 export default function UpdateModal({ expand, handleExpand }) {
     return (
@@ -11,23 +10,10 @@ export default function UpdateModal({ expand, handleExpand }) {
                 !expand ? { height: 0 } : { height: "100%" },
             ]}
         >
-            {!expand ? null : (
-                <TouchableOpacity
-                    onPress={handleExpand}
-                    style={styles.closeButton}
-                >
-                    <CloseIcon color={"black"} />
-                </TouchableOpacity>
-            )}
-
             <View style={styles.container}>
-                <FFText style={{ marginVertical: 20 }}>
-                    -did some bug fixes to leader checkbox
-                </FFText>
-
-                <FFText style={{ marginVertical: 20 }}>
-                    -put core strats in alphabetical order
-                </FFText>
+                <FFText>-did some bug fixes to leader checkbox</FFText>
+                <FFText>-put core strats in alphabetical order</FFText>
+                <FFText>-copy army list to clipboard button now live!</FFText>
 
                 <A style={styles.linkText} href="https://discord.gg/nQESuGNB">
                     Join the Discord
