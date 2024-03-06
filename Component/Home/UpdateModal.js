@@ -11,13 +11,12 @@ export default function UpdateModal({ expand, handleExpand }) {
             ]}
         >
             <View style={styles.container}>
-                <FFText>-did some bug fixes to leader checkbox</FFText>
-                <FFText>-put core strats in alphabetical order</FFText>
                 <FFText>
-                    -copy army list to clipboard button V2 now live!
+                    A big thanks to KushPatel from the discord for doing the
+                    points for da boys! so enjoy some orky goodness!
                 </FFText>
 
-                <A style={styles.linkText} href="https://discord.gg/nQESuGNB">
+                <A style={styles.linkText} href="https://discord.gg/v3kszadk">
                     Join the Discord
                 </A>
             </View>
