@@ -225,7 +225,7 @@ export default function ListBuilder() {
                     </View>
                 )}
 
-                {/* {!orgList.includes("Fortification") ? null : (
+                {!orgList.includes("Fortification") ? null : (
                     <View>
                         <Bar title={"Fortification"} />
                         {list?.roster.map((item, index) => {
@@ -243,7 +243,7 @@ export default function ListBuilder() {
                             }
                         })}
                     </View>
-                )} */}
+                )}
             </ScrollView>
         </View>
     );
