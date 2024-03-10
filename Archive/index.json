@@ -1531,16 +1531,16 @@
                 ],
                 "melee": [
                     {
-                        "name": "Brutal Assault Weapon",
+                        "name": "Cursed Plague Bell",
                         "range": "m",
                         "active": true,
                         "data": {
-                            "a": 2,
-                            "ws": 4,
-                            "s": 3,
+                            "a": 5,
+                            "ws": 3,
+                            "s": 4,
                             "ap": 0,
-                            "d": 1,
-                            "keywords": []
+                            "d": 2,
+                            "keywords": ["Lethal Hits"]
                         }
                     }
                 ]
