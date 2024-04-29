@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import FFText from "../Global/FFText";
 import { A } from "@expo/html-elements";
 
@@ -11,10 +11,7 @@ export default function UpdateModal({ expand, handleExpand }) {
             ]}
         >
             <View style={styles.container}>
-                <FFText>
-                    A big thanks to KushPatel from the discord for doing the
-                    points for da boys! so enjoy some orky goodness!
-                </FFText>
+                <FFText>spring points update</FFText>
 
                 <A style={styles.linkText} href="https://discord.gg/v3kszadk">
                     Join the Discord
